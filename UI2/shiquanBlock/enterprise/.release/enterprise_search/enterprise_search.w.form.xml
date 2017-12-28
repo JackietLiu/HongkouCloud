@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window crMfuym" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crMfuym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:btn_coop_searchClick" __cid="crMfuym" class="crMfuym"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7vyiM3-iosstatusbar crMfuym" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crMfuym"> 
+    <div class="x-panel-top crMfuym" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:155}" __cid="crMfuym"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar crMfuym" style="line-height:35px;background-color:#007afe;font-weight:normal;font-size:medium;font-style:normal;height:58px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;企业管理&quot;}" __cid="crMfuym"> 
+        <div class="x-titlebar-left crMfuym" __cid="crMfuym"></div>  
+        <div class="x-titlebar-title crMfuym" __cid="crMfuym">企业管理</div>  
+        <div class="x-titlebar-right  crMfuym" __cid="crMfuym">
+          <div class="empty crMfuym" __cid="crMfuym"/>
+        </div> 
+      </div>  
+      <div class="media crMfuym" xid="media1" style="padding:20px 10px;" __cid="crMfuym"> 
+        <div class="media-body crMfuym" xid="mediaBody1" style="width:100%;" __cid="crMfuym"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control crMfuym" xid="input2" bind-value="input_value" style="width:100%;border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入公司名称,简介等全部或部分信息&quot;}" __cid="crMfuym"/> 
+        </div>  
+        <div class="media-right crMfuym" xid="mediaRight1" __cid="crMfuym"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block crMfuym" xid="btn1" style="border-radius:0;width:80px;height:39px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_coop_searchClick" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/shiquanBlock/newImage/Search.png&quot;}" __cid="crMfuym"> 
+            <i xid="i5" __cid="crMfuym" class="crMfuym"/>  
+            <img src="$model/UI2/shiquanBlock/newImage/Search.png" xid="image3" height="20px;" __cid="crMfuym" class="crMfuym"/>  
+            <span xid="span3" __cid="crMfuym" class="crMfuym"/>
+          </a>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content crMfuym" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crMfuym">
+      <div xid="div7" class=" x-scroll-view crMfuym" __cid="crMfuym"> 
+        <div class="x-scroll crMfuym" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" style="background-color:s;" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;autoAppend&quot;:true,&quot;autoPullUp&quot;:true}" __cid="crMfuym"> 
+          <div class="x-content-center x-pull-down container crMfuym" xid="div8" __cid="crMfuym"> 
+            <i class="x-pull-down-img glyphicon x-icon-pull-down crMfuym" xid="i3" __cid="crMfuym"/>  
+            <span class="x-pull-down-label crMfuym" xid="span9" __cid="crMfuym">下拉刷新...</span>
+          </div>  
+          <div class="x-scroll-content crMfuym" xid="div9" __cid="crMfuym">
+            <div xid="div2" style="padding:10px;" __cid="crMfuym" class="crMfuym"> 
+              <span xid="span4" style="color:red;" __cid="crMfuym" class="crMfuym">请点击灰色条纹查看详情</span>
+            </div>
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list crMfuym" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;enterpriseData&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false,&quot;limit&quot;:10}" __cid="crMfuym"> 
+              <ul class="x-list-template hide crMfuym" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="crMfuym"> 
+                <li xid="li1" __cid="crMfuym" class="crMfuym">
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output crMfuym" xid="output1" style="padding-left:20px;" data-bind="component:{ref:ref(&quot;ent_name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crMfuym"/>  
+                  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group crMfuym" xid="controlGroup2" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsed&quot;:true,&quot;collapsible&quot;:true,&quot;title&quot;:&quot;title&quot;}" __cid="crMfuym"> 
+                    <div class="x-control-group-title crMfuym" xid="controlGroupTitle2" __cid="crMfuym"> 
+                      <span xid="span2" style="height:1px;display:none;" bind-text="val(&quot;ent_name&quot;)" __cid="crMfuym" class="crMfuym"/>
+                    </div>  
+                    <div xid="div3" style="border-radius:5px;border:1px solid #aaa;box-shadow:3px 3px 0px #aaa;" class="hide crMfuym" __cid="crMfuym">
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row crMfuym" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMfuym"> 
+                        <div class="x-col x-col-10 x-col-center crMfuym" xid="col13" __cid="crMfuym"> 
+                          <img src="$model/UI2/shiquanBlock/image/profile_pic-copy-15.png" alt="" xid="image7" height="60px" style="width:60px;" __cid="crMfuym" class="crMfuym"/>
+                        </div>  
+                        <div class="x-col crMfuym" xid="col16" __cid="crMfuym"> 
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMfuym" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMfuym"> 
+                            <div class="x-col crMfuym" xid="col30" __cid="crMfuym"> 
+                              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMfuym" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMfuym"> 
+                                <label class="pull-left x-label crMfuym" xid="label6" style="width:50px;" __cid="crMfuym">名称:</label>  
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit crMfuym" xid="output6" data-bind="component:{ref:ref(&quot;ent_name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crMfuym"/>
+                              </div> 
+                            </div> 
+                          </div>  
+                          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMfuym" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMfuym"> 
+                            <div class="x-col crMfuym" xid="col31" __cid="crMfuym"> 
+                              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMfuym" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMfuym"> 
+                                <label class="pull-left x-label crMfuym" xid="label7" style="width:50px;" __cid="crMfuym">地址:</label>  
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit crMfuym" xid="output7" data-bind="component:{ref:ref(&quot;ent_address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crMfuym"/>
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row crMfuym" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMfuym"> 
+                        <div class="x-col crMfuym" xid="col23" style="text-align:center;" __cid="crMfuym"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crMfuym" xid="btn2" style="width:68px;border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;详情&quot;}" __cid="crMfuym"> 
+                            <i xid="i4" __cid="crMfuym" class="crMfuym"/>  
+                            <span xid="span6" __cid="crMfuym" class="crMfuym">详情</span>
+                          </a> 
+                        </div>  
+                        <div class="x-col crMfuym" xid="col24" style="text-align:center;" __cid="crMfuym"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default crMfuym" xid="btn3" style="width:68px;border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_ContractClick" data-config="{&quot;label&quot;:&quot;联系人&quot;}" __cid="crMfuym"> 
+                            <i xid="i6" __cid="crMfuym" class="crMfuym"/>  
+                            <span xid="span8" __cid="crMfuym" class="crMfuym">联系人</span>
+                          </a> 
+                        </div>  
+                        <div class="x-col crMfuym" xid="col25" style="text-align:center;" __cid="crMfuym"/>  
+                        <div class="x-col crMfuym" xid="col29" __cid="crMfuym"/>
+                      </div>
+                    </div>
+                  </div>
+                </li> 
+              </ul> 
+            </div> 
+          </div>  
+          <div class="x-content-center x-pull-up crMfuym" xid="div10" __cid="crMfuym"> 
+            <span class="x-pull-up-label crMfuym" xid="span10" __cid="crMfuym">加载更多...</span>
+          </div> 
+        </div>
+      </div>
+    </div>  
+    <style __cid="crMfuym" class="crMfuym">.x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-top {height: 155px;}.x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-content { top: 155px;bottom: nullpx;}.x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-top {height: 175px;}.iosstatusbar .x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-content { top: 175px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-top {height: 155px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7vyiM3-iosstatusbar &gt;.x-panel-content {top: 155px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="Dialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:DialogOK" data-config="{&quot;message&quot;:&quot;对不起，没有找到符合条件的记录！&quot;,&quot;title&quot;:&quot;温馨提示&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="crMfuym" class="crMfuym">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay crMfuym" __cid="crMfuym"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal crMfuym" __cid="crMfuym">
+      <xhtml:div class="x-modal-inner crMfuym" __cid="crMfuym">
+        <xhtml:div class="x-modal-title crMfuym" __cid="crMfuym">温馨提示</xhtml:div>
+        <xhtml:div class="x-modal-text crMfuym" __cid="crMfuym">对不起，没有找到符合条件的记录！</xhtml:div>
+        <xhtml:input class="x-modal-prompt-input crMfuym" type="text" __cid="crMfuym"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons crMfuym" __cid="crMfuym">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK crMfuym" value="ok" __cid="crMfuym">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes crMfuym" value="yes" __cid="crMfuym">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No crMfuym" value="no" __cid="crMfuym">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel crMfuym" value="cancel" __cid="crMfuym">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>
+</div>

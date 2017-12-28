@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" xid="window" extends="../base/login.w" __id="id_1" design="device:pc;" sysParam="false" class="window portal-login-page portal-login-page window cBRRJBr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBRRJBr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:login" __cid="cBRRJBr" class="cBRRJBr"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="receiver" style="left:19px;top:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" __cid="cBRRJBr" class="cBRRJBr"></span>  
+  <div class="page-login cBRRJBr" __cid="cBRRJBr"> 
+    <div class="page-header cBRRJBr" style="text-align: center;font-size: 24px; margin-top:0; padding-top: 24px;" __cid="cBRRJBr"></div>  
+    <div class="page-body cBRRJBr" style="padding: 10px;" __cid="cBRRJBr"> 
+      <div class="form-container cBRRJBr" style="max-width: 420px;margin: 0 auto;padding: 0 15px;" __cid="cBRRJBr" data-bind="event:{keypress:$model._callModelFn.bind($model, 'div1Keypress')}"> 
+        <form class="form-horizontal ng-pristine ng-valid cBRRJBr" __cid="cBRRJBr"> 
+          <fieldset xid="fieldset" __cid="cBRRJBr" class="cBRRJBr"> 
+            <div class="form-group cBRRJBr" __cid="cBRRJBr"> 
+              <div class="input-group cBRRJBr" __cid="cBRRJBr"> 
+                <span class="input-group-addon cBRRJBr" __cid="cBRRJBr"> 
+                  <span class="glyphicon glyphicon-envelope cBRRJBr" __cid="cBRRJBr"></span> 
+                </span>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cBRRJBr" xid="name" data-bind="component:{ref:$model.loginData.ref(&#34;phone&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;登录名&#34;}" __cid="cBRRJBr"> 
+              </div> 
+            </div>  
+            <div class="form-group cBRRJBr" __cid="cBRRJBr"> 
+              <div class="input-group cBRRJBr" __cid="cBRRJBr"> 
+                <span class="input-group-addon cBRRJBr" __cid="cBRRJBr"> 
+                  <span class="glyphicon glyphicon-lock cBRRJBr" __cid="cBRRJBr"></span> 
+                </span>  
+                <input component="$model/UI2/system/components/justep/input/password" class="form-control cBRRJBr" xid="password" type="password" data-bind="component:{ref:$model.loginData.ref('code'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&#34;placeHolder&#34;:&#34;密码&#34;}" __cid="cBRRJBr"> 
+              </div> 
+            </div>  
+            <div class="form-group cBRRJBr" __cid="cBRRJBr"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cBRRJBr" xid="login" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&#34;label&#34;:&#34;登录&#34;}" __cid="cBRRJBr"> 
+                <i xid="i1" __cid="cBRRJBr" class="cBRRJBr"></i>  
+                <span xid="span1" __cid="cBRRJBr" class="cBRRJBr">登录</span> 
+              </a> 
+            </div>  
+            <a class="btn btn-link cBRRJBr" component="$model/UI2/system/components/justep/button/button" style="margin-top:-14px;" xid="registerBtn" xui:parent="fieldset" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;registerDialog.open&#34;}" data-config="{&#34;label&#34;:&#34;新用户注册&#34;}" __cid="cBRRJBr"> 
+              <i xid="i2" __cid="cBRRJBr" class="cBRRJBr"></i>  
+              <span xid="span2" __cid="cBRRJBr" class="cBRRJBr">新用户注册</span> 
+            </a>
+            <a class="btn btn-link pull-right cBRRJBr" component="$model/UI2/system/components/justep/button/button" style="margin-top:-14px;" xid="fotgetBtn" xui:parent="fieldset" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;forgetDialog.open&#34;}" data-config="{&#34;label&#34;:&#34;忘记密码？&#34;}" __cid="cBRRJBr"> 
+              <i xid="i2_4" __cid="cBRRJBr" class="cBRRJBr"></i>  
+              <span xid="span2_4" __cid="cBRRJBr" class="cBRRJBr">忘记密码？</span> 
+            </a>
+          </fieldset> 
+        </form> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="registerDialog" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/work/reg/registerActivity.m.w&#34;}" __cid="cBRRJBr" class="cBRRJBr">
+    <div class="x-dialog-overlay cBRRJBr" __cid="cBRRJBr"></div>
+    <div class="x-dialog cBRRJBr" style="display:none;" __cid="cBRRJBr">
+      <div class="x-dialog-title cBRRJBr" __cid="cBRRJBr">
+        <button class="close cBRRJBr" __cid="cBRRJBr">
+          <span __cid="cBRRJBr" class="cBRRJBr">×</span>
+        </button>
+        <div class="x-dialog-title-text cBRRJBr" __cid="cBRRJBr"></div>
+      </div>
+      <div class="x-dialog-body cBRRJBr" __cid="cBRRJBr"></div>
+    </div>
+  </span>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="forgetDialog" xui:parent="window" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/work/reg/forgetPasswordActivity.w&#34;}" __cid="cBRRJBr" class="cBRRJBr">
+    <div class="x-dialog-overlay cBRRJBr" __cid="cBRRJBr"></div>
+    <div class="x-dialog cBRRJBr" style="display:none;" __cid="cBRRJBr">
+      <div class="x-dialog-title cBRRJBr" __cid="cBRRJBr">
+        <button class="close cBRRJBr" __cid="cBRRJBr">
+          <span __cid="cBRRJBr" class="cBRRJBr">×</span>
+        </button>
+        <div class="x-dialog-title-text cBRRJBr" __cid="cBRRJBr"></div>
+      </div>
+      <div class="x-dialog-body cBRRJBr" __cid="cBRRJBr"></div>
+    </div>
+  </span>
+</div>

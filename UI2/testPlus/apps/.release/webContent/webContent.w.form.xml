@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cR777zq" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cR777zq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cR777zq{background: rgb(55, 185, 237)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cR777zq" class="cR777zq"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUJfIje-iosstatusbar cR777zq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cR777zq"> 
+    <div class="x-panel-top cR777zq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR777zq">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cR777zq" xid="titleBar1" style="font-weight:normal;font-size:20px;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;统计菜单&quot;}" __cid="cR777zq"> 
+        <div class="x-titlebar-left cR777zq" xid="left1" __cid="cR777zq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cR777zq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cR777zq"> 
+            <i xid="i7" class="linear linear-arrowleft cR777zq" __cid="cR777zq"/>  
+            <span xid="span11" __cid="cR777zq" class="cR777zq"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cR777zq" xid="title1" style="font-weight:normal;" __cid="cR777zq">统计菜单</div>  
+        <div class="x-titlebar-right  cR777zq" xid="right1" __cid="cR777zq">
+          <div class="empty cR777zq" __cid="cR777zq"/>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content cR777zq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cR777zq">
+      <div xid="div7" style="height:100%;" __cid="cR777zq" class="cR777zq"> 
+        <iframe name="netframe" xid="iframe" width="100%" frameborder="0" height="100%" scrolling="no" bind-load="iframeLoad" __cid="cR777zq" class="cR777zq"/>
+      </div>
+    </div>  
+    <style __cid="cR777zq" class="cR777zq">.x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUJfIje-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

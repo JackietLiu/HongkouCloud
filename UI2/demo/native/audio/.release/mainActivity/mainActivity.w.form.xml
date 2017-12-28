@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window oa" class="window cyY3Y7f" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyY3Y7f" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onunLoad:modelUnLoad;onLoad:modelLoad" __cid="cyY3Y7f" class="cyY3Y7f"></div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiverReceive" __cid="cyY3Y7f" class="cyY3Y7f"/>
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cyY3Y7f" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cyY3Y7f"> 
+    <div class="x-contents-content active cyY3Y7f" xid="main" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cyY3Y7f"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceamQFf-iosstatusbar cyY3Y7f" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyY3Y7f"> 
+        <div class="x-panel-top cyY3Y7f" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyY3Y7f"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyY3Y7f" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;音频录制/播放&quot;}" __cid="cyY3Y7f"> 
+            <div class="x-titlebar-left cyY3Y7f" xid="div1" __cid="cyY3Y7f"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cyY3Y7f" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cyY3Y7f"> 
+                <i xid="i2" class="icon-chevron-left cyY3Y7f" __cid="cyY3Y7f"/>  
+                <span xid="span1" __cid="cyY3Y7f" class="cyY3Y7f"/> 
+              </a> 
+            </div>  
+            <div class="x-titlebar-title cyY3Y7f" xid="div2" __cid="cyY3Y7f">音频录制/播放</div>  
+            <div class="x-titlebar-right  cyY3Y7f" xid="div3" __cid="cyY3Y7f">
+              <div class="empty cyY3Y7f" __cid="cyY3Y7f"/>
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content cyY3Y7f" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyY3Y7f"> 
+          <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cyY3Y7f" xid="controlGroup1" style="height:459px;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;title&quot;}" __cid="cyY3Y7f"> 
+            <div xid="div7" __cid="cyY3Y7f" class="cyY3Y7f"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow device-button-white cyY3Y7f" xid="audioBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:audioBtnClick" data-config="{&quot;disabled&quot;:true,&quot;label&quot;:&quot;开始录音&quot;}" __cid="cyY3Y7f"> 
+                <i xid="i4" __cid="cyY3Y7f" class="cyY3Y7f"/>  
+                <span xid="span3" __cid="cyY3Y7f" class="cyY3Y7f">开始录音</span> 
+              </a> 
+            </div>  
+            <div xid="div8" __cid="cyY3Y7f" class="cyY3Y7f"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn x-yellow device-button-white cyY3Y7f" xid="playBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:playBtnClick" data-config="{&quot;label&quot;:&quot;播放音乐&quot;}" __cid="cyY3Y7f"> 
+                <i xid="i5" __cid="cyY3Y7f" class="cyY3Y7f"/>  
+                <span xid="span4" __cid="cyY3Y7f" class="cyY3Y7f">播放音乐</span> 
+              </a> 
+            </div>  
+            <div xid="div9" style="height:33px;" class="list-row cyY3Y7f" __cid="cyY3Y7f"/>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row list-row cyY3Y7f" xid="emptyRow" style="height:48px;" bind-visible="$model.fileData.getCount() == 0" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyY3Y7f"> 
+              <div class="x-col x-col-center cyY3Y7f" xid="col1" __cid="cyY3Y7f"> 
+                <label xid="label3" style="color:#C0C0C0;" __cid="cyY3Y7f" class="cyY3Y7f">无历史记录</label> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cyY3Y7f" xid="fileList" bind-click="fileListClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;fileData&quot;}" __cid="cyY3Y7f"> 
+              <ul class="x-list-template hide cyY3Y7f" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_fileList($element),afterRender:$model.foreach_afterRender_fileList.bind($model,$element)}" __cid="cyY3Y7f"> 
+                <li xid="li1" class="x-flex list-row cyY3Y7f" __cid="cyY3Y7f"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cyY3Y7f" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyY3Y7f"> 
+                    <div class="x-col cyY3Y7f" xid="col4" __cid="cyY3Y7f"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyY3Y7f" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyY3Y7f"> 
+                        <div class="x-col cyY3Y7f" xid="col7" __cid="cyY3Y7f"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output title-data cyY3Y7f" xid="output2" data-bind="component:{ref:ref('fileName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cyY3Y7f" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cyY3Y7f"> 
+                        <div class="x-col cyY3Y7f" xid="col10" __cid="cyY3Y7f"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-flex1 x-output content-data cyY3Y7f" xid="output1" data-bind="component:{ref:ref('createTime'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-col x-col-fixed x-col-center cyY3Y7f" xid="col6" style="width:40px;" __cid="cyY3Y7f"> 
+                      <i xid="i6" class="icon-social-youtube-outline cyY3Y7f" style="font-size:25px;color:#C0C0C0;font-weight:100;" __cid="cyY3Y7f"/> 
+                    </div> 
+                  </div> 
+                </li> 
+              </ul> 
+            </div>  
+            <div xid="div11" style="height:23px;" __cid="cyY3Y7f" class="cyY3Y7f"/>  
+            <div xid="div12" __cid="cyY3Y7f" class="cyY3Y7f"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray device-button-black cyY3Y7f" xid="deleteBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;label&quot;:&quot;清空历史记录&quot;}" __cid="cyY3Y7f"> 
+                <i xid="i7" __cid="cyY3Y7f" class="cyY3Y7f"/>  
+                <span xid="span5" __cid="cyY3Y7f" class="cyY3Y7f">清空历史记录</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom device-bottom cyY3Y7f" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:100}" __cid="cyY3Y7f"> 
+          <div xid="content" style="padding:10px 10px 10px 10px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cyY3Y7f" xid="titleOutput" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output cyY3Y7f" xid="fileOutput" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/> 
+          </div> 
+        </div>  
+        <style __cid="cyY3Y7f" class="cyY3Y7f">.x-panel.pceamQFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceamQFf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 100px;}.x-panel.pceamQFf-iosstatusbar &gt;.x-panel-bottom {height: 100px;}.iosstatusbar .x-panel.pceamQFf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceamQFf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceamQFf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceamQFf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceamQFf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceamQFf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cyY3Y7f" xid="recordCover" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;center&quot;,&quot;dismissible&quot;:false,&quot;opacity&quot;:0.8,&quot;position&quot;:&quot;center&quot;}" __cid="cyY3Y7f"> 
+    <div class="x-popOver-overlay cyY3Y7f" xid="div5" style="background-color:black;" __cid="cyY3Y7f"/>  
+    <div class="x-popOver-content cyY3Y7f" xid="div6" style="width:200px;" __cid="cyY3Y7f"> 
+      <div xid="loaddiv" style="text-align:center;height:60px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+        <img alt="" xid="image1" height="60px" src="$model/UI2/demo/native/audio/record.gif" __cid="cyY3Y7f" class="cyY3Y7f"/> 
+      </div>  
+      <div style="text-align:center; height:70px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cyY3Y7f" style="padding-top:20px;padding-bottom:20px;font-size:24px;color:#FF0000;" xid="recordTime" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/> 
+      </div>  
+      <div xid="div10" style="text-align:center;padding-bottom:180px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+        <img src="$model/UI2/demo/native/audio/stop.png" alt="" xid="pauseImage" width="75px" bind-click="pauseImageClick" __cid="cyY3Y7f" class="cyY3Y7f"/> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cyY3Y7f" xid="playCover" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;center&quot;,&quot;dismissible&quot;:false,&quot;opacity&quot;:0.8,&quot;position&quot;:&quot;center&quot;}" __cid="cyY3Y7f"> 
+    <div class="x-popOver-overlay cyY3Y7f" xid="div51" style="background-color:black;" __cid="cyY3Y7f"/>  
+    <div class="x-popOver-content cyY3Y7f" xid="div61" style="width:200px;" __cid="cyY3Y7f"> 
+      <div style="text-align:center; height:70px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output cyY3Y7f" style="padding-top:20px;padding-bottom:20px;font-size:24px;color:#FF0000;" xid="playTime" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cyY3Y7f"/> 
+      </div>  
+      <div xid="div101" style="text-align:center;padding-bottom:180px;" __cid="cyY3Y7f" class="cyY3Y7f"> 
+        <img src="$model/UI2/demo/native/audio/stop.png" alt="" xid="pauseImage1" width="75px" bind-click="pauseImageClick" __cid="cyY3Y7f" class="cyY3Y7f"/> 
+      </div> 
+    </div> 
+  </div> 
+</div>

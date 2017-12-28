@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7Ffyma" class="c7Ffyma" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/wing/child,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/panel/panel,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/wing/wing,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-panel-bottom.c7Ffyma .btn-group.c7Ffyma .btn.c7Ffyma{color: rgb(108, 108, 108)} .panel-body.c7Ffyma{padding: 10px 0} .x-panel-bottom.c7Ffyma .btn-group.c7Ffyma .btn.active.c7Ffyma{color: rgb(55, 185, 237)} .x-titlebar.c7Ffyma{background: rgb(55, 185, 237)} .x-wing-left.c7Ffyma{background: rgb(55, 185, 237)} .x-panel-content.c7Ffyma .btn-group.c7Ffyma .btn.active.c7Ffyma{border-bottom: 2px solid white} .x-scroll-content.c7Ffyma .panel-body.c7Ffyma{padding: 10px 10px} .footer.c7Ffyma{height: 10px; background-color: rgb(237, 243, 243)} .panel-default.c7Ffyma{border: 0} .tb-img1.c7Ffyma{width: 100%; height: 210px} .clean.c7Ffyma{height: 15px; width: 100%; background: rgba(237, 243, 243, 0.5)} .tb-img5.c7Ffyma{height: 60px; width: 60px; border-radius: 100%} .ol1.c7Ffyma li.c7Ffyma{width: 6px; height: 6px; border-radius: 100%; background-color: rgb(229, 229, 229); margin-left: 10px; border: 0} .ol1.c7Ffyma li.active.c7Ffyma{background-color: rgb(83, 127, 249); width: 8px; height: 8px} .ol2.c7Ffyma{} .ol2.c7Ffyma li.c7Ffyma{background-color: rgb(229, 229, 229); border: 0; width: 10px; height: 10px; margin-left: 10px} .ol2.c7Ffyma li.active.c7Ffyma{background-color: rgb(83, 127, 249); width: 10px; height: 10px} .intro.c7Ffyma{position: absolute; bottom: 0; left: 0; color: rgb(255, 255, 255); margin-left: 10px; font-weight: normal; z-index: 111; font-size: 15px; font-family: "微软雅黑"; width: 90%; white-space: nowrap; word-break: keep-all; overflow: hidden; text-overflow: ellipsis} .x-panel-content.c7Ffyma .title.c7Ffyma{text-align: center} .botmeun.c7Ffyma{font-weight: bold; font-size: medium} .media-body.c7Ffyma{padding-top: 5px} .dis.c7Ffyma{display: none} .o-img.c7Ffyma{width: 100%; height: 80px} .o-imgList.c7Ffyma{padding: 14px} .o-imgList.c7Ffyma ul.c7Ffyma li.c7Ffyma{padding: 1px} .o-uploadFile.c7Ffyma .x-attachment-content.c7Ffyma{min-height: 40px; min-height: 40px; border-top: 0; background: none; margin-top: 0px} .o-uploadFile.c7Ffyma .x-item-upload.c7Ffyma{width: 40px; height: 40px} .o-uploadFile.c7Ffyma .x-attachment.c7Ffyma{min-height: 40px; padding: 0} .o-uploadFile.c7Ffyma .x-attachment.c7Ffyma .x-attachment-cell.c7Ffyma{float: none; margin: 0; height: 40px; display: block} .share_detail.c7Ffyma img.c7Ffyma{width: 35px; height: 35px; margin-top: 5px; border: 1px solid transparent; border-radius: 7px} .share_detail.c7Ffyma{width: 75%; margin: 0 auto; position: relative; float: right} .share_detail.c7Ffyma li.c7Ffyma{width: 25%; float: left} .share_btn.c7Ffyma{text-align: center; margin-top: 10px; position: relative} .normal.c7Ffyma{box-shadow: 0px 0px 5px rgb(170, 170, 170); color: red; background-color: white; width: 40%} .bottomdiv.c7Ffyma{width: 100%; background-color: white; height: 50px; position: fixed; bottom: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstruct;onActive:modelActive;onLoad:modelLoad" __cid="c7Ffyma" class="c7Ffyma"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/wing/wing" class="x-wing c7Ffyma" xid="wing1" data-bind="component:{name:'$model/UI2/system/components/justep/wing/wing'}" data-config="{&quot;display&quot;:&quot;push&quot;}" __cid="c7Ffyma"> 
+    <div class="x-wing-left c7Ffyma" xid="left2" style="color:#fff;" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'},event:{load:$model._callModelFn.bind($model, 'left2Load')}" __cid="c7Ffyma"> 
+      <div xid="div32" align="center" __cid="c7Ffyma" class="c7Ffyma"> 
+        <img src="" alt="" xid="image7" class="img-responsive center-block c7Ffyma" style="height:80px;border-radius:100%;margin-top:30px;width:80px;" __cid="c7Ffyma" data-bind="attr:{src:$model.userData.val(&quot;headerImg&quot;)}"/>  
+        <span xid="span7" style="font-size:large;" __cid="c7Ffyma" class="c7Ffyma" data-bind="text:$model.userData.ref(&quot;UserName_Real&quot;)">姓名</span> 
+      </div>  
+      <div xid="div34" style="background-color:#2bace1;margin-top:20px;font-size:16px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <div xid="div31" style="padding-top:10px;height:60px;border-bottom:3px solid #37baed;background:#2b5bf4;padding-left:20px;background-color:transparent;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <div class="media c7Ffyma" xid="media1" __cid="c7Ffyma"> 
+            <div class="media-left c7Ffyma" xid="mediaLeft1" __cid="c7Ffyma"> 
+              <a href="#" xid="a1" __cid="c7Ffyma" class="c7Ffyma"> 
+                <img alt="" xid="image8" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/4.png" height="40px" __cid="c7Ffyma" class="c7Ffyma"/> 
+              </a> 
+            </div>  
+            <div class="media-body c7Ffyma" xid="mediaBody1" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit6" style="padding-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                <label class="x-label c7Ffyma" xid="label6" style="width:60px;" __cid="c7Ffyma">职位：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output7" style="color:#fff;" data-bind="component:{ref:$model.userData.ref(&quot;Party_Title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div291" style="height:60px;border-bottom:3px solid #37baed;padding-left:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <div class="media c7Ffyma" xid="media2" style="padding-top:10px;" __cid="c7Ffyma"> 
+            <div class="media-left c7Ffyma" xid="mediaLeft2" __cid="c7Ffyma"> 
+              <a href="#" xid="a1" __cid="c7Ffyma" class="c7Ffyma"> 
+                <img alt="" xid="image5" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/3.png" height="40px" __cid="c7Ffyma" class="c7Ffyma"/> 
+              </a> 
+            </div>  
+            <div class="media-body c7Ffyma" xid="mediaBody2" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit7" style="padding-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                <label class="x-label c7Ffyma" xid="label7" style="width:60px;" __cid="c7Ffyma">电话：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output8" style="color:#fff;" data-bind="component:{ref:$model.userData.ref(&quot;Tel_Office1&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div292" style="height:60px;border-bottom:3px solid #37baed;padding-left:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <div class="media c7Ffyma" xid="media3" __cid="c7Ffyma"> 
+            <div class="media-left c7Ffyma" xid="mediaLeft3" style="padding-top:10px;" __cid="c7Ffyma"> 
+              <a href="#" xid="a3" __cid="c7Ffyma" class="c7Ffyma"> 
+                <img alt="" xid="image6" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/2.png" height="40px" __cid="c7Ffyma" class="c7Ffyma"/> 
+              </a> 
+            </div>  
+            <div class="media-body c7Ffyma" xid="mediaBody3" style="padding-top:10px;" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit10" style="padding-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                <label class="x-label c7Ffyma" xid="label10" style="width:60px;" __cid="c7Ffyma">手机：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output11" style="color:#fff;" data-bind="component:{ref:$model.userData.ref(&quot;Mobile_No&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div293" style="height:60px;border-bottom:3px solid #37baed;padding-left:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <div class="media c7Ffyma" xid="media4" __cid="c7Ffyma"> 
+            <div class="media-left c7Ffyma" xid="mediaLeft4" style="padding-top:10px;" __cid="c7Ffyma"> 
+              <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/1.png" alt="" xid="image5" height="40px" __cid="c7Ffyma" class="c7Ffyma"/> 
+            </div>  
+            <div class="media-body c7Ffyma" xid="mediaBody4" style="padding-top:10px;" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit1" style="padding-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                <label class="x-label c7Ffyma" xid="label1" style="width:60px;" __cid="c7Ffyma">邮箱：</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output1" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:" __cid="c7Ffyma"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div30" align="right" style="margin-top:50px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Ffyma" xid="button1" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;注销&quot;}" __cid="c7Ffyma"> 
+          <i xid="i7" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span8" __cid="c7Ffyma" class="c7Ffyma">注销</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link c7Ffyma" xid="button2" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;退出&quot;}" __cid="c7Ffyma"> 
+          <i xid="i7" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span9" __cid="c7Ffyma" class="c7Ffyma">退出</span> 
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-wing-content c7Ffyma" xid="content3" component="$model/UI2/system/components/justep/wing/child" data-bind="component:{name:'$model/UI2/system/components/justep/wing/child'}" __cid="c7Ffyma"> 
+      <div class="x-wing-backdrop c7Ffyma" xid="div27" __cid="c7Ffyma"/>  
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfyMfiu-iosstatusbar c7Ffyma" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Ffyma"> 
+        <div xid="top2" class="x-panel-top c7Ffyma" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;visible&quot;:true}" __cid="c7Ffyma"> 
+          <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7Ffyma" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;首页&quot;}" __cid="c7Ffyma"> 
+            <div class="x-titlebar-left c7Ffyma" xid="left1" __cid="c7Ffyma"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Ffyma" xid="settingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;wing1.toggleLeft&quot;}" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-menu-hamburger&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7Ffyma"> 
+                <i xid="i1" class="glyphicon glyphicon-menu-hamburger c7Ffyma" __cid="c7Ffyma"/>  
+                <span xid="span1" __cid="c7Ffyma" class="c7Ffyma"/> 
+              </a> 
+            </div>  
+            <div class="x-titlebar-title c7Ffyma" xid="title1" __cid="c7Ffyma">首页</div>  
+            <div class="x-titlebar-right  c7Ffyma" xid="right1" __cid="c7Ffyma"> 
+              <div class="empty c7Ffyma" __cid="c7Ffyma"/> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content c7Ffyma" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Ffyma"> 
+          <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c7Ffyma" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:false}" __cid="c7Ffyma"> 
+            <div class="x-contents-content active c7Ffyma" xid="index" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:indexActive" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc3EJb6v-iosstatusbar c7Ffyma" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Ffyma"> 
+                <div class="x-panel-content c7Ffyma" xid="content2" _xid="C700FEB06DB0000124D1CDB09C9D1FAC" style="bottom: 0px; background-size: cover;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Ffyma"> 
+                  <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel c7Ffyma" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:true,&quot;interval&quot;:10}" __cid="c7Ffyma"> 
+                    <ol class="carousel-indicators ol1 c7Ffyma" xid="ol1" __cid="c7Ffyma"/>  
+                    <div class="x-contents carousel-inner c7Ffyma" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contentsImg" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="c7Ffyma"> 
+                      <div class="x-contents-content active c7Ffyma" xid="content6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c7Ffyma"> 
+                        <div xid="div28" class="title c7Ffyma" align="center" __cid="c7Ffyma"> 
+                          <span xid="span28" style="font-size:15px;" class="intro c7Ffyma" __cid="c7Ffyma"/> 
+                        </div>  
+                        <div xid="div14" align="center" __cid="c7Ffyma" class="c7Ffyma"> 
+                          <a href="#" xid="a5" __cid="c7Ffyma" class="c7Ffyma"> 
+                            <img alt="" xid="image13" class="tb-img1 c7Ffyma" align="left" height="100%" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"/> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="panel panel-default c7Ffyma" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="c7Ffyma"> 
+                    <div xid="body1" class="panel-body c7Ffyma" __cid="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col5" __cid="c7Ffyma"> 
+                          <div xid="div1" class="text-center c7Ffyma" style="margin-bottom:10px;height:80px;" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div1Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_news.png" alt="" xid="image23" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" height="60px" __cid="c7Ffyma"/>  
+                            <span xid="span13" __cid="c7Ffyma" class="c7Ffyma">虹口新闻</span> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col6" __cid="c7Ffyma"> 
+                          <div xid="div7" class="text-center c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div7Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_gonggao.png" alt="" xid="image9" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" height="60px" __cid="c7Ffyma"/>  
+                            <span xid="span10" __cid="c7Ffyma" class="c7Ffyma">公示公告</span> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col7" __cid="c7Ffyma"> 
+                          <div xid="div35" class="text-center c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div35Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_file.png" alt="" xid="image10" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" height="60px" __cid="c7Ffyma"/>  
+                            <span xid="span12" __cid="c7Ffyma" class="c7Ffyma">政策文件</span> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col8" __cid="c7Ffyma"> 
+                          <div xid="div36" class="text-center c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div36Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_special.png" alt="" xid="image11" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" height="60px" __cid="c7Ffyma"/>  
+                            <span xid="span14" __cid="c7Ffyma" class="c7Ffyma">专题工作</span> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col13" __cid="c7Ffyma"> 
+                          <div xid="div40" class="text-center c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div40Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_netge.png" alt="" xid="image14" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" height="60px" __cid="c7Ffyma"/>  
+                            <span xid="span18" __cid="c7Ffyma" class="c7Ffyma">网格统计</span> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col14" __cid="c7Ffyma"> 
+                          <div xid="div37" class="text-center c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div37Click')}"> 
+                            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_netPath.png" alt="" xid="image12" class="sharow img-responsive center-block tb-img5 c7Ffyma" style="width:60px;" __cid="c7Ffyma"/>  
+                            <span xid="span17" __cid="c7Ffyma" class="c7Ffyma">移动网盘</span> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col15" __cid="c7Ffyma"/>  
+                        <div class="x-col c7Ffyma" xid="col16" __cid="c7Ffyma"/> 
+                      </div> 
+                    </div>  
+                    <div xid="footer1" class="footer c7Ffyma" __cid="c7Ffyma"/>  
+                    <div xid="div8" class="footer c7Ffyma" __cid="c7Ffyma"/>  
+                    <div xid="div25" style="width:100%;box-shadow: 0px 0px 15px #888888;height:auto;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col22" style="border-right:1px solid #e5e5e5;padding:10px 10px;" __cid="c7Ffyma"> 
+                          <div xid="div16" class="media c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'myNoticeClick')}"> 
+                            <div xid="div15" class="media-left c7Ffyma" __cid="c7Ffyma"> 
+                              <img xid="image27" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_notice.png" style="width:55px;" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div xid="myNotice" class="media-body c7Ffyma" __cid="c7Ffyma"> 
+                              <div xid="div13" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span29" style="color:#28b1e2;" class="botmeun c7Ffyma" __cid="c7Ffyma">我的通知</span> 
+                              </div>  
+                              <span xid="span27" style="color:#a7a7a7;font-size:xx-small;" __cid="c7Ffyma" class="c7Ffyma">通知类消息</span> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col34" style="padding:10px 10px;" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div9Click')}"> 
+                          <div xid="div3" class="media c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'myScheduleClick')}"> 
+                            <div xid="div4" class="media-left c7Ffyma" __cid="c7Ffyma"> 
+                              <img xid="image24" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_schedule.png" style="width:55px;" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div xid="mySchedule" class="media-body c7Ffyma" __cid="c7Ffyma"> 
+                              <div xid="div6" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span15" style="color:#28b1e2;" class="botmeun c7Ffyma" __cid="c7Ffyma">我的日程</span> 
+                              </div>  
+                              <span xid="span16" style="color:#a7a7a7;font-size:xx-small;" __cid="c7Ffyma" class="c7Ffyma">记录下您的行程</span> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row9" style="border-top:1px solid #e5e5e5;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col25" style="border-right:1px solid #e5e5e5;padding:10px 10px;" __cid="c7Ffyma"> 
+                          <div xid="div20" class="media c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div20Click')}"> 
+                            <div xid="div19" class="media-left c7Ffyma" __cid="c7Ffyma"> 
+                              <img xid="image28" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_shoucang.png" style="width:55px;" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div xid="div18" class="media-body c7Ffyma" __cid="c7Ffyma"> 
+                              <div xid="div17" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span31" style="color:#35bb99;" class="botmeun c7Ffyma" __cid="c7Ffyma">我的收藏</span> 
+                              </div>  
+                              <span xid="span30" style="color:#a7a7a7;font-size:xx-small;" __cid="c7Ffyma" class="c7Ffyma">收藏类文件</span> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col35" style="padding:10px 10px;" __cid="c7Ffyma"> 
+                          <div xid="div24" class="media c7Ffyma" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'div24Click')}"> 
+                            <div xid="div23" class="media-left c7Ffyma" __cid="c7Ffyma"> 
+                              <img xid="image29" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/index_myEmail.png" style="width:55px;" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div xid="div22" class="media-body c7Ffyma" __cid="c7Ffyma"> 
+                              <div xid="div21" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span33" style="color:#fe5b69;" class="botmeun c7Ffyma" __cid="c7Ffyma">我的邮件</span> 
+                              </div>  
+                              <span xid="span32" style="color:#a7a7a7;font-size:xx-small;" __cid="c7Ffyma" class="c7Ffyma">这里有您的邮件</span> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="c7Ffyma" class="c7Ffyma">.x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc3EJb6v-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+              </div> 
+            </div>  
+            <div class="x-contents-content c7Ffyma" xid="apps" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:appsbtnClick" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container c7Ffyma" xid="windowContainer2" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/testPlus/apps.w&quot;}" __cid="c7Ffyma"> 
+                <div xid="window" class="window cNVfiie" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNVfiie" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,"> 
+                  <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-group.cNVfiie .btn.active.cNVfiie{border-bottom: 2px solid white; color: rgb(0, 0, 0)}</style>  
+                  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cNVfiie" class="cNVfiie"></div>  
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJVJNry-iosstatusbar cNVfiie" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNVfiie">  
+                    <div class="x-panel-top cNVfiie" xid="top2" style="background-color:#6296f4;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVfiie"> 
+                      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNVfiie" xid="titleBar1" style="font-weight:normal;font-size:20px;background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;应用&quot;}" __cid="cNVfiie"> 
+                        <div class="x-titlebar-left cNVfiie" xid="left1" __cid="cNVfiie"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cNVfiie" xid="showLeftBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showLeftBtnClick" data-config="{&quot;icon&quot;:&quot;fa fa-reorder&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cNVfiie"> 
+                            <i xid="i11" class="fa fa-reorder cNVfiie" __cid="cNVfiie"/>  
+                            <span xid="span13" __cid="cNVfiie" class="cNVfiie"/> 
+                          </a> 
+                        </div>  
+                        <div class="x-titlebar-title cNVfiie" xid="title1" style="font-weight:normal;" __cid="cNVfiie">应用</div>  
+                        <div class="x-titlebar-right  cNVfiie" xid="right1" __cid="cNVfiie"> 
+                          <div class="empty cNVfiie" __cid="cNVfiie"/> 
+                        </div> 
+                      </div>  
+                      <div xid="div7" __cid="cNVfiie" class="cNVfiie"> 
+                        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cNVfiie" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cNVfiie"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="hide btn btn-link btn-icon-bottom active cNVfiie" xid="button8" style="color:#fff" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;应用下载&quot;}" __cid="cNVfiie"> 
+                            <i xid="i17" __cid="cNVfiie" class="cNVfiie"/>  
+                            <span xid="span24" __cid="cNVfiie" class="cNVfiie">应用下载</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="hide btn btn-link btn-icon-bottom cNVfiie" xid="button9" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;插件下载&quot;}" __cid="cNVfiie"> 
+                            <i xid="i16" __cid="cNVfiie" class="cNVfiie"/>  
+                            <span xid="span23" __cid="cNVfiie" class="cNVfiie">插件下载</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-panel-content cNVfiie" xid="content3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNVfiie"> 
+                      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cNVfiie" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:false,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cNVfiie"> 
+                        <div class="x-contents-content active cNVfiie" xid="appsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNVfiie"> 
+                          <div xid="div21" __cid="cNVfiie" class="cNVfiie"> 
+                            <div xid="div5" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie"> 
+                              <div xid="div14" class="media cNVfiie" __cid="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div14Click')}"> 
+                                <div xid="div2" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/newapps.png" alt="" xid="image1" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div1" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div3" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span1" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">最新应用</span> 
+                                  </div>  
+                                  <div xid="div4" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span2" __cid="cNVfiie" class="cNVfiie">最新最全应用</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div>  
+                            <div xid="div8" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div8Click')}"> 
+                              <div xid="div6" class="media cNVfiie" __cid="cNVfiie"> 
+                                <div xid="div12" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/app_yingyong.png" alt="" xid="image2" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div13" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div11" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span6" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">应用分类</span> 
+                                  </div>  
+                                  <div xid="div9" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span3" __cid="cNVfiie" class="cNVfiie">最新最全应用</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div>  
+                            <div xid="div16" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div8Click')}"> 
+                              <div xid="div15" class="media cNVfiie" __cid="cNVfiie"> 
+                                <div xid="div19" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/app_devide.png" alt="" xid="image3" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div20" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div18" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span8" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">部门分类</span> 
+                                  </div>  
+                                  <div xid="div17" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span7" __cid="cNVfiie" class="cNVfiie">最新最全应用</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div class="x-contents-content hide cNVfiie" xid="pluginsContent" url="/hongkou/index_myApps/apps_newplugins.w" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNVfiie"> 
+                          <div xid="div28" __cid="cNVfiie" class="cNVfiie"> 
+                            <div xid="div26" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie"> 
+                              <div xid="div38" class="media cNVfiie" __cid="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div38Click')}"> 
+                                <div xid="div30" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/newapps.png" alt="" xid="image5" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div31" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div29" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span12" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">最新插件</span> 
+                                  </div>  
+                                  <div xid="div27" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span10" __cid="cNVfiie" class="cNVfiie">包含常用的各种插件</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div>  
+                            <div xid="div24" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div8Click')}"> 
+                              <div xid="div25" class="media cNVfiie" __cid="cNVfiie"> 
+                                <div xid="div33" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/app_yingyong.png" alt="" xid="image4" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div32" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div34" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span5" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">插件分类</span> 
+                                  </div>  
+                                  <div xid="div23" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span11" __cid="cNVfiie" class="cNVfiie">最新最全插件分类</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div>  
+                            <div xid="div36" style="border-bottom:1px solid #edf4ff;padding:10px;" __cid="cNVfiie" class="cNVfiie" data-bind="event:{click:$model._callModelFn.bind($model, 'div8Click')}"> 
+                              <div xid="div37" class="media cNVfiie" __cid="cNVfiie"> 
+                                <div xid="div39" class="media-left cNVfiie" __cid="cNVfiie"> 
+                                  <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/app_devide.png" alt="" xid="image6" style="width:40px;" __cid="cNVfiie" class="cNVfiie"/> 
+                                </div>  
+                                <div xid="div22" class="media-body cNVfiie" style="padding-left:10px;" __cid="cNVfiie"> 
+                                  <div xid="div40" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span4" style="color:#37b9ed;font-size:large;" __cid="cNVfiie" class="cNVfiie">部门分类</span> 
+                                  </div>  
+                                  <div xid="div35" style="color:#c6d4ea;" __cid="cNVfiie" class="cNVfiie"> 
+                                    <span xid="span9" __cid="cNVfiie" class="cNVfiie">最新最全应用</span> 
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <style __cid="cNVfiie" class="cNVfiie">.x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJVJNry-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-contents-content c7Ffyma" xid="mine" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:appsbtnClick" __cid="c7Ffyma"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvqee6n-iosstatusbar c7Ffyma" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7Ffyma"> 
+                <div class="x-panel-top c7Ffyma" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Ffyma"> 
+                  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7Ffyma" xid="titleBar2" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的信息&quot;}" __cid="c7Ffyma"> 
+                    <div class="x-titlebar-left c7Ffyma" xid="left3" __cid="c7Ffyma"/>  
+                    <div class="x-titlebar-title c7Ffyma" xid="title2" __cid="c7Ffyma">我的信息</div>  
+                    <div class="x-titlebar-right  c7Ffyma" xid="right2" __cid="c7Ffyma"> 
+                      <div class="empty c7Ffyma" __cid="c7Ffyma"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content c7Ffyma" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Ffyma"> 
+                  <div xid="div39" __cid="c7Ffyma" class="c7Ffyma"> 
+                    <div xid="div45" align="center" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div xid="div50" style="padding-top:15px;" __cid="c7Ffyma" class="c7Ffyma"> 
+                        <img alt="" xid="showImage" style="border-radius:5px;width:70px;" height="70px" __cid="c7Ffyma" class="c7Ffyma" data-bind="attr:{src:$model.userData.val(&quot;headerImg&quot;)},event:{click:$model._callModelFn.bind($model, 'showImageClick')}"/>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon c7Ffyma" xid="photoBtn" style="color:#000;height:60px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'chooseOver.show'}" data-config="{&quot;icon&quot;:&quot;icon-android-camera&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7Ffyma"> 
+                          <i xid="i6" class="icon-android-camera c7Ffyma" __cid="c7Ffyma"/>  
+                          <span xid="span22" __cid="c7Ffyma" class="c7Ffyma"/> 
+                        </a> 
+                      </div>  
+                      <div xid="div51" __cid="c7Ffyma" class="c7Ffyma"> 
+                        <span xid="namespan" style="font-size:large;" __cid="c7Ffyma" class="c7Ffyma" data-bind="text:$model.userData.ref(&quot;UserName_Real&quot;)">姓名</span> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div xid="div2" __cid="c7Ffyma" class="c7Ffyma"/>  
+                  <div xid="div5" style="background-color:#fff;" __cid="c7Ffyma" class="c7Ffyma"> 
+                    <div xid="div33" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row3" style="border-bottom:1px solid #e5e5e5;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col3" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media8" __cid="c7Ffyma"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft8" style="padding-top:6px;" __cid="c7Ffyma"> 
+                              <img alt="" xid="image1" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/11.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody8" __cid="c7Ffyma"> 
+                              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                                <label class="x-label c7Ffyma" xid="label2" style="width:60px;" __cid="c7Ffyma">职位：</label>  
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output2" data-bind="component:{ref:$model.userData.ref(&quot;Party_Title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div29" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row3" style="border-bottom:1px solid #e5e5e5;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col9" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media6" __cid="c7Ffyma"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft7" style="padding-top:6px;" __cid="c7Ffyma"> 
+                              <img alt="" xid="image1" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/44.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody5" __cid="c7Ffyma"> 
+                              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                                <label class="x-label c7Ffyma" xid="label3" style="width:60px;" __cid="c7Ffyma">电话：</label>  
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output3" data-bind="component:{ref:$model.userData.ref(&quot;Tel_Office1&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div5" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row7" style="border-bottom:1px solid #e5e5e5;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col1" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media7" __cid="c7Ffyma"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft6" style="padding-top:6px;" __cid="c7Ffyma"> 
+                              <img alt="" xid="image2" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/33.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody6" __cid="c7Ffyma"> 
+                              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Ffyma" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7Ffyma"> 
+                                <label class="x-label c7Ffyma" xid="label4" style="width:60px;" __cid="c7Ffyma">手机：</label>  
+                                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c7Ffyma" xid="output4" data-bind="component:{ref:$model.userData.ref(&quot;Mobile_No&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="c7Ffyma"/> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div12" style="border-bottom:1px solid #e5e5e5;padding:10px;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div class="media c7Ffyma" xid="media5" __cid="c7Ffyma"> 
+                        <div class="media-left c7Ffyma" xid="mediaLeft5" style="padding-top:3px;" __cid="c7Ffyma"> 
+                          <img alt="" xid="image3" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/22.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                        </div>  
+                        <div class="media-body c7Ffyma" xid="mediaBody7" __cid="c7Ffyma"> 
+                          <label xid="label5" style="font-weight:normal;" __cid="c7Ffyma" class="c7Ffyma">邮箱：</label>  
+                          <span xid="span21" style="margin-left:12px;" __cid="c7Ffyma" class="c7Ffyma"/>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7Ffyma" xid="bindEmail" style="border:0;margin-left:20px;border-radius:0;line-height:15px;height:30px;width:130px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subMitBtnClick" __cid="c7Ffyma"> 
+                            <i xid="i8" __cid="c7Ffyma" class="c7Ffyma"/>  
+                            <span xid="span22" __cid="c7Ffyma" class="c7Ffyma">显示</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div2" style="border-bottom:1px solid #e5e5e5;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row5" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col4" style="line-height:25px;" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media5" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'media5Click')}"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft5" __cid="c7Ffyma"> 
+                              <div xid="div11" style="width:30px;" align="center" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <img alt="" xid="image3" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/ewm.png" style="width:25px;" __cid="c7Ffyma" class="c7Ffyma"/> 
+                              </div> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody5" __cid="c7Ffyma"> 
+                              <div xid="div9" style="line-height:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span19" __cid="c7Ffyma" class="c7Ffyma">把软件推荐给朋友</span> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div38" style="border-bottom:1px solid #e5e5e5;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row1" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col4" style="line-height:20px;" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media6" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'btnSetPasswordClick')}"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft6" __cid="c7Ffyma"> 
+                              <img alt="" xid="image4" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/index_images/55.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody6" __cid="c7Ffyma"> 
+                              <div xid="div10" style="line-height:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span6" __cid="c7Ffyma" class="c7Ffyma">添加/重置手势密码</span> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div63" style="border-bottom:1px solid #e5e5e5;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row13" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col19" style="line-height:20px;" __cid="c7Ffyma"> 
+                          <div class="media c7Ffyma" xid="media9" __cid="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'media9Click')}"> 
+                            <div class="media-left c7Ffyma" xid="mediaLeft9" __cid="c7Ffyma"> 
+                              <img alt="" xid="image16" height="30px" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/checkver.png" __cid="c7Ffyma" class="c7Ffyma"/> 
+                            </div>  
+                            <div class="media-body c7Ffyma" xid="mediaBody9" __cid="c7Ffyma"> 
+                              <div xid="div62" style="line-height:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+                                <span xid="span40" __cid="c7Ffyma" class="c7Ffyma">检查版本更新</span> 
+                              </div> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div26" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+                        <div class="x-col c7Ffyma" xid="col11" style="padding:30px;text-align:center;" __cid="c7Ffyma"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block c7Ffyma" xid="button3" style="color:#fff;border-radius:0px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;注销&quot;}" __cid="c7Ffyma"> 
+                            <i xid="i10" __cid="c7Ffyma" class="c7Ffyma"/>  
+                            <span xid="span11" __cid="c7Ffyma" class="c7Ffyma">注销</span> 
+                          </a> 
+                        </div>  
+                        <div class="x-col c7Ffyma" xid="col2" style="padding:30px;text-align:center;" __cid="c7Ffyma"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block c7Ffyma" xid="button6" style="color:#fff;border-radius:0px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;label&quot;:&quot;退出&quot;}" __cid="c7Ffyma"> 
+                            <i xid="i11" __cid="c7Ffyma" class="c7Ffyma"/>  
+                            <span xid="span20" __cid="c7Ffyma" class="c7Ffyma">退出</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div61" align="center" style="color:#aaa;" __cid="c7Ffyma" class="c7Ffyma"> 
+                      <span xid="span34" __cid="c7Ffyma" class="c7Ffyma">当前版本号：Version</span>  
+                      <span xid="version" __cid="c7Ffyma" class="c7Ffyma"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="c7Ffyma" class="c7Ffyma">.x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvqee6n-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom c7Ffyma" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7Ffyma"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified c7Ffyma" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;indexbtn&quot;,&quot;tabbed&quot;:true}" __cid="c7Ffyma"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Ffyma" xid="indexbtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-home&quot;,&quot;label&quot;:&quot;首页&quot;,&quot;target&quot;:&quot;index&quot;}" __cid="c7Ffyma"> 
+              <i xid="i2" class="dataControl dataControl-home c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span2" __cid="c7Ffyma" class="c7Ffyma">首页</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Ffyma" xid="appsbtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:appsbtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-chartbars&quot;,&quot;label&quot;:&quot;应用&quot;,&quot;target&quot;:&quot;apps&quot;}" __cid="c7Ffyma"> 
+              <i xid="i3" class="linear linear-chartbars c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span3" __cid="c7Ffyma" class="c7Ffyma">应用</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Ffyma" xid="chatbtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:chatbtnClick" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-commentfulll&quot;,&quot;label&quot;:&quot;交流&quot;}" __cid="c7Ffyma"> 
+              <i xid="i4" class="dataControl dataControl-commentfulll c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span4" __cid="c7Ffyma" class="c7Ffyma">交流</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top c7Ffyma" xid="minebtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:appsbtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-cog&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;mine&quot;}" __cid="c7Ffyma"> 
+              <i xid="i5" class="linear linear-cog c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span5" __cid="c7Ffyma" class="c7Ffyma">我的</span> 
+            </a> 
+          </div> 
+        </div>  
+        <style __cid="c7Ffyma" class="c7Ffyma">.x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfyMfiu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="top:163px;left:37px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Ffyma" style="display:none;" __cid="c7Ffyma">  
+      <div class="x-dialog-title c7Ffyma" __cid="c7Ffyma"> 
+        <button class="close c7Ffyma" __cid="c7Ffyma"> 
+          <span __cid="c7Ffyma" class="c7Ffyma">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7Ffyma" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-dialog-body c7Ffyma" __cid="c7Ffyma"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="webContentDialog" style="top:120px;left:29px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Ffyma" style="display:none;" __cid="c7Ffyma">  
+      <div class="x-dialog-title c7Ffyma" __cid="c7Ffyma"> 
+        <button class="close c7Ffyma" __cid="c7Ffyma"> 
+          <span __cid="c7Ffyma" class="c7Ffyma">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7Ffyma" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-dialog-body c7Ffyma" __cid="c7Ffyma"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="exitDialog" style="top:12px;left:44px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:exitDialogOK" data-config="{&quot;message&quot;:&quot;确定要退出吗？&quot;,&quot;title&quot;:&quot;提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma">提示</div>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma">确定要退出吗？</div>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="logoutDialog" style="top:14px;left:52px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:logoutDialogOK" data-config="{&quot;message&quot;:&quot;确定要注销当前用户吗？&quot;,&quot;title&quot;:&quot;提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma">提示</div>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma">确定要注销当前用户吗？</div>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="turnDialog" style="top:85px;left:4px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onCancel:turnDialogCancel;onOK:turnDialogOK" data-config="{&quot;type&quot;:&quot;OKCancel&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma"/>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma"/>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="registerDialog" xui:parent="window" xui:update-mode="insert" style="top:37px;left:54px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/chat/wex5/index.w&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Ffyma" style="display:none;" __cid="c7Ffyma">  
+      <div class="x-dialog-title c7Ffyma" __cid="c7Ffyma"> 
+        <button class="close c7Ffyma" __cid="c7Ffyma"> 
+          <span __cid="c7Ffyma" class="c7Ffyma">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7Ffyma" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-dialog-body c7Ffyma" __cid="c7Ffyma"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="chatWindow" style="top:50px;left:41px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/chat/wex5/index.w&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Ffyma" style="display:none;" __cid="c7Ffyma">  
+      <div class="x-dialog-title c7Ffyma" __cid="c7Ffyma"> 
+        <button class="close c7Ffyma" __cid="c7Ffyma"> 
+          <span __cid="c7Ffyma" class="c7Ffyma">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7Ffyma" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-dialog-body c7Ffyma" __cid="c7Ffyma"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c7Ffyma" xid="ewmOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:false}" __cid="c7Ffyma"> 
+    <div class="x-popOver-overlay c7Ffyma" xid="div47" __cid="c7Ffyma"/>  
+    <div class="x-popOver-content c7Ffyma" xid="div48" style="background-color:#f3fbff;height:450px;" __cid="c7Ffyma"> 
+      <div xid="div46" style="padding-left:30px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+          <div class="x-col c7Ffyma" xid="col21" __cid="c7Ffyma"/>  
+          <div class="x-col x-col-10 c7Ffyma" xid="col20" __cid="c7Ffyma"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon c7Ffyma" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'ewmOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7Ffyma"> 
+              <i xid="i12" class="icon-android-close c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span25" __cid="c7Ffyma" class="c7Ffyma"/> 
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+          <div class="x-col c7Ffyma" xid="col18" style="padding:10px 0;" __cid="c7Ffyma"> 
+            <span xid="span26" style="color:#6085c4;font-size:25px;font-weight:bold;" __cid="c7Ffyma" class="c7Ffyma">二维码分享</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div52" align="center" style="padding:0 20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <img src="http://116.236.228.21:8859/hongkou/shhk116.png" alt="" xid="image15" style="box-shadow:0px 0px 5px #000;" __cid="c7Ffyma" class="c7Ffyma"/> 
+      </div>  
+      <div xid="div49" align="center" style="margin-top:10px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-block c7Ffyma" xid="button7" style="font-size:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-fenxiang&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="c7Ffyma"> 
+          <i xid="i9" class="e-commerce e-commerce-fenxiang c7Ffyma" __cid="c7Ffyma"/>  
+          <span xid="span35" __cid="c7Ffyma" class="c7Ffyma">分享</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma"/>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma"/>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="falseDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:falseDialogOK" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma"/>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma"/>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c7Ffyma" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="c7Ffyma"> 
+    <div class="x-popOver-overlay c7Ffyma" xid="div54" __cid="c7Ffyma"/>  
+    <div class="x-popOver-content c7Ffyma" xid="div43" style="background-color:#f3fbff;height:450px;" __cid="c7Ffyma"> 
+      <div xid="div41" style="padding-left:30px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+          <div class="x-col c7Ffyma" xid="col10" __cid="c7Ffyma"/>  
+          <div class="x-col x-col-10 c7Ffyma" xid="col12" __cid="c7Ffyma"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon c7Ffyma" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c7Ffyma"> 
+              <i xid="i14" class="icon-android-close c7Ffyma" __cid="c7Ffyma"/>  
+              <span xid="span23" __cid="c7Ffyma" class="c7Ffyma"/> 
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row c7Ffyma" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c7Ffyma"> 
+          <div class="x-col c7Ffyma" xid="col17" style="padding:10px 0;" __cid="c7Ffyma"> 
+            <span xid="span24" style="color:#6085c4;font-size:25px;font-weight:bold;" __cid="c7Ffyma" class="c7Ffyma">邮箱绑定</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div41" __cid="c7Ffyma" class="c7Ffyma"> 
+        <div xid="div55" style="float:left;width:40%;font-size:16px;color:#padding-left:40px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <span xid="span25" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="c7Ffyma" class="c7Ffyma">邮箱账号</span> 
+        </div>  
+        <div xid="div43" style="padding-left:20px;line-height:50px;height:50px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <div xid="div42" style="float:left;width:100%;" __cid="c7Ffyma" class="c7Ffyma"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control c7Ffyma" xid="input1" style="border-radius:0;border:1px solid #c1d3f2;float:left;height:50px;width:62%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;只需输入邮箱用户名&quot;}" __cid="c7Ffyma"/>  
+            <label xid="label8" __cid="c7Ffyma" class="c7Ffyma">@hkq.gov.cn</label> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div46" __cid="c7Ffyma" class="c7Ffyma"> 
+        <div xid="div48" style="margin-top:20px;font-size:16px;color:#padding-left:40px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <span xid="span26" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="c7Ffyma" class="c7Ffyma">邮箱密码</span> 
+        </div>  
+        <div xid="div44" style="padding:0 20px;line-height:50px;height:50px;" __cid="c7Ffyma" class="c7Ffyma"> 
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control c7Ffyma" xid="input2" style="border-radius:0;border:1px solid #c1d3f2;float:left;height:50px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请输入登录邮箱密码&quot;}" __cid="c7Ffyma"/> 
+        </div> 
+      </div>  
+      <div xid="div49" align="left" style="padding:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block c7Ffyma" xid="sureBtn" style="border-radius:0;border:0;line-height:35px;height:50px;background-color:#9591ff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sureBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="c7Ffyma"> 
+          <i xid="i9" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span24" style="font-size:18px;" __cid="c7Ffyma" class="c7Ffyma">确定</span> 
+        </a> 
+      </div>  
+      <div xid="div42" style="font-size:16px;padding-left:20px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <span xid="span23" style="color:red;" __cid="c7Ffyma" class="c7Ffyma">注：只能绑定"@hkq.gov.cn"的邮箱</span> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="outBindEmail" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:outBindEmailOK" data-config="{&quot;type&quot;:&quot;OKCancel&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7Ffyma" __cid="c7Ffyma">  
+      <div class="x-modal-inner c7Ffyma" __cid="c7Ffyma"> 
+        <div class="x-modal-title c7Ffyma" __cid="c7Ffyma"/>  
+        <div class="x-modal-text c7Ffyma" __cid="c7Ffyma"/>  
+        <input class="x-modal-prompt-input c7Ffyma" type="text" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-modal-buttons c7Ffyma" __cid="c7Ffyma"> 
+        <a class="x-modal-button x-modal-button-bold OK c7Ffyma" value="ok" __cid="c7Ffyma">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7Ffyma" value="yes" __cid="c7Ffyma">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7Ffyma" value="no" __cid="c7Ffyma">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7Ffyma" value="cancel" __cid="c7Ffyma">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="loginDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:false,&quot;routable&quot;:false,&quot;src&quot;:&quot;$model/UI2/testPlus/login.w&quot;}" __cid="c7Ffyma" class="c7Ffyma"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay c7Ffyma" __cid="c7Ffyma"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog c7Ffyma" style="display:none;" __cid="c7Ffyma">  
+      <div class="x-dialog-title c7Ffyma" __cid="c7Ffyma"> 
+        <button class="close c7Ffyma" __cid="c7Ffyma"> 
+          <span __cid="c7Ffyma" class="c7Ffyma">×</span> 
+        </button>  
+        <div class="x-dialog-title-text c7Ffyma" __cid="c7Ffyma"/> 
+      </div>  
+      <div class="x-dialog-body c7Ffyma" __cid="c7Ffyma"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c7Ffyma" xid="sharePop" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="c7Ffyma"> 
+    <div class="x-popOver-overlay c7Ffyma" xid="div53" __cid="c7Ffyma"/>  
+    <div class="x-popOver-content c7Ffyma" xid="div44" style="padding:20px 0;width:100%;background-color:white;" __cid="c7Ffyma"> 
+      <p style="float:left;margin:12px 0 0 5px; width:20%" xid="p1" __cid="c7Ffyma" class="c7Ffyma">分享到：</p>  
+      <ul xid="share1" class="share_detail c7Ffyma" __cid="c7Ffyma"> 
+        <li xid="li1" __cid="c7Ffyma" class="c7Ffyma"> 
+          <img alt="" xid="qq" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/qq.png" __cid="c7Ffyma" class="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'qqClick')}"/> 
+        </li>  
+        <li xid="li2" __cid="c7Ffyma" class="c7Ffyma"> 
+          <img alt="" xid="kongjian" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/kongjian2.png" __cid="c7Ffyma" class="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'kongjianClick')}"/> 
+        </li>  
+        <li xid="li3" __cid="c7Ffyma" class="c7Ffyma"> 
+          <img alt="" xid="pengyouquan" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/pengyouquan.png" style="width:35px;" __cid="c7Ffyma" class="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'pengyouquanClick')}"/> 
+        </li>  
+        <li xid="li4" __cid="c7Ffyma" class="c7Ffyma"> 
+          <img alt="" xid="weixin" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/weixin.png" style="width:35px;" __cid="c7Ffyma" class="c7Ffyma" data-bind="event:{click:$model._callModelFn.bind($model, 'weixinClick')}"/> 
+        </li> 
+      </ul> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c7Ffyma" xid="chooseOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:false,&quot;position&quot;:&quot;bottom&quot;}" __cid="c7Ffyma"> 
+    <div class="x-popOver-overlay c7Ffyma" xid="div60" __cid="c7Ffyma"/>  
+    <div class="x-popOver-content c7Ffyma" xid="div58" style="padding-top:20px;width:100%;background-color:white;" __cid="c7Ffyma"> 
+      <div xid="div59" style="padding:0 10px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-block c7Ffyma" xid="button9" style="border-radius:0;color:#fff;background-color:green;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:photoBtnClick" data-config="{&quot;label&quot;:&quot;拍照&quot;}" __cid="c7Ffyma"> 
+          <i xid="i15" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span38" __cid="c7Ffyma" class="c7Ffyma">拍照</span> 
+        </a> 
+      </div>  
+      <div xid="div57" style="padding:0 10px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block c7Ffyma" xid="button10" style="color:#fff;border-radius:0;margin-top:10px;background-color:green;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;从相册选择&quot;}" __cid="c7Ffyma"> 
+          <i xid="i16" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span37" __cid="c7Ffyma" class="c7Ffyma">从相册选择</span> 
+        </a> 
+      </div>  
+      <div xid="div56" align="center" style="padding:10px;" __cid="c7Ffyma" class="c7Ffyma"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block c7Ffyma" xid="button11" style="border-color:#989898;color:#989898;line-height:20px;border-radius:20px;height:40px;background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'chooseOver.hide'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="c7Ffyma"> 
+          <i xid="i15" __cid="c7Ffyma" class="c7Ffyma"/>  
+          <span xid="span36" __cid="c7Ffyma" class="c7Ffyma">取消</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div> 
+</div>

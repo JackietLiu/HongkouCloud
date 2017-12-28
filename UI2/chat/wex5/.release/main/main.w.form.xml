@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" xid="window" component="$model/UI2/system/components/justep/window/window" extends="../base/main.w" design="device:m;" __id="id_1" sysParam="false" class="window window cFNBFbm" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFNBFbm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style>.x-titlebar.o-top.cFNBFbm{background-color: rgb(75, 115, 164)} .counter.cFNBFbm{font-size: 14px; font-weight: 100; line-height: 18px; display: inline-block; box-sizing: border-box; min-width: 18px; height: 18px; text-align: center; color: rgb(255, 255, 255); border-radius: 12px; background-color: rgb(253, 92, 82); position: absolute; left: 50px; top: 1px} .dialogName.cFNBFbm{color: rgb(17, 17, 17); float: left; margin-top: 6px} .latestChatDate.cFNBFbm{font-size: 10px; color: rgb(127, 127, 139); float: right; width: 100px; text-align: right; margin-top: 6px} .latestChat.cFNBFbm{font-size: 12px; color: rgb(127, 127, 139); margin-top: 18px; white-space: nowrap} .list-group.cFNBFbm{border: 0; border-radius: 0; box-shadow: none} .o-icon.cFNBFbm{width: 50px; height: 50px; border-radius: 50px} .btn-group.cFNBFbm &gt; .active.cFNBFbm{border-bottom-color: aliceblue; border-bottom-width: medium} li.cFNBFbm:active{background-color: whitesmoke} .x-offline.cFNBFbm{position: absolute; bottom: 0; right: 80px; z-index: 9999} .x-personal.cFNBFbm{height: 100%; width: 50px} .x-titlebar.o-top.cFNBFbm{background-color: rgb(75, 115, 164)} .counter.cFNBFbm{font-size: 14px; font-weight: 100; line-height: 18px; display: inline-block; box-sizing: border-box; min-width: 18px; height: 18px; text-align: center; color: rgb(255, 255, 255); border-radius: 12px; background-color: rgb(253, 92, 82); position: absolute; left: 50px; top: 1px} .dialogName.cFNBFbm{color: rgb(17, 17, 17); float: left; margin-top: 6px} .latestChatDate.cFNBFbm{font-size: 10px; color: rgb(127, 127, 139); float: right; width: 100px; text-align: right; margin-top: 6px} .latestChat.cFNBFbm{font-size: 12px; color: rgb(127, 127, 139); margin-top: 18px; white-space: nowrap} .list-group.cFNBFbm{border: 0; border-radius: 0; box-shadow: none} .o-icon.cFNBFbm{width: 50px; height: 50px; border-radius: 50px} li.cFNBFbm:active{background-color: whitesmoke} .x-offline.cFNBFbm{position: absolute; bottom: 0; right: 80px; z-index: 9999} .x-personal.cFNBFbm{height: 100%; width: 50px} .btn.cFNBFbm:active, .btn.active.cFNBFbm{color: rgb(47, 164, 231) !important} a.cFNBFbm{color: rgb(132, 133, 135)} .btn.cFNBFbm:hover{color: rgb(132, 133, 135)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct" __cid="cFNBFbm" class="cFNBFbm"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cFNBFbm" xid="menuPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;showMenuPopOverBtn&quot;,&quot;direction&quot;:&quot;right-top&quot;,&quot;position&quot;:&quot;top&quot;}" __cid="cFNBFbm"> 
+    <div class="x-popOver-overlay cFNBFbm" xid="div8" __cid="cFNBFbm"/>  
+    <div class="x-popOver-content cFNBFbm" xid="div9" __cid="cFNBFbm"> 
+      <div xid="div11" style="margin-top:10px;" __cid="cFNBFbm" class="cFNBFbm"> 
+        <span xid="span20" style="font-weight:bolder;margin-right:22px;" __cid="cFNBFbm" class="cFNBFbm">创建群组</span>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg btn-only-icon  cFNBFbm" xid="createGroupBtn" style="width: 50px;border-radius: 48px;background-color: #2fa4e7;border: 0px;color:#fff;" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:createGroupBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-contacts&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cFNBFbm"> 
+          <i xid="i14" class="icon-android-contacts cFNBFbm" __cid="cFNBFbm"/>  
+          <span xid="span17" __cid="cFNBFbm" class="cFNBFbm"/>
+        </a> 
+      </div>  
+      <div xid="div5" style="margin-top:2px;" __cid="cFNBFbm" class="cFNBFbm"> 
+        <span xid="span14" style="font-weight:bolder;margin-right:10px;" __cid="cFNBFbm" class="cFNBFbm">创建讨论组</span>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg btn-only-icon  cFNBFbm" xid="discussionGroupBtn" style="width: 50px;border-radius: 48px;border: 0px;background-color:#2fa4e7;" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:discussionGroupBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-contacts&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cFNBFbm"> 
+          <i xid="i7" class="icon-android-contacts cFNBFbm" style="color: aliceblue;" xui:update-mode="merge" __cid="cFNBFbm"/>  
+          <span xid="span8" __cid="cFNBFbm" class="cFNBFbm"/>
+        </a> 
+      </div>
+    </div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cFNBFbm" xid="contactsMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false,&quot;opacity&quot;:0}" __cid="cFNBFbm"> 
+    <div class="x-popMenu-overlay cFNBFbm" xid="div6" bind-click="contactsMenuHideClick" __cid="cFNBFbm"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cFNBFbm" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cFNBFbm"> 
+      <li class="x-menu-item cFNBFbm" xid="item1" __cid="cFNBFbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cFNBFbm" xid="contactInfoBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:contactInfoBtnClick" data-config="{&quot;label&quot;:&quot;查看好友信息&quot;}" __cid="cFNBFbm"> 
+          <i xid="i1" __cid="cFNBFbm" class="cFNBFbm"/>  
+          <span xid="span1" __cid="cFNBFbm" class="cFNBFbm">查看好友信息</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cFNBFbm" xid="item3" __cid="cFNBFbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cFNBFbm" xid="deleteChatBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteChatBtnClick" data-config="{&quot;label&quot;:&quot;删除对话&quot;}" __cid="cFNBFbm"> 
+          <i xid="i4" __cid="cFNBFbm" class="cFNBFbm"/>  
+          <span xid="span4" __cid="cFNBFbm" class="cFNBFbm">删除对话</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cFNBFbm" xid="groupMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false,&quot;opacity&quot;:0}" __cid="cFNBFbm"> 
+    <div class="x-popMenu-overlay cFNBFbm" xid="div4" bind-click="groupMenuHideClick" __cid="cFNBFbm"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cFNBFbm" xid="menu2" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cFNBFbm"> 
+      <li class="x-menu-item cFNBFbm" xid="item6" __cid="cFNBFbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cFNBFbm" xid="groupInfoBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:groupInfoBtnClick" data-config="{&quot;label&quot;:&quot;查看群组信息&quot;}" __cid="cFNBFbm"> 
+          <i xid="i10" __cid="cFNBFbm" class="cFNBFbm"/>  
+          <span xid="span13" __cid="cFNBFbm" class="cFNBFbm">查看群组信息</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cFNBFbm" xid="item4" __cid="cFNBFbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link  btn-lg cFNBFbm" xid="deleteGroupChatBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteGroupChatBtnClick" data-config="{&quot;label&quot;:&quot;删除会话&quot;}" __cid="cFNBFbm"> 
+          <i xid="i2" __cid="cFNBFbm" class="cFNBFbm"/>  
+          <span xid="span2" __cid="cFNBFbm" class="cFNBFbm">删除会话</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cFNBFbm" xid="item5" __cid="cFNBFbm"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg cFNBFbm" xid="leaveGroupBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:leaveGroupBtnClick" data-config="{&quot;label&quot;:&quot;删除并退出&quot;}" __cid="cFNBFbm"> 
+          <i xid="i8" __cid="cFNBFbm" class="cFNBFbm"/>  
+          <span xid="span7" __cid="cFNBFbm" class="cFNBFbm">删除并退出</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcvauqqm-iosstatusbar cFNBFbm" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFNBFbm"> 
+    <div class="x-panel-top cFNBFbm" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFNBFbm"> 
+      <div class="x-titlebar cFNBFbm" component="$model/UI2/system/components/justep/titleBar/titleBar" xid="titleBar4" xui:parent="top2" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cFNBFbm"> 
+        <div class="x-titlebar-left cFNBFbm" xid="left4" __cid="cFNBFbm"> 
+          <a class="btn btn-link pull-left cFNBFbm" component="$model/UI2/system/components/justep/button/button" style="display:none;font-size:0.8em;" xid="manageGroupBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:manageGroupBtnClick" data-config="{&quot;label&quot;:&quot;管理组织&quot;}" __cid="cFNBFbm"> 
+            <i xid="i6" __cid="cFNBFbm" class="cFNBFbm"/>  
+            <span xid="span6" __cid="cFNBFbm" class="cFNBFbm">管理组织</span> 
+          </a>  
+          <a class="btn btn-link cFNBFbm" component="$model/UI2/system/components/justep/button/button" xid="button1_4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1_4Click" data-config="{&quot;label&quot;:&quot;关闭&quot;}" __cid="cFNBFbm"> 
+            <i xid="i1_4" __cid="cFNBFbm" class="cFNBFbm"/>  
+            <span xid="span1_4" __cid="cFNBFbm" class="cFNBFbm">关闭</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cFNBFbm" xid="title2" __cid="cFNBFbm"> 
+          <span xid="span19" __cid="cFNBFbm" class="cFNBFbm">交流</span> 
+        </div>  
+        <div class="x-titlebar-right flex1  cFNBFbm" xid="right2" __cid="cFNBFbm">
+          <div class="empty cFNBFbm" __cid="cFNBFbm"/>
+          <a class="btn btn-link btn-only-icon x-personal cFNBFbm" component="$model/UI2/system/components/justep/button/button" xid="personalBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:personalBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-user&quot;}" __cid="cFNBFbm"> 
+            <i class="linear linear-user cFNBFbm" xid="i41" __cid="cFNBFbm"/>  
+            <span xid="span41" __cid="cFNBFbm" class="cFNBFbm"/> 
+          </a>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content cFNBFbm" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFNBFbm"> 
+      <div bind-visible="offline" style="display: none;" class="x-offline alert alert-danger cFNBFbm" __cid="cFNBFbm"> 
+        <strong __cid="cFNBFbm" class="cFNBFbm"> 
+          <i class="glyphicon glyphicon-alert cFNBFbm" __cid="cFNBFbm"/> 
+        </strong>网络连接不可用
+      </div>  
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cFNBFbm" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChanged:pagesActiveChanged" data-config="{&quot;active&quot;:0,&quot;wrap&quot;:false}" __cid="cFNBFbm"> 
+        <div class="x-contents-content  x-scroll-view active cFNBFbm" xid="messageContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cFNBFbm"> 
+          <div class="x-scroll cFNBFbm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullUp:scrollViewPullUp" data-config="{&quot;autoAppend&quot;:false}" __cid="cFNBFbm"> 
+            <div class="x-scroll-content cFNBFbm" xid="div10" __cid="cFNBFbm"> 
+              <div class="x-list cFNBFbm" component="$model/UI2/system/components/justep/list/list" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dialogData&quot;,&quot;limit&quot;:20}" __cid="cFNBFbm"> 
+                <ul class="x-list-template list-group hide cFNBFbm" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cFNBFbm"> 
+                  <li class="list-group-item cFNBFbm" xid="li1" bind-touchstart="touchStart" bind-click="msgLIClick" bind-touchend="touchEnd" bind-touchcancel="touchCancel" oncontextmenu="return false;" bind-touchmove="touchMove" __cid="cFNBFbm"> 
+                    <div class="media-left cFNBFbm" xid="div2" __cid="cFNBFbm"> 
+                      <span class="counter cFNBFbm" xid="span11" bind-visible=" $object.val(&quot;fCounter&quot;)&gt;0" bind-html="ref('fCounter')" __cid="cFNBFbm"/>  
+                      <img alt="" class="o-icon cFNBFbm" xid="image6" bind-attr-src=" $model.getImageUrl(val('fImg'))" bind-visible=" $model.getImageUrl(val('fImg'))" xui:update-mode="merge" __cid="cFNBFbm"/>  
+                      <div bind-style="{background:val(&quot;fType&quot;)==&quot;group&quot;?&quot;#ffaa99&quot;:&quot;&quot;}" bind-visible=" !$model.getImageUrl(val('fImg'))" class="photoDiv cFNBFbm" xid="div15" xui:parent="div2" xui:update-mode="insert" __cid="cFNBFbm"> 
+                        <span bind-text="val(&quot;fNickName&quot;)?(val(&quot;fType&quot;) == &quot;group&quot;?(val(&quot;fNickName&quot;) .slice(-2)  == &quot;、、&quot;?&quot;群组&quot; :(val(&quot;fNickName&quot;).slice(0,2))):(val(&quot;fNickName&quot;).slice(-2))):&quot;&quot;" xid="span32" __cid="cFNBFbm" class="cFNBFbm"/> 
+                      </div>
+                    </div>  
+                    <div class="media-body cFNBFbm" xid="div1" __cid="cFNBFbm"> 
+                      <h5 class="dialogName cFNBFbm" xid="h51" bind-text="ref('fNickName')" __cid="cFNBFbm"/>  
+                      <span class="latestChatDate cFNBFbm" xid="span9" bind-text="ref('fLatestChatDate')" __cid="cFNBFbm"/>  
+                      <div style="clear:both;" xid="div3" __cid="cFNBFbm" class="cFNBFbm"/>  
+                      <span class="latestChat cFNBFbm" xid="span10" bind-html="ref('fLatestChat')" __cid="cFNBFbm"/> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cFNBFbm" xid="div12" __cid="cFNBFbm"> 
+              <span class="x-pull-up-label cFNBFbm" xid="span12" __cid="cFNBFbm">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cFNBFbm" xid="contactsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cFNBFbm"> 
+          <div class="x-window-container cFNBFbm" component="$model/UI2/system/components/justep/windowContainer/windowContainer" xid="contactsContainer" xui:update-mode="merge" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;activity&quot;:&quot;mainActivity&quot;,&quot;autoLoad&quot;:false,&quot;process&quot;:&quot;/SA/OPM/system/systemProcess&quot;,&quot;src&quot;:&quot;$model/UI2/chat/wex5/contactList.w&quot;}" __cid="cFNBFbm"/> 
+        </div> 
+      </div>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg btn-only-icon cFNBFbm" xid="showMenuPopOverBtn" style="position: absolute;bottom:20px;right:10px;border-radius: 48px;background-color: #2fa4e7;border:0px;color:#fff;" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:showMenuPopOverBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;}" __cid="cFNBFbm"> 
+        <i xid="i3" class="icon-android-add cFNBFbm" __cid="cFNBFbm"/>  
+        <span xid="span3" __cid="cFNBFbm" class="cFNBFbm"/> 
+      </a> 
+    </div>  
+    <div class="x-panel-bottom cFNBFbm" style="background-color:#E3E3E3;" xid="bottom1_2" xui:parent="panel2" xui:update-mode="insert" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFNBFbm"> 
+      <div class="btn-group-justified cFNBFbm" component="$model/UI2/system/components/justep/button/buttonGroup" style="height:100%;margin-top:-5px;color:#666;background-color:#fcfcfc;border-top:1px solid #f3f3f3;outline:none;" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cFNBFbm"> 
+        <a class="btn btn-icon-top cFNBFbm" component="$model/UI2/system/components/justep/button/button" xid="messageBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chatbox-working&quot;,&quot;label&quot;:&quot;消息&quot;,&quot;target&quot;:&quot;messageContent&quot;}" __cid="cFNBFbm"> 
+          <i class="icon-chatbox-working cFNBFbm" style="font-size:large;" xid="i11" __cid="cFNBFbm"/>  
+          <span style="font-size:small;" xid="span14" __cid="cFNBFbm" class="cFNBFbm">消息</span> 
+        </a>  
+        <a class="btn btn-icon-top cFNBFbm" component="$model/UI2/system/components/justep/button/button" xid="contactsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contacts&quot;,&quot;label&quot;:&quot;通讯录&quot;,&quot;target&quot;:&quot;contactsContent&quot;}" __cid="cFNBFbm"> 
+          <i class="icon-android-contacts cFNBFbm" style="font-size:large;" xid="i12" __cid="cFNBFbm"/>  
+          <span style="font-size:small;" xid="span15" __cid="cFNBFbm" class="cFNBFbm">通讯录</span> 
+        </a> 
+      </div> 
+    </div>
+    <style __cid="cFNBFbm" class="cFNBFbm">.x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcvauqqm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+</div>

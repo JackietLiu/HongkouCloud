@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfiABRz" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfiABRz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfiABRz" class="cfiABRz"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc6fiu6z-iosstatusbar cfiABRz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfiABRz"> 
+    <div class="x-panel-content x-flex x-flex-column cfiABRz" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfiABRz"> 
+      <div class="x-control-group x-flex cfiABRz" style="height:54px;" xid="controlGroup1" __cid="cfiABRz"> 
+        <div class="x-flex1 cfiABRz" __cid="cfiABRz"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cfiABRz" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfiABRz"> 
+            <label class="x-label cfiABRz" xid="label1" __cid="cfiABRz">action类型</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cfiABRz" xid="select1" bind-options="dataActionType.datas" bind-optionsValue="'value'" bind-optionsText="'label'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:actionType,name:'$model/UI2/system/components/justep/select/select'}" data-events="onChange:select1Change" __cid="cfiABRz"/> 
+          </div> 
+        </div>  
+        <div class="x-flex1 cfiABRz" __cid="cfiABRz"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cfiABRz" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfiABRz"> 
+            <label class="x-label x-center cfiABRz" xid="label2" __cid="cfiABRz">查询</label>  
+            <div class="x-edit cfiABRz" xid="controlGroupForm1" __cid="cfiABRz"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cfiABRz" xid="input5" data-bind="component:{ref:filter,name:'$model/UI2/system/components/justep/input/input'}" __cid="cfiABRz"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group x-flex1  x-scroll-view cfiABRz" __cid="cfiABRz"> 
+        <div class="x-scroll cfiABRz" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfiABRz"> 
+          <div class="x-content-center x-pull-down container cfiABRz" xid="controlGroupForm4" __cid="cfiABRz"> 
+            <i class="x-pull-down-img glyphicon x-icon-pull-down cfiABRz" xid="i4" __cid="cfiABRz"/>  
+            <span class="x-pull-down-label cfiABRz" xid="span4" __cid="cfiABRz">下拉刷新...</span> 
+          </div>  
+          <div class="x-scroll-content cfiABRz" xid="controlGroupForm5" __cid="cfiABRz"> 
+            <div component="$model/UI2/system/components/fragment/list/listTable" data="dataService" masterData="" masterCol="" xid="listTable4" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cfiABRz" class="cfiABRz"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cfiABRz" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataService&quot;}" __cid="cfiABRz"> 
+                <table class="table table-condensed table-hover table-striped cfiABRz" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cfiABRz"> 
+                  <thead xid="thead4" __cid="cfiABRz" class="cfiABRz"> 
+                    <tr xid="tr7" __cid="cfiABRz" class="cfiABRz"> 
+                      <th xid="col11" __cid="cfiABRz" class="cfiABRz"> 
+                        <label bind-text="$model.dataService.label('path')" xid="label16" __cid="cfiABRz" class="cfiABRz"/> 
+                      </th>  
+                      <th xid="col12" __cid="cfiABRz" class="cfiABRz"> 
+                        <label bind-text="$model.dataService.label('action')" xid="label17" __cid="cfiABRz" class="cfiABRz"/> 
+                      </th>  
+                      <th xid="col13" __cid="cfiABRz" class="cfiABRz"> 
+                        <label bind-text="$model.dataService.label('table')" xid="label18" __cid="cfiABRz" class="cfiABRz"/> 
+                      </th> 
+                    </tr> 
+                  </thead>  
+                  <tbody class="x-list-template hide cfiABRz" bind-click="$model!=$object?$object.data.to($object):null" xid="tbody4" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cfiABRz"> 
+                    <tr xid="tr8" bind-css="{success:$object==$model.dataService.getCurrentRow()}" __cid="cfiABRz" class="cfiABRz"> 
+                      <td xid="td11" __cid="cfiABRz" class="cfiABRz"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfiABRz" xid="output6" data-bind="component:{ref:ref('path'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfiABRz"/> 
+                      </td>  
+                      <td xid="td12" __cid="cfiABRz" class="cfiABRz"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfiABRz" xid="output7" data-bind="component:{ref:ref('action'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfiABRz"/> 
+                      </td>  
+                      <td xid="td13" __cid="cfiABRz" class="cfiABRz"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cfiABRz" xid="output8" data-bind="component:{ref:ref('table'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfiABRz"/> 
+                      </td> 
+                    </tr> 
+                  </tbody> 
+                </table> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-content-center x-pull-up cfiABRz" xid="controlGroupForm6" __cid="cfiABRz"> 
+            <span class="x-pull-up-label cfiABRz" xid="span5" __cid="cfiABRz">加载更多...</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group cfiABRz" style="height:48px;" __cid="cfiABRz"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfiABRz" style="float: right;margin-left: 16px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cfiABRz"> 
+          <i xid="i2" __cid="cfiABRz" class="cfiABRz"/>  
+          <span xid="span2" __cid="cfiABRz" class="cfiABRz">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cfiABRz" style="float: right;margin-left: 16px;" bind-enable="canReturn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cfiABRz"> 
+          <i xid="i1" __cid="cfiABRz" class="cfiABRz"/>  
+          <span xid="span1" __cid="cfiABRz" class="cfiABRz">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cfiABRz" class="cfiABRz">.x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc6fiu6z-iosstatusbar &gt;.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

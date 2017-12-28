@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cnauABz" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cnauABz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cnauABz" class="cnauABz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cnauABz" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnauABz"> 
+    <label class="x-label cnauABz" xid="label2" __cid="cnauABz">版本号：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnauABz" xid="version" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：5.3.0，由点隔开的三部分构成&quot;}" __cid="cnauABz"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cnauABz" xid="labelInput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnauABz"> 
+    <label class="x-label cnauABz" xid="label3" __cid="cnauABz">应用包名：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnauABz" xid="packageName" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：com.justep.x5，小写字母、数字和点构成，不能数字开头，ios与证书BundleID一致&quot;}" __cid="cnauABz"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cnauABz" xid="labelInput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnauABz"> 
+    <label class="x-label cnauABz" xid="label4" __cid="cnauABz">应用描述：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnauABz" xid="description" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：这是一个用于演示WeX5特性的应用&quot;}" __cid="cnauABz"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/output/output" class="x-label cnauABz" xid="output2" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'},text:&quot;选择 Android 的 WebView 引擎：&quot;" data-config="{&quot;dataType&quot;:&quot;String&quot;}" __cid="cnauABz"/>  
+  <div xmlns="" xid="div2" style="padding-left:20px;padding-top:8px" __cid="cnauABz" class="cnauABz"> 
+    <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical cnauABz" xid="engineRadioGroup" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:engineData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" __cid="cnauABz"> 
+      <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cnauABz" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('Value'),value:ref('ID')}" __cid="cnauABz">  
+        <input type="radio" __cid="cnauABz" class="cnauABz"/>  
+        <label __cid="cnauABz" class="cnauABz"/> 
+      </span> 
+    </span> 
+  </div>  
+  <div xmlns="" xid="div1" style="padding-top:8px" __cid="cnauABz" class="cnauABz"> 
+    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cnauABz" xid="resEncryption" label="打包的资源进行加密。加密后应用运行将略多一点资源读取时间，但可以增强应用的安全性，使反编译无法直接获取资源" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;打包的资源进行加密。加密后应用运行将略多一点资源读取时间，但可以增强应用的安全性，使反编译无法直接获取资源&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cnauABz"> 
+      <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cnauABz" class="cnauABz"></input>  
+      <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cnauABz" class="cnauABz">打包的资源进行加密。加密后应用运行将略多一点资源读取时间，但可以增强应用的安全性，使反编译无法直接获取资源</label> 
+    </span> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cnauABz" xid="labelInput1" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cnauABz"> 
+    <label class="x-label cnauABz" xid="label1" __cid="cnauABz">推送服务地址：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cnauABz" xid="mqttServerURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：tcp://ip:port， android平台有效。注意需要选择推送插件&quot;}" __cid="cnauABz"/> 
+  </div> 
+</div>

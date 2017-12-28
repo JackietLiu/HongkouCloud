@@ -1,0 +1,727 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <script src="../../../v_04ef309e1f434024a2587e68ad602d22l_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = true;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_c5c5296aa321466c92c0e9991e11a07dl_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_e821241df1f843938111f9f61614c3dal_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/dataTables/css/dataTables,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div class="main13 cny6jQ3" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cny6jQ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.text-black.cny6jQ3{color: rgb(33, 33, 33)} .x-cards.cny6jQ3{padding-top: 0} .panel.cny6jQ3{border: 0} .panel.panel-default.cny6jQ3{margin-bottom: 10px} .row.cny6jQ3{margin: 0} .tb-nopadding.cny6jQ3{padding: 0} .btn.cny6jQ3 i.cny6jQ3{font-size: 20px} .btn.cny6jQ3 span.cny6jQ3{font-size: 12px; font-weight: normal} .tb-img1.cny6jQ3{width: 100%; height: 133px} .tb-img5.cny6jQ3{width: 70%} .tb-img6.cny6jQ3{width: 100%} .x-titlebar.cny6jQ3{background-color: rgb(255, 68, 0)} .x-titlebar.cny6jQ3 .btn.cny6jQ3{padding: 0} .x-titlebar.cny6jQ3 .btn-link.cny6jQ3{height: auto} .tb-top.x-titlebar.cny6jQ3 .x-titlebar-title.tb-searchBox.cny6jQ3{text-align: left; padding-top: 8px} .tb-searchBox.cny6jQ3 span.cny6jQ3{font-size: 16px} .tb-searchBox.cny6jQ3 div.cny6jQ3{height: 3px; border: 1px solid rgb(255, 255, 255); border-top: none} .tb-menu.table.cny6jQ3 > tbody.cny6jQ3 > tr.cny6jQ3 > td.cny6jQ3{border: 0; width: 20%} .tb-menu.table.cny6jQ3 > tbody.cny6jQ3 > tr.cny6jQ3 > td.cny6jQ3{padding-left: 0; padding-right: 0} .tb-line-right.cny6jQ3{border-right: 1px solid rgba(90, 90, 90, 0.05)} .btn-group.cny6jQ3{background-color: rgb(255, 255, 255)} .x-card.btn-group.cny6jQ3 .btn.active.cny6jQ3{color: rgb(255, 68, 0)} .btn-group.cny6jQ3 .btn.cny6jQ3 i.cny6jQ3{font-size: 30px; padding-bottom: 0} .tb-twoColList.col-xs-6.cny6jQ3{padding: 10px} .tb-twoColList.col-xs-6.cny6jQ3 h5.cny6jQ3{height: 45px; overflow: hidden}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onunLoad:modelUnLoad;onModelConstruct:modelModelConstruct;onLoad:modelLoad" __cid="cny6jQ3" class="cny6jQ3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcb2ANN3-iosstatusbar cny6jQ3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+    <div class="x-panel-content tb-trans cny6jQ3" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cny6jQ3"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cny6jQ3" xid="contents2" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChange:contents2ActiveChange" data-config="{&#34;active&#34;:0,&#34;slidable&#34;:false,&#34;swipe&#34;:false,&#34;wrap&#34;:false}" __cid="cny6jQ3"> 
+        <div class="x-contents-content x-cards active cny6jQ3" xid="homeContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cny6jQ3"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar pczmEru2-iosstatusbar cny6jQ3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+            <div class="x-panel-top cny6jQ3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cny6jQ3"> 
+              <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cny6jQ3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cny6jQ3"> 
+                <div class="x-titlebar-left cny6jQ3" xid="div6" __cid="cny6jQ3"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-qrcode&#34;,&#34;label&#34;:&#34;扫一扫&#34;}" __cid="cny6jQ3"> 
+                    <i xid="i6" class="glyphicon glyphicon-qrcode cny6jQ3" __cid="cny6jQ3"></i>  
+                    <span xid="span6" __cid="cny6jQ3" class="cny6jQ3">扫一扫</span> 
+                  </a> 
+                </div>  
+                <div class="x-titlebar-title tb-searchBox cny6jQ3" xid="div1" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'searchBtnClick')}"> 
+                  <i xid="i10" class="icon-ios7-search-strong cny6jQ3" __cid="cny6jQ3"></i>  
+                  <span __cid="cny6jQ3" class="cny6jQ3">芊芊玉手如何保养</span>  
+                  <div __cid="cny6jQ3" class="cny6jQ3"></div> 
+                </div>  
+                <div class="x-titlebar-right  cny6jQ3" xid="div5" __cid="cny6jQ3">
+                  <div class="empty cny6jQ3" __cid="cny6jQ3"></div>
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-chatbubble&#34;,&#34;label&#34;:&#34;消息&#34;}" __cid="cny6jQ3"> 
+                    <i xid="i8" class="icon-ios7-chatbubble cny6jQ3" __cid="cny6jQ3"></i>  
+                    <span xid="span8" __cid="cny6jQ3" class="cny6jQ3">消息</span> 
+                  </a>
+                </div> 
+              </div> 
+            </div>
+            <div class="x-panel-content  x-scroll-view cny6jQ3" xid="content3" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cny6jQ3"> 
+              <div class="x-scroll cny6jQ3" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollViewPullDown" __cid="cny6jQ3"> 
+                <div class="x-content-center x-pull-down container cny6jQ3" xid="div16" __cid="cny6jQ3"> 
+                  <i class="x-pull-down-img glyphicon x-icon-pull-down cny6jQ3" xid="i9" __cid="cny6jQ3"></i>  
+                  <span class="x-pull-down-label cny6jQ3" xid="span17" __cid="cny6jQ3">下拉刷新...</span> 
+                </div>  
+                <div class="x-scroll-content cny6jQ3" xid="div17" __cid="cny6jQ3"> 
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcQnuuYr-iosstatusbar cny6jQ3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+                    <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel cny6jQ3" xid="carousel1" style="height:133px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&#34;auto&#34;:true}" __cid="cny6jQ3"> 
+                      <ol class="carousel-indicators cny6jQ3" xid="ol1" __cid="cny6jQ3"></ol>  
+                      <div class="x-contents carousel-inner cny6jQ3" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contentsImg" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;routable&#34;:false,&#34;slidable&#34;:true,&#34;swipe&#34;:true,&#34;wrap&#34;:true}" __cid="cny6jQ3"> 
+                        <div class="x-contents-content active cny6jQ3" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cny6jQ3"> 
+                          <img src="../../../v_c8215abfc42c44f5b614254590ad4c62l_zh_CNs_d_m/demo/taobao/main/img/carouselBox61.jpg" alt="" xid="image13" class="tb-img1 cny6jQ3" pagename="./detail.w" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pcQnuuYr-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcQnuuYr-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcQnuuYr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQnuuYr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQnuuYr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcQnuuYr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQnuuYr-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQnuuYr-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQnuuYr-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pc2QZ7Zv-iosstatusbar cny6jQ3" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+                    <table class="table tb-menu cny6jQ3" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cny6jQ3"> 
+                      <tbody class="x-list-template cny6jQ3" xid="listTemplate2" __cid="cny6jQ3"> 
+                        <tr xid="tr1" __cid="cny6jQ3" class="cny6jQ3"> 
+                          <td pagename="./list.w" xid="td1" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div211" __cid="cny6jQ3"> 
+                              <img src="../../../v_56e22c14ea8e4292bf99a4a9419cdd9al_zh_CNs_d_m/demo/taobao/main/img/menu1.png" alt="" xid="image311" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span7" __cid="cny6jQ3" class="cny6jQ3">天猫</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td2" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div311" __cid="cny6jQ3"> 
+                              <img src="../../../v_b5217bfe2b964f98b4796b48d7dc0c31l_zh_CNs_d_m/demo/taobao/main/img/menu2.png" alt="" xid="image111" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span9" __cid="cny6jQ3" class="cny6jQ3">聚划算</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td3" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div411" __cid="cny6jQ3"> 
+                              <img src="../../../v_3b0e64ac54234896a9a16a16b12a50fdl_zh_CNs_d_m/demo/taobao/main/img/menu3.png" alt="" xid="image211" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span101" __cid="cny6jQ3" class="cny6jQ3">淘生活</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td4" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div71" __cid="cny6jQ3"> 
+                              <img alt="" xid="image81" src="../../../v_8026000b2c034019a58d18dd8b61c538l_zh_CNs_d_m/demo/taobao/main/img/menu4.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span111" __cid="cny6jQ3" class="cny6jQ3">淘点点</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td5" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div81" __cid="cny6jQ3"> 
+                              <img alt="" xid="image91" src="../../../v_7e80c20e0f28430498bfff2c2d589d3cl_zh_CNs_d_m/demo/taobao/main/img/menu5.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span121" __cid="cny6jQ3" class="cny6jQ3">天猫超市</span> 
+                            </div> 
+                          </td> 
+                        </tr>  
+                        <tr xid="tr2" __cid="cny6jQ3" class="cny6jQ3"> 
+                          <td pagename="./list.w" xid="td6" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div2" __cid="cny6jQ3"> 
+                              <img alt="" xid="image3" src="../../../v_5c5538248d7b42b7b77074b5071d08fdl_zh_CNs_d_m/demo/taobao/main/img/menu6.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span19" __cid="cny6jQ3" class="cny6jQ3">充值</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td7" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div3" __cid="cny6jQ3"> 
+                              <img alt="" xid="image1" src="../../../v_96e2612e090f4d7c98066364f716df66l_zh_CNs_d_m/demo/taobao/main/img/menu7.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span20" __cid="cny6jQ3" class="cny6jQ3">旅行</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td8" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div4" __cid="cny6jQ3"> 
+                              <img alt="" xid="image2" src="../../../v_4b540a3b52134b75b5b44ddc9da932b1l_zh_CNs_d_m/demo/taobao/main/img/menu8.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span10" __cid="cny6jQ3" class="cny6jQ3">金币</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./list.w" xid="td9" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div7" __cid="cny6jQ3"> 
+                              <img alt="" xid="image8" src="../../../v_427148bb302b4deda52d8392ab1f6d85l_zh_CNs_d_m/demo/taobao/main/img/menu9.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span11" __cid="cny6jQ3" class="cny6jQ3">宝箱</span> 
+                            </div> 
+                          </td>  
+                          <td pagename="./class.w" xid="td10" __cid="cny6jQ3" class="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                            <div class="text-center cny6jQ3" xid="div8" __cid="cny6jQ3"> 
+                              <img alt="" xid="image9" src="../../../v_84e7711e93474ccc88ad941aacb9c29bl_zh_CNs_d_m/demo/taobao/main/img/menu10.png" class="img-responsive center-block tb-img5 cny6jQ3" __cid="cny6jQ3">  
+                              <span xid="span12" __cid="cny6jQ3" class="cny6jQ3">分类</span> 
+                            </div> 
+                          </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>  
+                    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc2QZ7Zv-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcz2iymi-iosstatusbar cny6jQ3" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cny6jQ3" xid="row1" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cny6jQ3"> 
+                      <div class="col cell col-xs-5 tb-nopadding cny6jQ3" xid="col1" __cid="cny6jQ3"> 
+                        <img src="../../../v_b77e8c2a61e949a4b6d21d33a3f14f5fl_zh_CNs_d_m/demo/taobao/main/img/hotPic1.png" alt="" xid="image4" class=" img-responsive center-block cny6jQ3" pagename="./list.w" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                      </div>  
+                      <div class="col cell col-xs-7 tb-nopadding cny6jQ3" xid="col2" __cid="cny6jQ3"> 
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cny6jQ3" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cny6jQ3"> 
+                          <div class="col cell col-xs-12 tb-nopadding cny6jQ3" xid="col5" __cid="cny6jQ3"> 
+                            <img src="../../../v_eb25bb292105410f9de4c65ed152206el_zh_CNs_d_m/demo/taobao/main/img/hotPic2.png" alt="" xid="image5" class=" img-responsive center-block cny6jQ3" pagename="./list.w" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/bootstrap/row/row" class="row cny6jQ3" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cny6jQ3"> 
+                          <div class="col cell col-xs-6 tb-nopadding cny6jQ3" xid="col8" __cid="cny6jQ3"> 
+                            <img src="../../../v_3efce020736b4c53b51d924c864d6d27l_zh_CNs_d_m/demo/taobao/main/img/hotPic3.png" alt="" xid="image6" class=" img-responsive center-block cny6jQ3" pagename="./list.w" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                          </div>  
+                          <div class="col cell col-xs-6 tb-nopadding cny6jQ3" xid="col9" __cid="cny6jQ3"> 
+                            <img src="../../../v_39b6375f1314404f9cd0c8776579500fl_zh_CNs_d_m/demo/taobao/main/img/hotPic4.png" alt="" xid="image7" class=" img-responsive center-block cny6jQ3" pagename="./list.w" __cid="cny6jQ3" data-bind="event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pcz2iymi-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcz2iymi-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcz2iymi-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcz2iymi-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz2iymi-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcz2iymi-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcz2iymi-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz2iymi-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcz2iymi-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pcb2MBfm-iosstatusbar cny6jQ3" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cny6jQ3" xid="row2" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cny6jQ3"> 
+                      <div class="col cell col-xs-6 tb-nopadding tb-line-right cny6jQ3" xid="col17" __cid="cny6jQ3"> 
+                        <img alt="" xid="image11" class=" img-responsive center-block tb-img6 cny6jQ3" pagename="./list.w" style="width:100%;" __cid="cny6jQ3" data-bind="attr:{src:require.toUrl('./main/img/hotPic5.png')},event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                      </div>  
+                      <div class="col cell col-xs-2 tb-nopadding tb-line-right cny6jQ3" xid="col18" __cid="cny6jQ3"> 
+                        <img alt="" xid="image14" class=" img-responsive center-block tb-img6 cny6jQ3" pagename="./list.w" style="width:100%;" __cid="cny6jQ3" data-bind="attr:{src:require.toUrl('./main/img/hotPic6.png')},event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                      </div>  
+                      <div class="col cell col-xs-2 tb-nopadding tb-line-right cny6jQ3" xid="col21" __cid="cny6jQ3"> 
+                        <img alt="" xid="image15" class=" img-responsive center-block tb-img6 cny6jQ3" pagename="./list.w" style="width:100%;" __cid="cny6jQ3" data-bind="attr:{src:require.toUrl('./main/img/hotPic7.png')},event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                      </div>  
+                      <div class="col cell col-xs-2 tb-nopadding cny6jQ3" xid="col22" __cid="cny6jQ3"> 
+                        <img alt="" xid="image16" class=" img-responsive center-block tb-img6 cny6jQ3" pagename="./list.w" style="width:100%;" __cid="cny6jQ3" data-bind="attr:{src:require.toUrl('./main/img/hotPic8.png')},event:{click:$model._callModelFn.bind($model, 'openPageClick')}"> 
+                      </div> 
+                    </div>  
+                    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pcb2MBfm-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcb2MBfm-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcb2MBfm-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcb2MBfm-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2MBfm-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcb2MBfm-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2MBfm-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2MBfm-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2MBfm-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pceU3i22-iosstatusbar cny6jQ3" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cny6jQ3"> 
+                    <h4 xid="h41" class="list-group-item text-black cny6jQ3" __cid="cny6jQ3">猜您喜欢</h4>  
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list x-flex cny6jQ3" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},event:{click:$model._callModelFn.bind($model, 'listClick')}" data-config="{&#34;data&#34;:&#34;goodsData&#34;,&#34;disableInfiniteLoad&#34;:false,&#34;disablePullToRefresh&#34;:false,&#34;limit&#34;:6}" __cid="cny6jQ3"> 
+                      <ul class="x-list-template hide cny6jQ3" xid="listTemplateUl1" __cid="cny6jQ3" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                        <li xid="li1" class="col col-xs-6 tb-twoColList cny6jQ3" __cid="cny6jQ3"> 
+                          <div __cid="cny6jQ3" class="cny6jQ3"> 
+                            <img alt="" class="img-rounded img-responsive media-object cny6jQ3" xid="image18" __cid="cny6jQ3" data-bind="attr:{src:$model.getImageUrl(val(&#34;fImg&#34;))}">  
+                            <div class="caption cny6jQ3" __cid="cny6jQ3"> 
+                              <h5 class="text-black cny6jQ3" xid="h52" __cid="cny6jQ3" data-bind="text:ref('fTitle')"></h5>  
+                              <div xid="div12" __cid="cny6jQ3" class="cny6jQ3"> 
+                                <span class="text-danger cny6jQ3" xid="span14" __cid="cny6jQ3">￥</span>  
+                                <span class="text-danger cny6jQ3" xid="span15" __cid="cny6jQ3" data-bind="text:ref('fPrice')"></span> 
+                              </div>  
+                              <div xid="div13" class="text-muted cny6jQ3" __cid="cny6jQ3"> 
+                                <span xid="span24" __cid="cny6jQ3" class="cny6jQ3">月销</span>  
+                                <span xid="span26" __cid="cny6jQ3" class="cny6jQ3" data-bind="text:ref('fRecord')"></span>  
+                                <span xid="span27" __cid="cny6jQ3" class="cny6jQ3">笔</span>  
+                                <span xid="span28" class="pull-right cny6jQ3" __cid="cny6jQ3" data-bind="text:ref('fPostage')"></span> 
+                              </div> 
+                            </div>
+                          </div> 
+                        </li> 
+                      </ul> 
+                    </div>  
+                    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pceU3i22-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pceU3i22-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceU3i22-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceU3i22-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceU3i22-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceU3i22-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceU3i22-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceU3i22-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceU3i22-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                  </div> 
+                </div>  
+                <div class="x-content-center x-pull-up cny6jQ3" xid="div18" __cid="cny6jQ3"> 
+                  <span class="x-pull-up-label cny6jQ3" xid="span18" __cid="cny6jQ3">加载更多...</span> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pczmEru2-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pczmEru2-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pczmEru2-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczmEru2-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczmEru2-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pczmEru2-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczmEru2-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczmEru2-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczmEru2-iosstatusbar >.x-panel-content {top: 48px;}</style>
+          </div> 
+        </div>  
+        <div class="x-contents-content x-cards cny6jQ3" xid="microContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cny6jQ3"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cny6jQ3" xid="navContainer2" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/demo/taobao/micro.w&#34;}" __cid="cny6jQ3"></div> 
+        </div>  
+        <div class="x-contents-content x-cards cny6jQ3" xid="foundContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cny6jQ3"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cny6jQ3" xid="navContainer3" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/demo/taobao/found.w&#34;}" __cid="cny6jQ3"></div> 
+        </div>  
+        <div class="x-contents-content x-cards cny6jQ3" xid="shoppingContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onInactive:shoppingContentInactive" __cid="cny6jQ3"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cny6jQ3" xid="navContainer4" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/demo/taobao/cart.w&#34;}" __cid="cny6jQ3"></div> 
+        </div>  
+        <div class="x-contents-content x-cards cny6jQ3" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cny6jQ3"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cny6jQ3" xid="navContainer5" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&#34;autoLoad&#34;:false,&#34;src&#34;:&#34;$model/UI2/demo/taobao/user.w&#34;}" __cid="cny6jQ3"></div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cny6jQ3" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&#34;height&#34;:55}" __cid="cny6jQ3"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card cny6jQ3" xid="buttonGroup1" style="height:55px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cny6jQ3"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cny6jQ3" xid="homeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-home&#34;,&#34;label&#34;:&#34;首页&#34;,&#34;target&#34;:&#34;homeContent&#34;}" __cid="cny6jQ3"> 
+          <i xid="i1" class="icon-home icon cny6jQ3" __cid="cny6jQ3"></i>  
+          <span xid="span1" __cid="cny6jQ3" class="cny6jQ3">首页</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" xid="microBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-radio-waves&#34;,&#34;label&#34;:&#34;微淘&#34;,&#34;target&#34;:&#34;microContent&#34;}" __cid="cny6jQ3"> 
+          <i xid="i2" class="icon-radio-waves icon cny6jQ3" __cid="cny6jQ3"></i>  
+          <span xid="span2" __cid="cny6jQ3" class="cny6jQ3">微淘</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" xid="foundBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-eye&#34;,&#34;label&#34;:&#34;发现&#34;,&#34;target&#34;:&#34;foundContent&#34;}" __cid="cny6jQ3"> 
+          <i xid="i3" class="icon icon-eye cny6jQ3" __cid="cny6jQ3"></i>  
+          <span xid="span3" __cid="cny6jQ3" class="cny6jQ3">发现</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" xid="shoppingCartBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-cart&#34;,&#34;label&#34;:&#34;购物车&#34;,&#34;target&#34;:&#34;shoppingContent&#34;}" __cid="cny6jQ3"> 
+          <i xid="i4" class="icon-ios7-cart icon cny6jQ3" __cid="cny6jQ3"></i>  
+          <span xid="span4" __cid="cny6jQ3" class="cny6jQ3">购物车</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cny6jQ3" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-person&#34;,&#34;label&#34;:&#34;我的商城&#34;,&#34;target&#34;:&#34;userContent&#34;}" __cid="cny6jQ3"> 
+          <i xid="i5" class="icon icon-person cny6jQ3" __cid="cny6jQ3"></i>  
+          <span xid="span5" __cid="cny6jQ3" class="cny6jQ3">我的商城</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cny6jQ3" class="cny6jQ3">.x-panel.pcb2ANN3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcb2ANN3-iosstatusbar >.x-panel-content { top: 48px;bottom: 55px;}.x-panel.pcb2ANN3-iosstatusbar >.x-panel-bottom {height: 55px;}.iosstatusbar .x-panel.pcb2ANN3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2ANN3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcb2ANN3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcb2ANN3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2ANN3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcb2ANN3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_93a61e0de4514e818ef6d6ef8715ba56l_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_b9a4a9ea665541a3b7091a4bbc61ec7bl_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_3ffcb9395c314b4d90f7f209f566eca9l_zh_CNs_d_m/system/core.min.js"></script><script src="../../../v_e7838a72143c4869aeb3eb862d791f50l_zh_CNs_d_m/system/common.min.js"></script><script src="../../../v_c80f79c8639b4fae97d277efad110010l_zh_CNs_d_m/system/components/comp.min.js"></script><script src="../../../v_55558d464dc7412993242fd4bfcb6b5bl_zh_CNs_d_m/system/components/comp2.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m/demo/taobao',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_ed747e996f5f4293842afe69af4618b9l_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/demo/taobao/main.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

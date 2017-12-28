@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window container-fluid cbYFrEf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbYFrEf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/toolBar/toolBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cbYFrEf" class="cbYFrEf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cbYFrEf" xid="toolBar1" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cbYFrEf"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cbYFrEf" xid="btnFiledDlg" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&quot;operation&quot;:&quot;popMenu1.show&quot;}" data-config="{&quot;icon&quot;:&quot;icon-plus&quot;,&quot;label&quot;:&quot;新增列&quot;}" __cid="cbYFrEf"> 
+      <i xid="i2" class="icon-plus cbYFrEf" __cid="cbYFrEf"/>  
+      <span xid="span2" __cid="cbYFrEf" class="cbYFrEf">新增列</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cbYFrEf" xid="add" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'data.new'}" data-config="{&quot;label&quot;:&quot;新增计算列&quot;}" __cid="cbYFrEf"> 
+      <i __cid="cbYFrEf" class="cbYFrEf"/>  
+      <span __cid="cbYFrEf" class="cbYFrEf">新增计算列</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cbYFrEf" xid="delete" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'data.delete'}" __cid="cbYFrEf"> 
+      <i __cid="cbYFrEf" class="cbYFrEf"/>  
+      <span __cid="cbYFrEf" class="cbYFrEf"/> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cbYFrEf" xid="up" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:upClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-up&quot;,&quot;label&quot;:&quot;上移&quot;}" __cid="cbYFrEf"> 
+      <i class="icon-chevron-up cbYFrEf" __cid="cbYFrEf"/>  
+      <span __cid="cbYFrEf" class="cbYFrEf">上移</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cbYFrEf" xid="down" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:downClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;下移&quot;}" __cid="cbYFrEf"> 
+      <i class="icon-chevron-down cbYFrEf" __cid="cbYFrEf"/>  
+      <span __cid="cbYFrEf" class="cbYFrEf">下移</span> 
+    </a> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/list/list" class="x-list cbYFrEf" xid="3706EC4D19214F03AA286FF87EFB7DF7" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cbYFrEf"> 
+    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cbYFrEf" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cbYFrEf"> 
+      <div class="col col-xs-3 cbYFrEf" __cid="cbYFrEf"> 
+        <label xid="label1" __cid="cbYFrEf" class="cbYFrEf" data-bind="text:data.label('name')">label</label> 
+      </div>  
+      <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+        <label xid="label2" __cid="cbYFrEf" class="cbYFrEf" data-bind="text:data.label('type')">label</label> 
+      </div>  
+      <div class="col col-xs-3 cbYFrEf" __cid="cbYFrEf"> 
+        <label xid="label3" __cid="cbYFrEf" class="cbYFrEf" data-bind="text:data.label('displayName')">label</label> 
+      </div>  
+      <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+        <label xid="label4" __cid="cbYFrEf" class="cbYFrEf" data-bind="text:data.label('isCalculate')">label</label> 
+      </div>  
+      <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+        <label xid="label5" __cid="cbYFrEf" class="cbYFrEf" data-bind="text:data.label('isIDColumn')">label</label> 
+      </div> 
+    </div>  
+    <div class="x-list-template hide cbYFrEf" style="margin:0;" __cid="cbYFrEf" data-bind="foreach:{data:$model.foreach_3706EC4D19214F03AA286FF87EFB7DF7($element),afterRender:$model.foreach_afterRender_3706EC4D19214F03AA286FF87EFB7DF7.bind($model,$element)}"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row cbYFrEf" style="padding: 6px 0;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'},css:{'x-currentRow':$object==$model.data.getCurrentRow()}" __cid="cbYFrEf"> 
+        <div class="col col-xs-3 cbYFrEf" __cid="cbYFrEf"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cbYFrEf" xid="input1" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cbYFrEf"/> 
+        </div>  
+        <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control cbYFrEf" xid="select1" data-bind="component:{ref:ref('type'),name:'$model/UI2/system/components/justep/select/select'},options:$model.typeData.datas,optionsValue:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cbYFrEf"/> 
+        </div>  
+        <div class="col col-xs-3 cbYFrEf" __cid="cbYFrEf"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cbYFrEf" xid="input3" data-bind="component:{ref:ref('displayName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cbYFrEf"/> 
+        </div>  
+        <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cbYFrEf" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('isCalculate'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cbYFrEf"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cbYFrEf" class="cbYFrEf"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cbYFrEf" class="cbYFrEf"></label> 
+          </span> 
+        </div>  
+        <div class="col col-xs-2 cbYFrEf" __cid="cbYFrEf"> 
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cbYFrEf" xid="radio1" name="idCol" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;idCol&quot;}" data-bind="component:{ref:ref('isIDColumn'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cbYFrEf"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="idCol" __cid="cbYFrEf" class="cbYFrEf"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cbYFrEf" class="cbYFrEf"></label> 
+          </span> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="fieldDlg" style="left:621px;top:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:fieldDlgReceive" data-config="{&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/components/justep/data/designer/appendColumn.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;新增列&quot;}" __cid="cbYFrEf" class="cbYFrEf"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cbYFrEf" __cid="cbYFrEf"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cbYFrEf" style="display:none;" showTitle="true" __cid="cbYFrEf">  
+      <div class="x-dialog-title cbYFrEf" __cid="cbYFrEf"> 
+        <button class="close cbYFrEf" __cid="cbYFrEf"> 
+          <span __cid="cbYFrEf" class="cbYFrEf">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cbYFrEf" __cid="cbYFrEf">新增列</div> 
+      </div>  
+      <div class="x-dialog-body cbYFrEf" __cid="cbYFrEf"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cbYFrEf" xid="popMenu1" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;btnFiledDlg&quot;,&quot;direction&quot;:&quot;left-bottom&quot;,&quot;opacity&quot;:0}" __cid="cbYFrEf"> 
+    <div class="x-popMenu-overlay cbYFrEf" xid="div1" __cid="cbYFrEf"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cbYFrEf" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cbYFrEf"> 
+      <li class="x-menu-item cbYFrEf" xid="item1" __cid="cbYFrEf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbYFrEf" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnFiledDlgClick" data-config="{&quot;label&quot;:&quot;基于Table增加&quot;}" __cid="cbYFrEf"> 
+          <i xid="i1" __cid="cbYFrEf" class="cbYFrEf"/>  
+          <span xid="span1" __cid="cbYFrEf" class="cbYFrEf">基于Table增加</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cbYFrEf" xid="item2" __cid="cbYFrEf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cbYFrEf" xid="btnNewFiled" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnNewFiledClick" data-config="{&quot;label&quot;:&quot;自定义增加&quot;}" __cid="cbYFrEf"> 
+          <i xid="i3" __cid="cbYFrEf" class="cbYFrEf"/>  
+          <span xid="span3" __cid="cbYFrEf" class="cbYFrEf">自定义增加</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div> 
+</div>

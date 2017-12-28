@@ -1,0 +1,62 @@
+.btn-group .btn {
+	color: #989898;
+}
+
+.btn-group .btn.active {
+	border-bottom: 2px solid #37b9ed;
+	padding: 0;
+	color: #000;
+}
+
+.x-meun-item .btn img {
+	width: 25px;
+}
+
+.x-panel-bottom .btn-group .hide {
+	visibility: hidden
+}
+
+.x-popOver .x-popOver-content {
+	border-radius: 0;
+	position: fixed;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	margin-bottom: 0;
+}
+
+.o-img{ width:100%; height:80px;}
+
+.o-imgList{ padding:14px;}
+.o-imgList ul li{ padding:1px;}
+
+/*涓婁紶缁勪欢*/
+.o-uploadFile .x-attachment-content{ min-height:48px; min-height:48px; border-top:0; background:none; margin-top:0px;}
+.o-uploadFile .x-item-upload{ width:48px; height:48px; background:url(img/upload.png) no-repeat center center;}
+.o-uploadFile .x-attachment{ min-height:48px; padding:0;}
+.o-uploadFile .x-attachment .x-attachment-cell{ float:none; margin:0; height:48px; display:block;}
+
+/*进度条样式  */
+
+.progress{
+	height: 20px;
+    background: #e8eaec;
+    border-radius: 20px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+	text-align:center;
+    font-size: 15px;
+    color: #fff;
+    border-top: none;
+    position: absolute;
+    left:40%;
+}
+
+

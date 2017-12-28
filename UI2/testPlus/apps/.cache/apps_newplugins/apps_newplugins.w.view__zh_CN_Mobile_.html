@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window ceieqIv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceieqIv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ceieqIv" class="ceieqIv"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver ceieqIv" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="ceieqIv"> 
+    <div class="x-popOver-overlay ceieqIv" xid="div1" __cid="ceieqIv"></div>  
+    <div class="x-popOver-content ceieqIv" xid="div2" style="background-color:#fff;width:300;height:120;" __cid="ceieqIv"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ceieqIv" xid="row1" style="text-align:center;height:50%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceieqIv"> 
+        <div class="x-col ceieqIv" xid="col1" style="height:40px;" __cid="ceieqIv"> 
+          <label xid="label1" __cid="ceieqIv" class="ceieqIv">确定添加该插件吗？</label> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row ceieqIv" xid="row2" style="height:40%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceieqIv"> 
+        <div class="x-col ceieqIv" xid="col4" style="text-align:center;" __cid="ceieqIv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn x-purple ceieqIv" xid="button2" style="width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="ceieqIv"> 
+            <i xid="i3" __cid="ceieqIv" class="ceieqIv"></i>  
+            <span xid="span2" __cid="ceieqIv" class="ceieqIv">确定</span>
+          </a> 
+        </div>  
+        <div class="x-col ceieqIv" xid="col5" style="text-align:center;" __cid="ceieqIv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link ceieqIv" xid="button3" style="color:#000;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="ceieqIv"> 
+            <i xid="i3" __cid="ceieqIv" class="ceieqIv"></i>  
+            <span xid="span3" __cid="ceieqIv" class="ceieqIv">取消</span>
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYNNbYr-iosstatusbar ceieqIv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceieqIv"> 
+    <div class="x-panel-top ceieqIv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceieqIv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ceieqIv" style="background-color:#37b9ed;" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;最新插件&#34;}" __cid="ceieqIv"> 
+        <div class="x-titlebar-left ceieqIv" xid="left1" __cid="ceieqIv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon ceieqIv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="ceieqIv"> 
+            <i xid="i7" class="linear linear-arrowleft ceieqIv" __cid="ceieqIv"></i>  
+            <span xid="span1" __cid="ceieqIv" class="ceieqIv"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title ceieqIv" style="font-weight:normal;" xid="title1" __cid="ceieqIv">最新插件</div>  
+        <div class="x-titlebar-right  ceieqIv" xid="right1" __cid="ceieqIv">
+          <div class="empty ceieqIv" __cid="ceieqIv"></div>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content ceieqIv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceieqIv"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ceieqIv" xid="appList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:true,&#34;data&#34;:&#34;pluginsData&#34;,&#34;filter&#34;:&#34; $row.val(\&#34;type\&#34;) == 02  &amp;&amp;  $row.val(\&#34;AppStatus\&#34;) == \&#34;审核\&#34;&#34;}" __cid="ceieqIv"> 
+        <ul class="x-list-template hide ceieqIv" xid="listTemplateUl1" __cid="ceieqIv" data-bind="foreach:{data:$model.foreach_appList($element),afterRender:$model.foreach_afterRender_appList.bind($model,$element)}"> 
+          <li xid="li1" __cid="ceieqIv" class="ceieqIv"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row ceieqIv" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceieqIv"> 
+              <div class="x-col x-col-10 ceieqIv" xid="col18" style="line-height:70px;text-align:center;font-size:25px;height:80px;" __cid="ceieqIv"> 
+                <span xid="span4" __cid="ceieqIv" class="ceieqIv"></span>
+              </div>  
+              <div class="x-col ceieqIv" xid="col51" style="text-align:center;" __cid="ceieqIv"> 
+                <img src="" alt="" xid="image2" style="border-radius:5px;width:70px;" height="70px" __cid="ceieqIv" class="ceieqIv" data-bind="attr:{src:$model.getImageUrl( $object.val(&#34;ApplicationImagePath&#34;))}">
+              </div>  
+              <div class="x-col x-col-50 ceieqIv" xid="col21" __cid="ceieqIv"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ceieqIv" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceieqIv"> 
+                  <div class="x-col ceieqIv" xid="col45" __cid="ceieqIv"> 
+                    <span xid="span5" __cid="ceieqIv" class="ceieqIv" data-bind="text:ref('ApplicationName')"></span>
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row ceieqIv" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="ceieqIv"> 
+                  <div class="x-col ceieqIv" xid="col41" __cid="ceieqIv"> 
+                    <span xid="span7" style="color:#919191;" __cid="ceieqIv" class="ceieqIv" data-bind="text:ref('ApplicationMemo')"></span>  
+                    <span xid="span8" style="color:#919191;padding:3px;" __cid="ceieqIv" class="ceieqIv" data-bind="text:ref('download')"></span>
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col ceieqIv" xid="col22" style="text-align:center;line-height:65px;" __cid="ceieqIv"> 
+                <div xid="div" __cid="ceieqIv" class="ceieqIv">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon ceieqIv" xid="addToMainBtn" style="color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addToMainBtnClick" data-config="{&#34;icon&#34;:&#34;icon-plus-circled&#34;}" __cid="ceieqIv"> 
+                    <i xid="i1" class="un icon-plus-circled ceieqIv" __cid="ceieqIv"></i>  
+                    <span xid="span11" __cid="ceieqIv" class="ceieqIv"></span>
+                  </a>
+                </div>
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="ceieqIv" class="ceieqIv">.x-panel.pcYNNbYr-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcYNNbYr-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYNNbYr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYNNbYr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYNNbYr-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYNNbYr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYNNbYr-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYNNbYr-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYNNbYr-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" style="top:55px;left:22px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&#34;type&#34;:&#34;OKCancel&#34;}" __cid="ceieqIv" class="ceieqIv">
+    <div class="x-modal-overlay ceieqIv" __cid="ceieqIv"></div>
+    <div class="x-modal ceieqIv" __cid="ceieqIv">
+      <div class="x-modal-inner ceieqIv" __cid="ceieqIv">
+        <div class="x-modal-title ceieqIv" __cid="ceieqIv"></div>
+        <div class="x-modal-text ceieqIv" __cid="ceieqIv"></div>
+        <input class="x-modal-prompt-input ceieqIv" type="text" __cid="ceieqIv">
+      </div>
+      <div class="x-modal-buttons ceieqIv" __cid="ceieqIv">
+        <a class="x-modal-button x-modal-button-bold OK ceieqIv" value="ok" __cid="ceieqIv">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes ceieqIv" value="yes" __cid="ceieqIv">是</a>
+        <a class="x-modal-button x-modal-button-bold No ceieqIv" value="no" __cid="ceieqIv">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel ceieqIv" value="cancel" __cid="ceieqIv">取消</a>
+      </div>
+    </div>
+  </span>
+</div>

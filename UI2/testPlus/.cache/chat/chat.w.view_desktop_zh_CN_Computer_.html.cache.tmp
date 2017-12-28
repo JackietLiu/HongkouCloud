@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciiMNJb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciiMNJb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="ciiMNJb" class="ciiMNJb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pczE3QRb-iosstatusbar ciiMNJb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciiMNJb"> 
+    <div class="x-panel-content ciiMNJb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciiMNJb"> 
+      <iframe src="@justepContextPath@/v_c0f6d102a5014343b2bc2fa05edcd3e0l_zh_CNs_desktopd_pc/chat/wex5/index.w" xid="iframe" frameborder="0" height="100%" width="100%" __cid="ciiMNJb" class="ciiMNJb"/> 
+    </div>  
+    <style __cid="ciiMNJb" class="ciiMNJb">.x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczE3QRb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

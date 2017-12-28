@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cANbaam" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cANbaam" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/barcode/barcodeImage,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cANbaam" class="cANbaam"/>  
+  <div xmlns="" xid="div8" style="padding-left: 8px;" __cid="cANbaam" class="cANbaam"> 
+    <label xid="label1" class="x-label cANbaam" __cid="cANbaam">当前检查到的IP是：</label>  
+    <select xid="ip" style="vertical-align:top;margin-top:8px;margin-right:4px" __cid="cANbaam" class="cANbaam" data-bind="event:{change:$model._callModelFn.bind($model, 'ipChange')}"/>  
+    <label xid="label3" class="x-label cANbaam" __cid="cANbaam">如果IP地址不是无线网络IP，请从左边选择正确IP。</label> 
+  </div>  
+  <div xmlns="" xid="div6" class="panel-body cANbaam" __cid="cANbaam"> 
+    <label xid="label4" class="x-label cANbaam" __cid="cANbaam"/> 
+  </div>  
+  <div xmlns="" xid="div7" style="padding: 8px" __cid="cANbaam" class="cANbaam"> 
+    <div xid="androidDiv" style="display:inline-block;" __cid="cANbaam" class="cANbaam"> 
+      <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/deploy/package/img/android.png" alt="" xid="androidImage" style="cursor:pointer;padding-right: 16px" __cid="cANbaam" class="cANbaam" data-bind="event:{click:$model._callModelFn.bind($model, 'androidImageClick')}"/>  
+      <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cANbaam" type="qr" templateName="templateName" xid="androidQR" style="height:180px;width:180px;" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cANbaam"> 
+        <img id="img-androidQR" src="about:blank" style="vertical-align:middle;" __cid="cANbaam" class="cANbaam"/> 
+      </div> 
+    </div>  
+    <div xid="iosDiv" style="display:inline-block;" __cid="cANbaam" class="cANbaam"> 
+      <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/deploy/package/img/apple.png" alt="" xid="iosImage" style="cursor:pointer;padding-right: 16px" __cid="cANbaam" class="cANbaam" data-bind="event:{click:$model._callModelFn.bind($model, 'iosImageClick')}"/>  
+      <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cANbaam" type="qr" templateName="templateName" xid="iosQR" style="height:180px;width:180px;" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cANbaam"> 
+        <img id="img-iosQR" src="about:blank" style="vertical-align:middle;" __cid="cANbaam" class="cANbaam"/> 
+      </div> 
+    </div>  
+    <label xid="tipLabel" class="x-label cANbaam" style="font-size:x-large;font-weight:bold;display:none" __cid="cANbaam">未生成android或ios App</label> 
+  </div>  
+  <div xmlns="" xid="div2" class="panel-body cANbaam" __cid="cANbaam"/>  
+  <div xmlns="" xid="div1" style="padding-left: 8px;" __cid="cANbaam" class="cANbaam"> 
+    <label xid="howInstallLabel" class="x-label cANbaam" style="cursor:pointer;display:block;" __cid="cANbaam" data-bind="event:{click:$model._callModelFn.bind($model, 'howInstallLabelClick')}">如何安装？请点这里</label>  
+    <label xid="importentLabel" class="x-label text-red cANbaam" __cid="cANbaam" data-bind="event:{click:$model._callModelFn.bind($model, 'howInstallLabelClick')}"/> 
+  </div> 
+</div>

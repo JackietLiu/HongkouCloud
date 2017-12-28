@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cuAnUve" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuAnUve" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/extendType/commonExtendTypes,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cuAnUve" class="cuAnUve"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYVZ3Uv-iosstatusbar cuAnUve" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuAnUve"> 
+    <div class="x-panel-content x-flex x-flex-column cuAnUve" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuAnUve"> 
+      <div class="x-control-group x-flex1 cuAnUve" style="overflow-y: auto;" __cid="cuAnUve"> 
+        <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover table-striped cuAnUve" xid="dataTables1" data="dataTable" multiSelect="false" ordering="false" data-config="{&quot;columns&quot;:[{&quot;sName&quot;:&quot;checked&quot;,&quot;width&quot;:&quot;60px&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;sName&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;sName&quot;:&quot;type&quot;,&quot;xid&quot;:&quot;column3&quot;}],&quot;data&quot;:&quot;dataTable&quot;,&quot;flexibleWidth&quot;:true,&quot;multiSelect&quot;:false,&quot;ordering&quot;:false,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowClick:dataTables1RowClick" __cid="cuAnUve"></table> 
+      </div>  
+      <div class="x-control-group cuAnUve" style="height:48px;" xid="div2" __cid="cuAnUve"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cuAnUve" style="float: right;margin-left: 16px;" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cuAnUve"> 
+          <i xid="i2" __cid="cuAnUve" class="cuAnUve"/>  
+          <span xid="span2" __cid="cuAnUve" class="cuAnUve">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cuAnUve" style="float: right;margin-left: 16px;" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cuAnUve"> 
+          <i xid="i1" __cid="cuAnUve" class="cuAnUve"/>  
+          <span xid="span1" __cid="cuAnUve" class="cuAnUve">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cuAnUve" class="cuAnUve">.x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYVZ3Uv-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/extendType/commonExtendTypes" xid="commonExtendTypes1" style="left:658px;top:145px;" data-bind="component:{name:'$model/UI2/system/components/justep/extendType/commonExtendTypes'}" __cid="cuAnUve" class="cuAnUve"/> 
+</div>

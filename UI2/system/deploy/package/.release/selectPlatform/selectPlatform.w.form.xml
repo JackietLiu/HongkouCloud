@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window ciU77Vf" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciU77Vf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="ciU77Vf" class="ciU77Vf"/>  
+  <div xid="div1" style="padding:8px" __cid="ciU77Vf" class="ciU77Vf"> 
+    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="androidCheckbox" checked="true" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf"/>
+    </span>  
+    <img src="$model/UI2/system/deploy/package/img/android.png" alt="" xid="androidImage" bind-click="androidImageClick" style="cursor:pointer" __cid="ciU77Vf" class="ciU77Vf"/>  
+    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="iosCheckbox" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf"/>
+    </span>  
+    <img src="$model/UI2/system/deploy/package/img/apple.png" alt="" xid="iosImage" bind-click="iosImageClick" style="cursor:pointer" __cid="ciU77Vf" class="ciU77Vf"/>  
+    <div xid="div2" style="padding-top:32px;" __cid="ciU77Vf" class="ciU77Vf"> 
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="includeUIRes" label="本地应用包含UI资源。如果选择包含资源，则可第一次打开不用下载资源，提升速度。模式4（打开非WeX5开发的网站）选项无效" checked="true" style="padding-top:8px;display:block" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;本地应用包含UI资源。如果选择包含资源，则可第一次打开不用下载资源，提升速度。模式4（打开非WeX5开发的网站）选项无效&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf">本地应用包含UI资源。如果选择包含资源，则可第一次打开不用下载资源，提升速度。模式4（打开非WeX5开发的网站）选项无效</xhtml:label>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="compileUI" label="重新编译使用到的UI资源。如果未选择打包资源，此选项无效" checked="true" style="padding-top:8px;display:block" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;重新编译使用到的UI资源。如果未选择打包资源，此选项无效&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf">重新编译使用到的UI资源。如果未选择打包资源，此选项无效</xhtml:label>
+      </span>  
+      <div xid="div6" __cid="ciU77Vf" class="ciU77Vf"> 
+        <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="outputSrc" label="输出源码工程。工程名：" style="padding-top:8px" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;输出源码工程。工程名：&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+          <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+          <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf">输出源码工程。工程名：</xhtml:label>
+        </span>  
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control ciU77Vf" xid="outputProjectName" style="display:inline-block;width:139px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="ciU77Vf"/> 
+      </div>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="releaseMode" label="发布模式。用于打最终对外发布包，执行性能更优，不支持Chrome/Safari调试；如需开发调试请去掉本选项" checked="true" style="padding-top:8px;display:block" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;发布模式。用于打最终对外发布包，执行性能更优，不支持Chrome/Safari调试；如需开发调试请去掉本选项&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ciU77Vf">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf">发布模式。用于打最终对外发布包，执行性能更优，不支持Chrome/Safari调试；如需开发调试请去掉本选项</xhtml:label>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ciU77Vf" xid="useProxyBuilderServer" label="使用应用打包代理服务生成本地应用。对于Windows版WeX5，如需生成ios应用，请连接Mac OS X版的WeX5作为代理服务，启动Mac OS X版WeX5的Tomcat即可" style="padding-top:8px;display:block" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;使用应用打包代理服务生成本地应用。对于Windows版WeX5，如需生成ios应用，请连接Mac OS X版的WeX5作为代理服务，启动Mac OS X版WeX5的Tomcat即可&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:useProxyBuilderServerChange" __cid="ciU77Vf">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ciU77Vf" class="ciU77Vf"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ciU77Vf" class="ciU77Vf">使用应用打包代理服务生成本地应用。对于Windows版WeX5，如需生成ios应用，请连接Mac OS X版的WeX5作为代理服务，启动Mac OS X版WeX5的Tomcat即可</xhtml:label>
+      </span> 
+    </div>  
+    <div xid="proxyBuilderServerDiv" style="padding-top:8px;display:none" __cid="ciU77Vf" class="ciU77Vf"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 ciU77Vf" xid="proxyBuilderServerInput" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="ciU77Vf"> 
+        <label class="x-label ciU77Vf" xid="label2" __cid="ciU77Vf">应用打包代理服务地址：</label>  
+        <div class="x-edit ciU77Vf" xid="div4" __cid="ciU77Vf"> 
+          <div class="input-group ciU77Vf" xid="inputGroup1" __cid="ciU77Vf"> 
+            <input type="text" class="form-control ciU77Vf" component="$model/UI2/system/components/justep/input/input" xid="proxyBuilderServer" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：http://ip:port/app-builder&quot;}" __cid="ciU77Vf"/>  
+            <div class="input-group-btn ciU77Vf" xid="div5" __cid="ciU77Vf"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default ciU77Vf" xid="testServerButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:testServerButtonClick" data-config="{&quot;label&quot;:&quot;连接测试&quot;}" __cid="ciU77Vf"> 
+                <i xid="i1" __cid="ciU77Vf" class="ciU77Vf"/>  
+                <span xid="span1" __cid="ciU77Vf" class="ciU77Vf">连接测试</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver ciU77Vf" xid="finishPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;dismissible&quot;:false}" __cid="ciU77Vf"> 
+    <div class="x-popOver-overlay ciU77Vf" xid="div8" __cid="ciU77Vf"/>  
+    <div class="x-popOver-content ciU77Vf" xid="div9" __cid="ciU77Vf"/> 
+  </div> 
+</div>

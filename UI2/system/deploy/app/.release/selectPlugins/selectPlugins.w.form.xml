@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cEvU7vm" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEvU7vm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cEvU7vm" class="cEvU7vm"></div>  
+  <div xid="modeDiv" style="padding-top:8px;padding-bottom:8px;" __cid="cEvU7vm" class="cEvU7vm"> 
+    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cEvU7vm" xid="autoSelectPlugins" label="自动追加使用到的Cordova插件。根据包含的UI资源自动分析使用到的插件。注意：如果使用到的插件有参数需要配置，请在下方插件列表中进行设置。手工选择的插件将一定包含在应用中" checked="true" style="padding-left:5px" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;自动追加使用到的Cordova插件。根据包含的UI资源自动分析使用到的插件。注意：如果使用到的插件有参数需要配置，请在下方插件列表中进行设置。手工选择的插件将一定包含在应用中&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkbox2Change" __cid="cEvU7vm">
+      <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cEvU7vm" class="cEvU7vm"/>
+      <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cEvU7vm" class="cEvU7vm">自动追加使用到的Cordova插件。根据包含的UI资源自动分析使用到的插件。注意：如果使用到的插件有参数需要配置，请在下方插件列表中进行设置。手工选择的插件将一定包含在应用中</xhtml:label>
+    </span>
+    <label xid="label1" class="x-label cEvU7vm" style="padding-left:4px" __cid="cEvU7vm">小提示：应用下的plugins目录可以包含自定义插件，它将优先于系统Native/plugins中插件被使用</label>
+    <div component="$model/UI2/system/components/justep/row/row" class="x-row cEvU7vm" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cEvU7vm"> 
+      <div class="x-col-fixed cEvU7vm" xid="col2" __cid="cEvU7vm"> 
+        <div xid="div1" style="padding-top:10px;width:255px;" class="form-inline cEvU7vm" __cid="cEvU7vm">
+          <select component="$model/UI2/system/components/justep/select/select" xid="filterSelect" class="form-control cEvU7vm" bind-options="filterData.datas" bind-optionsValue="'id'" style="width:134px;" bind-optionsText="'value'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'}" data-events="onChange:filterChange" __cid="cEvU7vm"/>
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cEvU7vm" xid="paramsCheckbox" label="需参数配置" style="padding-left:8px;padding-right:8px" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;需参数配置&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:filterChange" __cid="cEvU7vm">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cEvU7vm" class="cEvU7vm"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cEvU7vm" class="cEvU7vm">需参数配置</xhtml:label>
+          </span>
+        </div>
+      </div>  
+      <div class="x-col cEvU7vm" xid="col1" __cid="cEvU7vm"> 
+        <div class="input-group cEvU7vm" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cEvU7vm"> 
+          <input type="text" class="form-control cEvU7vm" component="$model/UI2/system/components/justep/input/input" xid="searchInput" bind-keyup="searchInputKeyup" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入查询的关键字&quot;}" __cid="cEvU7vm"/>  
+          <div class="input-group-btn cEvU7vm" xid="div2" __cid="cEvU7vm"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-icon-right btn-only-icon cEvU7vm" xid="queryButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:queryButtonClick" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cEvU7vm"> 
+              <i xid="i1" class="icon-ios7-search cEvU7vm" __cid="cEvU7vm"/>  
+              <span xid="span1" __cid="cEvU7vm" class="cEvU7vm"/> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="form-horizontal container-fluid cEvU7vm" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cEvU7vm"/> 
+  </div>  
+  <div xid="pluginsDiv" style="overflow-y:auto" __cid="cEvU7vm" class="cEvU7vm"> 
+    <div component="$model/UI2/system/components/fragment/list/listTable" data="pluginsData" masterData="" masterCol="" xid="listTable3" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cEvU7vm" class="cEvU7vm"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cEvU7vm" xid="pluginsList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;pluginsData&quot;,&quot;filter&quot;:&quot;$model.customFilter($row)&quot;}" __cid="cEvU7vm"> 
+        <table class="table table-bordered table-hover table-striped table-condensed cEvU7vm" component="$model/UI2/system/components/bootstrap/table/table" xid="table3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cEvU7vm"> 
+          <thead xid="thead3" __cid="cEvU7vm" class="cEvU7vm"> 
+            <tr class="success cEvU7vm" xid="tr6" __cid="cEvU7vm"> 
+              <th xid="col10" style="width:40px;" __cid="cEvU7vm" class="cEvU7vm"> 
+                <label bind-text="$model.pluginsData.label('checked')" xid="label8" __cid="cEvU7vm" class="cEvU7vm"/> 
+              </th>  
+              <th xid="col11" __cid="cEvU7vm" class="cEvU7vm"> 
+                <label bind-text="$model.pluginsData.label('name')" xid="label10" __cid="cEvU7vm" class="cEvU7vm"/>
+              </th>  
+              <th xid="col13" __cid="cEvU7vm" class="cEvU7vm"> 
+                <label bind-text="$model.pluginsData.label('description')" xid="label11" __cid="cEvU7vm" class="cEvU7vm"/> 
+              </th> 
+            </tr> 
+          </thead>  
+          <tbody class="x-list-template hide cEvU7vm" bind-click="$model!=$object?$object.data.to($object):null" xid="listTemplate3" bind-foreach="{data:$model.foreach_pluginsList($element),afterRender:$model.foreach_afterRender_pluginsList.bind($model,$element)}" __cid="cEvU7vm"> 
+            <tr class="info cEvU7vm" bind-click="function(){var $e = $($element);$('&gt;td&gt;i.x-expand-i',$e).toggleClass('icon-arrow-right-b');$e.next().toggleClass('hide');}" xid="tr7" __cid="cEvU7vm"> 
+              <td xid="td8" __cid="cEvU7vm" class="cEvU7vm"> 
+                <i xid="i2" class="icon-arrow-right-b cEvU7vm" bind-visible="$object.val(&quot;hasParams&quot;)" __cid="cEvU7vm"/>
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cEvU7vm" xid="checkbox7" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('checked'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cEvU7vm">
+                  <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cEvU7vm" class="cEvU7vm"/>
+                  <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cEvU7vm" class="cEvU7vm"/>
+                </span> 
+              </td>  
+              <td xid="td9" __cid="cEvU7vm" class="cEvU7vm"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cEvU7vm" xid="output5" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/>
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cEvU7vm" xid="output4" data-bind="component:{ref:ref('id'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/> 
+              </td>  
+              <td xid="td11" __cid="cEvU7vm" class="cEvU7vm"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cEvU7vm" xid="output6" data-bind="component:{ref:ref('description'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/> 
+              </td> 
+            </tr>  
+            <tr class="hide cEvU7vm" xid="tr8" bind-visible="$object.val(&quot;hasParams&quot;)" __cid="cEvU7vm"> 
+              <td colspan="4" xid="td12" __cid="cEvU7vm" class="cEvU7vm"> 
+                <div component="$model/UI2/system/components/fragment/list/listTable" data="pluginsConfigData" masterData="pluginsData" masterCol="id" xid="listTable4" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cEvU7vm" class="cEvU7vm"> 
+                  <div component="$model/UI2/system/components/justep/list/list" class="x-list cEvU7vm" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;pluginsConfigData&quot;,&quot;filter&quot;:&quot;$object.getID() == $row.val('id')&quot;}" __cid="cEvU7vm"> 
+                    <table class="table table-bordered table-hover table-striped table-condensed cEvU7vm" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cEvU7vm"> 
+                      <thead xid="thead4" __cid="cEvU7vm" class="cEvU7vm"> 
+                        <tr class="danger cEvU7vm" xid="tr9" __cid="cEvU7vm"> 
+                          <th width="60px" xid="col14" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <label xid="label12" __cid="cEvU7vm" class="cEvU7vm"/> 
+                          </th>  
+                          <th xid="col15" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <label bind-text="$model.pluginsConfigData.label('platform')" xid="label13" __cid="cEvU7vm" class="cEvU7vm"/> 
+                          </th>  
+                          <th xid="col16" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <label bind-text="$model.pluginsConfigData.label('displayName')" xid="label14" __cid="cEvU7vm" class="cEvU7vm"/> 
+                          </th>  
+                          <th xid="col17" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <label bind-text="$model.pluginsConfigData.label('value')" xid="label15" __cid="cEvU7vm" class="cEvU7vm"/> 
+                          </th> 
+                        </tr> 
+                      </thead>  
+                      <tbody class="x-list-template hide cEvU7vm" bind-click="$model!=$object?$object.data.to($object):null" xid="listTemplate4" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cEvU7vm"> 
+                        <tr class="warning cEvU7vm" xid="tr10" __cid="cEvU7vm"> 
+                          <td class="text-center cEvU7vm" style="vertical-align:middle;" xid="td13" __cid="cEvU7vm"> 
+                            <i class="x-expand-i  cEvU7vm" style="color:#808080;padding-right:6px;" xid="i4" __cid="cEvU7vm"/>  
+                            <label bind-text="$index()+1" xid="label16" __cid="cEvU7vm" class="cEvU7vm"/> 
+                          </td>  
+                          <td xid="td14" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cEvU7vm" xid="output7" data-bind="component:{ref:ref('platform'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/> 
+                          </td>  
+                          <td xid="td15" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <div component="$model/UI2/system/components/justep/output/output" xid="output8" style="display:inline-block" class="x-output cEvU7vm" data-bind="component:{ref:ref('displayName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" xid="output1" style="display:inline-block" class="x-output cEvU7vm" bind-text="'(' + val('name') + ')'" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cEvU7vm"/>
+                          </td>  
+                          <td xid="td16" __cid="cEvU7vm" class="cEvU7vm"> 
+                            <div bind-ifnot="($object.val(&quot;type&quot;) === 'boolean') || ($object.val(&quot;type&quot;) === 'enumerate')" __cid="cEvU7vm" class="cEvU7vm"> 
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control cEvU7vm" xid="input3" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cEvU7vm"/> 
+                            </div>  
+                            <div bind-if="($object.val(&quot;type&quot;) === 'boolean') || ($object.val(&quot;type&quot;) === 'enumerate')" __cid="cEvU7vm" class="cEvU7vm"> 
+                              <select component="$model/UI2/system/components/justep/select/select" class="form-control cEvU7vm" xid="select1" bind-options="$model.getParamValueItems($object)" bind-optionsValue="'value'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/select/select'}" __cid="cEvU7vm"/>
+                            </div> 
+                          </td> 
+                        </tr> 
+                      </tbody> 
+                    </table> 
+                  </div> 
+                </div> 
+              </td> 
+            </tr> 
+          </tbody> 
+        </table> 
+      </div> 
+    </div> 
+  </div> 
+</div>

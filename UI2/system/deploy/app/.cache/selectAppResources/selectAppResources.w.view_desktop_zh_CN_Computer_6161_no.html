@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" class="window cjeEJBb" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjeEJBb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,">
+  <style>@import url(@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/components/designerCommon/tree/css/jqx.base.css); @import url(@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/components/designerCommon/css/common.css);</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cjeEJBb" class="cjeEJBb"></div>  
+  <div xid="serverDiv" __cid="cjeEJBb" class="cjeEJBb"> 
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cjeEJBb" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjeEJBb"> 
+      <label class="x-label cjeEJBb" xid="serverURLLabel" __cid="cjeEJBb">Web服务地址：</label>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjeEJBb" xid="serverURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;例：http://ip:port&#34;}" __cid="cjeEJBb">  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cjeEJBb" xid="selectIPButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectIPButtonClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cjeEJBb"> 
+        <i xid="i1" class="icon-arrow-down-b cjeEJBb" __cid="cjeEJBb"></i>  
+        <span xid="span1" __cid="cjeEJBb" class="cjeEJBb"></span>
+      </a>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cjeEJBb" xid="webPathLabelInput" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjeEJBb"> 
+      <label class="x-label cjeEJBb" xid="label2" __cid="cjeEJBb">Web路径：</label>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjeEJBb" xid="webPath" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;例：/demo，可为空，表示使用根路径。UIServer模式推荐用/x5/UI2&#34;}" __cid="cjeEJBb">
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cjeEJBb" xid="selectWebPathButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:selectWebPathButtonClick" data-config="{&#34;icon&#34;:&#34;icon-arrow-down-b&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cjeEJBb"> 
+        <i xid="i2" class="icon-arrow-down-b cjeEJBb" __cid="cjeEJBb"></i>  
+        <span xid="span2" __cid="cjeEJBb" class="cjeEJBb"></span>
+      </a>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cjeEJBb" xid="indexURLLabelInput" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cjeEJBb"> 
+      <label class="x-label cjeEJBb" xid="label6" __cid="cjeEJBb">首页：</label>  
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cjeEJBb" xid="indexURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;例：/takekout/index.w。双击下方资源树.w类型可设置为首页&#34;}" __cid="cjeEJBb"> 
+    </div> 
+  </div>  
+  <div xid="uiResDiv" __cid="cjeEJBb" class="cjeEJBb">
+    <label xid="label1" class="x-label cjeEJBb" style="width:100%;" __cid="cjeEJBb">选择需要发布的资源：</label>
+    <textarea class="form-control x-edit cjeEJBb" component="$model/UI2/system/components/justep/textarea/textarea" xid="uiResDirs" readonly="true" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cjeEJBb"></textarea>
+    <div xid="uiResDirsTree" style="overflow-y:auto;visibility:hidden;width:100%;" class="form-control x-edit cjeEJBb" __cid="cjeEJBb"></div>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cjeEJBb" xid="popMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&#34;anchor&#34;:&#34;selectIPButton&#34;,&#34;direction&#34;:&#34;right-bottom&#34;}" __cid="cjeEJBb"> 
+    <div class="x-popMenu-overlay cjeEJBb" xid="div2" __cid="cjeEJBb"></div>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cjeEJBb" xid="menu" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cjeEJBb"></ul>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cjeEJBb" xid="webPathPopMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&#34;anchor&#34;:&#34;selectWebPathButton&#34;,&#34;direction&#34;:&#34;right-bottom&#34;}" __cid="cjeEJBb"> 
+    <div class="x-popMenu-overlay cjeEJBb" xid="div1" __cid="cjeEJBb"></div>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cjeEJBb" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cjeEJBb">
+      <li class="x-menu-item cjeEJBb" xid="item1" __cid="cjeEJBb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjeEJBb" xid="webPathButton1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:webPathButtonClick" data-config="{&#34;label&#34;:&#34;/x5&#34;}" __cid="cjeEJBb"> 
+          <i xid="i3" __cid="cjeEJBb" class="cjeEJBb"></i>  
+          <span xid="span3" __cid="cjeEJBb" class="cjeEJBb">/x5</span>
+        </a> 
+      </li>  
+      <li class="x-menu-item cjeEJBb" xid="item2" __cid="cjeEJBb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cjeEJBb" xid="webPathButton2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:webPathButtonClick" data-config="{&#34;label&#34;:&#34;/x5/UI2&#34;}" __cid="cjeEJBb"> 
+          <i xid="i4" __cid="cjeEJBb" class="cjeEJBb"></i>  
+          <span xid="span4" __cid="cjeEJBb" class="cjeEJBb">/x5/UI2</span>
+        </a> 
+      </li>
+    </ul>
+  </div>
+</div>

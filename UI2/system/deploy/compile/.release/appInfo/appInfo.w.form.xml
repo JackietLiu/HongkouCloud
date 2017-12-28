@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/system/deploy/common/appInfo.w" __id="id_1" sysParam="false" class="window window c6zimum" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6zimum" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c6zimum" class="c6zimum"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="left:51px;top:256px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/deploy/common/waittingDialog.w&quot;}" __cid="c6zimum" class="c6zimum">
+    <xhtml:div class="x-dialog-overlay c6zimum" __cid="c6zimum"/>
+    <xhtml:div class="x-dialog c6zimum" style="display:none;" __cid="c6zimum">
+      <xhtml:div class="x-dialog-title c6zimum" __cid="c6zimum">
+        <xhtml:button class="close c6zimum" __cid="c6zimum">
+          <xhtml:span __cid="c6zimum" class="c6zimum">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text c6zimum" __cid="c6zimum"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body c6zimum" __cid="c6zimum"/>
+    </xhtml:div>
+  </span>
+  <div xid="appInfoDiv" style="padding:8px;" __cid="c6zimum" class="c6zimum"> 
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label2" __cid="c6zimum">应用名：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="appName" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label3" __cid="c6zimum">版本号：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="version" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label6" __cid="c6zimum">应用包名：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="packageName" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label7" __cid="c6zimum">服务地址：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="serverURL" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>  
+    <div class="x-label-edit x-label20 c6zimum" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelOutput111" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label211" __cid="c6zimum">Web路径：</label>  
+      <div class="x-output x-edit c6zimum" component="$model/UI2/system/components/justep/output/output" xid="webPath" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label5" __cid="c6zimum">首页：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="indexURL" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelOutput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label4" __cid="c6zimum">包含UI资源：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit c6zimum" xid="uiResDirs" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 c6zimum" xid="labelTextarea1" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label1" __cid="c6zimum">本地插件：</label>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit c6zimum" xid="plugins" readonly="true" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="c6zimum"/>
+    </div>  
+    <div xid="div2" style="padding-top:8px;display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" __cid="c6zimum" class="c6zimum"> 
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c6zimum" xid="browserEngine" checked="true" disabled="true" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:true}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:$model.browserEngine}" __cid="c6zimum">
+        <xhtml:input type="checkbox" __cid="c6zimum" class="c6zimum"/>
+        <xhtml:label __cid="c6zimum" class="c6zimum"/>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c6zimum" xid="resEncryption" label="资源加密" style="padding-left:16px" disabled="true" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:true,&quot;label&quot;:&quot;资源加密&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c6zimum">
+        <xhtml:input type="checkbox" __cid="c6zimum" class="c6zimum"/>
+        <xhtml:label __cid="c6zimum" class="c6zimum">资源加密</xhtml:label>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox c6zimum" xid="sourceMode" label="源码模式" style="padding-left:16px" disabled="true" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:true,&quot;label&quot;:&quot;源码模式&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c6zimum">
+        <xhtml:input type="checkbox" __cid="c6zimum" class="c6zimum"/>
+        <xhtml:label __cid="c6zimum" class="c6zimum">源码模式</xhtml:label>
+      </span>
+    </div>  
+    <div class="x-label-edit x-label20 c6zimum" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelEdit11_1" xmlns:xui="http://www.justep.com/xui" xui:parent="appInfoDiv" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label11_1" __cid="c6zimum">资源更新方式：</label>  
+      <div class="x-output x-edit c6zimum" component="$model/UI2/system/components/justep/output/output" xid="output11_1" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/> 
+    </div>
+    <div class="x-label-edit x-label20 c6zimum" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="md5JSON" xmlns:xui="http://www.justep.com/xui" xui:parent="appInfoDiv" xui:update-mode="insert" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c6zimum"> 
+      <label class="x-label c6zimum" xid="label21_1" __cid="c6zimum">资源对照文件：</label>  
+      <div class="x-output x-edit c6zimum" component="$model/UI2/system/components/justep/output/output" xid="md5JSONFile" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="c6zimum"/> 
+    </div>
+  </div>  
+</div>

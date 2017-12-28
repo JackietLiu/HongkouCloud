@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cuQZNzm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cuQZNzm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cuQZNzm" class="cuQZNzm"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYjui6f-iosstatusbar cuQZNzm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cuQZNzm"> 
+    <div class="x-panel-top cuQZNzm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:58}" __cid="cuQZNzm">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cuQZNzm" xid="titleBar1" style="line-height:35px;background-color:#007afe;font-weight:normal;font-size:medium;font-style:normal;height:58px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;房屋详情&quot;}" __cid="cuQZNzm"> 
+        <div class="x-titlebar-left cuQZNzm" xid="left1" __cid="cuQZNzm">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cuQZNzm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cuQZNzm"> 
+            <i class="icon-chevron-left cuQZNzm" xid="i1" __cid="cuQZNzm"/>  
+            <span xid="span1" __cid="cuQZNzm" class="cuQZNzm"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cuQZNzm" xid="title1" __cid="cuQZNzm">房屋详情</div>  
+        <div class="x-titlebar-right  cuQZNzm" xid="right1" __cid="cuQZNzm">
+          <div class="empty cuQZNzm" __cid="cuQZNzm"/>
+        </div>
+      </div>
+    </div>  
+    <div class="x-panel-content cuQZNzm" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuQZNzm">
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label9" style="width:90px;font-weight:bold;" __cid="cuQZNzm">名称</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output8" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;building_name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label10" style="width:90px;font-weight:bold;" __cid="cuQZNzm">地址</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output9" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;b_address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label8" style="width:90px;font-weight:bold;" __cid="cuQZNzm">物业性质</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output7" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;build_type_Text&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label1" style="width:90px;font-weight:bold;" __cid="cuQZNzm">使用性质</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output1" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;use_type_Text&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label11" style="width:90px;font-weight:bold;" __cid="cuQZNzm">面积</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output10" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;area&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div>
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cuQZNzm" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cuQZNzm"> 
+        <label class="x-label cuQZNzm" xid="label7" style="width:90px;font-weight:bold;" __cid="cuQZNzm">简介</label>  
+        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cuQZNzm" xid="output6" style="width:971px;" data-bind="component:{ref:$model.buildData.ref(&quot;content&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cuQZNzm"/>
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cuQZNzm" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cuQZNzm"/>
+    <style __cid="cuQZNzm" class="cuQZNzm">.x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-top {height: 58px;}.x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-content { top: 58px;bottom: nullpx;}.x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-top {height: 78px;}.iosstatusbar .x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-content { top: 78px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-top {height: 58px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYjui6f-iosstatusbar &gt;.x-panel-content {top: 58px;}</style>
+  </div>
+</div>

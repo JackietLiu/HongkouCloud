@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNBRbai" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNBRbai" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-panel-top.cNBRbai .btn-group.cNBRbai .btn.cNBRbai{background-color: rgb(255, 255, 255); border: 0; color: rgb(0, 0, 0); font-size: 16px} .x-panel-top.cNBRbai .btn-group.cNBRbai .btn.active.cNBRbai{border: 0; color: rgb(0, 122, 254); border-bottom: 2px solid rgb(0, 122, 254)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNBRbai" class="cNBRbai"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card x-full pcNBRbai-iosstatusbar cNBRbai" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNBRbai"> 
+    <div class="x-panel-top cNBRbai" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:58}" __cid="cNBRbai"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNBRbai" xid="titleBar1" style="line-height:35px;background-color:#007afe;font-weight:normal;font-size:medium;font-style:normal;height:58px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;物业管理&quot;}" __cid="cNBRbai"> 
+        <div class="x-titlebar-left cNBRbai" xid="left1" __cid="cNBRbai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNBRbai" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/shiquanBlock/newImage/back.png&quot;}" __cid="cNBRbai"> 
+            <i xid="i2" __cid="cNBRbai" class="cNBRbai"/>  
+            <img src="@justepContextPath@/v_5528_nol_zh_CNs_desktopd_pc/shiquanBlock/newImage/back.png" xid="image6" height="20px" __cid="cNBRbai" class="cNBRbai"/>  
+            <span xid="span7" __cid="cNBRbai" class="cNBRbai"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNBRbai" xid="title1" __cid="cNBRbai">物业管理</div>  
+        <div class="x-titlebar-right  cNBRbai" xid="right1" __cid="cNBRbai"> 
+          <div class="empty cNBRbai" __cid="cNBRbai"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cNBRbai" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNBRbai"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cNBRbai" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cNBRbai"> 
+        <div class="x-contents-content active cNBRbai" xid="floorContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cNBRbai"> 
+          <div class="media cNBRbai" xid="media1" style="padding:20px 10px;" __cid="cNBRbai"> 
+            <div class="media-body cNBRbai" xid="mediaBody1" style="width:100%;" __cid="cNBRbai"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control pull-left cNBRbai" xid="input2" style="width:100%;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},value:input_value" data-config="{&quot;placeHolder&quot;:&quot;请输入物业地址,名称,简介等全部或部分信息&quot;}" __cid="cNBRbai"/> 
+            </div>  
+            <div class="media-right cNBRbai" xid="mediaLeft1" __cid="cNBRbai"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cNBRbai" xid="btn_coop_search" style="width:80px;height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_coop_searchClick" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/shiquanBlock/newImage/Search.png&quot;}" __cid="cNBRbai"> 
+                <i xid="i5" __cid="cNBRbai" class="cNBRbai"/>  
+                <img src="@justepContextPath@/v_5528_nol_zh_CNs_desktopd_pc/shiquanBlock/newImage/Search.png" xid="image3" height="20px;" __cid="cNBRbai" class="cNBRbai"/>  
+                <span xid="span3" __cid="cNBRbai" class="cNBRbai"/> 
+              </a> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNBRbai" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;buildData&quot;}" __cid="cNBRbai"> 
+            <ul class="x-list-template hide cNBRbai" xid="listTemplateUl1" __cid="cNBRbai" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cNBRbai" class="cNBRbai"> 
+                <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cNBRbai" xid="controlGroup2" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsed&quot;:true,&quot;collapsible&quot;:true,&quot;title&quot;:&quot;title&quot;}" __cid="cNBRbai"> 
+                  <div class="x-control-group-title cNBRbai" xid="controlGroupTitle2" __cid="cNBRbai"> 
+                    <span xid="span2" style="height:1px;display:none;" __cid="cNBRbai" class="cNBRbai" data-bind="text:ref(&quot;tl&quot;)"/>  
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBRbai" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBRbai"> 
+                      <div class="x-col x-col-20 x-col-center cNBRbai" xid="col13" __cid="cNBRbai"> 
+                        <img src="http://115.28.183.186:8019/content/images/guanli.png" alt="" xid="image7" __cid="cNBRbai" class="cNBRbai"/> 
+                      </div>  
+                      <div class="x-col cNBRbai" xid="col16" __cid="cNBRbai"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBRbai" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBRbai"> 
+                          <div class="x-col cNBRbai" xid="col30" __cid="cNBRbai"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNBRbai" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNBRbai"> 
+                              <label class="pull-left x-label cNBRbai" xid="label6" style="width:20%;" __cid="cNBRbai">地址</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit cNBRbai" xid="output6" data-bind="component:{ref:ref(&quot;b_address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNBRbai"/> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cNBRbai" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBRbai"> 
+                          <div class="x-col cNBRbai" xid="col31" __cid="cNBRbai"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cNBRbai" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cNBRbai"> 
+                              <label class="pull-left x-label cNBRbai" xid="label7" style="width:20%;" __cid="cNBRbai">简介</label>  
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit cNBRbai" xid="output7" data-bind="component:{ref:ref(&quot;content&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNBRbai"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row hide cNBRbai" xid="row14" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNBRbai"> 
+                    <div class="x-col cNBRbai" xid="col23" style="text-align:center;" __cid="cNBRbai"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNBRbai" xid="btn_Detail" style="width:68px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;详情&quot;}" __cid="cNBRbai"> 
+                        <i xid="i4" __cid="cNBRbai" class="cNBRbai"/>  
+                        <span xid="span6" __cid="cNBRbai" class="cNBRbai">详情</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col cNBRbai" xid="col24" style="text-align:center;" __cid="cNBRbai"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNBRbai" xid="btn_Contract" style="width:68px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_ContractClick" data-config="{&quot;label&quot;:&quot;合同&quot;}" __cid="cNBRbai"> 
+                        <i xid="i6" __cid="cNBRbai" class="cNBRbai"/>  
+                        <span xid="span8" __cid="cNBRbai" class="cNBRbai">合同</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col cNBRbai" xid="col25" style="text-align:center;" __cid="cNBRbai"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNBRbai" xid="btn_Pay" style="width:68px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btn_PayClick" data-config="{&quot;label&quot;:&quot;缴费&quot;}" __cid="cNBRbai"> 
+                        <i xid="i1" __cid="cNBRbai" class="cNBRbai"/>  
+                        <span xid="span1" __cid="cNBRbai" class="cNBRbai">缴费</span> 
+                      </a> 
+                    </div>  
+                    <div class="x-col cNBRbai" xid="col29" __cid="cNBRbai"/> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNBRbai" class="cNBRbai">.x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-top {height: 58px;}.x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-content { top: 58px;bottom: nullpx;}.x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-top {height: 78px;}.iosstatusbar .x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-content { top: 78px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-top {height: 58px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcNBRbai-iosstatusbar &gt;.x-panel-content {top: 58px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="Dialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:exitDialogOK" data-config="{&quot;message&quot;:&quot;对不起，没有找到符合条件的记录！&quot;,&quot;title&quot;:&quot;温馨提示&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="cNBRbai" class="cNBRbai"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cNBRbai" __cid="cNBRbai"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cNBRbai" __cid="cNBRbai">  
+      <div class="x-modal-inner cNBRbai" __cid="cNBRbai"> 
+        <div class="x-modal-title cNBRbai" __cid="cNBRbai">温馨提示</div>  
+        <div class="x-modal-text cNBRbai" __cid="cNBRbai">对不起，没有找到符合条件的记录！</div>  
+        <input class="x-modal-prompt-input cNBRbai" type="text" __cid="cNBRbai"/> 
+      </div>  
+      <div class="x-modal-buttons cNBRbai" __cid="cNBRbai"> 
+        <a class="x-modal-button x-modal-button-bold OK cNBRbai" value="ok" __cid="cNBRbai">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cNBRbai" value="yes" __cid="cNBRbai">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cNBRbai" value="no" __cid="cNBRbai">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cNBRbai" value="cancel" __cid="cNBRbai">取消</a> 
+      </div> 
+    </div> 
+  </span> 
+</div>

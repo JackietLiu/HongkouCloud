@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cIfQbym" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cIfQbym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cIfQbym" class="cIfQbym"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcVB3Eve-iosstatusbar cIfQbym" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cIfQbym"> 
+    <div class="x-panel-content x-flex x-flex-column cIfQbym" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cIfQbym"> 
+      <div class="x-control-group x-flex1 cIfQbym" style="overflow-y: auto;" __cid="cIfQbym"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cIfQbym" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+          <label class="x-label cIfQbym" xid="label3" __cid="cIfQbym" data-bind="text:dataMain.label('db')"></label>  
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cIfQbym" xid="select1" data-bind="component:{ref:dataMain.ref('db'),name:'$model/UI2/system/components/justep/select/select'},options:dataDBs.datas,optionsCaption:'请选择DB',optionsValue:'db',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cIfQbym"></select> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cIfQbym" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+          <label class="x-label cIfQbym" xid="label4" __cid="cIfQbym" data-bind="text:dataMain.label('table')"></label>  
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cIfQbym" xid="select2" data-bind="component:{ref:dataMain.ref('table'),name:'$model/UI2/system/components/justep/select/select'},options:dataTables.datas,optionsCaption:'请选择Table',optionsValue:'table',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cIfQbym"></select> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cIfQbym" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+          <label class="x-label cIfQbym" xid="label1" __cid="cIfQbym" data-bind="text:dataMain.label('queryAction')"></label>  
+          <div class="x-edit cIfQbym" __cid="cIfQbym"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-right x-label10 cIfQbym" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+              <div class="x-label cIfQbym" __cid="cIfQbym"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cIfQbym" xid="checkbox1" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{ref:dataMain.ref('needQueryAction'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cIfQbym">
+                  <input type="checkbox" __cid="cIfQbym" class="cIfQbym">
+                  <label __cid="cIfQbym" class="cIfQbym"></label>
+                </span> 
+              </div>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit  x-left cIfQbym" xid="input1" style="text-align: left;" data-bind="component:{ref:dataMain.ref('queryAction'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cIfQbym"> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cIfQbym" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+          <label class="x-label cIfQbym" xid="label2" __cid="cIfQbym" data-bind="text:dataMain.label('saveAction')"></label>  
+          <div class="x-edit cIfQbym" __cid="cIfQbym"> 
+            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label-right x-label10 cIfQbym" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cIfQbym"> 
+              <div class="x-label cIfQbym" __cid="cIfQbym"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cIfQbym" xid="checkbox2" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{ref:dataMain.ref('needSaveAction'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cIfQbym">
+                  <input type="checkbox" __cid="cIfQbym" class="cIfQbym">
+                  <label __cid="cIfQbym" class="cIfQbym"></label>
+                </span> 
+              </div>  
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit x-left cIfQbym" xid="input2" style="text-align: left;" data-bind="component:{ref:dataMain.ref('saveAction'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cIfQbym"> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group cIfQbym" style="height:48px;" __cid="cIfQbym"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cIfQbym" style="float: right;margin-left: 16px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cIfQbym"> 
+          <i xid="i2" __cid="cIfQbym" class="cIfQbym"></i>  
+          <span xid="span2" __cid="cIfQbym" class="cIfQbym">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cIfQbym" style="float: right;margin-left: 16px;" xid="btnOK" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:canOK" data-events="onClick:btnOKClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cIfQbym"> 
+          <i xid="i1" __cid="cIfQbym" class="cIfQbym"></i>  
+          <span xid="span1" __cid="cIfQbym" class="cIfQbym">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cIfQbym" class="cIfQbym">.x-panel.pcVB3Eve-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcVB3Eve-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcVB3Eve-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVB3Eve-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVB3Eve-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcVB3Eve-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVB3Eve-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVB3Eve-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVB3Eve-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div> 
+</div>

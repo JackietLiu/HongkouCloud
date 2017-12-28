@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cNf6BFn" component="$model/UI2/system/components/justep/window/window" style="overflow:auto;" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNf6BFn" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/bootstrap/form/form,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/toolBar/toolBar,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onModelConstruct:modelModelConstruct" __cid="cNf6BFn" class="cNf6BFn"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cNf6BFn" xid="implPopMenu" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;btnImpl&quot;,&quot;opacity&quot;:0}" __cid="cNf6BFn"> 
+    <div class="x-popMenu-overlay cNf6BFn" xid="div2" __cid="cNf6BFn"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cNf6BFn" xid="menu1" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'},event:{click:$model._callModelFn.bind($model, 'menu1Click')}" __cid="cNf6BFn"> 
+      <li class="x-menu-item cNf6BFn" xid="item1" __cid="cNf6BFn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNf6BFn" data-value="com.justep.baas.action.CRUD.query" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;com.justep.baas.action.CRUD.query--查询&quot;}" __cid="cNf6BFn"> 
+          <i __cid="cNf6BFn" class="cNf6BFn"/>  
+          <span __cid="cNf6BFn" class="cNf6BFn">com.justep.baas.action.CRUD.query--查询</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-item cNf6BFn" xid="item3" __cid="cNf6BFn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cNf6BFn" data-value="com.justep.baas.action.CRUD.save" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;com.justep.baas.action.CRUD.save--保存&quot;}" __cid="cNf6BFn"> 
+          <i __cid="cNf6BFn" class="cNf6BFn"/>  
+          <span __cid="cNf6BFn" class="cNf6BFn">com.justep.baas.action.CRUD.save--保存</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cNf6BFn" xid="toolBar1" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cNf6BFn"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'newTableActionDlg.open'}" data-config="{&quot;icon&quot;:&quot;icon-plus&quot;,&quot;label&quot;:&quot;新建数据表Action&quot;}" __cid="cNf6BFn"> 
+      <i xid="i7" class="icon-plus cNf6BFn" __cid="cNf6BFn"/>  
+      <span xid="span9" __cid="cNf6BFn" class="cNf6BFn">新建数据表Action</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{'operation':'dataActions.new'}" __cid="cNf6BFn"> 
+      <i xid="i1" __cid="cNf6BFn" class="cNf6BFn"/>  
+      <span xid="span1" __cid="cNf6BFn" class="cNf6BFn"/> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{'operation':'dataActions.delete'}" __cid="cNf6BFn"> 
+      <i xid="i2" __cid="cNf6BFn" class="cNf6BFn"/>  
+      <span xid="span2" __cid="cNf6BFn" class="cNf6BFn"/> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="reloadBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reloadBtnClick" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-refresh&quot;,&quot;label&quot;:&quot;刷新&quot;}" __cid="cNf6BFn"> 
+      <i xid="i8" class="glyphicon glyphicon-refresh cNf6BFn" __cid="cNf6BFn"/>  
+      <span xid="span10" __cid="cNf6BFn" class="cNf6BFn">刷新</span> 
+    </a> 
+  </div>  
+  <div xmlns="" xid="div1" class="container-fluid cNf6BFn" __cid="cNf6BFn"> 
+    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cNf6BFn" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cNf6BFn"> 
+      <div class="col col-xs-3 col-sm-2 col-md-2 col-lg-2 cNf6BFn" xid="col1" __cid="cNf6BFn"> 
+        <div component="$model/UI2/system/components/fragment/list/listTable" data="dataActions" masterData="" masterCol="" xid="listTable2" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cNf6BFn" class="cNf6BFn"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNf6BFn" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataActions&quot;}" __cid="cNf6BFn"> 
+            <table class="table table-condensed table-hover table-striped cNf6BFn" component="$model/UI2/system/components/bootstrap/table/table" xid="table2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cNf6BFn"> 
+              <thead xid="thead2" __cid="cNf6BFn" class="cNf6BFn"> 
+                <tr xid="tr3" __cid="cNf6BFn" class="cNf6BFn"> 
+                  <th xid="col5" __cid="cNf6BFn" class="cNf6BFn"> 
+                    <label xid="label2" __cid="cNf6BFn" class="cNf6BFn">Action</label> 
+                  </th> 
+                </tr> 
+              </thead>  
+              <tbody class="x-list-template hide cNf6BFn" xid="tbody2" __cid="cNf6BFn" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+                <tr xid="tr4" __cid="cNf6BFn" class="cNf6BFn" data-bind="css:{success:$object==$model.dataActions.getCurrentRow()}"> 
+                  <td xid="td2" __cid="cNf6BFn" class="cNf6BFn"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cNf6BFn" xid="output2" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNf6BFn"/> 
+                  </td> 
+                </tr> 
+              </tbody> 
+            </table> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="col col-xs-9 col-sm-10 col-md-10 col-lg-10 col-spliter-left cNf6BFn" style="padding-left:0;padding-right:0;" xid="col2" __cid="cNf6BFn"> 
+        <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cNf6BFn" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;基本信息&quot;}" __cid="cNf6BFn"> 
+          <div class="x-control-group-title cNf6BFn" xid="controlGroupTitle1" __cid="cNf6BFn"> 
+            <span xid="span3" __cid="cNf6BFn" class="cNf6BFn">基本信息</span> 
+          </div>  
+          <div class="form-horizontal container-fluid cNf6BFn" component="$model/UI2/system/components/bootstrap/form/form" xid="form1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/form/form'}" __cid="cNf6BFn"> 
+            <div class="form-group cNf6BFn" xid="formGroup1" style="margin-bottom: 0;" __cid="cNf6BFn"> 
+              <div class="col-sm-1 cNf6BFn" style="padding-left:0;padding-right:0;" __cid="cNf6BFn"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cNf6BFn" xid="output3" data-bind="component:{ref:dataActions.label('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNf6BFn"/> 
+              </div>  
+              <div class="col-sm-4 cNf6BFn" __cid="cNf6BFn"> 
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control cNf6BFn" xid="input1" data-bind="component:{ref:dataActions.ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/> 
+              </div>  
+              <div class="col-sm-1 cNf6BFn" style="padding-left:0;padding-right:0;" __cid="cNf6BFn"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output cNf6BFn" xid="output4" data-bind="component:{ref:dataActions.label('impl'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cNf6BFn"/> 
+              </div>  
+              <div class="col-sm-4 cNf6BFn" __cid="cNf6BFn"> 
+                <div class="input-group cNf6BFn" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cNf6BFn"> 
+                  <input type="text" class="form-control cNf6BFn" component="$model/UI2/system/components/justep/input/input" xid="input2" data-bind="component:{ref:dataActions.ref('impl'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/>  
+                  <div class="input-group-btn cNf6BFn" xid="layoutWizard1" __cid="cNf6BFn"> 
+                    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNf6BFn" xid="btnImpl" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'actionDialog.open'}" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="cNf6BFn"> 
+                      <i xid="i6" __cid="cNf6BFn" class="cNf6BFn"/>  
+                      <span xid="span8" __cid="cNf6BFn" class="cNf6BFn">...</span> 
+                    </a> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="col-sm-2 cNf6BFn" __cid="cNf6BFn"> 
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cNf6BFn" xid="checkbox1" label="private" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;private&quot;}" data-bind="component:{ref:dataActions.ref('private'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cNf6BFn"> 
+                  <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cNf6BFn" class="cNf6BFn"></input>  
+                  <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cNf6BFn" class="cNf6BFn">private</label> 
+                </span> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cNf6BFn" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;参数列表&quot;}" __cid="cNf6BFn"> 
+          <div class="x-control-group-title cNf6BFn" xid="controlGroupTitle2" __cid="cNf6BFn"> 
+            <span xid="span4" __cid="cNf6BFn" class="cNf6BFn">参数列表</span> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cNf6BFn" xid="toolBar2" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cNf6BFn"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{'operation':'dataParams.new'}" __cid="cNf6BFn"> 
+              <i xid="i3" __cid="cNf6BFn" class="cNf6BFn"/>  
+              <span xid="span5" __cid="cNf6BFn" class="cNf6BFn"/> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{'operation':'dataParams.delete'}" __cid="cNf6BFn"> 
+              <i xid="i4" __cid="cNf6BFn" class="cNf6BFn"/>  
+              <span xid="span6" __cid="cNf6BFn" class="cNf6BFn"/> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cNf6BFn" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:doDeleteParams" data-config="{&quot;icon&quot;:&quot;icon-close&quot;,&quot;label&quot;:&quot;清除全部&quot;}" __cid="cNf6BFn"> 
+              <i xid="i5" class="icon-close cNf6BFn" __cid="cNf6BFn"/>  
+              <span xid="span7" __cid="cNf6BFn" class="cNf6BFn">清除全部</span> 
+            </a> 
+          </div>  
+          <div component="$model/UI2/system/components/fragment/list/listTable" data="dataParams" masterData="" masterCol="" xid="listTable4" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cNf6BFn" class="cNf6BFn"> 
+            <div component="$model/UI2/system/components/justep/list/list" class="x-list cNf6BFn" xid="list5" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataParams&quot;}" __cid="cNf6BFn"> 
+              <table class="table table-condensed table-hover table-striped cNf6BFn" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cNf6BFn"> 
+                <thead xid="thead4" __cid="cNf6BFn" class="cNf6BFn"> 
+                  <tr xid="tr7" __cid="cNf6BFn" class="cNf6BFn"> 
+                    <th __cid="cNf6BFn" class="cNf6BFn"> 
+                      <label __cid="cNf6BFn" class="cNf6BFn" data-bind="text:$model.dataParams.label('kind')"/> 
+                    </th>  
+                    <th xid="col8" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <label xid="label6" __cid="cNf6BFn" class="cNf6BFn" data-bind="text:$model.dataParams.label('name')"/> 
+                    </th>  
+                    <th xid="col9" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <label xid="label7" __cid="cNf6BFn" class="cNf6BFn" data-bind="text:$model.dataParams.label('type')"/> 
+                    </th>  
+                    <th xid="col10" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <label xid="label8" __cid="cNf6BFn" class="cNf6BFn" data-bind="text:$model.dataParams.label('value')"/> 
+                    </th> 
+                  </tr> 
+                </thead>  
+                <tbody class="x-list-template hide cNf6BFn" xid="tbody4" __cid="cNf6BFn" data-bind="foreach:{data:$model.foreach_list5($element),afterRender:$model.foreach_afterRender_list5.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+                  <tr xid="tr8" __cid="cNf6BFn" class="cNf6BFn" data-bind="css:{active:$object==$model.dataParams.getCurrentRow()}"> 
+                    <td style="width:25%;" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <select component="$model/UI2/system/components/justep/select/select" class="form-control cNf6BFn" data-bind="component:{ref:ref('kind'),name:'$model/UI2/system/components/justep/select/select'},options:$model.dataKind.datas,optionsCaption:'请选择参数作用范围',optionsValue:'value',optionsText:'label',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cNf6BFn"/> 
+                    </td>  
+                    <td style="width:25%;" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control cNf6BFn" xid="input5" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/> 
+                    </td>  
+                    <td style="width:25%;" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <select component="$model/UI2/system/components/justep/select/select" class="form-control cNf6BFn" xid="select1" data-bind="component:{ref:ref('type'),name:'$model/UI2/system/components/justep/select/select'},options:$model.dataType.datas,optionsCaption:'请选择参数类型',optionsValue:'value',optionsText:'label',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" __cid="cNf6BFn"/> 
+                    </td>  
+                    <td style="width:25%;" __cid="cNf6BFn" class="cNf6BFn"> 
+                      <div __cid="cNf6BFn" class="cNf6BFn" data-bind="if:'db'==$object.val('name')"> 
+                        <div class="input-group cNf6BFn" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cNf6BFn"> 
+                          <input type="text" class="form-control cNf6BFn" component="$model/UI2/system/components/justep/input/input" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/>  
+                          <div class="input-group-btn cNf6BFn" __cid="cNf6BFn"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNf6BFn" xid="DbBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:DbBtnClick" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="cNf6BFn"> 
+                              <i __cid="cNf6BFn" class="cNf6BFn"/>  
+                              <span __cid="cNf6BFn" class="cNf6BFn">...</span> 
+                            </a> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div __cid="cNf6BFn" class="cNf6BFn" data-bind="if:'tableName'==$object.val('name')"> 
+                        <div class="input-group cNf6BFn" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cNf6BFn"> 
+                          <input type="text" class="form-control cNf6BFn" component="$model/UI2/system/components/justep/input/input" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/>  
+                          <div class="input-group-btn cNf6BFn" __cid="cNf6BFn"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNf6BFn" xid="tableBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:tableBtnClick" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="cNf6BFn"> 
+                              <i __cid="cNf6BFn" class="cNf6BFn"/>  
+                              <span __cid="cNf6BFn" class="cNf6BFn">...</span> 
+                            </a> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div __cid="cNf6BFn" class="cNf6BFn" data-bind="if:'permissions'==$object.val('name')"> 
+                        <div class="input-group cNf6BFn" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cNf6BFn"> 
+                          <input type="text" class="form-control cNf6BFn" component="$model/UI2/system/components/justep/input/input" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/>  
+                          <div class="input-group-btn cNf6BFn" __cid="cNf6BFn"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cNf6BFn" xid="rangeBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:rangeBtnClick" data-config="{&quot;label&quot;:&quot;...&quot;}" __cid="cNf6BFn"> 
+                              <i __cid="cNf6BFn" class="cNf6BFn"/>  
+                              <span __cid="cNf6BFn" class="cNf6BFn">...</span> 
+                            </a> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div __cid="cNf6BFn" class="cNf6BFn" data-bind="if:'sql'==$object.val('name') || 'countSql'==$object.val('name')"> 
+                        <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cNf6BFn" style="height:96px" _placeHolder="请输入......" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cNf6BFn"/> 
+                      </div>  
+                      <div __cid="cNf6BFn" class="cNf6BFn" data-bind="if:$model.isDefaultValueEditor($object)"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control cNf6BFn" xid="input6" data-bind="component:{ref:ref('value'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cNf6BFn"/> 
+                      </div> 
+                    </td> 
+                  </tr> 
+                </tbody> 
+              </table> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="actionDialog" style="left:184px;top:14px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:actionDialogReceive" data-config="{&quot;height&quot;:&quot;95%&quot;,&quot;resizable&quot;:true,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/designer/baas/editor/actionDlg.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;选择Action&quot;,&quot;width&quot;:&quot;70%&quot;}" __cid="cNf6BFn" class="cNf6BFn"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNf6BFn" __cid="cNf6BFn"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNf6BFn" style="display:none;" showTitle="true" __cid="cNf6BFn">  
+      <div class="x-dialog-title cNf6BFn" __cid="cNf6BFn"> 
+        <button class="close cNf6BFn" __cid="cNf6BFn"> 
+          <span __cid="cNf6BFn" class="cNf6BFn">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNf6BFn" __cid="cNf6BFn">选择Action</div> 
+      </div>  
+      <div class="x-dialog-body cNf6BFn" __cid="cNf6BFn"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="saveRangeDialog" style="left:404px;top:77px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;height&quot;:&quot;95%&quot;,&quot;resizable&quot;:true,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/designer/baas/editor/saveRangeDlg.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;设置保存的范围&quot;,&quot;width&quot;:&quot;80%&quot;}" __cid="cNf6BFn" class="cNf6BFn"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNf6BFn" __cid="cNf6BFn"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNf6BFn" style="display:none;" showTitle="true" __cid="cNf6BFn">  
+      <div class="x-dialog-title cNf6BFn" __cid="cNf6BFn"> 
+        <button class="close cNf6BFn" __cid="cNf6BFn"> 
+          <span __cid="cNf6BFn" class="cNf6BFn">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNf6BFn" __cid="cNf6BFn">设置保存的范围</div> 
+      </div>  
+      <div class="x-dialog-body cNf6BFn" __cid="cNf6BFn"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newTableActionDlg" style="left:349px;top:77px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceive:newTableActionDlgReceive" data-config="{&quot;height&quot;:&quot;360px&quot;,&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/designer/baas/editor/newTableActionDlg.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;创建Table Action&quot;,&quot;width&quot;:&quot;50%&quot;}" __cid="cNf6BFn" class="cNf6BFn"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNf6BFn" __cid="cNf6BFn"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNf6BFn" style="display:none;" showTitle="true" __cid="cNf6BFn">  
+      <div class="x-dialog-title cNf6BFn" __cid="cNf6BFn"> 
+        <button class="close cNf6BFn" __cid="cNf6BFn"> 
+          <span __cid="cNf6BFn" class="cNf6BFn">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNf6BFn" __cid="cNf6BFn">创建Table Action</div> 
+      </div>  
+      <div class="x-dialog-body cNf6BFn" __cid="cNf6BFn"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="selectTableDlg" style="left:288px;top:112px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/designer/baas/editor/selectTableDlg.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;选择数据表&quot;,&quot;width&quot;:&quot;50%&quot;}" __cid="cNf6BFn" class="cNf6BFn"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNf6BFn" __cid="cNf6BFn"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNf6BFn" style="display:none;" showTitle="true" __cid="cNf6BFn">  
+      <div class="x-dialog-title cNf6BFn" __cid="cNf6BFn"> 
+        <button class="close cNf6BFn" __cid="cNf6BFn"> 
+          <span __cid="cNf6BFn" class="cNf6BFn">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNf6BFn" __cid="cNf6BFn">选择数据表</div> 
+      </div>  
+      <div class="x-dialog-body cNf6BFn" __cid="cNf6BFn"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="selectDbDlg" style="left:184px;top:141px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;showTitle&quot;:true,&quot;src&quot;:&quot;$model/UI2/system/designer/baas/editor/selectDBDlg.w&quot;,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;选择DB&quot;,&quot;width&quot;:&quot;50%&quot;}" __cid="cNf6BFn" class="cNf6BFn"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cNf6BFn" __cid="cNf6BFn"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cNf6BFn" style="display:none;" showTitle="true" __cid="cNf6BFn">  
+      <div class="x-dialog-title cNf6BFn" __cid="cNf6BFn"> 
+        <button class="close cNf6BFn" __cid="cNf6BFn"> 
+          <span __cid="cNf6BFn" class="cNf6BFn">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cNf6BFn" __cid="cNf6BFn">选择DB</div> 
+      </div>  
+      <div class="x-dialog-body cNf6BFn" __cid="cNf6BFn"/> 
+    </div> 
+  </span> 
+</div>

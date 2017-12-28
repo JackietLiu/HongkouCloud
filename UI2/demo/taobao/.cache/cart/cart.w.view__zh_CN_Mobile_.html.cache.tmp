@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cUVFnmm" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUVFnmm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.bg-white.cUVFnmm{background-color: rgb(255, 255, 255)} .text-black.cUVFnmm{color: rgb(85, 85, 85)} .x-titlebar.cUVFnmm{background-color: rgb(255, 68, 0)} .x-titlebar-right.cUVFnmm .btn.cUVFnmm i.cUVFnmm{font-size: 24px} .row.cUVFnmm{margin: 0} .x-cards.cUVFnmm{padding-top: 15px} .tb-box.cUVFnmm{margin-bottom: 10px; border-top: 1px solid rgb(220, 220, 220); border-bottom: 1px solid rgb(220, 220, 220)} .tb-del-line.cUVFnmm{text-decoration: line-through} .x-card.cUVFnmm .panel-heading.cUVFnmm{padding: 5px 15px} .x-card.cUVFnmm .panel-heading.cUVFnmm i.cUVFnmm{margin-right: 13px} .tb-img-shop.cUVFnmm{width: 20px; height: 20px} .tb-img-good.cUVFnmm{width: 100%; height: 100px} .tb-nomargin.cUVFnmm{margin: 0} .tb-nopadding.cUVFnmm{padding: 0} .tb-goodList.cUVFnmm{margin-bottom: 5px} .tb-goodList.cUVFnmm:last-child{margin-bottom: 0px} .tb-goodList.cUVFnmm .x-col.cUVFnmm:first-child{padding-top: 35px} .tb-goodList.cUVFnmm .x-col.cUVFnmm:nth-child(2){width: 100px; padding-right: 5px} .tb-goodList.cUVFnmm .h5.cUVFnmm{height: 30px; overflow: hidden; text-overflow: ellipsis} .tb-goodList.cUVFnmm .h6.cUVFnmm{margin-top: 3px; margin-bottom: 3px} .tb-numberOperation.cUVFnmm{width: 100%; height: 30px} .tb-numberOperation.cUVFnmm .btn.cUVFnmm{border-radius: 0} .tb-numberOperation.cUVFnmm span.cUVFnmm{padding: 4px 15px; border-top: 1px solid rgb(225, 225, 225); border-bottom: 1px solid rgb(225, 225, 225)} .x-panel-bottom.cUVFnmm{border-top: 1px solid rgb(220, 220, 220)} .x-panel-bottom.cUVFnmm .h4.cUVFnmm{margin: 5px 0} .tb-settlement.cUVFnmm{line-height: 40px; background-color: rgb(253, 80, 1); color: rgb(255, 255, 255); font-size: 16px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cUVFnmm" class="cUVFnmm"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pcam2yEb-iosstatusbar cUVFnmm" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUVFnmm"> 
+    <div class="x-panel-top cUVFnmm" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUVFnmm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cUVFnmm" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cUVFnmm"> 
+        <div class="x-titlebar-left cUVFnmm" __cid="cUVFnmm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cUVFnmm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:$model.calculateData.val(&quot;isBack&quot;)==1" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUVFnmm"> 
+            <i xid="i1" class="icon-chevron-left cUVFnmm" __cid="cUVFnmm"/>  
+            <span xid="span3" __cid="cUVFnmm" class="cUVFnmm"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cUVFnmm" __cid="cUVFnmm"> 
+          <span xid="span1" __cid="cUVFnmm" class="cUVFnmm">购物车（</span>  
+          <span xid="span11" __cid="cUVFnmm" class="cUVFnmm" data-bind="text:goodsData.count()"/>  
+          <span xid="span2" __cid="cUVFnmm" class="cUVFnmm">）</span> 
+        </div>  
+        <div class="x-titlebar-right  cUVFnmm" __cid="cUVFnmm"> 
+          <div class="empty cUVFnmm" __cid="cUVFnmm"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cUVFnmm" xid="delBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:delBtnClick" data-config="{&quot;icon&quot;:&quot;icon-ios7-trash-outline&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUVFnmm"> 
+            <i xid="i4" class="icon-ios7-trash-outline cUVFnmm" __cid="cUVFnmm"/>  
+            <span xid="span20" __cid="cUVFnmm" class="cUVFnmm"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content x-scroll-view x-cards cUVFnmm" supportpulldown="true" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUVFnmm"> 
+      <div class="x-scroll cUVFnmm" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;pullUpLabel&quot;:&quot; &quot;}" __cid="cUVFnmm"> 
+        <div class="x-content-center x-pull-down container cUVFnmm" xid="div8" __cid="cUVFnmm"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cUVFnmm" xid="i2" __cid="cUVFnmm"/>  
+          <span class="x-pull-down-label cUVFnmm" xid="span9" __cid="cUVFnmm">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cUVFnmm" xid="div71" __cid="cUVFnmm"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cUVFnmm" xid="shopList" dataItemAlias="shopRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;shopData&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;limit&quot;:-1}" __cid="cUVFnmm"> 
+            <ul class="x-list-template x-min-height hide cUVFnmm" xid="listTemplateUl1" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl1" __cid="cUVFnmm" data-bind="foreach:{data:$model.foreach_shopList($element),afterRender:$model.foreach_afterRender_shopList.bind($model,$element),as:'shopRow'}"> 
+              <li xid="li1" class="panel panel-default x-card tb-box cUVFnmm" __cid="cUVFnmm"> 
+                <div class="panel-heading cUVFnmm" __cid="cUVFnmm"> 
+                  <i xid="i5" class="icon-chevron-right cUVFnmm" __cid="cUVFnmm"/>  
+                  <img src="" alt="" xid="image3" class="img-circle tb-img-shop cUVFnmm" __cid="cUVFnmm" data-bind="attr:{src:$model.getImageUrl(val(&quot;fShopImg&quot;))}"/>  
+                  <span xid="span4" __cid="cUVFnmm" class="cUVFnmm" data-bind="text:ref('fShopName')"/> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list bg-white cUVFnmm" xid="goodsList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;,&quot;disableInfiniteLoad&quot;:true,&quot;disablePullToRefresh&quot;:true,&quot;filter&quot;:&quot;$row.val('fShopID')==shopRow.val('id')&quot;}" __cid="cUVFnmm"> 
+                  <ul class="x-list-template x-min-height hide cUVFnmm" xid="listTemplateUl4" componentname="$UI/system/components/justep/list/list#listTemplateUl" id="undefined_listTemplateUl4" __cid="cUVFnmm" data-bind="foreach:{data:$model.foreach_goodsList($element),afterRender:$model.foreach_afterRender_goodsList.bind($model,$element)}"> 
+                    <li xid="li4" class="x-min-height tb-goodList cUVFnmm" componentname="li(html)" id="undefined_li4" __cid="cUVFnmm"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cUVFnmm" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUVFnmm"> 
+                        <div class="x-col x-col-fixed cUVFnmm" xid="col1" style="width:auto;" __cid="cUVFnmm"> 
+                          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox x-radio choose cUVFnmm" xid="checkbox2" checkedValue="1" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('fChoose'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cUVFnmm"> 
+                            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cUVFnmm" class="cUVFnmm"></input>  
+                            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cUVFnmm" class="cUVFnmm"></label> 
+                          </span> 
+                        </div>  
+                        <div class="x-col x-col-fixed tb-nopadding cUVFnmm" xid="col2" __cid="cUVFnmm"> 
+                          <img src="" alt="" xid="image1" class="tb-img-good cUVFnmm" __cid="cUVFnmm" data-bind="attr:{src:$model.getImageUrl(val(&quot;fImg&quot;))},event:{click:$model._callModelFn.bind($model, 'listClick')}"/> 
+                        </div>  
+                        <div class="x-col  tb-nopadding cUVFnmm" xid="col3" __cid="cUVFnmm"> 
+                          <span class="x-flex text-black h5 tb-nomargin cUVFnmm" xid="span26" __cid="cUVFnmm" data-bind="text:ref('fTitle')"/>  
+                          <div class="text-muted h6 cUVFnmm" xid="div6" __cid="cUVFnmm"> 
+                            <span xid="span27" __cid="cUVFnmm" class="cUVFnmm">颜色:</span>  
+                            <span xid="span6" __cid="cUVFnmm" class="cUVFnmm" data-bind="text:ref('fColor')"/>  
+                            <span xid="span7" __cid="cUVFnmm" class="cUVFnmm">;</span>  
+                            <span xid="span12" __cid="cUVFnmm" class="cUVFnmm">尺寸:</span>  
+                            <span xid="span18" __cid="cUVFnmm" class="cUVFnmm" data-bind="text:ref('fSize')"/> 
+                          </div>  
+                          <div class="text-muted cUVFnmm" xid="div5" __cid="cUVFnmm"> 
+                            <span xid="span22" class="text-danger cUVFnmm" __cid="cUVFnmm">￥</span>  
+                            <span xid="span28" class="h4 text-danger cUVFnmm" __cid="cUVFnmm" data-bind="text:ref('fPrice')"/>  
+                            <span xid="span19" class="tb-del-line cUVFnmm" __cid="cUVFnmm">￥</span>  
+                            <span xid="span24" class="tb-del-line cUVFnmm" __cid="cUVFnmm" data-bind="text:ref('fOldPrice')"/> 
+                          </div>  
+                          <div class="tb-numberOperation cUVFnmm" xid="div4" __cid="cUVFnmm"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left cUVFnmm" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:reductionBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-remove&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUVFnmm"> 
+                              <i xid="i3" class="icon-android-remove cUVFnmm" __cid="cUVFnmm"/>  
+                              <span xid="span13" __cid="cUVFnmm" class="cUVFnmm"/> 
+                            </a>  
+                            <span class="pull-left cUVFnmm" __cid="cUVFnmm" data-bind="text:ref('fNumber')"/>  
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn x-gray btn-sm btn-only-icon pull-left cUVFnmm" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:addBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-add&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cUVFnmm"> 
+                              <i xid="i6" class="icon-android-add cUVFnmm" __cid="cUVFnmm"/>  
+                              <span xid="span29" __cid="cUVFnmm" class="cUVFnmm"/> 
+                            </a> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div>  
+        <div class="x-content-center x-pull-up cUVFnmm" xid="div7" __cid="cUVFnmm"> 
+          <span class="x-pull-up-label cUVFnmm" xid="span8" __cid="cUVFnmm"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cUVFnmm" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUVFnmm"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row tb-nopadding cUVFnmm" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUVFnmm"> 
+        <div class="x-col x-col-20 x-col-center cUVFnmm" xid="col4" __cid="cUVFnmm"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cUVFnmm" xid="allChoose" label="全选" checked="false" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;全选&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:allChooseChange" __cid="cUVFnmm"> 
+            <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cUVFnmm" class="cUVFnmm"></input>  
+            <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cUVFnmm" class="cUVFnmm">全选</label> 
+          </span> 
+        </div>  
+        <div class="x-col cUVFnmm" xid="col8" __cid="cUVFnmm"> 
+          <div class="text-right cUVFnmm" xid="div9" __cid="cUVFnmm"> 
+            <span xid="span15" class="text-muted cUVFnmm" __cid="cUVFnmm">合计：</span>  
+            <span xid="span17" class="text-danger cUVFnmm" __cid="cUVFnmm">￥</span>  
+            <span xid="sum" class="h4 text-danger cUVFnmm" __cid="cUVFnmm" data-bind="text:calculateData.ref('allSum')"/> 
+          </div>  
+          <div class="text-right cUVFnmm" xid="div10" __cid="cUVFnmm"> 
+            <span xid="span16" __cid="cUVFnmm" class="cUVFnmm">不含运费</span> 
+          </div> 
+        </div>  
+        <div class="x-col x-col-33 text-center tb-settlement cUVFnmm" xid="col9" __cid="cUVFnmm" data-bind="event:{click:$model._callModelFn.bind($model, 'settlementClick')}"> 
+          <span xid="span10" __cid="cUVFnmm" class="cUVFnmm">结算(</span>  
+          <span xid="number" class="allNumber cUVFnmm" __cid="cUVFnmm" data-bind="text:calculateData.ref('allNumber')"/>  
+          <span xid="span14" __cid="cUVFnmm" class="cUVFnmm">)</span> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cUVFnmm" class="cUVFnmm">.x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcam2yEb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

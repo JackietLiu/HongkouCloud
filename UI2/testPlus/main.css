@@ -1,0 +1,203 @@
+.x-panel-bottom .btn-group .btn {
+	color: #6c6c6c;
+}
+
+.panel-body {
+	padding: 10px 0;
+}
+
+.x-panel-bottom .btn-group .btn.active {
+	color: #37b9ed;
+}
+
+.x-titlebar {
+	background: #37b9ed;
+	/* background: -webkit-linear-gradient(left, blue, #37b9ed); */
+}
+
+.x-wing-left {
+	/* background: -webkit-linear-gradient(bottom, blue, #37b9ed); */
+	background: #37b9ed;
+}
+
+.x-panel-content .btn-group .btn.active {
+	border-bottom: 2px solid white;
+}
+
+.x-scroll-content .panel-body {
+	padding: 10px 10px;
+}
+
+.footer {
+	height: 10px;
+	background-color: rgb(237, 243, 243);
+}
+
+.panel-default {
+	border: 0;
+}
+
+.tb-img1 {
+	width: 100%;
+	height: 210px;
+}
+
+.clean {
+	height: 15px;
+	width: 100%;
+	background: rgba(237, 243, 243, 0.5)
+}
+
+.tb-img5 {
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+}
+
+.ol1 li {
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: #e5e5e5;
+	margin-left: 10px;
+	border: 0;
+}
+
+.ol1 li.active {
+	background-color: #537ff9;
+	width: 8px;
+	height: 8px;
+}
+
+.ol2 {
+	
+}
+
+.ol2 li {
+	background-color: #e5e5e5;
+	border: 0;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+}
+
+.ol2 li.active {
+	background-color: #537ff9;
+	width: 10px;
+	height: 10px;
+}
+
+.intro {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	margin-left: 10px;
+	font-weight: normal;
+	z-index: 111;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	width: 90%;
+	white-space: nowrap;
+	word-break: keep-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.x-panel-content .title {
+	text-align: center;
+}
+
+.botmeun {
+	font-weight: bold;
+	font-size: medium;
+}
+.media-body{
+	padding-top:5px;
+}
+
+/* mine */
+.dis {
+	display: none;
+}
+
+.o-img {
+	width: 100%;
+	height: 80px;
+}
+
+.o-imgList {
+	padding: 14px;
+}
+
+.o-imgList ul li {
+	padding: 1px;
+}
+
+/*上传组件*/
+.o-uploadFile .x-attachment-content {
+	min-height: 40px;
+	min-height: 40px;
+	border-top: 0;
+	background: none;
+	margin-top: 0px;
+}
+
+.o-uploadFile .x-item-upload {
+	width: 40px;
+	height: 40px;
+}
+
+.o-uploadFile .x-attachment {
+	min-height: 40px;
+	padding: 0;
+}
+
+.o-uploadFile .x-attachment .x-attachment-cell {
+	float: none;
+	margin: 0;
+	height: 40px;
+	display: block;
+}
+
+/*分享*/
+.share_detail  img {
+	width: 35px;
+	height: 35px;
+	margin-top: 5px;
+	border: 1px solid transparent;
+	border-radius: 7px;
+}
+
+.share_detail {
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	float: right;
+}
+
+.share_detail li {
+	width: 25%;
+	float: left;
+}
+/*.x-titlebar{ background-color:#fff; color:#777; border-bottom:1px solid #CCDAE7;}*/
+.share_btn {
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+.normal {
+	box-shadow: 0px 0px 5px #aaa;
+	color: red;
+	background-color: white;
+	width: 40%;
+}
+
+.bottomdiv {
+	width: 100%;
+	background-color: white;
+	height:50px;
+	position: fixed;
+	bottom:0;
+}

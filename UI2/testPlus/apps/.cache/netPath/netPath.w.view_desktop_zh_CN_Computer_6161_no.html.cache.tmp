@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfIbiai" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfIbiai" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/bootstrap/progress/progress,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/attachment/attachmentSimple,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/button/buttonGroup,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-group.cfIbiai .btn.cfIbiai{color: rgb(152, 152, 152)} .btn-group.cfIbiai .btn.active.cfIbiai{border-bottom: 2px solid rgb(55, 185, 237); padding: 0; color: rgb(0, 0, 0)} .x-meun-item.cfIbiai .btn.cfIbiai img.cfIbiai{width: 25px} .x-panel-bottom.cfIbiai .btn-group.cfIbiai .hide.cfIbiai{visibility: hidden} .x-popOver.cfIbiai .x-popOver-content.cfIbiai{border-radius: 0; position: fixed; z-index: 1000; top: 50%; left: 50%; margin-bottom: 0} .o-img.cfIbiai{width: 100%; height: 80px} .o-imgList.cfIbiai{padding: 14px} .o-imgList.cfIbiai ul.cfIbiai li.cfIbiai{padding: 1px} .o-uploadFile.cfIbiai .x-attachment-content.cfIbiai{min-height: 48px; min-height: 48px; border-top: 0; background: none; margin-top: 0px} .o-uploadFile.cfIbiai .x-item-upload.cfIbiai{width: 48px; height: 48px; background: url(@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/apps/img/upload.png) no-repeat center center} .o-uploadFile.cfIbiai .x-attachment.cfIbiai{min-height: 48px; padding: 0} .o-uploadFile.cfIbiai .x-attachment.cfIbiai .x-attachment-cell.cfIbiai{float: none; margin: 0; height: 48px; display: block}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfIbiai" class="cfIbiai"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cfIbiai" xid="sharePopOver" style="buttom:0;background-color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5,&quot;position&quot;:&quot;bottom&quot;}" __cid="cfIbiai"> 
+    <div class="x-popOver-overlay cfIbiai" xid="div9" __cid="cfIbiai"/>  
+    <div class="x-full x-popOver-content panel cfIbiai" xid="div15" __cid="cfIbiai"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfIbiai" xid="row8" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfIbiai"> 
+        <div class="x-col cfIbiai" xid="col17" __cid="cfIbiai"/>  
+        <div class="x-col cfIbiai" xid="col18" style="text-align:center;" __cid="cfIbiai"> 
+          <span xid="span4" style="font-size:15px;font-weight:bold;" __cid="cfIbiai" class="cfIbiai">分享到</span> 
+        </div>  
+        <div class="x-col cfIbiai" xid="col19" __cid="cfIbiai"/> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfIbiai" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfIbiai"> 
+        <div class="x-col cfIbiai" xid="col24" style="text-align:center" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfIbiai" xid="button1" style="height:100px;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_bigmessage.png&quot;,&quot;label&quot;:&quot;信息&quot;}" __cid="cfIbiai"> 
+            <i xid="i6" __cid="cfIbiai" class="cfIbiai"/>  
+            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_bigmessage.png" xid="image17" style="width:70px;" height="70px" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span5" style="color:#000;" __cid="cfIbiai" class="cfIbiai">信息</span> 
+          </a> 
+        </div>  
+        <div class="x-col cfIbiai" xid="col25" style="text-align:center" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfIbiai" xid="button5" style="height:100px;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_bigemails.png&quot;,&quot;label&quot;:&quot;邮箱&quot;}" __cid="cfIbiai"> 
+            <i xid="i13" __cid="cfIbiai" class="cfIbiai"/>  
+            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_bigemails.png" xid="image18" style="width:70px;" height="70px" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span15" style="color:#000;" __cid="cfIbiai" class="cfIbiai">邮箱</span> 
+          </a> 
+        </div>  
+        <div class="x-col cfIbiai" xid="col26" style="text-align:center" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfIbiai" xid="button6" style="height:100px;width:100px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_chat.png&quot;,&quot;label&quot;:&quot;交流&quot;}" __cid="cfIbiai"> 
+            <i xid="i14" __cid="cfIbiai" class="cfIbiai"/>  
+            <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_chat.png" xid="image19" style="width:70px;" height="70px" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span16" style="color:#000;" __cid="cfIbiai" class="cfIbiai">交流</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfIbiai" xid="row14" style="text-align:center" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfIbiai"> 
+        <div class="x-col cfIbiai" xid="col28" style="padding-top:50px;" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cfIbiai" xid="button11" style="border-color:#989898;color:#989898;line-height:20px;border-radius:20px;height:40px;background-color:#fff;width:75%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'sharePopOver.hide'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cfIbiai"> 
+            <i xid="i15" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span17" __cid="cfIbiai" class="cfIbiai">取消</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cfIbiai" xid="pathPopMenu" style="top:10px;left:6px;" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;titleBar1&quot;,&quot;autoHidable&quot;:true,&quot;dismissible&quot;:true}" __cid="cfIbiai"> 
+    <div class="x-popMenu-overlay cfIbiai" xid="div20" __cid="cfIbiai"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu  x-popMenu-content cfIbiai" xid="menu3" style="border-radius:0;width:150px;" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cfIbiai"> 
+      <li class="x-menu-item cfIbiai" xid="item3" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button15" style="line-height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_search.png&quot;,&quot;label&quot;:&quot;搜索&quot;}" __cid="cfIbiai"> 
+          <i xid="i16" __cid="cfIbiai" class="cfIbiai"/>  
+          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_search.png" xid="image1" style="width:20px;" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span29" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">搜索</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cfIbiai" xid="divider1" __cid="cfIbiai"/>  
+      <li class="x-menu-item cfIbiai" xid="item4" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_upload.png&quot;,&quot;label&quot;:&quot;上传文件&quot;}" __cid="cfIbiai"> 
+          <i xid="i17" __cid="cfIbiai" class="cfIbiai"/>  
+          <img xid="image12" style="width:20px;" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_upload.png" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span30" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">上传文件</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cfIbiai" xid="divider2" __cid="cfIbiai"/>  
+      <li class="x-menu-item cfIbiai" xid="item5" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button17" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_newfloder.png&quot;,&quot;label&quot;:&quot;新建文件夹&quot;}" __cid="cfIbiai"> 
+          <i xid="i18" __cid="cfIbiai" class="cfIbiai"/>  
+          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_newfloder.png" xid="image15" style="width:20px;" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span31" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">新建文件夹</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cfIbiai" xid="divider3" __cid="cfIbiai"/>  
+      <li class="x-menu-item cfIbiai" xid="item8" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button20" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_refresh.png&quot;,&quot;label&quot;:&quot;刷新&quot;}" __cid="cfIbiai"> 
+          <i xid="i21" __cid="cfIbiai" class="cfIbiai"/>  
+          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_refresh.png" xid="image16" style="width:20px;" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span34" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">刷新</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cfIbiai" xid="divider4" __cid="cfIbiai"/>  
+      <li class="x-menu-item cfIbiai" xid="item6" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_paixu.png&quot;,&quot;label&quot;:&quot;排序&quot;}" __cid="cfIbiai"> 
+          <i xid="i19" __cid="cfIbiai" class="cfIbiai"/>  
+          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_paixu.png" xid="image13" style="width:20px;" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span32" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">排序</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cfIbiai" xid="divider5" __cid="cfIbiai"/>  
+      <li class="x-menu-item cfIbiai" xid="item7" __cid="cfIbiai"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="shareBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'sharePopOver.show'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/net_share.png&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="cfIbiai"> 
+          <i xid="i20" __cid="cfIbiai" class="cfIbiai"/>  
+          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/net_share.png" xid="image14" style="width:20px;" __cid="cfIbiai" class="cfIbiai"/>  
+          <span xid="span33" style="margin-left:10px;" __cid="cfIbiai" class="cfIbiai">分享</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmUjY7z-iosstatusbar cfIbiai" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfIbiai"> 
+    <div class="x-panel-top cfIbiai" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfIbiai"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfIbiai" xid="titleBar1" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cfIbiai"> 
+        <div class="x-titlebar-left cfIbiai" xid="left1" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cfIbiai" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfIbiai"> 
+            <i xid="i1" class="linear linear-arrowleft cfIbiai" __cid="cfIbiai"/>  
+            <span xid="span1" __cid="cfIbiai" class="cfIbiai"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cfIbiai" xid="title1" __cid="cfIbiai"> 
+          <label xid="label1" __cid="cfIbiai" class="cfIbiai">网盘</label> 
+        </div>  
+        <div class="x-titlebar-right   cfIbiai" xid="right1" __cid="cfIbiai"> 
+          <div class="empty cfIbiai" __cid="cfIbiai"/> 
+        </div> 
+      </div>  
+      <div xid="div7" style="padding-left:10px;padding-right:10px;color:#000" __cid="cfIbiai" class="cfIbiai"> 
+        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cfIbiai" xid="buttonGroup2" style="padding:0 10%;border-bottom:1px solid #e5e5e5;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cfIbiai"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-bottom active cfIbiai" xid="fileBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;上传&quot;,&quot;target&quot;:&quot;fileContent&quot;}" __cid="cfIbiai"> 
+            <i xid="i4" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span2" __cid="cfIbiai" class="cfIbiai">上传</span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cfIbiai" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;disabled&quot;:true}" __cid="cfIbiai"> 
+            <i xid="i7" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span12" __cid="cfIbiai" class="cfIbiai"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-bottom cfIbiai" xid="classBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;浏览&quot;,&quot;target&quot;:&quot;classContent&quot;}" __cid="cfIbiai"> 
+            <i xid="i5" __cid="cfIbiai" class="cfIbiai"/>  
+            <span xid="span11" __cid="cfIbiai" class="cfIbiai">浏览</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cfIbiai" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfIbiai"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cfIbiai" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cfIbiai"> 
+        <div class="x-contents-content active cfIbiai" xid="fileContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:fileContentActive" __cid="cfIbiai"> 
+          <div component="$model/UI2/system/components/justep/attachment/attachmentSimple" xid="attachmentSimple" data-bind="component:{ref:data.ref(&quot;fileName&quot;),name:'$model/UI2/system/components/justep/attachment/attachmentSimple'}" data-config="{&quot;accept&quot;:&quot;*/*&quot;,&quot;actionUrl&quot;:&quot;/baas/justep/attachment/simpleFileStore&quot;,&quot;compress&quot;:false}" __cid="cfIbiai" class="cfIbiai"> 
+            <div class="x-attachment cfIbiai" xid="div6" __cid="cfIbiai"> 
+              <div class="x-attachment-content x-card-border cfIbiai" xid="div8" __cid="cfIbiai"> 
+                <div class="x-doc-process cfIbiai" xid="div10" __cid="cfIbiai"> 
+                  <div class="progress-bar x-doc-process-bar cfIbiai" role="progressbar" style="width:0%;" xid="progressBar2" __cid="cfIbiai"/> 
+                </div>  
+                <div data-bind="foreach:$attachmentItems" xid="div11" __cid="cfIbiai" class="cfIbiai"> 
+                  <div class="x-attachment-cell cfIbiai" xid="div12" __cid="cfIbiai"> 
+                    <div class="x-attachment-item x-item-other cfIbiai" data-bind="click:$model.previewOrRemoveItem.bind($model),style:{backgroundImage:($model.previewPicture.bind($model,$object))()}" xid="div13" __cid="cfIbiai"> 
+                      <a data-bind="visible:$model.$state.get() == 'remove'" class="x-remove-barget cfIbiai" xid="a1" __cid="cfIbiai"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-attachment-cell cfIbiai" data-bind="visible:$state.get() == 'upload'" xid="div14" __cid="cfIbiai"> 
+                  <div class="x-attachment-item x-item-upload cfIbiai" data-bind="visible:$state.get() == 'upload'" xid="div16" __cid="cfIbiai"/> 
+                </div>  
+                <div class="x-attachment-cell cfIbiai" data-bind="visible:$state.get() == 'upload' &amp;&amp; $attachmentItems.get().length &gt; 0" xid="div17" __cid="cfIbiai"> 
+                  <div class="x-attachment-item x-item-remove cfIbiai" data-bind="click:changeState.bind($object,'remove')" xid="div18" __cid="cfIbiai"/> 
+                </div>  
+                <div style="clear:both;" xid="div19" __cid="cfIbiai" class="cfIbiai"/> 
+              </div> 
+            </div> 
+          </div>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control userID hide cfIbiai" xid="input2" data-bind="component:{ref:$model.personData.ref(&quot;ID&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;valueUpdateMode&quot;:&quot;input&quot;}" __cid="cfIbiai"/>  
+          <span xid="span18" style="color:red;padding:0 20px;" __cid="cfIbiai" class="cfIbiai">注意：文件上传成功后会在右侧浏览中显示</span> 
+        </div>  
+        <div class="x-contents-content  x-scroll-view  cfIbiai" xid="classContent" onactive="classContentActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:classContentActive" __cid="cfIbiai"> 
+          <div class="x-scroll hide cfIbiai" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfIbiai"> 
+            <div class="x-content-center x-pull-down container cfIbiai" xid="div1" __cid="cfIbiai"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cfIbiai" xid="i3" __cid="cfIbiai"/>  
+              <span class="x-pull-down-label cfIbiai" xid="span3" __cid="cfIbiai">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cfIbiai" xid="div2" __cid="cfIbiai"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cfIbiai" xid="fileList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;filesData&quot;}" __cid="cfIbiai"> 
+                <ul class="x-list-template hide cfIbiai" xid="listTemplateUl1" __cid="cfIbiai" data-bind="foreach:{data:$model.foreach_fileList($element),afterRender:$model.foreach_afterRender_fileList.bind($model,$element)}"> 
+                  <li xid="li1" __cid="cfIbiai" class="cfIbiai"> 
+                    <div xid="div4" style="padding:10px;" __cid="cfIbiai" class="cfIbiai"> 
+                      <span xid="span8" __cid="cfIbiai" class="cfIbiai" data-bind="text:$index()+1"/>  
+                      <label xid="label2" style="height:100%;" __cid="cfIbiai" class="cfIbiai" data-bind="text:ref(&quot;fFileName&quot;)">label</label>  
+                      <span xid="span7" style="font-size:12px;margin-left:20px;" __cid="cfIbiai" class="cfIbiai">文件大小：</span>  
+                      <span xid="span9" __cid="cfIbiai" class="cfIbiai" data-bind="text:ref(&quot;fileSize&quot;)"/> 
+                    </div>  
+                    <div class="hide progress cfIbiai" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" __cid="cfIbiai"> 
+                      <div class="progress-bar progress-bar-success cfIbiai" role="progressbar" xid="progressBar1" __cid="cfIbiai"> 
+                        <span xid="span10" __cid="cfIbiai" class="cfIbiai">0%</span> 
+                      </div> 
+                    </div>  
+                    <div xid="div5" style="margin-left:15px;" __cid="cfIbiai" class="cfIbiai"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cfIbiai" xid="download" style="border-radius:0;line-height:15px;width:120px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:downloadClick" data-config="{&quot;label&quot;:&quot;下载/预览&quot;}" __cid="cfIbiai"> 
+                        <i xid="i8" __cid="cfIbiai" class="cfIbiai"/>  
+                        <span xid="span13" __cid="cfIbiai" class="cfIbiai">下载/预览</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning cfIbiai" xid="deleteBtn" style="border-radius:0;line-height:15px;width:120px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:deleteBtnClick" data-config="{&quot;label&quot;:&quot;删除&quot;}" __cid="cfIbiai"> 
+                        <i xid="i9" __cid="cfIbiai" class="cfIbiai"/>  
+                        <span xid="span14" __cid="cfIbiai" class="cfIbiai">删除</span> 
+                      </a> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cfIbiai" xid="div3" __cid="cfIbiai"> 
+              <span class="x-pull-up-label cfIbiai" xid="span6" __cid="cfIbiai"/> 
+            </div> 
+          </div>  
+          <div class="x-scroll cfIbiai" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfIbiai"> 
+            <div class="x-content-center x-pull-down container cfIbiai" xid="div21" __cid="cfIbiai"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cfIbiai" xid="i11" __cid="cfIbiai"/>  
+              <span class="x-pull-down-label cfIbiai" xid="span21" __cid="cfIbiai">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cfIbiai" xid="div22" __cid="cfIbiai"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cfIbiai" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;paiData&quot;,&quot;disablePullToRefresh&quot;:false}" __cid="cfIbiai"> 
+                <ul class="x-list-template hide cfIbiai" xid="listTemplateUl3" __cid="cfIbiai" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li3" __cid="cfIbiai" class="cfIbiai"> 
+                    <div xid="div27" style="padding:0 10px;" __cid="cfIbiai" class="cfIbiai"> 
+                      <span xid="span24" __cid="cfIbiai" class="cfIbiai" data-bind="text:$index()+1"/>  
+                      <label xid="label3" __cid="cfIbiai" class="cfIbiai"/>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfIbiai" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfIbiai"> 
+                        <label class="x-label cfIbiai" xid="label4" __cid="cfIbiai">文件名：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfIbiai" xid="output1" data-bind="component:{ref:ref(&quot;fFileName&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfIbiai"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfIbiai" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfIbiai"> 
+                        <label class="x-label cfIbiai" xid="label5" __cid="cfIbiai">文件大小：</label>  
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cfIbiai" xid="output2" data-bind="component:{ref:ref(&quot;fFileSize&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cfIbiai"/> 
+                      </div> 
+                    </div>  
+                    <div class="progress hide cfIbiai" component="$model/UI2/system/components/bootstrap/progress/progress" xid="progress2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/progress/progress'}" __cid="cfIbiai"> 
+                      <div class="progress-bar progress-bar-success cfIbiai" role="progressbar" xid="progressBar3" __cid="cfIbiai"> 
+                        <span xid="span26" __cid="cfIbiai" class="cfIbiai">0%</span> 
+                      </div> 
+                    </div>  
+                    <div xid="div26" style="margin-left:15px;" __cid="cfIbiai" class="cfIbiai"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cfIbiai" xid="downloadbtn" style="border-radius:0;line-height:15px;width:120px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:downloadbtnClick" data-config="{&quot;label&quot;:&quot;下载文件&quot;}" __cid="cfIbiai"> 
+                        <i xid="i10" __cid="cfIbiai" class="cfIbiai"/>  
+                        <span xid="span20" __cid="cfIbiai" class="cfIbiai">下载文件</span> 
+                      </a>  
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-warning cfIbiai" xid="delbtn" style="border-radius:0;line-height:15px;width:120px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:delbtnClick" data-config="{&quot;label&quot;:&quot;删除&quot;}" __cid="cfIbiai"> 
+                        <i xid="i12" __cid="cfIbiai" class="cfIbiai"/>  
+                        <span xid="span24" __cid="cfIbiai" class="cfIbiai">删除</span> 
+                      </a> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cfIbiai" xid="div23" __cid="cfIbiai"> 
+              <span class="x-pull-up-label cfIbiai" xid="span22" __cid="cfIbiai">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cfIbiai" class="cfIbiai">.x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-top {height: 88px;}.x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-content { top: 88px;bottom: nullpx;}.x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-top {height: 108px;}.iosstatusbar .x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-content { top: 108px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-top {height: 88px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmUjY7z-iosstatusbar &gt;.x-panel-content {top: 88px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog2" style="top:48px;left:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog2OK" data-config="{&quot;message&quot;:&quot;是否确定删除网盘文件？&quot;,&quot;title&quot;:&quot;警告&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cfIbiai" class="cfIbiai"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cfIbiai" __cid="cfIbiai"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cfIbiai" __cid="cfIbiai">  
+      <div class="x-modal-inner cfIbiai" __cid="cfIbiai"> 
+        <div class="x-modal-title cfIbiai" __cid="cfIbiai">警告</div>  
+        <div class="x-modal-text cfIbiai" __cid="cfIbiai">是否确定删除网盘文件？</div>  
+        <input class="x-modal-prompt-input cfIbiai" type="text" __cid="cfIbiai"/> 
+      </div>  
+      <div class="x-modal-buttons cfIbiai" __cid="cfIbiai"> 
+        <a class="x-modal-button x-modal-button-bold OK cfIbiai" value="ok" __cid="cfIbiai">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cfIbiai" value="yes" __cid="cfIbiai">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cfIbiai" value="no" __cid="cfIbiai">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cfIbiai" value="cancel" __cid="cfIbiai">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="top:44px;left:26px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;height&quot;:&quot;200px&quot;,&quot;showTitle&quot;:true,&quot;status&quot;:&quot;normal&quot;,&quot;title&quot;:&quot;删除提示：&quot;,&quot;width&quot;:&quot;250px&quot;}" __cid="cfIbiai" class="cfIbiai"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cfIbiai" __cid="cfIbiai"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cfIbiai" style="display:none;" showTitle="true" __cid="cfIbiai">  
+      <div class="x-dialog-title cfIbiai" __cid="cfIbiai"> 
+        <button class="close cfIbiai" __cid="cfIbiai"> 
+          <span __cid="cfIbiai" class="cfIbiai">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cfIbiai" __cid="cfIbiai">删除提示：</div> 
+      </div>  
+      <div class="x-dialog-body cfIbiai" __cid="cfIbiai"/> 
+    </div> 
+  </span> 
+</div>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7rMRRf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7rMRRf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/bar/bar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/locker/locker,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-panel-bottom.c7rMRRf .btn-group.c7rMRRf .btn.c7rMRRf{color: rgb(255, 255, 255); line-height: 38px; font-weight: normal}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="c7rMRRf" class="c7rMRRf"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcuYfMBb-iosstatusbar c7rMRRf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7rMRRf"> 
+    <div class="x-panel-top c7rMRRf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7rMRRf"> 
+      <div component="$model/UI2/system/components/justep/bar/bar" class="x-bar c7rMRRf" xid="bar1" style="text-align:center;font-weight:normal;font-size:20px;background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/bar/bar'}" __cid="c7rMRRf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link hide c7rMRRf" xid="backBtn" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;}" __cid="c7rMRRf"> 
+          <i xid="i11" class="linear linear-arrowleft c7rMRRf" __cid="c7rMRRf"/>  
+          <span xid="span11" __cid="c7rMRRf" class="c7rMRRf"/> 
+        </a>  
+        <div xid="div39" style="width:100%;" align="center" __cid="c7rMRRf" class="c7rMRRf"> 
+          <label xid="label1" style="font-size:18px;margin-left:-20px;" __cid="c7rMRRf" class="c7rMRRf"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7rMRRf" xid="content1" style="height:100%;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7rMRRf"> 
+      <div xid="div1" align="center" __cid="c7rMRRf" class="c7rMRRf"> 
+        <tr style="vertical-align: middle;text-align: center;" xid="tr1" __cid="c7rMRRf" class="c7rMRRf"> 
+          <td style="vertical-align: middle;text-align: center;" xid="td1" __cid="c7rMRRf" class="c7rMRRf"> 
+            <canvas xid="locker" component="$model/UI2/system/components/justep/locker/locker" class="x-locker c7rMRRf" style="width:320px;height:320px;" data-bind="component:{name:'$model/UI2/system/components/justep/locker/locker'}" data-events="onCheckSuccess:lockerCheckSuccess;onPasswordError:lockerPasswordError;onPasswordSuccess:setPasswordSuccess;onCheckError:lockerCheckError;onInput:linePoint" data-config="{&quot;R&quot;:26,&quot;mode&quot;:2}" __cid="c7rMRRf"/> 
+          </td> 
+        </tr> 
+      </div>  
+      <div xid="div2" __cid="c7rMRRf" class="c7rMRRf"/> 
+    </div>  
+    <div class="x-panel-bottom c7rMRRf" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7rMRRf"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified c7rMRRf" xid="buttonGroup1" style="width:100%;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="c7rMRRf"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default c7rMRRf" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;清除手势密码&quot;}" __cid="c7rMRRf"> 
+          <i xid="i2" __cid="c7rMRRf" class="c7rMRRf"/>  
+          <span xid="span2" __cid="c7rMRRf" class="c7rMRRf">清除手势密码</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="c7rMRRf" class="c7rMRRf">.x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-top {height: 58px;}.x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-content { top: 58px;bottom: nullpx;}.x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-top {height: 78px;}.iosstatusbar .x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-content { top: 78px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-top {height: 58px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcuYfMBb-iosstatusbar &gt;.x-panel-content {top: 58px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" style="top:28px;left:97px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="c7rMRRf" class="c7rMRRf"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7rMRRf" __cid="c7rMRRf"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7rMRRf" __cid="c7rMRRf">  
+      <div class="x-modal-inner c7rMRRf" __cid="c7rMRRf"> 
+        <div class="x-modal-title c7rMRRf" __cid="c7rMRRf"/>  
+        <div class="x-modal-text c7rMRRf" __cid="c7rMRRf"/>  
+        <input class="x-modal-prompt-input c7rMRRf" type="text" __cid="c7rMRRf"/> 
+      </div>  
+      <div class="x-modal-buttons c7rMRRf" __cid="c7rMRRf"> 
+        <a class="x-modal-button x-modal-button-bold OK c7rMRRf" value="ok" __cid="c7rMRRf">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7rMRRf" value="yes" __cid="c7rMRRf">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7rMRRf" value="no" __cid="c7rMRRf">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7rMRRf" value="cancel" __cid="c7rMRRf">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog2" style="top:155px;left:37px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialog2OK" data-config="{&quot;message&quot;:&quot;是否清除手势密码&quot;,&quot;title&quot;:&quot;提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="c7rMRRf" class="c7rMRRf"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay c7rMRRf" __cid="c7rMRRf"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal c7rMRRf" __cid="c7rMRRf">  
+      <div class="x-modal-inner c7rMRRf" __cid="c7rMRRf"> 
+        <div class="x-modal-title c7rMRRf" __cid="c7rMRRf">提示</div>  
+        <div class="x-modal-text c7rMRRf" __cid="c7rMRRf">是否清除手势密码</div>  
+        <input class="x-modal-prompt-input c7rMRRf" type="text" __cid="c7rMRRf"/> 
+      </div>  
+      <div class="x-modal-buttons c7rMRRf" __cid="c7rMRRf"> 
+        <a class="x-modal-button x-modal-button-bold OK c7rMRRf" value="ok" __cid="c7rMRRf">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes c7rMRRf" value="yes" __cid="c7rMRRf">是</a>  
+        <a class="x-modal-button x-modal-button-bold No c7rMRRf" value="no" __cid="c7rMRRf">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel c7rMRRf" value="cancel" __cid="c7rMRRf">取消</a> 
+      </div> 
+    </div> 
+  </span> 
+</div>

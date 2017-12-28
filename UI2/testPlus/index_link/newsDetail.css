@@ -1,0 +1,11 @@
+/**文本字体大小*/
+.lit{font-size:12pt;}
+.mid{font-size:16pt;}
+.big{font-size:21pt;}
+/**下拉菜单*/
+.dropdown-menu {
+  min-width: 50px;
+}
+.dropdown-menu .divider {
+    margin: 3px 0;
+}

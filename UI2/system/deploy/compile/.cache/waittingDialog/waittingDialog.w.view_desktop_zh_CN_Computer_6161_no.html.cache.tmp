@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" extends="$UI/system/deploy/common/waittingDialog.w" __id="id_1" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmeErYj" class="cmeErYj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cmeErYj" class="cmeErYj"/>  
+  <div xmlns="" xid="infoDiv" style="padding:8px" __cid="cmeErYj" class="cmeErYj"> 
+    <label xid="info" class="x-label cmeErYj" __cid="cmeErYj">正在执行，请稍候......</label>  
+    <div xid="div7" __cid="cmeErYj" class="cmeErYj"> 
+      <label xid="detail" style="font-size:small;color:#0080FF;cursor:pointer;" __cid="cmeErYj" class="cmeErYj" data-bind="event:{click:$model._callModelFn.bind($model, 'detailClick')}">详细信息</label> 
+    </div> 
+  </div>  
+  <div xmlns="" xid="logDiv" style="display:none" __cid="cmeErYj" class="cmeErYj"> 
+    <div xid="iframeDiv" style="height:100%;" __cid="cmeErYj" class="cmeErYj"/> 
+  </div> 
+</div>

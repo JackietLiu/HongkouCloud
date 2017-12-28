@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cMBb6Br" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMBb6Br" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cMBb6Br" class="cMBb6Br"/>
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label11" __cid="cMBb6Br">资源更新模式：</label>  
+    <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical x-radios x-edit cMBb6Br" xid="updateModeGroup" bind-foreach="{data:updateMode.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'}" data-events="onChange:updateModeGroupChange" __cid="cMBb6Br">
+      <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio cMBb6Br" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&quot;Value&quot;),value:ref(&quot;fID&quot;)}" __cid="cMBb6Br">
+        <xhtml:input type="radio" __cid="cMBb6Br" class="cMBb6Br"/>
+        <xhtml:label __cid="cMBb6Br" class="cMBb6Br"/>
+      </xhtml:span>
+    </span>
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label1" __cid="cMBb6Br">资源版本号：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cMBb6Br" xid="resourceVersion" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：version1，合法的url字符（不允许包含‘-’）构成，为空则编译UI资源时自动生成&quot;}" __cid="cMBb6Br"/> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label2" __cid="cMBb6Br">资源下载链接：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cMBb6Br" xid="resourceDownloadURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：http://myserver/webPath/www.zip，默认部署可为空&quot;}" __cid="cMBb6Br"/> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 hide cMBb6Br" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label3" __cid="cMBb6Br">资源依赖App版本：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cMBb6Br" xid="resourceAppVersion" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：&gt;=5.3.3&quot;}" __cid="cMBb6Br"/>
+  </div>
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelInput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label6" __cid="cMBb6Br">android下载地址：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cMBb6Br" xid="androidDownloadURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：http://myserver/webPath/app.apk，默认部署可为空&quot;}" __cid="cMBb6Br"/> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelInput7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label7" __cid="cMBb6Br">ios下载地址：</label>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cMBb6Br" xid="iosDownloadURL" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;例：http://myserver/webPath/app.ipa，默认部署可为空&quot;}" __cid="cMBb6Br"/> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label4" __cid="cMBb6Br">android更新说明：</label>  
+    <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cMBb6Br" xid="androidChangeLog" style="height:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;在这里填写android的app做了哪些更新&quot;}" __cid="cMBb6Br"/>
+  </div>  
+  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cMBb6Br" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cMBb6Br"> 
+    <label class="x-label cMBb6Br" xid="label8" __cid="cMBb6Br">ios更新说明：</label>  
+    <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cMBb6Br" xid="iosChangeLog" style="height:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&quot;placeHolder&quot;:&quot;在这里填写ios的app做了哪些更新&quot;}" __cid="cMBb6Br"/>
+  </div> 
+</div>

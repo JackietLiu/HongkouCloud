@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cERzqYv" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cERzqYv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cERzqYv" class="cERzqYv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjqmiqa-iosstatusbar cERzqYv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cERzqYv"> 
+    <div class="x-panel-top cERzqYv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERzqYv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cERzqYv" xid="titleBar1" style="background-color:rgb(23,145,255);" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cERzqYv"> 
+        <div class="x-titlebar-left cERzqYv" xid="left1" __cid="cERzqYv"/>  
+        <div class="x-titlebar-title cERzqYv" xid="title1" __cid="cERzqYv">leftMenu</div>  
+        <div class="x-titlebar-right  cERzqYv" xid="right1" __cid="cERzqYv"> 
+          <div class="empty cERzqYv" __cid="cERzqYv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cERzqYv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERzqYv"/>  
+    <div class="x-panel-bottom cERzqYv" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cERzqYv"/>  
+    <style __cid="cERzqYv" class="cERzqYv">.x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjqmiqa-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

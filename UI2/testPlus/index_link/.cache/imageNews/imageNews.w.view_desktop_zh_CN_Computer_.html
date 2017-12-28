@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cq2Q7bu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cq2Q7bu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.lit.cq2Q7bu{font-size: 12pt} .mid.cq2Q7bu{font-size: 16pt} .big.cq2Q7bu{font-size: 21pt} .dropdown-menu.cq2Q7bu{min-width: 50px} .dropdown-menu.cq2Q7bu .divider.cq2Q7bu{margin: 3px 0}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelLoad;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cq2Q7bu" class="cq2Q7bu"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJnyeM3-iosstatusbar cq2Q7bu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cq2Q7bu"> 
+    <div class="x-panel-top cq2Q7bu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq2Q7bu">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cq2Q7bu" xid="titleBar1" style="background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;新闻详情&#34;}" __cid="cq2Q7bu"> 
+        <div class="x-titlebar-left cq2Q7bu" xid="left1" __cid="cq2Q7bu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cq2Q7bu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cq2Q7bu"> 
+            <i xid="i7" class="linear linear-arrowleft cq2Q7bu" __cid="cq2Q7bu"></i>  
+            <span xid="span1" __cid="cq2Q7bu" class="cq2Q7bu"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cq2Q7bu" xid="title1" __cid="cq2Q7bu">新闻详情</div>  
+        <div class="x-titlebar-right  cq2Q7bu" xid="right1" __cid="cq2Q7bu">
+          <div class="empty cq2Q7bu" __cid="cq2Q7bu"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cq2Q7bu" xid="fontBtn" style="font-size:14px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popMenu1.show'}" data-config="{&#34;icon&#34;:&#34;glyphicon glyphicon-font&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cq2Q7bu"> 
+            <i xid="i9" class="glyphicon glyphicon-font cq2Q7bu" __cid="cq2Q7bu"></i>  
+            <span xid="span5" __cid="cq2Q7bu" class="cq2Q7bu"></span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cq2Q7bu" xid="content1" _xid="C716F56078E000013B4118E022F4DAB0" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq2Q7bu"> 
+      <div class="x-scroll cq2Q7bu" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cq2Q7bu"> 
+        <div class="x-content-center x-pull-down container cq2Q7bu" xid="div2" __cid="cq2Q7bu"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cq2Q7bu" xid="i2" __cid="cq2Q7bu"></i>  
+          <span class="x-pull-down-label cq2Q7bu" xid="span2" __cid="cq2Q7bu">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cq2Q7bu" xid="div4" __cid="cq2Q7bu">
+          <div xid="div3" style="background-color:#37b9ed;" __cid="cq2Q7bu" class="cq2Q7bu"> 
+            <span xid="span11" style="font-size:22px;padding-left:10px;color:#fff;height:60px;" __cid="cq2Q7bu" class="cq2Q7bu"></span>
+          </div>
+          <div xid="div1" align="center" style="padding:15px 20px;" class="text-black cq2Q7bu" __cid="cq2Q7bu"></div>
+        </div>  
+        <div class="x-content-center x-pull-up cq2Q7bu" xid="div5" __cid="cq2Q7bu"></div> 
+      </div>
+    </div>  
+    <style __cid="cq2Q7bu" class="cq2Q7bu">.x-panel.pcJnyeM3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcJnyeM3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJnyeM3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJnyeM3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJnyeM3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJnyeM3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJnyeM3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJnyeM3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJnyeM3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cq2Q7bu" xid="popMenu1" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&#34;anchor&#34;:&#34;fontBtn&#34;,&#34;direction&#34;:&#34;right-bottom&#34;,&#34;opacity&#34;:0}" __cid="cq2Q7bu"> 
+    <div class="x-popMenu-overlay cq2Q7bu" xid="div15" __cid="cq2Q7bu"></div>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cq2Q7bu" xid="fontSize" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cq2Q7bu"> 
+      <li class="x-menu-item cq2Q7bu" xid="item1" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="litFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:litFontSizeClick" data-config="{&#34;label&#34;:&#34;小&#34;}" __cid="cq2Q7bu"> 
+          <i xid="i10" __cid="cq2Q7bu" class="cq2Q7bu"></i>  
+          <span xid="span6" __cid="cq2Q7bu" class="cq2Q7bu">小</span>
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cq2Q7bu" xid="divider1" __cid="cq2Q7bu"></li>  
+      <li class="x-menu-item cq2Q7bu" xid="item2" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="midFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:midFontSizeClick" data-config="{&#34;label&#34;:&#34;中&#34;}" __cid="cq2Q7bu"> 
+          <i xid="i11" __cid="cq2Q7bu" class="cq2Q7bu"></i>  
+          <span xid="span12" __cid="cq2Q7bu" class="cq2Q7bu">中</span>
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cq2Q7bu" xid="divider2" __cid="cq2Q7bu"></li>  
+      <li class="x-menu-item cq2Q7bu" xid="item3" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="bigFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:bigFontSizeClick" data-config="{&#34;label&#34;:&#34;大&#34;}" __cid="cq2Q7bu"> 
+          <i xid="i12" __cid="cq2Q7bu" class="cq2Q7bu"></i>  
+          <span xid="span13" __cid="cq2Q7bu" class="cq2Q7bu">大</span>
+        </a> 
+      </li> 
+    </ul> 
+  </div>
+</div>

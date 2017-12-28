@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="../base/contact.w" design="device:mobile;" __id="id_1" sysParam="false" class="main13 main13 ciAZZra" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciAZZra" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/button/toggle,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/bootstrap/panel/panel,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="">.o-img.ciAZZra{width: 70px; height: 70px; border-radius: 70px} .o-code.ciAZZra{width: 20px; height: 20px} .o-tb.ciAZZra{width: 15px; height: 15px; margin-left: 5px} .text-black.ciAZZra{color: rgb(33, 33, 33)} .o-marginRight.ciAZZra{margin-right: 20px} .h4.ciAZZra{font-size: 16px} .o-noStytle.ciAZZra{border: 0; border-radius: 0; box-shadow: none} .x-titlebar.o-top.ciAZZra{background-color: rgb(75, 115, 164)} .x-titlebar.o-top.ciAZZra span.ciAZZra{font-size: 16px} .o-name.ciAZZra{padding-left: 10px; color: rgb(255, 255, 255); font-size: 16px; border-left: 1px solid rgb(46, 47, 51)} .o-btn.ciAZZra{background-color: rgb(255, 255, 255); margin-top: 15px} .x-green.ciAZZra{border-color: rgb(69, 192, 24); background-color: rgb(69, 192, 24)} .top-background.ciAZZra{background-color: rgb(75, 115, 164)} .item-container.ciAZZra{padding: 5px 10px !important} .item-image.ciAZZra{float: left} .item-row.ciAZZra{margin: 5px 0px 0px 10px} .item-value.ciAZZra{color: rgb(17, 17, 17); font-size: 13pt} .item-desc.ciAZZra{color: rgb(204, 204, 204); font-size: 10pt} .setup-title.ciAZZra{font-size: 13pt; color: rgb(75, 115, 164); margin-left: 46px; height: 48px; line-height: 48px} .setup-item.ciAZZra{font-size: 12pt; color: rgb(17, 17, 17); float: left; margin-top: 12px} .item-container-temp.ciAZZra:active{background-color: whitesmoke} .account-name.ciAZZra{font-size: 18px; color: rgb(17, 17, 17)} .user-status.ciAZZra{font-size: 13px; color: rgb(133, 133, 133)} .account-caption.ciAZZra{width: 73px; font-size: 15px; float: left; margin-top: 5px; color: rgb(17, 17, 17)} .account-value.ciAZZra{font-size: 15px; float: left; margin-top: 5px; color: rgb(17, 17, 17); margin-left: 10px} .list-item.ciAZZra{margin-top: 5px} .x-personal.ciAZZra{height: 100%; width: 50px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onunLoad:modelUnLoad;onInactive:modelInactive;onParamsReceive:modelParamsReceive" __cid="ciAZZra" class="ciAZZra"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-cards pcRZVjQf-iosstatusbar ciAZZra" xid="panel" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciAZZra"> 
+    <div class="x-panel-top ciAZZra" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciAZZra"> 
+      <div xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar ciAZZra" xid="titleBar1" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="ciAZZra">  
+        <div class="x-titlebar-left flex3 ciAZZra" xid="left1" __cid="ciAZZra"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciAZZra" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-left-c&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciAZZra"> 
+            <i xid="i1" class="icon-arrow-left-c ciAZZra" style="font-size:larger;" __cid="ciAZZra"/>  
+            <span xid="span2" __cid="ciAZZra" class="ciAZZra"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title ciAZZra" xid="title1" __cid="ciAZZra"/>  
+        <div xid="right1" style="padding:3px 5px 0px 0px;" __cid="ciAZZra" class="ciAZZra"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon x-personal ciAZZra" xid="personalBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:personalBtnClick" data-config="{&quot;icon&quot;:&quot;icon-android-more&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciAZZra"> 
+            <i xid="i2" class="icon-android-more ciAZZra" __cid="ciAZZra"/>  
+            <span xid="span2" __cid="ciAZZra" class="ciAZZra"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content ciAZZra" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciAZZra"> 
+      <div class="panel panel-body x-card ciAZZra" style="margin:0;" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="ciAZZra"> 
+        <div class="media-left ciAZZra" xid="div6" __cid="ciAZZra"> 
+          <img xmlns:xui="http://www.justep.com/xui" xid="avatar" alt="" class="o-img ciAZZra" onerror="this.src='../base/img/person.png'" xui:update-mode="merge" __cid="ciAZZra"></img>  
+          <div xmlns:xui="http://www.justep.com/xui" class="photoDiv ciAZZra" style="width:70px;height:70px" xid="div15" xui:parent="div6" xui:update-mode="insert" __cid="ciAZZra">  
+            <span style="line-height:70px;font-size:1.3em;" xid="span32" __cid="ciAZZra" class="ciAZZra" data-bind="text:$model.name.get()"/> 
+          </div> 
+        </div>  
+        <div class="media-body ciAZZra" xid="div7" __cid="ciAZZra"> 
+          <div __cid="ciAZZra" class="ciAZZra"> 
+            <span xid="accountName" class="account-name ciAZZra" __cid="ciAZZra"/> 
+          </div>  
+          <span xid="userStatus" class="user-status ciAZZra" __cid="ciAZZra"/> 
+        </div> 
+      </div>  
+      <div class="panel list-group o-noStytle ciAZZra" style="margin:0;" component="$model/UI2/system/components/bootstrap/panel/panel" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="ciAZZra"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" xid="aboutMePanel" class="list-group-item item-container item-container-temp pcbma2Uf-iosstatusbar ciAZZra" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciAZZra"> 
+          <div class="item-image ciAZZra" __cid="ciAZZra"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciAZZra" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-chat&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciAZZra"> 
+              <i xid="i1" class="icon-android-chat ciAZZra" style="font-size:20pt;" __cid="ciAZZra"/>  
+              <span xid="span2" __cid="ciAZZra" class="ciAZZra"/> 
+            </a> 
+          </div>  
+          <div class="item-row ciAZZra" __cid="ciAZZra"> 
+            <span xid="aboutMe" class="item-value ciAZZra" __cid="ciAZZra"/>  
+            <br __cid="ciAZZra" class="ciAZZra"/>  
+            <span class="item-desc ciAZZra" __cid="ciAZZra">关于我</span> 
+          </div>  
+          <div style="clear:both; height:0px;" __cid="ciAZZra" class="ciAZZra"/>  
+          <style __cid="ciAZZra" class="ciAZZra">.x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbma2Uf-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+        </div> 
+      </div>  
+      <div class="panel list-group o-noStytle ciAZZra" style="margin-top:16px;" component="$model/UI2/system/components/bootstrap/panel/panel" xid="edit" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="ciAZZra"> 
+        <div class="list-group-item item-container ciAZZra" __cid="ciAZZra"> 
+          <div class="setup-title ciAZZra" __cid="ciAZZra">设置</div>  
+          <div style="clear:both;" __cid="ciAZZra" class="ciAZZra"/> 
+        </div>  
+        <div class="list-group-item item-container ciAZZra" __cid="ciAZZra"> 
+          <div class="item-image ciAZZra" __cid="ciAZZra"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciAZZra" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-forward&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciAZZra"> 
+              <i xid="i1" class="icon-forward ciAZZra" style="font-size:20pt;" __cid="ciAZZra"/>  
+              <span xid="span2" __cid="ciAZZra" class="ciAZZra"/> 
+            </a> 
+          </div>  
+          <div class="setup-item ciAZZra" style="width:130px;" __cid="ciAZZra">推送通知</div>  
+          <span component="$model/UI2/system/components/justep/button/toggle" class="x-toggle ciAZZra" xid="isNotificationsEnabled" style="width:78px; margin:1px 0px 0px 136px;" ON=" " OFF=" " data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:{&quot;off&quot;:&quot; &quot;,&quot;on&quot;:&quot; &quot;}}" data-bind="component:{name:'$model/UI2/system/components/justep/button/toggle'}" data-events="onChange:isNotificationsEnabledChange" __cid="ciAZZra"> 
+            <input type="checkbox" __cid="ciAZZra" class="ciAZZra"/>  
+            <label data-on=" " data-off=" " __cid="ciAZZra" class="ciAZZra"> 
+              <span __cid="ciAZZra" class="ciAZZra"/> 
+            </label> 
+          </span> 
+        </div> 
+      </div>  
+      <a xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg ciAZZra" style="position:absolute; top:80px; right:20px; border-radius:48px; background-color:2fa4e7; border:0px;height:51px;width:51px;" xid="sendMessageBtn" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sendMessageClick" data-config="{&quot;icon&quot;:&quot;icon-chatbox-working&quot;}" __cid="ciAZZra">  
+        <i xid="i6" class="icon-chatbox-working ciAZZra" style="font-size:18pt;" __cid="ciAZZra"/>  
+        <span xid="span3" __cid="ciAZZra" class="ciAZZra"/> 
+      </a> 
+    </div>  
+    <style __cid="ciAZZra" class="ciAZZra">.x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRZVjQf-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,17 @@
+.x-list .x-list-template .span {
+	color: #f37116;
+}
+
+.radius {
+	border-radius: none;
+}
+
+.dao {
+	font-size: 10px;
+	height: 30px;
+	width: 60px;
+	border-radius: 0;
+	border: 1px solid #aaa;
+	color: #000;
+	background-color: transparent;
+}

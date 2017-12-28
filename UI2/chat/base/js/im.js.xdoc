@@ -1,0 +1,540 @@
+/**
+    @name $UI/chat/base/js/im#person
+    @class
+    @category javascript
+	@model UI2
+	@description 组织人员的person对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#person.id
+	@property
+	@type String
+	@description 组织人员id
+*/
+ 
+/**
+	@name $UI/chat/base/js/im#person.name
+	@property
+	@type String
+	@description 组织人员姓名
+*/
+  
+/**
+	@name $UI/chat/base/js/im#person.uid
+	@property
+	@type int
+	@description 组织人员uid,注册dangchat-server后返回
+*/
+ 
+/**
+	@name $UI/chat/base/js/im#person.about
+	@property
+	@type String
+	@description 组织人员简介
+*/
+
+/**
+	@name $UI/chat/base/js/im#person.avatar
+	@property
+	@type String
+	@description 组织人员请求头像的URL
+*/
+
+/**
+    @name $UI/chat/base/js/im#peer
+    @class
+    @category javascript
+	@model UI2
+	@description 组织人员在dangchat-server中的唯一标识,通过组织人员的uid获取
+	@example
+	<xmp>
+		var peer = IM.getUserPeer(uid);
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#peer.id
+	@property
+	@type int
+	@description 组织人员的uid
+*/
+
+/**
+	@name $UI/chat/base/js/im#peer.type
+	@property
+	@type String
+	@description peer的类型,user或group
+*/
+
+/**
+    @name $UI/chat/base/js/im
+    @class
+    @category javascript
+	@model UI2
+	@description IM前端JS接口
+*/
+
+/**
+	@name $UI/chat/base/js/impl#constructor
+	@function
+	@description 构造函数
+	@param model 当前页面model
+	@returns {void}
+	@example 
+	<xmp>
+		var Impl = require("$UI/chat/base/js/im.impl");
+		new Impl(model);
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#loginActor
+	@function
+	@description 登录dangchat-server,组织人员第一次登录时,组织人员在dangchat-server中注册并返回注册人员的uid
+	@returns {Object} promise 参考JavaScript的promise对象
+	<xmp>
+		IM.loginActor.done(function(){
+			//登录dangchat-server成功
+		})
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#getOrgPersons
+	@function
+	@description 获取组织下的所有人(需使用者自己实现)
+	@param {String} id 当前登录人的ID
+	@returns {Object} promise 具体参考JavaScript的promise对象
+	<br/><b>promise完成时返回参数</b>
+	<xmp>
+		IM.getOrgPersons(id).done(function(org){
+			org是当前登录人所在组织的所有人员
+		})
+	</xmp>
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#getPersonByUID
+	@function
+	@description 根据组织人员的uid取组织人员的person对象
+	@param {int} uid 组织人员UID
+	@returns {$UI/chat/base/js/im#person} person对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#getPerson
+	@function
+	@description 根据组织人员的uid取组织人员的person对象
+	@param {String} id 组织ID
+	@returns {$UI/chat/base/js/im#person} person对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#addPerson
+	@function
+	@description 组织人员增加时,增加组织人员的前端person对象数组
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#isLoggedIn
+	@function
+	@description 组织人员增加时,增加组织人员的前端person对象数组
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#getOrgDepts
+	@function
+	@description 获取组织下的所有部门(需使用者自己实现)
+	@param {String} id 当前登录人员id
+	@returns {Object} promise 参考JavaScript的promise对象
+	<xmp>
+		IM.getOrgDepts(id).done{function(orgDepts){
+			orgDepts是当前登录人所在组织的所有部门
+		}}
+	</xmp>
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#setReady
+	@function
+	@description wex5铛铛新注册人员登录后选择组织,加入组织成功后进行注册并登录dangchat-server操作
+	@param {Boolean} ok 是否完成注册人员
+	@param{String} info 错误信息
+	@returns {void}
+*/
+
+/**
+	@name $UI/chat/base/js/im#onLoggedIn
+	@function
+	@description 登录X5成功后派发的事件"onLoggedIn"
+	@returns {void}
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#login
+	@function
+	@description 登录X5逻辑,登录成功后保存成功信息
+	@param {Object} param 保存登录信息的对象(登录名和密码)
+	<xmp>
+		param.userName
+		param.password
+	</xmp> 
+	@returns {Object} promise
+	<xmp>
+		IM.login(param).done(function(data){
+			data是登录成功后返回的信息
+		})
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#autoLogin
+	@function
+	@description 自动登录,取Store中保存登录成功的信息
+	@param {Object} param 保存登录信息的对象,登录名和密码。 
+	@returns {void} 
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#logout
+	@function
+	@description 登出X5逻辑,dangchat-server没有退出,次方法中将本地缓存清空,实现dangchat-server退出
+	@returns {void}
+*/
+
+/**
+	@name $UI/chat/base/js/im#getCurrentPerson
+	@function
+	@description 获取当前登录人员的person对象
+	@returns {$UI/chat/base/js/im#person}  person对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#getCurrentPersonID
+	@function
+	@description 获取当前登录人员ID
+	@returns {String} id 当前登录人id
+*/
+
+/**
+	@name $UI/chat/base/js/im#regPerson
+	@function
+	@description 注册功能,帮助组织人员注册dangchat-server获取组织人员uid
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@returns {Object} promise 参考JavaScript的promise对象
+	<xmp>
+		IM.regPerson(person).done(function(uid){
+			返回注册人员的uid
+		})
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#addFriend
+	@function
+	@description 帮组织人员在dangchat-server中注册并与组织人员在dangchat-server中成为好友关系。聊天和创建群聊邀请成员都需要成为好友关系
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@returns {Object} promise 参考JavaScript的promise对象
+	<xmp>
+		IM.addFriend(person).done(function(uid){
+			帮助组织人员注册并在dangchat-server中成为好友关系和返回注册人员的uid
+		})
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#existFriend
+	@function
+	@description 判断组织中人员和登录人是否为好友关系
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@returns {Object} promise 参考JavaScript的promise对象
+	<xmp>
+		IM.existFriend(person).done(function(exist){
+			exist为boolean类型。返回和组织人员在dangchat-server是否为好友关系
+		});
+	</xmp>
+*/
+
+/**
+	@name $UI/chat/base/js/im#getPersonDefaultIcon
+	@function
+	@description 获取人员默认头像
+	@returns {String} 头像路径 
+*/
+
+/**
+	@name $UI/chat/base/js/im#getGroupDefaultIcon
+	@function
+	@description 获取群组默认头像
+	@returns {String} 头像路径 
+*/
+
+/**
+	@name $UI/chat/base/js/im#messageParse
+	@function
+	@description 消息解析,根据消息的类型对消息进行处理,展示不同的形式。图片、声音等。
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#emojiParse
+	@function
+	@description 解析emoji表情
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#bindDialogs
+	@function
+	@description 获取绑定会话列表,获取推送消息
+	@param {fucntion} callback 回调函数
+	@example 
+	 <xmp>
+		IM.bindDialogs(function(dialogs){
+			//会话列表数组
+		})
+  	</xmp> 
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#unbindDialogs
+	@function
+	@description 解绑会话列表,断开推送
+	@param {fucntion} callback 回调函数
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#sendTextMessageToPerson
+	@function
+	@description 发送消息(人员)
+	@param {$UI/chat/base/js/im#person} person 组织人员的person对象
+	@param {String}text 消息内容
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#sendTextMessage
+	@function
+	@description 发送文本消息
+	@param {$UI/chat/base/js/im#peer} peer 组织人员在dangchat-server中保存的对象
+	@param {String} text 文本消息内容
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#sendPhotoMessage
+	@function
+	@description 发送图片消息
+	@param {$UI/chat/base/js/im#peer} peer 组织人员在dangchat-server中保存的对象
+	@param {Object} file 文件对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#sendVoiceMessage
+	@function
+	@description 发送音频消息
+	@param {$UI/chat/base/js/im#peer} peer 组织人员在dangchat-server中保存的对象
+	@param {int} duration 时长
+	@param {Object} voice 声音文件
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#sendClipboardPhotoMessage
+	@function
+	@description 发送剪切板中图片
+	@param {$UI/chat/base/js/im#peer} peer 组织人员在dangchat-server中保存的对象
+	@param {Object} photo 图片文件
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#deleteChat
+	@function
+	@description 删除会话
+	@param {$UI/chat/base/js/im#peer} peer 人员或群组的peer对象,推送的会话列表中可取到 
+	@returns {Object} promise 参考JavaScript的promise对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#clearChat
+	@function
+	@description 清空与联系人或群组的所有聊天消息
+	@param {$UI/chat/base/js/im#peer} peer 人员或群组的peer对象,推送的会话列表中可取到 
+	@returns {Object} promise 参考JavaScript的promise对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#deleteMessage
+	@function
+	@description 清空与联系人或群组的所有聊天消息
+	@param {$UI/chat/base/js/im#peer}peer 人员或群组的peer对象
+	@param {String}rid 消息的id,可在推送的消息内容中取到
+	@returns {Object} promise 参考JavaScript的promise对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#bindUser
+	@function
+	@description 绑定联系人信息
+	@param {int}uid 组织人员在dangchat-server中的id,
+	@param {function}callback 回调函数,当人员信息发生变化时dangchat-server会推送过来
+	
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#getUser
+	@function
+	@description 得到联系人信息
+	@param {int} uid 组织人员在dangchat-server中的id
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#bindGroup
+	@function
+	@description 绑定群组信息
+	@param {int} gid 群组在dangchat-server中的id
+	@param {fucntion}callback 回调函数,当群组信息发生变化时dangchat-server会推送过来
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#getGroup
+	@function
+	@description 群组信息
+	@param {int} gid 群组在dangchat-server中的id
+	@returns {Object} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#onConversationOpen
+	@function
+	@description 打开与联系人的链接,将会话列表中的未读消息数设置为零
+	@param {$UI/chat/base/js/im#peer} peer  联系人或群组的peer对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#onConversationClosed
+	@function
+	@description 关闭与联系人的链接,离开消息页面时要关闭,否则进入新会话页面时不会清空会话列表中的未读消息数。
+	@param {$UI/chat/base/js/im#peer} peer  联系人或群组的peer对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#onChatEnd
+	@function
+	@description 获取更多消息。调用一次推二十条历史消息
+	@param {$UI/chat/base/js/im#peer} peer  联系人或群组的peer对象
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#onDialogsEnd
+	@function
+	@description 获取更多会话。调用一次推二十条历史会话
+	@returns {void} 
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#bindUserOnline
+	@function
+	@description 绑定人员的在线状态
+	@param {int} uid 人员的uid
+	@param {fucntion}callback 回调函数,获取人员的在线状态
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#unbindUserOnline
+	@function
+	@description 解绑人员的在线状态
+	@param {int} uid 人员的uid
+	@param {fucntion} callback  回调函数
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#getUid
+	@function
+	@description 得到登录人的uid
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#editMyAbout
+	@function
+	@description 修改个人的介绍
+	@param {String} string 字符串
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#editGroupAbout
+	@function
+	@description 群主修改群介绍
+	@param {String} string 字符串
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#addLike
+	@function
+	@description 消息添加关注
+	@param {$UI/chat/base/js/im#peer} peer 人员或群组的peer对象
+	@param {String} rid 消息id
+	@returns {void} 
+*/
+
+
+/**
+	@name $UI/chat/base/js/im#inviteMember
+	@function
+	@description 邀请群成员
+	@param {int} gid 群组id
+	@param {int} uid 人员uid
+	@returns {Object} promise 参考JavaScript的promise对象
+*/
+
+/**
+	@name $UI/chat/base/js/im#kickMember
+	@function
+	@description 群主删除群成员
+	@param {$UI/chat/base/js/im#peer} peer 人员或群组的peer对象
+	@param {String} rid 消息id
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#updateGroupShared
+	@function
+	@description 群主的共享群设置,新加入群成员是否能够看到历史消息。
+	@param {int} gid 群组id
+	@param {String} groupShared "#|$,1"为开启群共享,"#|$,0"为关闭群共享
+	@returns {void} 
+*/
+
+/**
+	@name $UI/chat/base/js/im#editGroupTitle
+	@function
+	@description 群主修改群名称
+	@param {int} gid 群组id
+	@param {String} title 群组名称
+	@returns {void} 
+*/

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQRfiqi" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQRfiqi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQRfiqi" class="cQRfiqi"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQFryEj-iosstatusbar cQRfiqi" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQRfiqi"> 
+    <div class="x-panel-top cQRfiqi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRfiqi"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQRfiqi" xid="titleBar1" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;账户安全验证&quot;}" __cid="cQRfiqi"> 
+        <div class="x-titlebar-left cQRfiqi" xid="left1" __cid="cQRfiqi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQRfiqi" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-chevronleft&quot;,&quot;label&quot;:&quot;退出验证&quot;}" __cid="cQRfiqi"> 
+            <i xid="i1" class="linear linear-chevronleft cQRfiqi" __cid="cQRfiqi"/>  
+            <span xid="span11" __cid="cQRfiqi" class="cQRfiqi">退出验证</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQRfiqi" xid="title1" style="font-weight:normal;" __cid="cQRfiqi">账户安全验证</div>  
+        <div class="x-titlebar-right  cQRfiqi" xid="right1" __cid="cQRfiqi"> 
+          <div class="empty cQRfiqi" __cid="cQRfiqi"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQRfiqi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRfiqi"> 
+      <div xid="div9" __cid="cQRfiqi" class="cQRfiqi"> 
+        <div class="panel-heading cQRfiqi" xid="div11" __cid="cQRfiqi"> 
+          <div class="media-left media-middle cQRfiqi" xid="mediaLeft1" __cid="cQRfiqi"> 
+            <span class="x-flex cQRfiqi" style="width:42px;" xid="span1" __cid="cQRfiqi">手机号</span> 
+          </div>  
+          <div class="media-body cQRfiqi" style="width:119px;" xid="mediaBody1" __cid="cQRfiqi"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm tb-noborder text-muted cQRfiqi" xid="phoneNumber" style="width:200px;border-radius:0;height:37px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQRfiqi"/> 
+          </div> 
+        </div>  
+        <div class="panel-heading cQRfiqi" xid="div1" __cid="cQRfiqi"> 
+          <div class="media-left media-middle cQRfiqi" xid="div2" style="height:37px;" __cid="cQRfiqi"> 
+            <span class="x-flex cQRfiqi" style="width:44px;" xid="span2" __cid="cQRfiqi">验证码</span> 
+          </div>  
+          <div class="media-body cQRfiqi" xid="div3" style="height:28px;width:140px;" __cid="cQRfiqi"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm tb-noborder text-muted cQRfiqi" xid="verifyCode" style="border-radius:0;width:127px;height:37px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cQRfiqi"/> 
+          </div>  
+          <div class="media-body cQRfiqi" style="width:760px;" xid="div7" __cid="cQRfiqi"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cQRfiqi" xid="sendsmsbutton" style="font-size:12px;color:#fff;width:100px;background-color:#37b9ed;height:37px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sendsmsButton" data-config="{&quot;label&quot;:&quot;获取验证码&quot;}" __cid="cQRfiqi"> 
+              <i xid="i3" __cid="cQRfiqi" class="cQRfiqi"/>  
+              <span xid="span5" __cid="cQRfiqi" class="cQRfiqi">获取验证码</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="panel-heading cQRfiqi" xid="div6" __cid="cQRfiqi"> 
+          <div class="media-body cQRfiqi" style="width:119px;" xid="div13" align="justify" __cid="cQRfiqi"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-block cQRfiqi" xid="button2" style="color:#fff;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:verifyButton" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cQRfiqi"> 
+            <i xid="i2" __cid="cQRfiqi" class="cQRfiqi"/>  
+            <span xid="span4" __cid="cQRfiqi" class="cQRfiqi">确定</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cQRfiqi" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRfiqi"/>  
+    <style __cid="cQRfiqi" class="cQRfiqi">.x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQFryEj-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="lockerDialog" style="top:17px;left:89px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cQRfiqi" class="cQRfiqi"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQRfiqi" __cid="cQRfiqi"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQRfiqi" style="display:none;" __cid="cQRfiqi">  
+      <div class="x-dialog-title cQRfiqi" __cid="cQRfiqi"> 
+        <button class="close cQRfiqi" __cid="cQRfiqi"> 
+          <span __cid="cQRfiqi" class="cQRfiqi">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cQRfiqi" __cid="cQRfiqi"/> 
+      </div>  
+      <div class="x-dialog-body cQRfiqi" __cid="cQRfiqi"/> 
+    </div> 
+  </span> 
+</div>

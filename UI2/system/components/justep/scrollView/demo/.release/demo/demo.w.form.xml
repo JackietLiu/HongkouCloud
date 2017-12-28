@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="window c6z2Qve" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6z2Qve" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">body.c6z2Qve{-webkit-touch-callout: none; -webkit-user-select: text} .x-scroll.c6z2Qve{z-index: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; padding: 0} .x-scroll.c6z2Qve ul.c6z2Qve{list-style: none; padding: 0; margin: 0; width: 100%; text-align: left} .x-scroll.c6z2Qve li.c6z2Qve{padding: 0 10px; height: 40px; line-height: 40px; border-bottom: 1px solid rgb(204, 204, 204); border-top: 1px solid rgb(255, 255, 255); background-color: rgb(250, 250, 250); font-size: 14px}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/list/list" class="x-list x-scroll-view c6z2Qve" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" __cid="c6z2Qve"> 
+    <div class="x-scroll c6z2Qve" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="c6z2Qve"> 
+      <div class="x-content-center x-pull-down container c6z2Qve" __cid="c6z2Qve"> 
+        <i class="x-pull-down-img glyphicon x-icon-pull-down c6z2Qve" __cid="c6z2Qve"/>  
+        <span class="x-pull-down-label c6z2Qve" __cid="c6z2Qve">下拉刷新...</span> 
+      </div>  
+      <div class="x-scroll-content c6z2Qve" xid="div2" __cid="c6z2Qve"> 
+        <ul class="x-list-template hide c6z2Qve" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="c6z2Qve"> 
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li>  
+          <li __cid="c6z2Qve" class="c6z2Qve">li</li> 
+        </ul> 
+      </div>  
+      <div class="x-content-center x-pull-up c6z2Qve" xid="div3" __cid="c6z2Qve"> 
+        <span class="x-pull-up-label c6z2Qve" xid="span2" __cid="c6z2Qve">加载更多...</span> 
+      </div> 
+    </div> 
+  </div> 
+</div>

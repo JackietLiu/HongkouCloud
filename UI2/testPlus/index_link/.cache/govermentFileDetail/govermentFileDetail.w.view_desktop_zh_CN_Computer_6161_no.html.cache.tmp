@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfuq6Rz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfuq6Rz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-titlebar.cfuq6Rz{background: rgb(55, 185, 237)} .lit.cfuq6Rz{font-size: 12pt} .mid.cfuq6Rz{font-size: 16pt} .big.cfuq6Rz{font-size: 21pt}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelActive;onParamsReceive:modelParamsReceive" __cid="cfuq6Rz" class="cfuq6Rz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEveAB3-iosstatusbar cfuq6Rz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfuq6Rz"> 
+    <div class="x-panel-top cfuq6Rz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfuq6Rz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfuq6Rz" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;文件详情&quot;}" __cid="cfuq6Rz"> 
+        <div class="x-titlebar-left cfuq6Rz" xid="left1" __cid="cfuq6Rz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cfuq6Rz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfuq6Rz"> 
+            <i xid="i7" class="linear linear-arrowleft cfuq6Rz" __cid="cfuq6Rz"/>  
+            <span xid="span11" __cid="cfuq6Rz" class="cfuq6Rz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cfuq6Rz" xid="title1" style="font-weight:normal;" __cid="cfuq6Rz">文件详情</div>  
+        <div class="x-titlebar-right  cfuq6Rz" xid="right1" __cid="cfuq6Rz"> 
+          <div class="empty cfuq6Rz" __cid="cfuq6Rz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cfuq6Rz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfuq6Rz"> 
+      <div class="x-scroll cfuq6Rz" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfuq6Rz"> 
+        <div class="x-content-center x-pull-down container cfuq6Rz" xid="div1" __cid="cfuq6Rz"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down cfuq6Rz" xid="i2" __cid="cfuq6Rz"/>  
+          <span class="x-pull-down-label cfuq6Rz" xid="span2" __cid="cfuq6Rz">下拉刷新...</span> 
+        </div>  
+        <div class="x-scroll-content cfuq6Rz" xid="div2" __cid="cfuq6Rz"> 
+          <div xid="div4" style="background-color:#37b9ed;" __cid="cfuq6Rz" class="cfuq6Rz"> 
+            <span xid="span1" style="font-size:22px;padding-left:10px;color:#fff;height:60px;" __cid="cfuq6Rz" class="cfuq6Rz"/> 
+          </div>  
+          <div xid="div7" class="text-black lead cfuq6Rz" style="padding:15px 20px;" align="center" __cid="cfuq6Rz"/> 
+        </div>  
+        <div class="x-content-center x-pull-up cfuq6Rz" xid="div3" __cid="cfuq6Rz"/> 
+      </div> 
+    </div>  
+    <style __cid="cfuq6Rz" class="cfuq6Rz">.x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEveAB3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

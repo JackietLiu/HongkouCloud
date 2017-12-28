@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" __id="id_1" extends="$UI/system/deploy/common/waittingDialog.w" component="$model/UI2/system/components/justep/window/window" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czeeQBb" class="czeeQBb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czeeQBb" class="czeeQBb"/>  
+  <div xmlns="" xid="infoDiv" style="padding:8px" __cid="czeeQBb" class="czeeQBb"> 
+    <label xid="info" class="x-label czeeQBb" __cid="czeeQBb">正在执行，请稍候......</label>  
+    <div xid="div7" __cid="czeeQBb" class="czeeQBb"> 
+      <label xid="detail" style="font-size:small;color:#0080FF;cursor:pointer;" __cid="czeeQBb" class="czeeQBb" data-bind="event:{click:$model._callModelFn.bind($model, 'detailClick')}">详细信息</label> 
+    </div> 
+  </div>  
+  <div xmlns="" xid="logDiv" style="display:none" __cid="czeeQBb" class="czeeQBb"> 
+    <div xid="iframeDiv" style="height:100%;" __cid="czeeQBb" class="czeeQBb"/>  
+    <div xid="useServerDiv" style="padding-left:8px" __cid="czeeQBb" class="czeeQBb"> 
+      <span component="$model/UI2/system/components/justep/button/radio" class="x-radio czeeQBb" xid="logTypeRadio1" name="logType" label="日志" checked="true" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;日志&quot;,&quot;name&quot;:&quot;logType&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:logTypeRadioChange" __cid="czeeQBb"> 
+        <input type="radio" name="logType" __cid="czeeQBb" class="czeeQBb"/>  
+        <label __cid="czeeQBb" class="czeeQBb">日志</label> 
+      </span>  
+      <span xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/button/radio" class="x-radio czeeQBb" xid="logTypeRadio2" name="logType" label="代理服务日志" xui:update-mode="merge" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;代理服务日志&quot;,&quot;name&quot;:&quot;logType&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:logTypeRadioChange" __cid="czeeQBb">  
+        <input type="radio" name="logType" __cid="czeeQBb" class="czeeQBb"/>  
+        <label __cid="czeeQBb" class="czeeQBb">代理服务日志</label> 
+      </span> 
+    </div> 
+  </div> 
+</div>

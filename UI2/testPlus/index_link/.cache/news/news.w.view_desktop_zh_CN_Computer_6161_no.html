@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cQviqIf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQviqIf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.x-panel-top.cQviqIf .btn-group.cQviqIf{box-shadow: 0px 2px 1px rgb(136, 136, 136)} .x-panel-top.cQviqIf .btn-group.cQviqIf .btn.cQviqIf{font-size: 16px; letter-spacing: 3px; font-weight: normal} .x-panel-top.cQviqIf .btn-group.cQviqIf .btn.active.cQviqIf{border-bottom: 2px solid rgb(55, 185, 237); color: rgb(55, 185, 237); font-size: 18px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cQviqIf" class="cQviqIf"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcAjaiIr-iosstatusbar cQviqIf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQviqIf"> 
+    <div class="x-panel-top cQviqIf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQviqIf">
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQviqIf" xid="titleBar1" style="font-weight:normal;font-size:20px;background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;新闻列表&#34;}" __cid="cQviqIf"> 
+        <div class="x-titlebar-left cQviqIf" xid="left1" __cid="cQviqIf"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cQviqIf" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cQviqIf"> 
+            <i xid="i7" class="linear linear-arrowleft cQviqIf" __cid="cQviqIf"></i>  
+            <span xid="span11" __cid="cQviqIf" class="cQviqIf"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cQviqIf" xid="title1" style="font-weight:normal;" __cid="cQviqIf">新闻列表</div>  
+        <div class="x-titlebar-right  cQviqIf" xid="right1" __cid="cQviqIf">
+          <div class="empty cQviqIf" __cid="cQviqIf"></div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cQviqIf" xid="buttonGroup1" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;selected&#34;:&#34;hongkouBtn&#34;,&#34;tabbed&#34;:true}" __cid="cQviqIf">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cQviqIf" xid="hongkouBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;scrollView1.reachEndDown&#34;}" data-config="{&#34;label&#34;:&#34;虹口新闻&#34;,&#34;target&#34;:&#34;hongkouNews&#34;}" __cid="cQviqIf"> 
+          <i xid="i1" __cid="cQviqIf" class="cQviqIf"></i>  
+          <span xid="span2" __cid="cQviqIf" class="cQviqIf">虹口新闻</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cQviqIf" xid="partmentBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;scrollView2.reachEndUp&#34;}" data-config="{&#34;label&#34;:&#34;部门动态&#34;,&#34;target&#34;:&#34;partmentDym&#34;}" __cid="cQviqIf"> 
+          <i xid="i3" __cid="cQviqIf" class="cQviqIf"></i>  
+          <span xid="span4" __cid="cQviqIf" class="cQviqIf">部门动态</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cQviqIf" xid="blockBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;社区新闻&#34;,&#34;target&#34;:&#34;blockNews&#34;}" __cid="cQviqIf"> 
+          <i xid="i4" __cid="cQviqIf" class="cQviqIf"></i>  
+          <span xid="span5" __cid="cQviqIf" class="cQviqIf">社区新闻</span>
+        </a>
+      </div>
+    </div>  
+    <div class="x-panel-content cQviqIf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQviqIf"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQviqIf" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;routable&#34;:false,&#34;swipe&#34;:true}" __cid="cQviqIf"> 
+        <div class="x-contents-content  x-scroll-view active cQviqIf" xid="hongkouNews" onactive="hongkouNewsActive" supportpulldown="true" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:hongkouNewsActive" __cid="cQviqIf"> 
+          <div class="x-scroll cQviqIf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:hongkouNewsActive" data-config="{&#34;autoAppend&#34;:false,&#34;autoPullUp&#34;:false}" __cid="cQviqIf"> 
+            <div class="x-content-center x-pull-down container cQviqIf" xid="div3" __cid="cQviqIf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cQviqIf" xid="i2" __cid="cQviqIf"></i>  
+              <span class="x-pull-down-label cQviqIf" xid="span17" __cid="cQviqIf">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cQviqIf" xid="div2" __cid="cQviqIf"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cQviqIf" xid="list1" supportpulldown="true" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;hongkouData&#34;,&#34;disableInfiniteLoad&#34;:false,&#34;disablePullToRefresh&#34;:false,&#34;limit&#34;:10}" __cid="cQviqIf"> 
+                <ul class="x-list-template hide cQviqIf" xid="listTemplateUl1" __cid="cQviqIf" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+                  <li xid="li1" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cQviqIf" class="cQviqIf" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cQviqIf" xid="media1" __cid="cQviqIf"> 
+                      <div class="media-left cQviqIf" xid="mediaLeft1" __cid="cQviqIf"> 
+                        <a href="#" xid="a1" __cid="cQviqIf" class="cQviqIf"></a>
+                      </div>  
+                      <div class="media-body cQviqIf" xid="mediaBody1" __cid="cQviqIf"> 
+                        <h4 xid="h41" class="media-heading cQviqIf" style="color:#000;" __cid="cQviqIf" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span9" style="color:#989898;font-size:10px;" __cid="cQviqIf" class="cQviqIf">发布时间：</span>  
+                        <span xid="span1" __cid="cQviqIf" class="cQviqIf" data-bind="text:ref(&#34;date&#34;)"></span>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul>
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cQviqIf" xid="div1" __cid="cQviqIf"> 
+              <span class="x-pull-up-label cQviqIf" xid="span12" __cid="cQviqIf">加载更多...</span>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content   x-scroll-view cQviqIf" xid="partmentDym" onactive="partmentDymActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:partmentDymActive" __cid="cQviqIf"> 
+          <div class="x-scroll cQviqIf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:partmentDymActive" __cid="cQviqIf"> 
+            <div class="x-content-center x-pull-down container cQviqIf" xid="div5" __cid="cQviqIf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cQviqIf" xid="i5" __cid="cQviqIf"></i>  
+              <span class="x-pull-down-label cQviqIf" xid="span13" __cid="cQviqIf">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cQviqIf" xid="div6" __cid="cQviqIf">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cQviqIf" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;departmentData&#34;,&#34;disablePullToRefresh&#34;:false,&#34;limit&#34;:10}" __cid="cQviqIf"> 
+                <ul class="x-list-template hide cQviqIf" xid="listTemplateUl2" __cid="cQviqIf" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                  <li xid="li2" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cQviqIf" class="cQviqIf" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cQviqIf" xid="media2" __cid="cQviqIf"> 
+                      <div class="media-left cQviqIf" xid="mediaLeft2" __cid="cQviqIf"> 
+                        <a href="#" xid="a2" __cid="cQviqIf" class="cQviqIf"> 
+                          <img class="media-object cQviqIf" src="" alt="" xid="image2" __cid="cQviqIf">
+                        </a> 
+                      </div>  
+                      <div class="media-body cQviqIf" xid="mediaBody2" __cid="cQviqIf"> 
+                        <h4 xid="h42" class="media-heading cQviqIf" style="color:#000;" __cid="cQviqIf" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span10" style="color:#989898;font-size:10px;" __cid="cQviqIf" class="cQviqIf">发布时间：</span>  
+                        <span xid="span6" __cid="cQviqIf" class="cQviqIf" data-bind="text:ref(&#34;date&#34;)"></span>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cQviqIf" xid="div7" __cid="cQviqIf"> 
+              <span class="x-pull-up-label cQviqIf" xid="span14" __cid="cQviqIf">加载更多...</span>
+            </div> 
+          </div>
+        </div>
+        <div class="x-contents-content  x-scroll-view cQviqIf" xid="blockNews" onactive="blockNewsActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:blockNewsActive" __cid="cQviqIf"> 
+          <div class="x-scroll cQviqIf" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:blockNewsActive" __cid="cQviqIf"> 
+            <div class="x-content-center x-pull-down container cQviqIf" xid="div8" __cid="cQviqIf"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cQviqIf" xid="i6" __cid="cQviqIf"></i>  
+              <span class="x-pull-down-label cQviqIf" xid="span15" __cid="cQviqIf">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cQviqIf" xid="div9" __cid="cQviqIf">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cQviqIf" xid="list3" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:true,&#34;data&#34;:&#34;blockData&#34;,&#34;disableInfiniteLoad&#34;:false,&#34;disablePullToRefresh&#34;:false,&#34;limit&#34;:10}" __cid="cQviqIf"> 
+                <ul class="x-list-template hide cQviqIf" xid="listTemplateUl3" __cid="cQviqIf" data-bind="foreach:{data:$model.foreach_list3($element),afterRender:$model.foreach_afterRender_list3.bind($model,$element)}"> 
+                  <li xid="li3" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cQviqIf" class="cQviqIf" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cQviqIf" xid="media3" __cid="cQviqIf"> 
+                      <div class="media-left cQviqIf" xid="mediaLeft3" __cid="cQviqIf"> 
+                        <a href="#" xid="a3" __cid="cQviqIf" class="cQviqIf"> 
+                          <img class="media-object cQviqIf" src="" alt="" xid="image3" __cid="cQviqIf">
+                        </a> 
+                      </div>  
+                      <div class="media-body cQviqIf" xid="mediaBody3" __cid="cQviqIf"> 
+                        <h4 xid="h43" class="media-heading cQviqIf" style="color:#000;" __cid="cQviqIf" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span8" style="color:#989898;font-size:10px;" __cid="cQviqIf" class="cQviqIf">发布时间：</span>  
+                        <span xid="span7" __cid="cQviqIf" class="cQviqIf" data-bind="text:ref(&#34;date&#34;)"></span>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cQviqIf" xid="div10" __cid="cQviqIf"> 
+              <span class="x-pull-up-label cQviqIf" xid="span16" __cid="cQviqIf">加载更多...</span>
+            </div> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cQviqIf" class="cQviqIf">.x-panel.pcAjaiIr-iosstatusbar >.x-panel-top {height: 100px;}.x-panel.pcAjaiIr-iosstatusbar >.x-panel-content { top: 100px;bottom: nullpx;}.x-panel.pcAjaiIr-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcAjaiIr-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAjaiIr-iosstatusbar >.x-panel-top {height: 120px;}.iosstatusbar .x-panel.pcAjaiIr-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcAjaiIr-iosstatusbar >.x-panel-content { top: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAjaiIr-iosstatusbar >.x-panel-top {height: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcAjaiIr-iosstatusbar >.x-panel-content {top: 100px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="newsDetail" style="top:6px;left:131px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;height&#34;:&#34;80%&#34;,&#34;routable&#34;:true}" __cid="cQviqIf" class="cQviqIf">
+    <div class="x-dialog-overlay cQviqIf" __cid="cQviqIf"></div>
+    <div class="x-dialog cQviqIf" style="display:none;" __cid="cQviqIf">
+      <div class="x-dialog-title cQviqIf" __cid="cQviqIf">
+        <button class="close cQviqIf" __cid="cQviqIf">
+          <span __cid="cQviqIf" class="cQviqIf">×</span>
+        </button>
+        <div class="x-dialog-title-text cQviqIf" __cid="cQviqIf"></div>
+      </div>
+      <div class="x-dialog-body cQviqIf" __cid="cQviqIf"></div>
+    </div>
+  </span>
+</div>

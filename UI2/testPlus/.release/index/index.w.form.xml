@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfm6NRf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfm6NRf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfm6NRf" class="cfm6NRf"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cfm6NRf" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:false,&quot;wrap&quot;:true}" __cid="cfm6NRf"/>
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="loginDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;src&quot;:&quot;$model/UI2/testPlus/login1.w&quot;}" __cid="cfm6NRf" class="cfm6NRf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cfm6NRf" __cid="cfm6NRf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cfm6NRf" style="display:none;" __cid="cfm6NRf">
+      <xhtml:div class="x-dialog-title cfm6NRf" __cid="cfm6NRf">
+        <xhtml:button class="close cfm6NRf" __cid="cfm6NRf">
+          <xhtml:span __cid="cfm6NRf" class="cfm6NRf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cfm6NRf" __cid="cfm6NRf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cfm6NRf" __cid="cfm6NRf"/>
+    </xhtml:div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="lockerDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cfm6NRf" class="cfm6NRf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cfm6NRf" __cid="cfm6NRf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cfm6NRf" style="display:none;" __cid="cfm6NRf">
+      <xhtml:div class="x-dialog-title cfm6NRf" __cid="cfm6NRf">
+        <xhtml:button class="close cfm6NRf" __cid="cfm6NRf">
+          <xhtml:span __cid="cfm6NRf" class="cfm6NRf">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cfm6NRf" __cid="cfm6NRf"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cfm6NRf" __cid="cfm6NRf"/>
+    </xhtml:div>
+  </span>
+</div>

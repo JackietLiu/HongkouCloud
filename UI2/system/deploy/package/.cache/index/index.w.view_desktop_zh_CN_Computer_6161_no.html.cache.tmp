@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" class="window cUfEvuy" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUfEvuy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-dialog-senior.cUfEvuy{position: absolute; bottom: 10px; right: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cUfEvuy" class="cUfEvuy"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full o-containerParentApp pcErqqam-iosstatusbar cUfEvuy" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cUfEvuy"> 
+    <div class="x-panel-content cUfEvuy" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfEvuy"> 
+      <div xid="containerParentPackage" class="composeParent cUfEvuy" __cid="cUfEvuy"/>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-dialog-senior cUfEvuy" xid="advanceBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasAdvanceBtn.get()}" data-events="onClick:advanceBtnClick" data-config="{&quot;label&quot;:&quot;高级模式&quot;}" __cid="cUfEvuy"> 
+        <i xid="i7" __cid="cUfEvuy" class="cUfEvuy"/>  
+        <span xid="span1" __cid="cUfEvuy" class="cUfEvuy">高级模式</span> 
+      </a> 
+    </div>  
+    <div class="x-panel-bottom cUfEvuy" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cUfEvuy"> 
+      <nav class="navbar navbar-default cUfEvuy" role="navigation" xid="default2" __cid="cUfEvuy"> 
+        <div class="navbar-buttons-container text-center cUfEvuy" xid="div1" __cid="cUfEvuy"> 
+          <div class="btn-group-single cUfEvuy" style="display:inline-block" xid="div2" __cid="cUfEvuy"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cUfEvuy" xid="downloadBtn" style="width:120px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasDownloadBtn.get()}" data-events="onClick:downloadBtnClick" data-config="{&quot;label&quot;:&quot;下载&quot;}" __cid="cUfEvuy"> 
+              <i xid="i2" __cid="cUfEvuy" class="cUfEvuy"/>  
+              <span xid="span2" __cid="cUfEvuy" class="cUfEvuy">下载</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cUfEvuy" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasBackBtn.get()}" data-events="onClick:backBtnClick" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="cUfEvuy"> 
+              <i xid="i1" __cid="cUfEvuy" class="cUfEvuy"/>  
+              <span xid="span3" __cid="cUfEvuy" class="cUfEvuy">上一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-next cUfEvuy" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasNextBtn.get()}" data-events="onClick:nextBtnClick" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="cUfEvuy"> 
+              <i xid="i3" __cid="cUfEvuy" class="cUfEvuy"/>  
+              <span xid="span4" __cid="cUfEvuy" class="cUfEvuy">下一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-next cUfEvuy" xid="finishBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasFinishBtn.get()},enable:$model.hasFinishEnable.get()" data-events="onClick:finishBtnClick" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cUfEvuy"> 
+              <i xid="i4" __cid="cUfEvuy" class="cUfEvuy"/>  
+              <span xid="span5" __cid="cUfEvuy" class="cUfEvuy">完成</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cUfEvuy" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasCancelBtn.get()}" data-events="onClick:cancelBtnClick" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cUfEvuy"> 
+              <i xid="i5" __cid="cUfEvuy" class="cUfEvuy"/>  
+              <span xid="span6" __cid="cUfEvuy" class="cUfEvuy">取消</span> 
+            </a> 
+          </div> 
+        </div> 
+      </nav> 
+    </div>  
+    <style __cid="cUfEvuy" class="cUfEvuy">.x-panel.pcErqqam-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcErqqam-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcErqqam-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcErqqam-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcErqqam-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcErqqam-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcErqqam-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcErqqam-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcErqqam-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div>  
+  <link xmlns="" rel="stylesheet" href="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/deploy/common/common.css" __cid="cUfEvuy" class="cUfEvuy"/> 
+</div>

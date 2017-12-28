@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cbiYvaq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cbiYvaq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-list.cbiYvaq .x-list-template.cbiYvaq .span.cbiYvaq{color: rgb(243, 113, 22)} .radius.cbiYvaq{border-radius: none} .dao.cbiYvaq{font-size: 10px; height: 30px; width: 60px; border-radius: 0; border: 1px solid rgb(170, 170, 170); color: rgb(0, 0, 0); background-color: transparent}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad" __cid="cbiYvaq" class="cbiYvaq"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="appDetailDialog" style="left:1px;top:1px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true}" __cid="cbiYvaq" class="cbiYvaq"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cbiYvaq" __cid="cbiYvaq"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cbiYvaq" style="display:none;" __cid="cbiYvaq">  
+      <div class="x-dialog-title cbiYvaq" __cid="cbiYvaq"> 
+        <button class="close cbiYvaq" __cid="cbiYvaq"> 
+          <span __cid="cbiYvaq" class="cbiYvaq">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cbiYvaq" __cid="cbiYvaq"/> 
+      </div>  
+      <div class="x-dialog-body cbiYvaq" __cid="cbiYvaq"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcba2YFz-iosstatusbar cbiYvaq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cbiYvaq"> 
+    <div class="x-panel-top cbiYvaq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbiYvaq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cbiYvaq" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;最新发布&quot;}" __cid="cbiYvaq"> 
+        <div class="x-titlebar-left cbiYvaq" __cid="cbiYvaq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cbiYvaq" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbiYvaq"> 
+            <i xid="i7" class="linear linear-arrowleft cbiYvaq" __cid="cbiYvaq"/>  
+            <span xid="span4" __cid="cbiYvaq" class="cbiYvaq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cbiYvaq" style="font-weight:normal;" __cid="cbiYvaq">最新发布</div>  
+        <div class="x-titlebar-right  cbiYvaq" __cid="cbiYvaq"> 
+          <div class="empty cbiYvaq" __cid="cbiYvaq"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cbiYvaq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cbiYvaq"> 
+      <div xid="div13" align="center" style="margin-top:30px;" class="hide cbiYvaq" __cid="cbiYvaq"/>  
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cbiYvaq" xid="appList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;appData&quot;,&quot;disablePullToRefresh&quot;:false,&quot;limit&quot;:10}" __cid="cbiYvaq"> 
+        <ul class="x-list-template hide cbiYvaq" xid="listTemplateUl1" __cid="cbiYvaq" data-bind="foreach:{data:$model.foreach_appList($element),afterRender:$model.foreach_afterRender_appList.bind($model,$element)}"> 
+          <li xid="li1" class="x-min-height cbiYvaq" __cid="cbiYvaq"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cbiYvaq" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbiYvaq"> 
+              <div class="x-col cbiYvaq" xid="col51" style="text-align:center;" __cid="cbiYvaq" data-bind="event:{click:$model._callModelFn.bind($model, 'appListClick')}"> 
+                <img src="" alt="" xid="image2" style="height:70px;border-radius:5px;width:70px;" __cid="cbiYvaq" class="cbiYvaq" data-bind="attr:{src:$model.getImageUrl(val(&quot;ApplicationImagePath&quot;))}"/> 
+              </div>  
+              <div class="x-col x-col-50 cbiYvaq" xid="col21" style="border-bottom:1px solid #f0f0f0;" __cid="cbiYvaq" data-bind="event:{click:$model._callModelFn.bind($model, 'appListClick')}"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cbiYvaq" xid="row18" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbiYvaq"> 
+                  <div class="x-col cbiYvaq" xid="col45" __cid="cbiYvaq"> 
+                    <span xid="span5" __cid="cbiYvaq" class="cbiYvaq" data-bind="text:ref(&quot;ApplicationName&quot;)"/> 
+                  </div> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cbiYvaq" xid="row17" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cbiYvaq"> 
+                  <div class="x-col cbiYvaq" xid="col41" __cid="cbiYvaq"> 
+                    <span xid="span8" style="color:#919191;" __cid="cbiYvaq" class="cbiYvaq" data-bind="text:ref(&quot;Size&quot;)"/> 
+                  </div>  
+                  <div class="x-col cbiYvaq" xid="col42" __cid="cbiYvaq"> 
+                    <span xid="span10" style="color:#919191;" __cid="cbiYvaq" class="cbiYvaq"/> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="x-col cbiYvaq" xid="col22" style="border-bottom:1px solid #f0f0f0;text-align:center;line-height:70px;" __cid="cbiYvaq"> 
+                <a name="buttons" component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-only-label cbiYvaq" xid="button1" style="color:#6296F4;background-color:#fff;width:63px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" __cid="cbiYvaq"> 
+                  <i xid="i1" __cid="cbiYvaq" class="cbiYvaq"/>  
+                  <span xid="span11" __cid="cbiYvaq" class="cbiYvaq"/> 
+                </a>  
+                <div name="divs" xid="div1" style="border-radius:10px;border:1px solid #aaa;background:#aaa;height:10px;width:100%;" class="hide cbiYvaq" __cid="cbiYvaq"/> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <style __cid="cbiYvaq" class="cbiYvaq">.x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcba2YFz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cbiYvaq" xid="popOver2" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="cbiYvaq"> 
+    <div class="x-popOver-overlay cbiYvaq" xid="div3" __cid="cbiYvaq"/>  
+    <div class="x-popOver-content cbiYvaq" xid="div4" style="line-height:80px;background-color:white;height:80px;width:300px;" __cid="cbiYvaq"> 
+      <div xid="div7" align="center" __cid="cbiYvaq" class="cbiYvaq"> 
+        <span xid="span6" style="color:red;font-size:medium;" __cid="cbiYvaq" class="cbiYvaq">本软件目前仅支持安卓用户下载</span>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cbiYvaq" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver2.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cbiYvaq"> 
+          <i xid="i4" class="icon-android-close cbiYvaq" __cid="cbiYvaq"/>  
+          <span xid="span9" __cid="cbiYvaq" class="cbiYvaq"/> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="comfireDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onYes:comfireDialogYes" data-config="{&quot;type&quot;:&quot;YesNo&quot;}" __cid="cbiYvaq" class="cbiYvaq"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cbiYvaq" __cid="cbiYvaq"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cbiYvaq" __cid="cbiYvaq">  
+      <div class="x-modal-inner cbiYvaq" __cid="cbiYvaq"> 
+        <div class="x-modal-title cbiYvaq" __cid="cbiYvaq"/>  
+        <div class="x-modal-text cbiYvaq" __cid="cbiYvaq"/>  
+        <input class="x-modal-prompt-input cbiYvaq" type="text" __cid="cbiYvaq"/> 
+      </div>  
+      <div class="x-modal-buttons cbiYvaq" __cid="cbiYvaq"> 
+        <a class="x-modal-button x-modal-button-bold OK cbiYvaq" value="ok" __cid="cbiYvaq">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cbiYvaq" value="yes" __cid="cbiYvaq">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cbiYvaq" value="no" __cid="cbiYvaq">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cbiYvaq" value="cancel" __cid="cbiYvaq">取消</a> 
+      </div> 
+    </div> 
+  </span> 
+</div>

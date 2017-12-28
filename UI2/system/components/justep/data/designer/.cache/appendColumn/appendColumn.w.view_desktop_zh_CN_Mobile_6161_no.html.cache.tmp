@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cq2Anaa" class="cq2Anaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cq2Anaa" class="cq2Anaa"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceQfAnq-iosstatusbar cq2Anaa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cq2Anaa"> 
+    <div class="x-panel-content x-flex x-flex-column cq2Anaa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq2Anaa"> 
+      <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group x-flex1 cq2Anaa" style="overflow-y: auto;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cq2Anaa"> 
+        <div component="$model/UI2/system/components/fragment/list/listTable" data="data" masterData="" masterCol="" xid="listTable1" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cq2Anaa" class="cq2Anaa"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cq2Anaa" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cq2Anaa"> 
+            <table class="table table-condensed table-hover table-striped cq2Anaa" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cq2Anaa"> 
+              <thead xid="thead1" __cid="cq2Anaa" class="cq2Anaa"> 
+                <tr xid="tr1" __cid="cq2Anaa" class="cq2Anaa"> 
+                  <th xid="col4" style="text-align:center;" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cq2Anaa" xid="checkbox2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkbox2Change" __cid="cq2Anaa"> 
+                      <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cq2Anaa" class="cq2Anaa"></input>  
+                      <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cq2Anaa" class="cq2Anaa"></label> 
+                    </span> 
+                  </th>  
+                  <th xid="col1" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <label xid="label1" __cid="cq2Anaa" class="cq2Anaa" data-bind="text:$model.data.label('name')"/> 
+                  </th>  
+                  <th xid="col3" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <label xid="label3" __cid="cq2Anaa" class="cq2Anaa" data-bind="text:$model.data.label('displayName')"/> 
+                  </th>  
+                  <th xid="col2" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <label xid="label2" __cid="cq2Anaa" class="cq2Anaa" data-bind="text:$model.data.label('type')"/> 
+                  </th> 
+                </tr> 
+              </thead>  
+              <tbody class="x-list-template hide cq2Anaa" xid="listTemplate1" __cid="cq2Anaa" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+                <tr xid="tr2" __cid="cq2Anaa" class="cq2Anaa"> 
+                  <td xid="td4" style="text-align:center;" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cq2Anaa" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('selected'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cq2Anaa"> 
+                      <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cq2Anaa" class="cq2Anaa"></input>  
+                      <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cq2Anaa" class="cq2Anaa"></label> 
+                    </span> 
+                  </td>  
+                  <td xid="td1" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cq2Anaa" xid="output1" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cq2Anaa"/> 
+                  </td>  
+                  <td xid="td3" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cq2Anaa" xid="output3" data-bind="component:{ref:ref('displayName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cq2Anaa"/> 
+                  </td>  
+                  <td xid="td2" __cid="cq2Anaa" class="cq2Anaa"> 
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output cq2Anaa" xid="output2" data-bind="component:{ref:ref('type'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cq2Anaa"/> 
+                  </td> 
+                </tr> 
+              </tbody> 
+            </table> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group cq2Anaa" style="height:48px;" xid="div1" __cid="cq2Anaa"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cq2Anaa" style="float: right;margin-left: 16px;" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cq2Anaa"> 
+          <i xid="i2" __cid="cq2Anaa" class="cq2Anaa"/>  
+          <span xid="span2" __cid="cq2Anaa" class="cq2Anaa">取消</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary cq2Anaa" style="float: right;margin-left: 16px;" xid="btnOK" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnOKClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cq2Anaa"> 
+          <i xid="i1" __cid="cq2Anaa" class="cq2Anaa"/>  
+          <span xid="span1" __cid="cq2Anaa" class="cq2Anaa">确定</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cq2Anaa" class="cq2Anaa">.x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceQfAnq-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

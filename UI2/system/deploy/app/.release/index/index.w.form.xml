@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" class="window cu2AbUf" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cu2AbUf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-dialog-senior.cu2AbUf{color: rgb(252, 110, 100)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cu2AbUf" class="cu2AbUf"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full o-containerParentApp pczAbmqy-iosstatusbar cu2AbUf" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cu2AbUf"> 
+    <div class="x-panel-top cu2AbUf" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cu2AbUf"> 
+      <nav class="navbar navbar-default cu2AbUf" role="navigation" __cid="cu2AbUf"> 
+        <a class="navbar-brand cu2AbUf" bind-text="$model.title" __cid="cu2AbUf"/> 
+      </nav> 
+    </div>  
+    <div class="x-panel-content cu2AbUf" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cu2AbUf"> 
+      <div xid="containerParentApp" __cid="cu2AbUf" class="cu2AbUf"/> 
+    </div>  
+    <div class="x-panel-bottom cu2AbUf" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cu2AbUf"> 
+      <nav class="navbar navbar-default cu2AbUf" role="navigation" __cid="cu2AbUf"> 
+        <div class="navbar-buttons-container cu2AbUf" __cid="cu2AbUf"> 
+          <span style="display:inline-block;width:60px;" __cid="cu2AbUf" class="cu2AbUf">应用名：</span>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cu2AbUf" style="width:240px;display:inline" xid="appName" value="mainActivity" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cu2AbUf"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label btn-dialog-senior cu2AbUf" bind-css="{hide: !$model.hasSimpleBtn.get()}" xid="simpleBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:simpleBtnClick" data-config="{&quot;label&quot;:&quot;简洁模式&quot;}" __cid="cu2AbUf"> 
+            <i xid="i7" __cid="cu2AbUf" class="cu2AbUf"/>  
+            <span xid="span1" __cid="cu2AbUf" class="cu2AbUf">简洁模式</span> 
+          </a>  
+          <div xid="dropMenu" class="dropup cu2AbUf" style="display:inline" __cid="cu2AbUf"/>  
+          <div class="btn-group-single pull-right cu2AbUf" style="display:inline-block" __cid="cu2AbUf"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cu2AbUf" bind-css="{hide: !$model.hasSkipEditBtn.get()}" xid="skipEditBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:skipEditBtnClick" data-config="{&quot;label&quot;:&quot;直接打包&quot;}" __cid="cu2AbUf"> 
+              <i xid="i1" __cid="cu2AbUf" class="cu2AbUf"/>  
+              <span xid="span1" __cid="cu2AbUf" class="cu2AbUf">直接打包</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back cu2AbUf" bind-css="{hide: !$model.hasBackBtn.get()}" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="cu2AbUf"> 
+              <i __cid="cu2AbUf" class="cu2AbUf"/>  
+              <span __cid="cu2AbUf" class="cu2AbUf">上一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-next cu2AbUf" bind-css="{hide: !$model.hasNextBtn.get()}" xid="nextBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:nextBtnClick" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="cu2AbUf"> 
+              <i __cid="cu2AbUf" class="cu2AbUf"/>  
+              <span __cid="cu2AbUf" class="cu2AbUf">下一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-finish cu2AbUf" bind-css="{hide: !$model.hasFinishBtn.get()}" xid="finishBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:finishBtnClick" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="cu2AbUf"> 
+              <i __cid="cu2AbUf" class="cu2AbUf"/>  
+              <span __cid="cu2AbUf" class="cu2AbUf">完成</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-cancel cu2AbUf" bind-css="{hide: !$model.hasCancelBtn.get()}" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:cancelBtnClick" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cu2AbUf"> 
+              <i __cid="cu2AbUf" class="cu2AbUf"/>  
+              <span __cid="cu2AbUf" class="cu2AbUf">取消</span> 
+            </a> 
+          </div> 
+        </div> 
+      </nav> 
+    </div>  
+    <style __cid="cu2AbUf" class="cu2AbUf">.x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-top {height: 56px;}.x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-content { top: 56px;bottom: nullpx;}.x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-top {height: 76px;}.iosstatusbar .x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-content { top: 76px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-top {height: 56px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pczAbmqy-iosstatusbar &gt;.x-panel-content {top: 56px;}</style>
+  </div>  
+  <link rel="stylesheet" href="$model/UI2/system/deploy/common/common.css" __cid="cu2AbUf" class="cu2AbUf"/> 
+</div>

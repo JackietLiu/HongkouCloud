@@ -1,0 +1,7 @@
+.x-panel-bottom .btn-group{ background-color:#fff;}
+.x-panel-bottom .btn-group .btn{color:#fff; background:#007afe; border:0;border-radius:0;}
+.x-panel-bottom .btn-group .btn.active{ background:#0156bb; color:#fff;}
+.x-panel-content .btn-group{ box-shadow:2px 2px 8px #e5e5e5}
+.x-panel-content .btn-group .btn{ background-color:#fff; border:0; color:#000; font-size:16px;}
+.x-panel-content .btn-group .btn.active{ border:0; color:#007afe; border-bottom:2px solid #007afe;}
+

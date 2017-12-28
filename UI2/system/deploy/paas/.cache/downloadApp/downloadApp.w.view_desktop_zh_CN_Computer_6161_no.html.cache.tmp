@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window cR7jA3u" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cR7jA3u" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/barcode/barcodeImage,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cR7jA3u" class="cR7jA3u"/>  
+  <div xmlns="" xid="paasStateDiv" style="padding: 8px" __cid="cR7jA3u" class="cR7jA3u"> 
+    <label class="x-label cR7jA3u" xid="label3" __cid="cR7jA3u">应用状态：</label>  
+    <label xid="showState" class="x-label cR7jA3u" __cid="cR7jA3u"/>  
+    <label xid="openPaaSBtn" class="x-label cR7jA3u" style="cursor:pointer;margin-left:100px;" __cid="cR7jA3u" data-bind="event:{click:$model._callModelFn.bind($model, 'openPaaSBtnClick')}">打开CloudX5控制台</label> 
+  </div>  
+  <div xmlns="" xid="div6" style="padding-left: 8px;" __cid="cR7jA3u" class="cR7jA3u"> 
+    <label class="x-label cR7jA3u" __cid="cR7jA3u">服务地址：</label>  
+    <label xid="showUrl" class="x-label cR7jA3u" style="cursor:pointer;" __cid="cR7jA3u" data-bind="event:{click:$model._callModelFn.bind($model, 'showUrlClick')}">正在获取……</label>  
+    <br __cid="cR7jA3u" class="cR7jA3u"/>  
+    <div xid="div10" style="position:relative;display:inline-block;" class="clearfix cR7jA3u" __cid="cR7jA3u"> 
+      <div style="display:inline-block;margin-left:128px;text-align:center;" xid="div11" __cid="cR7jA3u" class="cR7jA3u"> 
+        <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cR7jA3u" type="qr" templateName="templateName" xid="indexQR" style="height:180px;width:180px;display:block" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cR7jA3u"> 
+          <img id="img-indexQR" src="about:blank" style="vertical-align:middle;" __cid="cR7jA3u" class="cR7jA3u"/> 
+        </div>  
+        <label xid="label6" __cid="cR7jA3u" class="cR7jA3u">扫码打开</label> 
+      </div>  
+      <div xid="appDiv" style="position:relative;display:inline-block;" class="clearfix cR7jA3u" __cid="cR7jA3u"> 
+        <div style="display:inline-block;margin-left:128px;text-align:center;" xid="div8" __cid="cR7jA3u" class="cR7jA3u"> 
+          <div component="$model/UI2/system/components/justep/barcode/barcodeImage" class="xui-barcodeImage cR7jA3u" type="qr" templateName="templateName" xid="appQR" style="height:180px;width:180px;display:block" barcodeConfig="{mw:1.0}" config="{&quot;barcodeConfig&quot;:&quot;{mw:1.0}&quot;,&quot;type&quot;:&quot;qr&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/barcode/barcodeImage'}" __cid="cR7jA3u"> 
+            <img id="img-appQR" src="about:blank" style="vertical-align:middle;" __cid="cR7jA3u" class="cR7jA3u"/> 
+          </div>  
+          <label xid="scandetail" __cid="cR7jA3u" class="cR7jA3u">扫码下载应用</label> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" xid="div9" style="padding: 8px" __cid="cR7jA3u" class="cR7jA3u"/>  
+  <div xmlns="" xid="div1" style="padding-left: 8px;" __cid="cR7jA3u" class="cR7jA3u"> 
+    <label xid="howInstallLabel" class="x-label cR7jA3u" style="cursor:pointer;display:block;" __cid="cR7jA3u" data-bind="event:{click:$model._callModelFn.bind($model, 'howInstallLabelClick')}">如何安装？请点这里</label>  
+    <label xid="importentLabel" class="x-label cR7jA3u" style="color:#FF8000;" __cid="cR7jA3u" data-bind="event:{click:$model._callModelFn.bind($model, 'howInstallLabelClick')}"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cR7jA3u" xid="restartPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="cR7jA3u"> 
+    <div class="x-popOver-overlay cR7jA3u" xid="div2" __cid="cR7jA3u"/>  
+    <div class="x-popOver-content cR7jA3u" xid="div3" __cid="cR7jA3u"/> 
+  </div> 
+</div>

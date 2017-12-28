@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ceaYBVb" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ceaYBVb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstruct:modelModelConstruct" __cid="ceaYBVb" class="ceaYBVb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceqqiMb-iosstatusbar ceaYBVb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ceaYBVb"> 
+    <div class="x-panel-content ceaYBVb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ceaYBVb"> 
+      <div component="$model/UI2/system/components/fragment/list/listTable" data="dataDB" masterData="" masterCol="" xid="listTable2" style="padding:8px;max-width:600px" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="ceaYBVb" class="ceaYBVb"> 
+        <div component="$model/UI2/system/components/justep/list/list" class="x-list ceaYBVb" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataDB&quot;}" __cid="ceaYBVb"> 
+          <table class="table table-condensed table-hover table-striped ceaYBVb" component="$model/UI2/system/components/bootstrap/table/table" xid="table2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="ceaYBVb"> 
+            <thead xid="thead2" __cid="ceaYBVb" class="ceaYBVb"> 
+              <tr xid="tr3" __cid="ceaYBVb" class="ceaYBVb"> 
+                <th xid="col3" style="width:80px;" __cid="ceaYBVb" class="ceaYBVb"> 
+                  <label xid="label3" __cid="ceaYBVb" class="ceaYBVb" data-bind="text:$model.dataDB.label('checked')"/> 
+                </th>  
+                <th xid="col4" __cid="ceaYBVb" class="ceaYBVb"> 
+                  <label xid="label4" __cid="ceaYBVb" class="ceaYBVb" data-bind="text:$model.dataDB.label('name')"/> 
+                </th> 
+              </tr> 
+            </thead>  
+            <tbody class="x-list-template hide ceaYBVb" xid="tbody2" __cid="ceaYBVb" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+              <tr xid="tr4" __cid="ceaYBVb" class="ceaYBVb"> 
+                <td xid="td3" style="text-align:center;" __cid="ceaYBVb" class="ceaYBVb"> 
+                  <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox ceaYBVb" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('checked'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="ceaYBVb"> 
+                    <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="ceaYBVb" class="ceaYBVb"></input>  
+                    <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="ceaYBVb" class="ceaYBVb"></label> 
+                  </span> 
+                </td>  
+                <td xid="td4" __cid="ceaYBVb" class="ceaYBVb"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output ceaYBVb" xid="output1" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ceaYBVb"/> 
+                </td> 
+              </tr> 
+            </tbody> 
+          </table> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="ceaYBVb" class="ceaYBVb">.x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceqqiMb-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cAzei2i" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cAzei2i" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-pinch-table.cAzei2i{width: 100%; height: 100%; display: table; position: relative} .x-pinch-table-cell.cAzei2i{display: table-cell; vertical-align: middle; text-align: center; padding: 10px; position: absolute; top: 50%; left: 50%} .x-pinch-tableCell.cAzei2i a.cAzei2i{display: block; position: relative; top: -50%; left: -50%} .x-swipe-area.cAzei2i{text-align: center; padding-top: 40px; font-size: 1.5em; background: red; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0); right: 0} .x-swipe-area1.cAzei2i{text-align: center; padding-top: 40px; font-size: 1.5em; background: green; color: white; width: 100px; position: absolute; top: 0; height: 100%; transform: translate3d(100%, 0, 0); -webkit-transform: translate3d(100%, 0, 0); right: -100px; float: right} .x-list.cAzei2i{overflow-x: hidden}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cAzei2i" class="cAzei2i"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfMBfqq-iosstatusbar cAzei2i" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cAzei2i"> 
+    <div class="x-panel-top cAzei2i" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAzei2i"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cAzei2i" xid="titleBar2" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;touch相关效果&quot;}" __cid="cAzei2i"> 
+        <div class="x-titlebar-left cAzei2i" xid="div4" __cid="cAzei2i"> 
+          <a component="$model/UI2/system/components/justep/button/button" xid="button2" class="btn btn-link btn-only-icon cAzei2i" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cAzei2i"> 
+            <i xid="i2" class="icon-chevron-left cAzei2i" __cid="cAzei2i"/>  
+            <span xid="span2" __cid="cAzei2i" class="cAzei2i"/>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cAzei2i" xid="div5" __cid="cAzei2i">touch相关效果</div>  
+        <div class="x-titlebar-right  cAzei2i" xid="div6" __cid="cAzei2i">
+          <div class="empty cAzei2i" __cid="cAzei2i"/>
+        </div>
+      </div> 
+    </div>
+    <div class="x-panel-content cAzei2i" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAzei2i">
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cAzei2i" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;wrap&quot;:false}" __cid="cAzei2i"> 
+        <div class="x-contents-content active cAzei2i" xid="rotateContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cAzei2i"> 
+          <img src="$model/UI2/system/components/justep/touch/demo/touchjs/img/cloud.png" alt="" xid="rotate" style="height:196px;width:184px;" __cid="cAzei2i" class="cAzei2i"/>
+        </div>  
+        <div class="x-contents-content cAzei2i" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cAzei2i"> 
+          <div xid="div19" class="x-pinch-table cAzei2i" __cid="cAzei2i"> 
+            <div xid="div20" class="x-pinch-table-cell cAzei2i" __cid="cAzei2i"> 
+              <img src="$model/UI2/system/components/justep/touch/demo/touchjs/img/1024.jpg" alt="" xid="pinch" style="height:196px;width:184px;" __cid="cAzei2i" class="cAzei2i"/>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content cAzei2i" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cAzei2i"> 
+          <img src="$model/UI2/system/components/justep/touch/demo/touchjs/img/cloud.png" alt="" xid="drag" style="height:196px;width:184px;" __cid="cAzei2i" class="cAzei2i"/>
+        </div>  
+        <div class="x-contents-content cAzei2i" xid="newsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cAzei2i"> 
+          <div class="x-scroll cAzei2i" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="demoList" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cAzei2i"> 
+            <div class="x-content-center x-pull-down container cAzei2i" xid="div15" __cid="cAzei2i"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cAzei2i" xid="i7" __cid="cAzei2i"/>  
+              <span class="x-pull-down-label cAzei2i" xid="span6" __cid="cAzei2i">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cAzei2i" xid="div14" __cid="cAzei2i"> 
+              <div xid="newsList" class="x-list cAzei2i" component="$model/UI2/system/components/justep/list/list" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:8}" __cid="cAzei2i"> 
+                <ul class="x-list-template hide cAzei2i" style="padding-top:6px;" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_newsList($element),afterRender:$model.foreach_afterRender_newsList.bind($model,$element)}" __cid="cAzei2i"> 
+                  <li class="media cAzei2i" style="padding-left:6px; padding-right:6px;overflow:visible;position:relative;display:block;" xid="li1" __cid="cAzei2i"> 
+                    <div style="overflow:hidden;" xid="div21" __cid="cAzei2i" class="cAzei2i"> 
+                      <div class="x-blob x-blob-radius pull-left media-object x-news-image cAzei2i" xid="div16" __cid="cAzei2i"> 
+                        <img class="x-blob-img x-autofill cAzei2i" bind-attr-src="$model.getImageUrl($object)" xid="image4" __cid="cAzei2i"/>
+                      </div>  
+                      <div class="media-body cAzei2i" xid="div17" __cid="cAzei2i"> 
+                        <h4 class="media-heading cAzei2i" bind-text="ref('fTitle')" xid="h41" __cid="cAzei2i"/>  
+                        <div bind-text="ref('fContent')" xid="div18" __cid="cAzei2i" class="cAzei2i"/>
+                      </div> 
+                    </div>  
+                    <div class="x-swipe-area cAzei2i" xid="div22" __cid="cAzei2i">删除</div>  
+                    <div class="x-swipe-area1 cAzei2i" xid="div1" __cid="cAzei2i">删除</div>
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cAzei2i" xid="div13" __cid="cAzei2i"> 
+              <span class="x-pull-up-label cAzei2i" xid="span7" __cid="cAzei2i">加载更多...</span>
+            </div> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cAzei2i" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cAzei2i">
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cAzei2i" xid="buttonGroup1" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cAzei2i">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cAzei2i" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;单指旋转&quot;,&quot;target&quot;:&quot;rotateContent&quot;}" __cid="cAzei2i"> 
+          <i xid="i4" __cid="cAzei2i" class="cAzei2i"/>  
+          <span xid="span4" __cid="cAzei2i" class="cAzei2i">单指旋转</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cAzei2i" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;双指缩放&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cAzei2i"> 
+          <i xid="i5" __cid="cAzei2i" class="cAzei2i"/>  
+          <span xid="span5" __cid="cAzei2i" class="cAzei2i">双指缩放</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cAzei2i" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;拖拽&quot;,&quot;target&quot;:&quot;content5&quot;}" __cid="cAzei2i"> 
+          <i xid="i6" __cid="cAzei2i" class="cAzei2i"/>  
+          <span xid="span8" __cid="cAzei2i" class="cAzei2i">拖拽</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cAzei2i" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;滑动删除&quot;,&quot;target&quot;:&quot;newsContent&quot;}" __cid="cAzei2i"> 
+          <i xid="i8" __cid="cAzei2i" class="cAzei2i"/>  
+          <span xid="span9" __cid="cAzei2i" class="cAzei2i">滑动删除</span>
+        </a>
+      </div>
+    </div>  
+    <style __cid="cAzei2i" class="cAzei2i">.x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfMBfqq-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>
+</div>

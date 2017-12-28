@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c6nymAr" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c6nymAr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">
+  <style>.check.c6nymAr{position: absolute; display: none; left: 5px; margin-top: 40px} .collectlist.c6nymAr{margin: 10px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelActive;onLoad:modelLoad" __cid="c6nymAr" class="c6nymAr"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pciUzeyy-iosstatusbar c6nymAr" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c6nymAr"> 
+    <div class="x-panel-top c6nymAr" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6nymAr"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c6nymAr" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;我的收藏&#34;}" __cid="c6nymAr"> 
+        <div class="x-titlebar-left c6nymAr" __cid="c6nymAr"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c6nymAr" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;&#34;}" __cid="c6nymAr"> 
+            <i class="linear linear-arrowleft c6nymAr" __cid="c6nymAr"></i>  
+            <span __cid="c6nymAr" class="c6nymAr"></span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link hide c6nymAr" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:cancelBtnClick" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="c6nymAr"> 
+            <i xid="i5" __cid="c6nymAr" class="c6nymAr"></i>  
+            <span xid="span8" __cid="c6nymAr" class="c6nymAr">取消</span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title c6nymAr" style="font-weight:normal;" __cid="c6nymAr">我的收藏</div>  
+        <div class="x-titlebar-right  c6nymAr" __cid="c6nymAr">
+          <div class="empty c6nymAr" __cid="c6nymAr"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="hide btn btn-link c6nymAr" xid="delBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:delBtnClick" data-config="{&#34;label&#34;:&#34;删除&#34;}" __cid="c6nymAr"> 
+            <i xid="i2" __cid="c6nymAr" class="c6nymAr"></i>  
+            <span xid="span5" __cid="c6nymAr" class="c6nymAr">删除</span>
+          </a>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c6nymAr" xid="editBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:editBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-pencil&#34;,&#34;label&#34;:&#34;&#34;}" __cid="c6nymAr"> 
+            <i class="linear linear-pencil c6nymAr" xid="i4" __cid="c6nymAr"></i>  
+            <span xid="span7" __cid="c6nymAr" class="c6nymAr"></span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view c6nymAr" xid="content1" _xid="C7CD58613B000001F1D010E013601B2E" style="background-color:#f1eff6;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c6nymAr">
+      <div class="x-scroll c6nymAr" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&#34;noMoreLoadLabel&#34;:&#34;没有更多收藏了&#34;}" __cid="c6nymAr"> 
+        <div class="x-content-center x-pull-down container c6nymAr" xid="div1" __cid="c6nymAr"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down c6nymAr" xid="i1" __cid="c6nymAr"></i>  
+          <span class="x-pull-down-label c6nymAr" xid="span1" __cid="c6nymAr">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content c6nymAr" xid="div2" __cid="c6nymAr">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list  c6nymAr" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;collectData&#34;,&#34;limit&#34;:10}" __cid="c6nymAr"> 
+            <ul class="x-list-template hide c6nymAr" xid="listTemplateUl1" __cid="c6nymAr" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="c6nymAr" class="c6nymAr">
+                <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox check c6nymAr" xid="checkbox1" checkedValue="1" uncheckedValue="0" checked="false" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;checked&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="c6nymAr">
+                  <input type="checkbox" __cid="c6nymAr" class="c6nymAr">
+                  <label __cid="c6nymAr" class="c6nymAr"></label>
+                </span>
+                <div name="divs" xid="div5" style="border-radius:6px;background-color:#fff;" class="collectlist c6nymAr" __cid="c6nymAr" data-bind="disable:,event:{click:$model._callModelFn.bind($model, 'li1Click')}">
+                  <div xid="div27" style="font-size:16px;padding:20px 10px;" __cid="c6nymAr" class="c6nymAr"> 
+                    <span xid="span24" __cid="c6nymAr" class="c6nymAr" data-bind="text:ref(&#34;title&#34;)"></span> 
+                  </div>
+                  <div xid="div24" style="font-size:12px;padding:0px 10px;color:#aaa;" __cid="c6nymAr" class="c6nymAr"> 
+                    <span xid="span25" __cid="c6nymAr" class="c6nymAr">来自于：</span>  
+                    <span xid="span28" __cid="c6nymAr" class="c6nymAr" data-bind="text:ref(&#34;comefrom&#34;)"></span>  
+                    <span xid="span3" class="pull-right c6nymAr" __cid="c6nymAr" data-bind="text:val(&#34;createtime&#34;)"></span>
+                    <span xid="span4" class="pull-right c6nymAr" __cid="c6nymAr">创建于：</span> 
+                  </div>  
+                  <div xid="div4" style="font-size:12px;padding:5px 10px;color:#aaa;" __cid="c6nymAr" class="c6nymAr"></div>
+                </div> 
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up c6nymAr" xid="div3" __cid="c6nymAr"> 
+          <span class="x-pull-up-label c6nymAr" xid="span2" __cid="c6nymAr">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="c6nymAr" class="c6nymAr">.x-panel.pciUzeyy-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pciUzeyy-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pciUzeyy-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pciUzeyy-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciUzeyy-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pciUzeyy-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pciUzeyy-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciUzeyy-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pciUzeyy-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

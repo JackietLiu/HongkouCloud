@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cq2Q7bu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cq2Q7bu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/popMenu/popMenu,$model/UI2/system/components/justep/menu/menu,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.lit.cq2Q7bu{font-size: 12pt} .mid.cq2Q7bu{font-size: 16pt} .big.cq2Q7bu{font-size: 21pt} .dropdown-menu.cq2Q7bu{min-width: 50px} .dropdown-menu.cq2Q7bu .divider.cq2Q7bu{margin: 3px 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onActive:modelLoad;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cq2Q7bu" class="cq2Q7bu"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcJnyeM3-iosstatusbar cq2Q7bu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cq2Q7bu"> 
+    <div class="x-panel-top cq2Q7bu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq2Q7bu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cq2Q7bu" xid="titleBar1" style="background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;新闻详情&quot;}" __cid="cq2Q7bu"> 
+        <div class="x-titlebar-left cq2Q7bu" xid="left1" __cid="cq2Q7bu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cq2Q7bu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cq2Q7bu"> 
+            <i xid="i7" class="linear linear-arrowleft cq2Q7bu" __cid="cq2Q7bu"/>  
+            <span xid="span1" __cid="cq2Q7bu" class="cq2Q7bu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cq2Q7bu" xid="title1" __cid="cq2Q7bu">新闻详情</div>  
+        <div class="x-titlebar-right  cq2Q7bu" xid="right1" __cid="cq2Q7bu"> 
+          <div class="empty cq2Q7bu" __cid="cq2Q7bu"/>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cq2Q7bu" xid="collectBtn" style="font-size:20px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-star&quot;}" __cid="cq2Q7bu"> 
+            <i xid="i3" class="linear linear-star cq2Q7bu" __cid="cq2Q7bu"/>  
+            <span xid="span3" __cid="cq2Q7bu" class="cq2Q7bu"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cq2Q7bu" xid="fontBtn" style="font-size:20px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popMenu1.show'}" data-config="{&quot;icon&quot;:&quot;linear linear-textformat&quot;}" __cid="cq2Q7bu"> 
+            <i xid="i9" class="linear linear-textformat cq2Q7bu" __cid="cq2Q7bu"/>  
+            <span xid="span5" __cid="cq2Q7bu" class="cq2Q7bu">显示</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content x-scroll-view cq2Q7bu" xid="content1" _xid="C716F56078E000013B4118E022F4DAB0" style="bottom: 0px; background-size: cover; top: 48px; background-image: url(http://localhost:41333/x5/UI2/v_/testPlus/index_link/none);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cq2Q7bu"> 
+      <div class="x-scroll cq2Q7bu" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onScrollMove:scrollView1ScrollMove" __cid="cq2Q7bu"> 
+        <div class="x-scroll-content cq2Q7bu" xid="div4" __cid="cq2Q7bu"> 
+          <div xid="div9" style="padding:0 10px;background-color:#37b9ed;" __cid="cq2Q7bu" class="cq2Q7bu"> 
+            <div xid="div8" align="left" __cid="cq2Q7bu" class="cq2Q7bu"> 
+              <span xid="span15" style="font-size:22px;padding-left:10px;color:#fff;" __cid="cq2Q7bu" class="cq2Q7bu"/> 
+            </div> 
+          </div>  
+          <div xid="div7" class="text-black cq2Q7bu" style="padding:15px 20px;" align="left" __cid="cq2Q7bu"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cq2Q7bu" class="cq2Q7bu">.x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcJnyeM3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popMenu/popMenu" class="x-popMenu cq2Q7bu" xid="popMenu1" data-bind="component:{name:'$model/UI2/system/components/justep/popMenu/popMenu'}" data-config="{&quot;anchor&quot;:&quot;fontBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0}" __cid="cq2Q7bu"> 
+    <div class="x-popMenu-overlay cq2Q7bu" xid="div15" __cid="cq2Q7bu"/>  
+    <ul component="$model/UI2/system/components/justep/menu/menu" class="x-menu dropdown-menu x-popMenu-content cq2Q7bu" xid="fontSize" data-bind="component:{name:'$model/UI2/system/components/justep/menu/menu'}" __cid="cq2Q7bu"> 
+      <li class="x-menu-item cq2Q7bu" xid="item1" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="litFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:litFontSizeClick" data-config="{&quot;label&quot;:&quot;小&quot;}" __cid="cq2Q7bu"> 
+          <i xid="i10" __cid="cq2Q7bu" class="cq2Q7bu"/>  
+          <span xid="span6" __cid="cq2Q7bu" class="cq2Q7bu">小</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cq2Q7bu" xid="divider1" __cid="cq2Q7bu"/>  
+      <li class="x-menu-item cq2Q7bu" xid="item2" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="midFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:midFontSizeClick" data-config="{&quot;label&quot;:&quot;中&quot;}" __cid="cq2Q7bu"> 
+          <i xid="i11" __cid="cq2Q7bu" class="cq2Q7bu"/>  
+          <span xid="span12" __cid="cq2Q7bu" class="cq2Q7bu">中</span> 
+        </a> 
+      </li>  
+      <li class="x-menu-divider divider cq2Q7bu" xid="divider2" __cid="cq2Q7bu"/>  
+      <li class="x-menu-item cq2Q7bu" xid="item3" __cid="cq2Q7bu"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cq2Q7bu" xid="bigFontSize" style="text-align:center;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:bigFontSizeClick" data-config="{&quot;label&quot;:&quot;大&quot;}" __cid="cq2Q7bu"> 
+          <i xid="i12" __cid="cq2Q7bu" class="cq2Q7bu"/>  
+          <span xid="span13" __cid="cq2Q7bu" class="cq2Q7bu">大</span> 
+        </a> 
+      </li> 
+    </ul> 
+  </div> 
+</div>

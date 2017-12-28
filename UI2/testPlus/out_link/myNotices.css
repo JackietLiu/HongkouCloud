@@ -1,0 +1,8 @@
+.x-panel-bottom .btn-group .btn {
+	color: #6c6c6c;
+}
+
+.x-panel-bottom .btn-group .btn.active {
+	color: #37b9ed;
+	
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window czqaMna" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czqaMna" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.content.czqaMna div.czqaMna{padding: 0.4em 1em}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="czqaMna" class="czqaMna"></div>  
+  <div xid="div4" class="content czqaMna" __cid="czqaMna"> 
+    <div xid="div1" __cid="czqaMna" class="czqaMna"> 
+      <p xid="p6" style="font-size:18px;" fid="phone" __cid="czqaMna" class="czqaMna">是否生成左侧边栏？</p>  
+      <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group czqaMna" xid="wing" bind-foreach="{data:data1.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:data6.ref('wing'),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="czqaMna">
+        <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio czqaMna" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('label'),value:ref('value')}" __cid="czqaMna">
+          <xhtml:input type="radio" __cid="czqaMna" class="czqaMna"/>
+          <xhtml:label __cid="czqaMna" class="czqaMna"/>
+        </xhtml:span>
+      </span> 
+    </div>  
+    <div xid="div2" __cid="czqaMna" class="czqaMna"> 
+      <p xid="p1" style="font-size:18px;" fid="phone" __cid="czqaMna" class="czqaMna">左侧边栏是否为独立页（leftMenu.w）?</p>  
+      <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group czqaMna" xid="leftMenu" bind-foreach="{data:data4.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:data6.ref('leftMenu'),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="czqaMna">
+        <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio czqaMna" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('label'),value:ref('value')}" __cid="czqaMna">
+          <xhtml:input type="radio" __cid="czqaMna" class="czqaMna"/>
+          <xhtml:label __cid="czqaMna" class="czqaMna"/>
+        </xhtml:span>
+      </span> 
+    </div>  
+    <div xid="div3" __cid="czqaMna" class="czqaMna"> 
+      <p xid="p2" style="font-size:18px;" fid="phone" __cid="czqaMna" class="czqaMna">是否同时生成主页（main.w）?</p>  
+      <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group czqaMna" xid="main" bind-foreach="{data:data5.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{ref:data6.ref('main'),name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="czqaMna">
+        <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio czqaMna" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('label'),value:ref('value')}" __cid="czqaMna">
+          <xhtml:input type="radio" __cid="czqaMna" class="czqaMna"/>
+          <xhtml:label __cid="czqaMna" class="czqaMna"/>
+        </xhtml:span>
+      </span> 
+    </div>  
+    <div xid="div5" bind-visible=" $model.data6.val(&quot;main&quot;) ==2" __cid="czqaMna" class="czqaMna">
+      <h4 xid="h41" class="text-center czqaMna" __cid="czqaMna">请输入主页地址：（例：$UI/system/templates/normal/homePage1/template/main.w）</h4>
+      <input component="$model/UI2/system/components/justep/input/input" class="form-control czqaMna" xid="mainInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="czqaMna"/>
+    </div>
+  </div> 
+</div>

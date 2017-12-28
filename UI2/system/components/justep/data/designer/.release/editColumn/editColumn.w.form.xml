@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window container-fluid cjeYjQb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjeYjQb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/toolBar/toolBar,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cjeYjQb" class="cjeYjQb"></div>  
+  <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cjeYjQb" xid="toolBar1" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cjeYjQb"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cjeYjQb" xid="add" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'data.new'}" __cid="cjeYjQb"> 
+      <i __cid="cjeYjQb" class="cjeYjQb"/>  
+      <span __cid="cjeYjQb" class="cjeYjQb"/> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cjeYjQb" xid="delete" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'data.delete'}" __cid="cjeYjQb"> 
+      <i __cid="cjeYjQb" class="cjeYjQb"/>  
+      <span __cid="cjeYjQb" class="cjeYjQb"/> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cjeYjQb" xid="up" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:upClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-up&quot;,&quot;label&quot;:&quot;上移&quot;}" __cid="cjeYjQb"> 
+      <i class="icon-chevron-up cjeYjQb" __cid="cjeYjQb"/>  
+      <span __cid="cjeYjQb" class="cjeYjQb">上移</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-left cjeYjQb" xid="down" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:downClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;下移&quot;}" __cid="cjeYjQb"> 
+      <i class="icon-chevron-down cjeYjQb" __cid="cjeYjQb"/>  
+      <span __cid="cjeYjQb" class="cjeYjQb">下移</span> 
+    </a> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/list/list" class="x-list cjeYjQb" xid="E3CDB0DAFA0345BBB9688A2F857E7353" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;data&quot;}" __cid="cjeYjQb"> 
+    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cjeYjQb" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cjeYjQb"> 
+      <div class="col col-xs-3 cjeYjQb" __cid="cjeYjQb"> 
+        <label xid="label1" bind-text="data.label('name')" __cid="cjeYjQb" class="cjeYjQb">label</label> 
+      </div>  
+      <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+        <label xid="label2" bind-text="data.label('type')" __cid="cjeYjQb" class="cjeYjQb">label</label> 
+      </div>  
+      <div class="col col-xs-3 cjeYjQb" __cid="cjeYjQb"> 
+        <label xid="label3" bind-text="data.label('displayName')" __cid="cjeYjQb" class="cjeYjQb">label</label> 
+      </div>  
+      <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+        <label xid="label4" bind-text="data.label('isCalculate')" __cid="cjeYjQb" class="cjeYjQb">label</label> 
+      </div>  
+      <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+        <label xid="label5" bind-text="data.label('isIDColumn')" __cid="cjeYjQb" class="cjeYjQb">label</label> 
+      </div> 
+    </div>  
+    <div class="x-list-template hide cjeYjQb" style="margin:0;" bind-foreach="{data:$model.foreach_E3CDB0DAFA0345BBB9688A2F857E7353($element),afterRender:$model.foreach_afterRender_E3CDB0DAFA0345BBB9688A2F857E7353.bind($model,$element)}" __cid="cjeYjQb"> 
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row cjeYjQb" bind-css="{'x-currentRow':$object==$model.data.getCurrentRow()}" style="padding: 6px 0;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cjeYjQb"> 
+        <div class="col col-xs-3 cjeYjQb" __cid="cjeYjQb"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cjeYjQb" xid="input1" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjeYjQb"/> 
+        </div>  
+        <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control cjeYjQb" xid="select1" bind-options="$model.typeData.datas" bind-optionsValue="'name'" bind-optionsText="'label'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:ref('type'),name:'$model/UI2/system/components/justep/select/select'}" __cid="cjeYjQb"/> 
+        </div>  
+        <div class="col col-xs-3 cjeYjQb" __cid="cjeYjQb"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cjeYjQb" xid="input3" data-bind="component:{ref:ref('displayName'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cjeYjQb"/> 
+        </div>  
+        <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+          <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cjeYjQb" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{ref:ref('isCalculate'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cjeYjQb">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cjeYjQb" class="cjeYjQb"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cjeYjQb" class="cjeYjQb"/>
+          </span> 
+        </div>  
+        <div class="col col-xs-2 cjeYjQb" __cid="cjeYjQb"> 
+          <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cjeYjQb" xid="radio1" name="idCol" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;idCol&quot;}" data-bind="component:{ref:ref('isIDColumn'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cjeYjQb">
+            <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="idCol" __cid="cjeYjQb" class="cjeYjQb"/>
+            <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cjeYjQb" class="cjeYjQb"/>
+          </span> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

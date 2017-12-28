@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQB7v2y" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQB7v2y" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQB7v2y" class="cQB7v2y"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pceu6n6b-iosstatusbar cQB7v2y" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQB7v2y"> 
+    <div class="x-panel-top cQB7v2y" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQB7v2y"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQB7v2y" xid="titleBar1" style="font-weight:normal;font-size:20px;background-color:#37b9ed;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;公示公告&quot;}" __cid="cQB7v2y"> 
+        <div class="x-titlebar-left cQB7v2y" xid="left1" __cid="cQB7v2y"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cQB7v2y" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQB7v2y"> 
+            <i xid="i7" class="linear linear-arrowleft cQB7v2y" __cid="cQB7v2y"/>  
+            <span xid="span11" __cid="cQB7v2y" class="cQB7v2y"/>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cQB7v2y" xid="title1" style="font-weight:normal;" __cid="cQB7v2y">公示公告</div>  
+        <div class="x-titlebar-right  cQB7v2y" xid="right1" __cid="cQB7v2y">
+          <div class="empty cQB7v2y" __cid="cQB7v2y"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQB7v2y" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;label&quot;:&quot;button&quot;}" __cid="cQB7v2y"> 
+            <i xid="i16" class="icon-refresh cQB7v2y" __cid="cQB7v2y"/>  
+            <span xid="span23" __cid="cQB7v2y" class="cQB7v2y"/>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQB7v2y" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQB7v2y"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQB7v2y" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQB7v2y"> 
+        <div class="x-contents-content x-left-to-center  x-scroll-view active cQB7v2y" xid="noticeFile" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:noticeFileActive" __cid="cQB7v2y"> 
+          <div class="x-scroll cQB7v2y" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollView1PullDown" __cid="cQB7v2y"> 
+            <div class="x-content-center x-pull-down container cQB7v2y" xid="div1" __cid="cQB7v2y"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cQB7v2y" xid="i1" __cid="cQB7v2y"/>  
+              <span class="x-pull-down-label cQB7v2y" xid="span2" __cid="cQB7v2y">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cQB7v2y" xid="div2" __cid="cQB7v2y">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cQB7v2y" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;listData&quot;,&quot;limit&quot;:10}" __cid="cQB7v2y"> 
+                <ul class="x-list-template hide cQB7v2y" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cQB7v2y"> 
+                  <li xid="li1" bind-click="li1Click" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cQB7v2y" class="cQB7v2y"> 
+                    <div class="media cQB7v2y" xid="media1" __cid="cQB7v2y"> 
+                      <div class="media-left cQB7v2y" xid="mediaLeft1" __cid="cQB7v2y"> 
+                        <a href="#" xid="a1" __cid="cQB7v2y" class="cQB7v2y"> 
+                          <img class="media-object cQB7v2y" src="" alt="" xid="image1" __cid="cQB7v2y"/>
+                        </a> 
+                      </div>  
+                      <div class="media-body cQB7v2y" xid="mediaBody1" __cid="cQB7v2y"> 
+                        <h4 xid="h41" bind-text="ref(&quot;title&quot;)" class="media-heading cQB7v2y" style="color:#000;" __cid="cQB7v2y">Media heading</h4>  
+                        <span xid="span1" style="color:#989898;font-size:10px;" __cid="cQB7v2y" class="cQB7v2y">发布时间：</span>  
+                        <span xid="span3" bind-text="ref(&quot;time&quot;)" style="color:#989898;font-size:10px;" __cid="cQB7v2y" class="cQB7v2y"/>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cQB7v2y" xid="div3" __cid="cQB7v2y"> 
+              <span class="x-pull-up-label cQB7v2y" xid="span4" __cid="cQB7v2y">加载更多...</span>
+            </div> 
+          </div>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQB7v2y" class="cQB7v2y">.x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pceu6n6b-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="noticeDetail" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:true,&quot;routable&quot;:true}" __cid="cQB7v2y" class="cQB7v2y">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQB7v2y" __cid="cQB7v2y"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQB7v2y" style="display:none;" __cid="cQB7v2y">
+      <xhtml:div class="x-dialog-title cQB7v2y" __cid="cQB7v2y">
+        <xhtml:button class="close cQB7v2y" __cid="cQB7v2y">
+          <xhtml:span __cid="cQB7v2y" class="cQB7v2y">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cQB7v2y" __cid="cQB7v2y"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cQB7v2y" __cid="cQB7v2y"/>
+    </xhtml:div>
+  </span>
+</div>

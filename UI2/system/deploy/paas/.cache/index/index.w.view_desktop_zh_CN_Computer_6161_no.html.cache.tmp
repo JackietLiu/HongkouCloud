@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" xid="window" class="window czaiiaa" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="czaiiaa" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="czaiiaa" class="czaiiaa"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full o-containerParentApp pcIrAzQz-iosstatusbar czaiiaa" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="czaiiaa"> 
+    <div class="x-panel-top czaiiaa" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czaiiaa"> 
+      <nav class="navbar navbar-default  czaiiaa" role="navigation" __cid="czaiiaa"> 
+        <a class="navbar-brand czaiiaa" __cid="czaiiaa" data-bind="text:$model.title"/> 
+      </nav> 
+    </div>  
+    <div class="x-panel-content czaiiaa" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="czaiiaa"> 
+      <div xid="containerParentPaas" __cid="czaiiaa" class="czaiiaa"/> 
+    </div>  
+    <div class="x-panel-bottom czaiiaa" xid="bottom1" style="padding-top: 4px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:60}" __cid="czaiiaa"> 
+      <nav class="navbar navbar-default czaiiaa" role="navigation" __cid="czaiiaa"> 
+        <div class="navbar-buttons-container czaiiaa" __cid="czaiiaa"> 
+          <div class="btn-group-single pull-right czaiiaa" style="display:inline-block" __cid="czaiiaa"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back czaiiaa" xid="downloadBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasDownloadBtn.get()}" data-events="onClick:downloadBtnClick" data-config="{&quot;label&quot;:&quot;部署信息&quot;}" __cid="czaiiaa"> 
+              <i __cid="czaiiaa" class="czaiiaa"/>  
+              <span __cid="czaiiaa" class="czaiiaa">部署信息</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-back czaiiaa" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasBackBtn.get()}" data-events="onClick:backBtnClick" data-config="{&quot;label&quot;:&quot;上一步&quot;}" __cid="czaiiaa"> 
+              <i __cid="czaiiaa" class="czaiiaa"/>  
+              <span __cid="czaiiaa" class="czaiiaa">上一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-next czaiiaa" xid="nextBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasNextBtn.get()}" data-events="onClick:nextBtnClick" data-config="{&quot;label&quot;:&quot;下一步&quot;}" __cid="czaiiaa"> 
+              <i __cid="czaiiaa" class="czaiiaa"/>  
+              <span __cid="czaiiaa" class="czaiiaa">下一步</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-dialog-finish czaiiaa" xid="finishBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasFinishBtn.get()}" data-events="onClick:finishBtnClick" data-config="{&quot;label&quot;:&quot;完成&quot;}" __cid="czaiiaa"> 
+              <i __cid="czaiiaa" class="czaiiaa"/>  
+              <span __cid="czaiiaa" class="czaiiaa">完成</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-dialog-cancel czaiiaa" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},css:{hide: !$model.hasCancelBtn.get()}" data-events="onClick:cancelBtnClick" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="czaiiaa"> 
+              <i __cid="czaiiaa" class="czaiiaa"/>  
+              <span __cid="czaiiaa" class="czaiiaa">取消</span> 
+            </a> 
+          </div> 
+        </div> 
+      </nav> 
+    </div>  
+    <style __cid="czaiiaa" class="czaiiaa">.x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-top {height: 56px;}.x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-content { top: 56px;bottom: 60px;}.x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-bottom {height: 60px;}.iosstatusbar .x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-top {height: 76px;}.iosstatusbar .x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-content { top: 76px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-top {height: 56px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIrAzQz-iosstatusbar &gt;.x-panel-content {top: 56px;}</style> 
+  </div>  
+  <link xmlns="" rel="stylesheet" href="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/deploy/common/common.css" __cid="czaiiaa" class="czaiiaa"/> 
+</div>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" __id="id_1" component="$model/UI2/system/components/justep/window/window" extends="$UI/system/deploy/common/waittingDialog.w" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caUnQz2" class="caUnQz2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="caUnQz2" class="caUnQz2"/>
+  <div xid="infoDiv" style="padding:8px" __cid="caUnQz2" class="caUnQz2"> 
+    <label xid="info" class="x-label caUnQz2" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge-and-replace" __cid="caUnQz2">正在执行，成功将自动关闭窗口。请稍候......</label>  
+    <div xid="div7" __cid="caUnQz2" class="caUnQz2">
+      <label xid="detail" style="font-size:small;color:#0080FF;cursor:pointer;" bind-click="detailClick" __cid="caUnQz2" class="caUnQz2">详细信息</label>
+    </div>
+  </div>  
+  <div xid="logDiv" style="display:none" __cid="caUnQz2" class="caUnQz2">
+    <div xid="iframeDiv" style="height:100%;" __cid="caUnQz2" class="caUnQz2"></div>
+    <div xid="useServerDiv" style="padding-left:8px" __cid="caUnQz2" class="caUnQz2">
+      <span component="$model/UI2/system/components/justep/button/radio" class="x-radio caUnQz2" xid="logTypeRadio1" name="logType" label="日志" checked="true" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;日志&quot;,&quot;name&quot;:&quot;logType&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:logTypeRadioChange" __cid="caUnQz2">
+        <xhtml:input type="radio" name="logType" __cid="caUnQz2" class="caUnQz2"/>
+        <xhtml:label __cid="caUnQz2" class="caUnQz2">日志</xhtml:label>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/radio" class="x-radio caUnQz2" xid="logTypeRadio2" name="logType" label="打包服务器日志" style="display:none" xmlns:xui="http://www.justep.com/xui" xui:update-mode="merge" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;打包服务器日志&quot;,&quot;name&quot;:&quot;logType&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:logTypeRadioChange" __cid="caUnQz2">
+        <xhtml:input type="radio" name="logType" __cid="caUnQz2" class="caUnQz2"/>
+        <xhtml:label __cid="caUnQz2" class="caUnQz2">打包服务器日志</xhtml:label>
+      </span>
+    </div>
+  </div>
+</div>

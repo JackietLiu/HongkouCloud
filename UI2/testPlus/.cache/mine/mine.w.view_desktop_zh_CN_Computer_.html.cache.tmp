@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJ7JvUb" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJ7JvUb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.dis.cJ7JvUb{display: none} .o-img.cJ7JvUb{width: 100%; height: 80px} .o-imgList.cJ7JvUb{padding: 14px} .o-imgList.cJ7JvUb ul.cJ7JvUb li.cJ7JvUb{padding: 1px} .o-uploadFile.cJ7JvUb .x-attachment-content.cJ7JvUb{min-height: 40px; min-height: 40px; border-top: 0; background: none; margin-top: 0px} .o-uploadFile.cJ7JvUb .x-item-upload.cJ7JvUb{width: 40px; height: 40px} .o-uploadFile.cJ7JvUb .x-attachment.cJ7JvUb{min-height: 40px; padding: 0} .o-uploadFile.cJ7JvUb .x-attachment.cJ7JvUb .x-attachment-cell.cJ7JvUb{float: none; margin: 0; height: 40px; display: block} .share_detail.cJ7JvUb img.cJ7JvUb{width: 35px; height: 35px; margin-top: 5px; border: 1px solid transparent; border-radius: 7px} .share_detail.cJ7JvUb{width: 75%; margin: 0 auto; position: relative; float: right} .share_detail.cJ7JvUb li.cJ7JvUb{width: 25%; float: left} .share_btn.cJ7JvUb{text-align: center; margin-top: 10px; position: relative} .normal.cJ7JvUb{box-shadow: 0px 0px 5px rgb(170, 170, 170); color: red; background-color: white; width: 40%} .bottomdiv.cJ7JvUb{width: 100%; background-color: white; height: 50px; position: fixed; bottom: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cJ7JvUb" xid="ewmOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:false}" __cid="cJ7JvUb"> 
+    <div class="x-popOver-overlay cJ7JvUb" xid="div10" __cid="cJ7JvUb"/>  
+    <div class="x-popOver-content cJ7JvUb" xid="div11" style="background-color:#f3fbff;width:350px;height:450px;" __cid="cJ7JvUb"> 
+      <div xid="div12" style="padding-left:30px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+          <div class="x-col cJ7JvUb" xid="col21" __cid="cJ7JvUb"/>  
+          <div class="x-col x-col-10 cJ7JvUb" xid="col20" __cid="cJ7JvUb"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cJ7JvUb" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'ewmOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cJ7JvUb"> 
+              <i xid="i2" class="icon-android-close cJ7JvUb" __cid="cJ7JvUb"/>  
+              <span xid="span2" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+          <div class="x-col cJ7JvUb" xid="col22" style="padding:10px 0;" __cid="cJ7JvUb"> 
+            <span xid="span3" style="color:#6085c4;font-size:25px;font-weight:bold;" __cid="cJ7JvUb" class="cJ7JvUb">二维码分享</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div15" align="center" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <img src="@justepContextPath@/v_81998fd0801d40fea19761739d73a360l_zh_CNs_desktopd_pc/hongkou/index_images/shhk116.png" alt="" xid="image10" style="box-shadow:0px 0px 5px #000;" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+      </div>  
+      <div xid="div14" align="center" style="margin-top:10px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link normal cJ7JvUb" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button8Click" data-config="{&quot;icon&quot;:&quot;dataControl dataControl-download&quot;,&quot;label&quot;:&quot;保存&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i3" class="dataControl dataControl-download cJ7JvUb" __cid="cJ7JvUb"/>  
+          <span xid="span4" __cid="cJ7JvUb" class="cJ7JvUb">保存</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link normal cJ7JvUb" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button7Click" data-config="{&quot;icon&quot;:&quot;e-commerce e-commerce-fenxiang&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i1" class="e-commerce e-commerce-fenxiang cJ7JvUb" __cid="cJ7JvUb"/>  
+          <span xid="span1" __cid="cJ7JvUb" class="cJ7JvUb">分享</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcA7zMb2-iosstatusbar cJ7JvUb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJ7JvUb"> 
+    <div class="x-panel-top cJ7JvUb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJ7JvUb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJ7JvUb" xid="titleBar1" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我&quot;}" __cid="cJ7JvUb"> 
+        <div class="x-titlebar-left cJ7JvUb" xid="left1" __cid="cJ7JvUb"/>  
+        <div class="x-titlebar-title cJ7JvUb" xid="title1" __cid="cJ7JvUb">我的信息</div>  
+        <div class="x-titlebar-right  cJ7JvUb" xid="right1" __cid="cJ7JvUb"> 
+          <div class="empty cJ7JvUb" __cid="cJ7JvUb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJ7JvUb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJ7JvUb"> 
+      <div xid="div1" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div xid="div45" align="center" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div xid="div50" style="padding-top:15px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+            <img alt="" xid="showImage" style="border-radius:5px;width:70px;" height="70px" class="dis cJ7JvUb" __cid="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'showImageClick')}"/>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-lg btn-only-icon cJ7JvUb" xid="photoBtn" style="color:#000;height:60px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'chooseOver.show'}" data-config="{&quot;icon&quot;:&quot;icon-android-camera&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cJ7JvUb"> 
+              <i xid="i4" class="icon-android-camera cJ7JvUb" __cid="cJ7JvUb"/>  
+              <span xid="span10" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+            </a> 
+          </div>  
+          <div xid="div51" __cid="cJ7JvUb" class="cJ7JvUb"> 
+            <span xid="span13" style="font-size:large;" __cid="cJ7JvUb" class="cJ7JvUb" data-bind="text:$model.personData.ref(&quot;UserName_Real&quot;)">姓名</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div2" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+      <div xid="div27" style="background-color:#fff;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div xid="div4" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row3" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col7" style="line-height:20px;" __cid="cJ7JvUb"> 
+              <div class="media cJ7JvUb" xid="media1" __cid="cJ7JvUb"> 
+                <div class="media-left cJ7JvUb" xid="mediaLeft1" __cid="cJ7JvUb"> 
+                  <img alt="" xid="image1" height="30px" src="@justepContextPath@/v_fa5a336102bf498f80cd1b7b2fcb7110l_zh_CNs_desktopd_pc/testPlus/images/index_images/11.png" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+                </div>  
+                <div class="media-body cJ7JvUb" xid="mediaBody1" __cid="cJ7JvUb"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ7JvUb" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ7JvUb"> 
+                    <label class="x-label cJ7JvUb" xid="label6" style="width:60px;" __cid="cJ7JvUb">职位：</label>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJ7JvUb" xid="output7" data-bind="component:{ref:$model.personData.ref(&quot;Party_Title&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJ7JvUb"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div6" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row4" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col9" style="line-height:20px;" __cid="cJ7JvUb"> 
+              <div class="media cJ7JvUb" xid="media2" __cid="cJ7JvUb"> 
+                <div class="media-left cJ7JvUb" xid="mediaLeft2" __cid="cJ7JvUb"> 
+                  <img alt="" xid="image6" height="30px" src="@justepContextPath@/v_233cb85afa5340c6b5712e18faa01b09l_zh_CNs_desktopd_pc/testPlus/images/index_images/44.png" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+                </div>  
+                <div class="media-body cJ7JvUb" xid="mediaBody2" __cid="cJ7JvUb"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ7JvUb" xid="labelEdit7" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ7JvUb"> 
+                    <label class="x-label cJ7JvUb" xid="label7" style="width:60px;" __cid="cJ7JvUb">电话：</label>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJ7JvUb" xid="output8" data-bind="component:{ref:$model.personData.ref(&quot;Tel_Office1&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJ7JvUb"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div5" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row7" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col15" style="line-height:20px;" __cid="cJ7JvUb"> 
+              <div class="media cJ7JvUb" xid="media3" __cid="cJ7JvUb"> 
+                <div class="media-left cJ7JvUb" xid="mediaLeft3" __cid="cJ7JvUb"> 
+                  <img alt="" xid="image7" height="30px" src="@justepContextPath@/v_e7cbe20c20e04497909d17c8b843a435l_zh_CNs_desktopd_pc/testPlus/images/index_images/33.png" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+                </div>  
+                <div class="media-body cJ7JvUb" xid="mediaBody3" __cid="cJ7JvUb"> 
+                  <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJ7JvUb" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJ7JvUb"> 
+                    <label class="x-label cJ7JvUb" xid="label10" style="width:60px;" __cid="cJ7JvUb">手机：</label>  
+                    <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJ7JvUb" xid="output11" data-bind="component:{ref:$model.personData.ref(&quot;Mobie_No&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJ7JvUb"/> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div8" style="border-bottom:1px solid #e5e5e5;padding:10px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div class="media cJ7JvUb" xid="media4" __cid="cJ7JvUb"> 
+            <div class="media-left cJ7JvUb" xid="mediaLeft4" __cid="cJ7JvUb"> 
+              <img alt="" xid="image8" height="30px" src="@justepContextPath@/v_9673970e926f45ea8cceccb597cc91b7l_zh_CNs_desktopd_pc/testPlus/images/index_images/22.png" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+            </div>  
+            <div class="media-body cJ7JvUb" xid="mediaBody4" __cid="cJ7JvUb"> 
+              <label xid="label1" style="font-weight:normal;" __cid="cJ7JvUb" class="cJ7JvUb">邮箱：</label>  
+              <span xid="span21" style="margin-left:12px;" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cJ7JvUb" xid="bindEmail" style="border:0;margin-left:20px;border-radius:0;line-height:15px;height:30px;width:130px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:subMitBtnClick" __cid="cJ7JvUb"> 
+                <i xid="i7" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+                <span xid="span22" __cid="cJ7JvUb" class="cJ7JvUb">显示</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div35" style="border-bottom:1px solid #e5e5e5;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row5" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col4" style="line-height:25px;" __cid="cJ7JvUb"> 
+              <div class="media cJ7JvUb" xid="media5" __cid="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'media5Click')}"> 
+                <div class="media-left cJ7JvUb" xid="mediaLeft5" __cid="cJ7JvUb"> 
+                  <div xid="div18" style="width:30px;" align="center" __cid="cJ7JvUb" class="cJ7JvUb"> 
+                    <img alt="" xid="image3" src="@justepContextPath@/v_f23921e9d7ce4be2aaf935b7da315ecbl_zh_CNs_desktopd_pc/testPlus/images/index_images/ewm.png" style="width:25px;" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+                  </div> 
+                </div>  
+                <div class="media-body cJ7JvUb" xid="mediaBody5" __cid="cJ7JvUb"> 
+                  <div xid="div16" style="line-height:30px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+                    <span xid="span5" __cid="cJ7JvUb" class="cJ7JvUb">把软件推荐给朋友</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div3" style="border-bottom:1px solid #e5e5e5;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row8" style="border-bottom:1px solid #e5e5e5;line-height:50px;height:50px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col5" style="line-height:20px;" __cid="cJ7JvUb"> 
+              <div class="media cJ7JvUb" xid="media6" __cid="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'btnSetPasswordClick')}"> 
+                <div class="media-left cJ7JvUb" xid="mediaLeft6" __cid="cJ7JvUb"> 
+                  <img alt="" xid="image4" height="30px" src="@justepContextPath@/v_6834e16a75774662b8d0286d9fac2864l_zh_CNs_desktopd_pc/testPlus/images/index_images/55.png" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+                </div>  
+                <div class="media-body cJ7JvUb" xid="mediaBody6" __cid="cJ7JvUb"> 
+                  <div xid="div17" style="line-height:35px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+                    <span xid="span6" __cid="cJ7JvUb" class="cJ7JvUb">添加/重置手势密码</span> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div xid="div7" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+            <div class="x-col cJ7JvUb" xid="col11" style="padding:30px;text-align:center;" __cid="cJ7JvUb"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block cJ7JvUb" xid="button3" style="color:#fff;border-radius:0px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&quot;label&quot;:&quot;注销&quot;}" __cid="cJ7JvUb"> 
+                <i xid="i10" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+                <span xid="span29" __cid="cJ7JvUb" class="cJ7JvUb">注销</span> 
+              </a> 
+            </div>  
+            <div class="x-col cJ7JvUb" xid="col13" style="padding:30px;text-align:center;" __cid="cJ7JvUb"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block cJ7JvUb" xid="button6" style="color:#fff;border-radius:0px;background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button6Click" data-config="{&quot;label&quot;:&quot;退出&quot;}" __cid="cJ7JvUb"> 
+                <i xid="i11" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+                <span xid="span30" __cid="cJ7JvUb" class="cJ7JvUb">退出</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJ7JvUb" class="cJ7JvUb">.x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcA7zMb2-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cJ7JvUb" xid="chooseOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:false,&quot;position&quot;:&quot;bottom&quot;}" __cid="cJ7JvUb"> 
+    <div class="x-popOver-overlay cJ7JvUb" xid="div13" __cid="cJ7JvUb"/>  
+    <div class="x-popOver-content cJ7JvUb" xid="div28" style="padding-top:20px;width:100%;background-color:white;" __cid="cJ7JvUb"> 
+      <div xid="div29" style="padding:0 10px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn  btn-block cJ7JvUb" xid="button4" style="border-radius:0;color:#fff;background-color:green;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:photoBtnClick" data-config="{&quot;label&quot;:&quot;拍照&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i5" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+          <span xid="span11" __cid="cJ7JvUb" class="cJ7JvUb">拍照</span> 
+        </a> 
+      </div>  
+      <div xid="div33" style="padding:0 10px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-block cJ7JvUb" xid="button5" style="color:#fff;border-radius:0;margin-top:10px;background-color:green;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button5Click" data-config="{&quot;label&quot;:&quot;从相册选择&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i6" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+          <span xid="span12" __cid="cJ7JvUb" class="cJ7JvUb">从相册选择</span> 
+        </a> 
+      </div>  
+      <div xid="div34" align="center" style="padding:10px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cJ7JvUb" xid="button11" style="border-color:#989898;color:#989898;line-height:20px;border-radius:20px;height:40px;background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'chooseOver.hide'}" data-config="{&quot;label&quot;:&quot;取消&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i15" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+          <span xid="span20" __cid="cJ7JvUb" class="cJ7JvUb">取消</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:messageDialogOK" data-config="{&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ7JvUb" __cid="cJ7JvUb">  
+      <div class="x-modal-inner cJ7JvUb" __cid="cJ7JvUb"> 
+        <div class="x-modal-title cJ7JvUb" __cid="cJ7JvUb"/>  
+        <div class="x-modal-text cJ7JvUb" __cid="cJ7JvUb"/>  
+        <input class="x-modal-prompt-input cJ7JvUb" type="text" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-modal-buttons cJ7JvUb" __cid="cJ7JvUb"> 
+        <a class="x-modal-button x-modal-button-bold OK cJ7JvUb" value="ok" __cid="cJ7JvUb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJ7JvUb" value="yes" __cid="cJ7JvUb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJ7JvUb" value="no" __cid="cJ7JvUb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJ7JvUb" value="cancel" __cid="cJ7JvUb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="falseDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:falseDialogOK" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ7JvUb" __cid="cJ7JvUb">  
+      <div class="x-modal-inner cJ7JvUb" __cid="cJ7JvUb"> 
+        <div class="x-modal-title cJ7JvUb" __cid="cJ7JvUb"/>  
+        <div class="x-modal-text cJ7JvUb" __cid="cJ7JvUb"/>  
+        <input class="x-modal-prompt-input cJ7JvUb" type="text" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-modal-buttons cJ7JvUb" __cid="cJ7JvUb"> 
+        <a class="x-modal-button x-modal-button-bold OK cJ7JvUb" value="ok" __cid="cJ7JvUb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJ7JvUb" value="yes" __cid="cJ7JvUb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJ7JvUb" value="no" __cid="cJ7JvUb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJ7JvUb" value="cancel" __cid="cJ7JvUb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cJ7JvUb" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" __cid="cJ7JvUb"> 
+    <div class="x-popOver-overlay cJ7JvUb" xid="div9" __cid="cJ7JvUb"/>  
+    <div class="x-popOver-content cJ7JvUb" xid="div37" style="background-color:#f3fbff;width:350px;height:450px;" __cid="cJ7JvUb"> 
+      <div xid="div38" style="padding-left:30px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+          <div class="x-col cJ7JvUb" xid="col2" __cid="cJ7JvUb"/>  
+          <div class="x-col x-col-10 cJ7JvUb" xid="col3" __cid="cJ7JvUb"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cJ7JvUb" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&quot;icon&quot;:&quot;icon-android-close&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cJ7JvUb"> 
+              <i xid="i8" class="icon-android-close cJ7JvUb" __cid="cJ7JvUb"/>  
+              <span xid="span23" __cid="cJ7JvUb" class="cJ7JvUb"/> 
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cJ7JvUb" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJ7JvUb"> 
+          <div class="x-col cJ7JvUb" xid="col1" style="padding:10px 0;" __cid="cJ7JvUb"> 
+            <span xid="span24" style="color:#6085c4;font-size:25px;font-weight:bold;" __cid="cJ7JvUb" class="cJ7JvUb">企业邮箱绑定</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div41" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div xid="div40" style="font-size:16px;color:#padding-left:40px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <span xid="span25" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="cJ7JvUb" class="cJ7JvUb">邮箱账号</span> 
+        </div>  
+        <div xid="div43" style="padding-left:20px;line-height:50px;height:50px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div xid="div42" style="float:left;width:75%;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cJ7JvUb" xid="input1" style="border-radius:0;border:1px solid #c1d3f2;float:left;float:left;height:50px;width:62%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;只需输入邮箱用户名&quot;}" __cid="cJ7JvUb"/>  
+            <label xid="label2" __cid="cJ7JvUb" class="cJ7JvUb">@hkq.gov.cn</label> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div46" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <div xid="div48" style="margin-top:20px;font-size:16px;color:#padding-left:40px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <span xid="span26" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="cJ7JvUb" class="cJ7JvUb">邮箱密码</span> 
+        </div>  
+        <div xid="div44" style="padding-left:20px;line-height:50px;height:50px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <div xid="div47" style="float:left;width:75%;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+            <input component="$model/UI2/system/components/justep/input/password" class="form-control cJ7JvUb" xid="input2" style="border-radius:0;border:1px solid #c1d3f2;float:left;float:left;height:50px;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="cJ7JvUb"/> 
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div49" align="left" style="padding:20px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cJ7JvUb" xid="sureBtn" style="border:0;line-height:35px;height:50px;background-color:#9591ff;width:80%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sureBtnClick" data-config="{&quot;label&quot;:&quot;确定&quot;}" __cid="cJ7JvUb"> 
+          <i xid="i9" __cid="cJ7JvUb" class="cJ7JvUb"/>  
+          <span xid="span27" style="font-size:18px;" __cid="cJ7JvUb" class="cJ7JvUb">确定</span> 
+        </a> 
+      </div>  
+      <div xid="div39" style="font-size:16px;padding-left:20px;" __cid="cJ7JvUb" class="cJ7JvUb"> 
+        <span xid="span28" style="color:red;" __cid="cJ7JvUb" class="cJ7JvUb">注：只能绑定"@hkq.gov.cn"的邮箱</span> 
+      </div> 
+    </div> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="outBindEmail" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:outBindEmailOK" data-config="{&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ7JvUb" __cid="cJ7JvUb">  
+      <div class="x-modal-inner cJ7JvUb" __cid="cJ7JvUb"> 
+        <div class="x-modal-title cJ7JvUb" __cid="cJ7JvUb"/>  
+        <div class="x-modal-text cJ7JvUb" __cid="cJ7JvUb"/>  
+        <input class="x-modal-prompt-input cJ7JvUb" type="text" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-modal-buttons cJ7JvUb" __cid="cJ7JvUb"> 
+        <a class="x-modal-button x-modal-button-bold OK cJ7JvUb" value="ok" __cid="cJ7JvUb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJ7JvUb" value="yes" __cid="cJ7JvUb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJ7JvUb" value="no" __cid="cJ7JvUb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJ7JvUb" value="cancel" __cid="cJ7JvUb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="exitDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:exitDialogOK" data-config="{&quot;message&quot;:&quot;确定要退出app吗？&quot;,&quot;title&quot;:&quot;提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ7JvUb" __cid="cJ7JvUb">  
+      <div class="x-modal-inner cJ7JvUb" __cid="cJ7JvUb"> 
+        <div class="x-modal-title cJ7JvUb" __cid="cJ7JvUb">提示</div>  
+        <div class="x-modal-text cJ7JvUb" __cid="cJ7JvUb">确定要退出app吗？</div>  
+        <input class="x-modal-prompt-input cJ7JvUb" type="text" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-modal-buttons cJ7JvUb" __cid="cJ7JvUb"> 
+        <a class="x-modal-button x-modal-button-bold OK cJ7JvUb" value="ok" __cid="cJ7JvUb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJ7JvUb" value="yes" __cid="cJ7JvUb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJ7JvUb" value="no" __cid="cJ7JvUb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJ7JvUb" value="cancel" __cid="cJ7JvUb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="logoutDialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:logoutDialogOK" data-config="{&quot;message&quot;:&quot;确定要注销当前用户吗？&quot;,&quot;title&quot;:&quot;提示&quot;,&quot;type&quot;:&quot;OKCancel&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJ7JvUb" __cid="cJ7JvUb">  
+      <div class="x-modal-inner cJ7JvUb" __cid="cJ7JvUb"> 
+        <div class="x-modal-title cJ7JvUb" __cid="cJ7JvUb">提示</div>  
+        <div class="x-modal-text cJ7JvUb" __cid="cJ7JvUb">确定要注销当前用户吗？</div>  
+        <input class="x-modal-prompt-input cJ7JvUb" type="text" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-modal-buttons cJ7JvUb" __cid="cJ7JvUb"> 
+        <a class="x-modal-button x-modal-button-bold OK cJ7JvUb" value="ok" __cid="cJ7JvUb">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJ7JvUb" value="yes" __cid="cJ7JvUb">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJ7JvUb" value="no" __cid="cJ7JvUb">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJ7JvUb" value="cancel" __cid="cJ7JvUb">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="loginDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;forceRefreshOnOpen&quot;:false,&quot;routable&quot;:false,&quot;src&quot;:&quot;$model/UI2/testPlus/login.w&quot;}" __cid="cJ7JvUb" class="cJ7JvUb"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cJ7JvUb" __cid="cJ7JvUb"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cJ7JvUb" style="display:none;" __cid="cJ7JvUb">  
+      <div class="x-dialog-title cJ7JvUb" __cid="cJ7JvUb"> 
+        <button class="close cJ7JvUb" __cid="cJ7JvUb"> 
+          <span __cid="cJ7JvUb" class="cJ7JvUb">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cJ7JvUb" __cid="cJ7JvUb"/> 
+      </div>  
+      <div class="x-dialog-body cJ7JvUb" __cid="cJ7JvUb"/> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cJ7JvUb" xid="sharePop" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;direction&quot;:&quot;auto&quot;,&quot;position&quot;:&quot;bottom&quot;}" __cid="cJ7JvUb"> 
+    <div class="x-popOver-overlay cJ7JvUb" xid="div19" __cid="cJ7JvUb"/>  
+    <div class="x-popOver-content cJ7JvUb" xid="div20" style="padding:20px 0;width:100%;background-color:white;" __cid="cJ7JvUb"> 
+      <p style="float:left;margin:12px 0 0 5px; width:20%" xid="p1" __cid="cJ7JvUb" class="cJ7JvUb">分享到：</p>  
+      <ul xid="share_detail" class="share_detail cJ7JvUb" __cid="cJ7JvUb"> 
+        <li xid="li1" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <img alt="" xid="qq" src="@justepContextPath@/v_e4f18c81f85c45939241ef13b8fb145el_zh_CNs_desktopd_pc/testPlus/images/img/qq.png" __cid="cJ7JvUb" class="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'qqClick')}"/> 
+        </li>  
+        <li xid="li2" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <img alt="" xid="kongjian" src="@justepContextPath@/v_bcddcb0d101946f39874d50bcb601b7dl_zh_CNs_desktopd_pc/testPlus/images/img/kongjian2.png" __cid="cJ7JvUb" class="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'kongjianClick')}"/> 
+        </li>  
+        <li xid="li3" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <img alt="" xid="pengyouquan" src="@justepContextPath@/v_3b47f37695e74f6aada90c8cbd4f84e4l_zh_CNs_desktopd_pc/testPlus/images/img/pengyouquan.png" style="width:35px;" __cid="cJ7JvUb" class="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'pengyouquanClick')}"/> 
+        </li>  
+        <li xid="li4" __cid="cJ7JvUb" class="cJ7JvUb"> 
+          <img alt="" xid="weixin" src="@justepContextPath@/v_44deb44091e4473a97f0b4b185e6f8cfl_zh_CNs_desktopd_pc/testPlus/images/img/weixin.png" style="width:35px;" __cid="cJ7JvUb" class="cJ7JvUb" data-bind="event:{click:$model._callModelFn.bind($model, 'weixinClick')}"/> 
+        </li> 
+      </ul> 
+    </div> 
+  </div> 
+</div>

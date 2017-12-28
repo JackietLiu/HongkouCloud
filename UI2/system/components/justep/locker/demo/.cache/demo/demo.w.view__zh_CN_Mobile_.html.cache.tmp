@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cEneEBb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEneEBb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/locker/locker,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cEneEBb" class="cEneEBb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card x-full pcmEraEr-iosstatusbar cEneEBb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cEneEBb"> 
+    <div class="x-panel-top cEneEBb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEneEBb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cEneEBb" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;手势密码组件&quot;}" __cid="cEneEBb"> 
+        <div class="x-titlebar-left cEneEBb" __cid="cEneEBb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cEneEBb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cEneEBb"> 
+            <i class="icon-chevron-left cEneEBb" __cid="cEneEBb"/>  
+            <span __cid="cEneEBb" class="cEneEBb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cEneEBb" __cid="cEneEBb">手势密码组件</div>  
+        <div class="x-titlebar-right  cEneEBb" __cid="cEneEBb"> 
+          <div class="empty cEneEBb" __cid="cEneEBb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cEneEBb" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEneEBb"> 
+      <div xid="div1" style="height:100%;width:100%;" __cid="cEneEBb" class="cEneEBb"> 
+        <table style="height:100%;width:100%;" __cid="cEneEBb" class="cEneEBb"> 
+          <tr style="vertical-align: middle;text-align: center;" __cid="cEneEBb" class="cEneEBb"> 
+            <td style="vertical-align: middle;text-align: center;" __cid="cEneEBb" class="cEneEBb"> 
+              <canvas xid="locker" component="$model/UI2/system/components/justep/locker/locker" class="x-locker cEneEBb" style="width:320px;height:320px;" onPasswordFirstSuccess="lockerPasswordFirstSuccess" data-bind="component:{name:'$model/UI2/system/components/justep/locker/locker'}" data-events="onPasswordSuccess:setPasswordSuccess;onInput:linePoint" data-config="{&quot;R&quot;:26,&quot;mode&quot;:2}" __cid="cEneEBb"/> 
+            </td> 
+          </tr> 
+        </table> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cEneEBb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cEneEBb"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cEneEBb" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;btnSetPassword&quot;,&quot;tabbed&quot;:true}" __cid="cEneEBb"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cEneEBb" xid="btnSetPassword" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSetPasswordClick" data-config="{&quot;label&quot;:&quot;设置密码&quot;}" __cid="cEneEBb"> 
+          <i xid="i1" __cid="cEneEBb" class="cEneEBb"/>  
+          <span xid="span1" __cid="cEneEBb" class="cEneEBb">设置密码</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cEneEBb" xid="btnCheck" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCheckClick" data-config="{&quot;label&quot;:&quot;检验密码&quot;}" __cid="cEneEBb"> 
+          <i xid="i2" __cid="cEneEBb" class="cEneEBb"/>  
+          <span xid="span2" __cid="cEneEBb" class="cEneEBb">检验密码</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cEneEBb" xid="btnNormal" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnNormalClick" data-config="{&quot;label&quot;:&quot;通用模式&quot;}" __cid="cEneEBb"> 
+          <i xid="i3" __cid="cEneEBb" class="cEneEBb"/>  
+          <span xid="span3" __cid="cEneEBb" class="cEneEBb">通用模式</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cEneEBb" class="cEneEBb">.x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmEraEr-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

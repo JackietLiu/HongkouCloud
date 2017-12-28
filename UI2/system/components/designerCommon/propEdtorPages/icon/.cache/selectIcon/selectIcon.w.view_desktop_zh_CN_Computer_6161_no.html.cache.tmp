@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqI7vEv" class="cqI7vEv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.list.cqI7vEv, .block.cqI7vEv{margin: 0; padding: 0; list-style: none} .list.cqI7vEv li.cqI7vEv{display: inline-block; width: 300px; padding-top: 4px; padding-bottom: 4px} .block.cqI7vEv{display: none} .block.cqI7vEv li.cqI7vEv{display: inline-block; width: 50px; height: 60px; margin: 5px; text-align: center} .block.cqI7vEv li.cqI7vEv label.cqI7vEv{cursor: pointer} .block.cqI7vEv li.cqI7vEv i.cqI7vEv{font-size: 28px} .list.cqI7vEv li.cqI7vEv label.cqI7vEv{display: inline-block} .list.cqI7vEv li.cqI7vEv span.cqI7vEv{color: black} .list.cqI7vEv li.cqI7vEv:hover{background-color: rgb(238, 238, 238)} .list.cqI7vEv li.cqI7vEv label.cqI7vEv:hover, .list.cqI7vEv li.cqI7vEv input.cqI7vEv:hover{cursor: pointer} .container.cqI7vEv li.cqI7vEv{color: rgb(68, 68, 68)} .container.cqI7vEv li.active.cqI7vEv{background-color: rgb(242, 186, 41)} .icon36.cqI7vEv{margin-left: 5px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cqI7vEv" class="cqI7vEv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cqI7vEv" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cqI7vEv"> 
+    <div class="x-control-group-title cqI7vEv" __cid="cqI7vEv">选择Icon</div>  
+    <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cqI7vEv" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="cqI7vEv"> 
+      <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cqI7vEv" xid="facefont" name="iconType" label="Facefont模式" value="1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;Facefont模式&quot;,&quot;name&quot;:&quot;iconType&quot;,&quot;value&quot;:&quot;1&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:facefontChanged" __cid="cqI7vEv"> 
+        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="iconType" value="1" __cid="cqI7vEv" class="cqI7vEv"></input>  
+        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cqI7vEv" class="cqI7vEv">Facefont模式</label> 
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cqI7vEv" xid="image" name="iconType" label="Image模式" value="2" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;Image模式&quot;,&quot;name&quot;:&quot;iconType&quot;,&quot;value&quot;:&quot;2&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio'}" data-events="onChange:imageChanged" __cid="cqI7vEv"> 
+        <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="iconType" value="2" __cid="cqI7vEv" class="cqI7vEv"></input>  
+        <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cqI7vEv" class="cqI7vEv">Image模式</label> 
+      </span> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cqI7vEv" xid="imgGroup" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'},css:{hide: !isImgIcon.get()}" __cid="cqI7vEv"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cqI7vEv" xid="labelInput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqI7vEv"> 
+        <label class="x-label cqI7vEv" xid="label1" __cid="cqI7vEv">可用时图标：</label>  
+        <div class="x-edit cqI7vEv" xid="div1" __cid="cqI7vEv"> 
+          <input xid="inputImg" placeHolder="格式：$UI/system/components/justep/button/demo/chart32.png" class="form-control cqI7vEv" __cid="cqI7vEv" data-bind="value:imgIcon"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit cqI7vEv" xid="labelInput2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cqI7vEv"> 
+        <label class="x-label cqI7vEv" xid="label2" __cid="cqI7vEv">禁用时图标：</label>  
+        <div class="x-edit cqI7vEv" xid="div2" __cid="cqI7vEv"> 
+          <input xid="inputFacefont" placeHolder="格式：$UI/system/components/justep/button/demo/chart32.png" class="form-control cqI7vEv" __cid="cqI7vEv" data-bind="value:disimgIcon"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="facefontGroup" __cid="cqI7vEv" class="cqI7vEv" data-bind="css:{hide: isImgIcon.get()}"> 
+      <div xid="div3" class="container-fluid cqI7vEv" __cid="cqI7vEv"> 
+        <select component="$model/UI2/system/components/justep/select/select" class="form-control cqI7vEv" xid="selectFile" style="margin-bottom:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:files.datas,optionsValue:'filePath',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:selectFileChange" data-config="{&quot;optionsAutoLoad&quot;:false}" __cid="cqI7vEv"/> 
+      </div> 
+    </div> 
+  </div> 
+</div>

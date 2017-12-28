@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQNVrE3" class="cQNVrE3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-panel-top.cQNVrE3 .btn-group.cQNVrE3 .btn.active.cQNVrE3{border-bottom: 4px solid rgb(255, 255, 255)} .tb-img1.cQNVrE3{width: 100%; height: 133px} .table2.cQNVrE3 .tb-img5.cQNVrE3{width: 60px} .tb-img6.cQNVrE3{width: 100%} .table.cQNVrE3{margin: 0} .table2.cQNVrE3 .text-center.cQNVrE3 span.cQNVrE3{font-size: 18px} .table1.cQNVrE3 .tb-img5.cQNVrE3{width: 40px}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQNVrE3" class="cQNVrE3"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcUramau-iosstatusbar cQNVrE3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQNVrE3"> 
+    <div class="x-panel-top cQNVrE3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQNVrE3"> 
+      <div class="media cQNVrE3" xid="media1" style="height:48px;background-color:rgb(23,145,255);" __cid="cQNVrE3"> 
+        <div class="media-left cQNVrE3" xid="mediaLeft1" style="line-height:48px;" __cid="cQNVrE3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQNVrE3" xid="button17" style="font-size:20px;color:#fff;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-menu&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQNVrE3"> 
+            <i xid="i17" class="linear linear-menu cQNVrE3" __cid="cQNVrE3"/>  
+            <span xid="span17" __cid="cQNVrE3" class="cQNVrE3"/> 
+          </a> 
+        </div>  
+        <div class="media-body cQNVrE3" xid="mediaBody1" __cid="cQNVrE3"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-sm btn-group-justified cQNVrE3" xid="buttonGroup3" style="margin-left:15%;height:48px;background-color:rgb(23,145,255);width:70%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cQNVrE3"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQNVrE3" xid="button20" style="font-size:24px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;听&quot;,&quot;target&quot;:&quot;maincontent&quot;}" __cid="cQNVrE3"> 
+              <i xid="i20" __cid="cQNVrE3" class="cQNVrE3"/>  
+              <span xid="span20" __cid="cQNVrE3" class="cQNVrE3">听</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQNVrE3" xid="button21" style="font-size:24px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;看&quot;}" __cid="cQNVrE3"> 
+              <i xid="i21" __cid="cQNVrE3" class="cQNVrE3"/>  
+              <span xid="span21" __cid="cQNVrE3" class="cQNVrE3">看</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQNVrE3" xid="button22" style="font-size:24px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;唱&quot;}" __cid="cQNVrE3"> 
+              <i xid="i22" __cid="cQNVrE3" class="cQNVrE3"/>  
+              <span xid="span22" __cid="cQNVrE3" class="cQNVrE3">唱</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="media-right cQNVrE3" xid="mediaRight1" style="line-height:48px;" __cid="cQNVrE3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cQNVrE3" xid="button19" style="font-size:20px;color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;linear linear-magnifier&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQNVrE3"> 
+            <i xid="i19" class="linear linear-magnifier cQNVrE3" __cid="cQNVrE3"/>  
+            <span xid="span19" __cid="cQNVrE3" class="cQNVrE3"/> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQNVrE3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQNVrE3"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQNVrE3" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQNVrE3"> 
+        <div class="x-contents-content active cQNVrE3" xid="maincontent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQNVrE3"> 
+          <div xid="div15" style="padding:0 20px;" __cid="cQNVrE3" class="cQNVrE3"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row cQNVrE3" xid="row2" style="height:80px;border-bottom:1px solid #ccc;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cQNVrE3"> 
+              <div class="col col-xs-3 cQNVrE3" xid="col4" __cid="cQNVrE3"> 
+                <img src="@justepContextPath@/v_0dc7106d50264f2fade5d0f733181285l_zh_CNs_d_m/testMUsicPlaer/images/defaultHead.png" alt="" xid="image4" height="100%" style="width:60px;border-radius:100%;" __cid="cQNVrE3" class="cQNVrE3"/> 
+              </div>  
+              <div class="col col-xs-6 cQNVrE3" xid="col5" __cid="cQNVrE3"> 
+                <div xid="div16" __cid="cQNVrE3" class="cQNVrE3"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output cQNVrE3" xid="output1" style="height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQNVrE3"/> 
+                </div>  
+                <div xid="div17" style="height:40px;padding-top:10px;width:100%;" __cid="cQNVrE3" class="cQNVrE3"> 
+                  <div xid="div18" style="float:left;height:20px;width:22%;background-image: url(@justepContextPath@/v_b2a16a4e2e0f4b918f243aa27b12af21l_zh_CNs_d_m/testMUsicPlaer/images/defaultHead.png);" __cid="cQNVrE3" class="cQNVrE3"/>  
+                  <div xid="div19" style="float:left;line-height:20px;padding-left:10px;width:78%;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <span xid="span24" __cid="cQNVrE3" class="cQNVrE3">听歌</span>  
+                    <span xid="span25" __cid="cQNVrE3" class="cQNVrE3">999999</span>  
+                    <span xid="span26" __cid="cQNVrE3" class="cQNVrE3">分钟</span> 
+                  </div> 
+                </div> 
+              </div>  
+              <div class="col col-xs-3 cQNVrE3" xid="col6" __cid="cQNVrE3"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cQNVrE3" xid="button23" style="color:grey;font-size:30px;margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button23Click" data-config="{&quot;icon&quot;:&quot;linear linear-envelope&quot;}" __cid="cQNVrE3"> 
+                  <i xid="i23" class="linear linear-envelope cQNVrE3" __cid="cQNVrE3"/>  
+                  <span xid="span23" __cid="cQNVrE3" class="cQNVrE3"/> 
+                </a> 
+              </div> 
+            </div>  
+            <table component="$model/UI2/system/components/bootstrap/table/table" xid="table1" class="table tb-menu table1 cQNVrE3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cQNVrE3"> 
+              <tbody class="x-list-template cQNVrE3" xid="listTemplate2" __cid="cQNVrE3"> 
+                <tr xid="tr1" __cid="cQNVrE3" class="cQNVrE3"> 
+                  <td pagename="./list.w" xid="td1" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div211" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_f5a3ae7c053a41a38fdbf2c3e1ddab06l_zh_CNs_d_m/testMUsicPlaer/images/index_shoucang.png" alt="" xid="image311" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span7" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">本地音乐</span>  
+                      <span xid="span34" style="font-size:16px;margin-top:5px;color:#aaa;" __cid="cQNVrE3" class="cQNVrE3">0</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td2" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div311" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_53108534e4b64187b91de981630b2ed0l_zh_CNs_d_m/testMUsicPlaer/images/app_yingyong.png" alt="" xid="image8" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span35" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">喜欢·歌单</span>  
+                      <span xid="span36" style="font-size:16px;margin-top:5px;color:#aaa;" __cid="cQNVrE3" class="cQNVrE3">0</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td3" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div411" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_867d31b36d864757a167d675f20d0919l_zh_CNs_d_m/testMUsicPlaer/images/app_devide.png" alt="" xid="image9" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span37" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">下载</span>  
+                      <span xid="span41" style="font-size:16px;margin-top:5px;color:#aaa;" __cid="cQNVrE3" class="cQNVrE3">0</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td4" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div71" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_fd360cd59a7b4520babebbc8dc67c724l_zh_CNs_d_m/testMUsicPlaer/images/index_schedule.png" alt="" xid="image10" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span39" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">最近</span>  
+                      <span xid="span40" style="font-size:16px;margin-top:5px;color:#aaa;" __cid="cQNVrE3" class="cQNVrE3">0</span> 
+                    </div> 
+                  </td> 
+                </tr> 
+              </tbody> 
+            </table> 
+          </div>  
+          <div xid="div2" style="height:11px;background-color:#ccc;" __cid="cQNVrE3" class="cQNVrE3"/>  
+          <div xid="div11" style="padding:20px 0;" __cid="cQNVrE3" class="cQNVrE3"> 
+            <table component="$model/UI2/system/components/bootstrap/table/table" xid="table2" class="table tb-menu table2 cQNVrE3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cQNVrE3"> 
+              <tbody class="x-list-template cQNVrE3" xid="listTemplate1" __cid="cQNVrE3"> 
+                <tr xid="tr2" __cid="cQNVrE3" class="cQNVrE3"> 
+                  <td pagename="./list.w" xid="td5" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div5" __cid="cQNVrE3"> 
+                      <img alt="" xid="image5" class="img-responsive center-block tb-img5 cQNVrE3" src="@justepContextPath@/v_dc2763cb3fad447ba503d05dbf3729f6l_zh_CNs_d_m/testMUsicPlaer/images/index_bianqian.png" __cid="cQNVrE3"/>  
+                      <span xid="span1" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">乐库</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td7" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div3" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_82fe8e07418e47debbd5b4bbab2bd689l_zh_CNs_d_m/testMUsicPlaer/images/index_file.png" alt="" xid="image2" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span6" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">歌单</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td6" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div4" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_71bf256dea0a49948f33d788298f5028l_zh_CNs_d_m/testMUsicPlaer/images/index_gonggao.png" alt="" xid="image1" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span8" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">电台·酷群</span> 
+                    </div> 
+                  </td> 
+                </tr>  
+                <tr xid="tr3" __cid="cQNVrE3" class="cQNVrE3"> 
+                  <td pagename="./list.w" xid="td9" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div8" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_cfe404c381fb4e82965a720725c1c609l_zh_CNs_d_m/testMUsicPlaer/images/index_innerContact.png" alt="" xid="image6" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span18" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">猜你喜欢</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td10" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div10" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_17d9c7b057e1436389fbd4c1c52946f5l_zh_CNs_d_m/testMUsicPlaer/images/index_netge.png" alt="" xid="image12" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span14" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">每日推荐</span> 
+                    </div> 
+                  </td>  
+                  <td pagename="./list.w" xid="td11" style="border:none;" __cid="cQNVrE3" class="cQNVrE3"> 
+                    <div class="text-center cQNVrE3" xid="div9" __cid="cQNVrE3"> 
+                      <img src="@justepContextPath@/v_6a67ca4ce23d4609aa301bd3393b524al_zh_CNs_d_m/testMUsicPlaer/images/index_file.png" alt="" xid="image11" class="img-responsive center-block tb-img5 cQNVrE3" __cid="cQNVrE3"/>  
+                      <span xid="span15" style="margin-top:15px;display:block;" __cid="cQNVrE3" class="cQNVrE3">听歌识曲</span> 
+                    </div> 
+                  </td> 
+                </tr> 
+              </tbody> 
+            </table> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cQNVrE3" class="cQNVrE3">.x-panel.pcUramau-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcUramau-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcUramau-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcUramau-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUramau-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcUramau-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcUramau-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUramau-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcUramau-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

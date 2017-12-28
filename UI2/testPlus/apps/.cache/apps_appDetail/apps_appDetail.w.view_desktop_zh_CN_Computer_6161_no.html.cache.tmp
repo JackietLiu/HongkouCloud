@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cQRb2am" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQRb2am" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/data/baasData,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cQRb2am" class="cQRb2am"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cQRb2am" xid="commentOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;opacity&quot;:0.4,&quot;position&quot;:&quot;bottom&quot;}" __cid="cQRb2am"> 
+    <div class="x-popOver-overlay cQRb2am" xid="div9" __cid="cQRb2am"/>  
+    <div class="x-popOver-content cQRb2am" xid="div10" style="width:100%;padding:10px 0;background-color:white;" __cid="cQRb2am"> 
+      <div class="form-group cQRb2am" xid="formGroup1" __cid="cQRb2am"> 
+        <div class="col-sm-8 cQRb2am" xid="col4" __cid="cQRb2am"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cQRb2am" xid="input" style="border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;输入需要评论的内容，最多200字&quot;}" __cid="cQRb2am"/> 
+        </div>  
+        <div class="col-sm-4 cQRb2am" xid="col5" style="text-align:center;padding-top:20px;" __cid="cQRb2am"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-success btn-block cQRb2am" xid="submit" style="border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:submitClick" data-config="{&quot;label&quot;:&quot;提交评论&quot;}" __cid="cQRb2am"> 
+            <i xid="i5" __cid="cQRb2am" class="cQRb2am"/>  
+            <span xid="span6" __cid="cQRb2am" class="cQRb2am">提交评论</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmANRjm-iosstatusbar cQRb2am" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQRb2am"> 
+    <div class="x-panel-top cQRb2am" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRb2am"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQRb2am" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cQRb2am"> 
+        <div class="x-titlebar-left cQRb2am" __cid="cQRb2am"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cQRb2am" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cQRb2am"> 
+            <i xid="i9" class="linear linear-arrowleft cQRb2am" __cid="cQRb2am"/>  
+            <span xid="span16" __cid="cQRb2am" class="cQRb2am"/> 
+          </a> 
+        </div>  
+        <div style="font-weight:normal;" class="x-titlebar-title cQRb2am" __cid="cQRb2am"> 
+          <div xid="div1" align="center" __cid="cQRb2am" class="cQRb2am"> 
+            <span xid="span1" __cid="cQRb2am" class="cQRb2am">软件详情</span> 
+          </div> 
+        </div>  
+        <div class="x-titlebar-right  cQRb2am" __cid="cQRb2am"> 
+          <div class="empty cQRb2am" __cid="cQRb2am"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cQRb2am" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRb2am"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQRb2am" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cQRb2am"> 
+        <div class="x-contents-content active cQRb2am" xid="content2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQRb2am"> 
+          <div xid="div5" class=" x-scroll-view cQRb2am" __cid="cQRb2am"> 
+            <div class="x-scroll cQRb2am" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;noMoreLoadLabel&quot;:&quot;没有更多评论.&quot;,&quot;pullUpLabel&quot;:&quot;加载更多评论&quot;}" __cid="cQRb2am"> 
+              <div class="x-content-center x-pull-down container cQRb2am" xid="div11" __cid="cQRb2am"> 
+                <i class="x-pull-down-img glyphicon x-icon-pull-down cQRb2am" xid="i6" __cid="cQRb2am"/>  
+                <span class="x-pull-down-label cQRb2am" xid="span7" __cid="cQRb2am">下拉刷新...</span> 
+              </div>  
+              <div class="x-scroll-content cQRb2am" xid="div12" __cid="cQRb2am"> 
+                <div xid="div2" style="border-bottom:1px solid #e5e5e5;height:200px;" __cid="cQRb2am" class="cQRb2am"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row cQRb2am" xid="row3" style="height:160px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQRb2am"> 
+                    <div class="x-col x-col-33 cQRb2am" xid="col8" style="height:150px;" __cid="cQRb2am"> 
+                      <div xid="div8" style="height:130px;width:130px;" __cid="cQRb2am" class="cQRb2am"> 
+                        <img src=" " alt="" xid="image1" style="width:130px;" height="130px" __cid="cQRb2am" class="cQRb2am"/> 
+                      </div> 
+                    </div>  
+                    <div class="x-col cQRb2am" xid="col9" style="height:150px;padding-left:20px;" __cid="cQRb2am"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cQRb2am" xid="row4" style="height:25%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQRb2am"> 
+                        <div class="x-col cQRb2am" xid="col11" __cid="cQRb2am"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output cQRb2am" xid="output3" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRb2am"/> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cQRb2am" xid="row5" style="height:75%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQRb2am"> 
+                        <div class="x-col cQRb2am" xid="col14" __cid="cQRb2am"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output center-block cQRb2am" xid="output1" style="height:90px;overflow:hidden;" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRb2am"/> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div xid="div3" __cid="cQRb2am" class="cQRb2am"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cQRb2am" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cQRb2am"> 
+                      <div class="x-col x-col-50 cQRb2am" xid="col1" __cid="cQRb2am"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-left cQRb2am" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/testPlus/images/img/heart.png&quot;,&quot;label&quot;:&quot;1&quot;}" __cid="cQRb2am"> 
+                          <i xid="i1" __cid="cQRb2am" class="cQRb2am"/>  
+                          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/heart.png" xid="image2" style="width:25px;" __cid="cQRb2am" class="cQRb2am"/>  
+                          <span xid="span2" __cid="cQRb2am" class="cQRb2am">1</span> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-left cQRb2am" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/testPlus/images/img/Comment-Icon.png&quot;,&quot;label&quot;:&quot;0&quot;}" __cid="cQRb2am"> 
+                          <i xid="i2" __cid="cQRb2am" class="cQRb2am"/>  
+                          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/Comment-Icon.png" xid="image3" style="width:25px;" __cid="cQRb2am" class="cQRb2am"/>  
+                          <span xid="span3" __cid="cQRb2am" class="cQRb2am">0</span> 
+                        </a> 
+                      </div>  
+                      <div class="x-col cQRb2am" xid="col2" __cid="cQRb2am"/>  
+                      <div class="x-col cQRb2am" xid="col3" style="text-align:right;" __cid="cQRb2am"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-right cQRb2am" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/testPlus/images/img/Share-Icon.png&quot;,&quot;label&quot;:&quot;分享&quot;}" __cid="cQRb2am"> 
+                          <i xid="i3" __cid="cQRb2am" class="cQRb2am"/>  
+                          <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/Share-Icon.png" xid="image4" style="width:25px;" __cid="cQRb2am" class="cQRb2am"/>  
+                          <span xid="span4" __cid="cQRb2am" class="cQRb2am">分享</span> 
+                        </a> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div xid="div4" style="margin-top:30px;" __cid="cQRb2am" class="cQRb2am"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-block cQRb2am" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'commentOver.show'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/testPlus/images/img/Comment-Icon.png&quot;,&quot;label&quot;:&quot;我要评论&quot;}" __cid="cQRb2am"> 
+                    <i xid="i4" __cid="cQRb2am" class="cQRb2am"/>  
+                    <img xid="image7" style="width:30px;" src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/testPlus/images/img/Comment-Icon.png" __cid="cQRb2am" class="cQRb2am"/>  
+                    <span xid="span5" __cid="cQRb2am" class="cQRb2am">我要评论</span> 
+                  </a> 
+                </div>  
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list x-cards cQRb2am" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:true,&quot;data&quot;:&quot;cmtData&quot;,&quot;disablePullToRefresh&quot;:false,&quot;limit&quot;:10}" __cid="cQRb2am"> 
+                  <ul class="x-list-template hide cQRb2am" xid="listTemplateUl2" __cid="cQRb2am" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                    <li xid="li2" class="panel-heading x-nopadding cQRb2am" style="height:90px;" __cid="cQRb2am"> 
+                      <div class="media cQRb2am" xid="div16" __cid="cQRb2am"> 
+                        <div class="media-body cQRb2am" xid="div16" __cid="cQRb2am"> 
+                          <span xid="span14" style="color:#f37116" __cid="cQRb2am" class="cQRb2am" data-bind="text:ref(&quot;pName&quot;)">姓名</span>  
+                          <span xid="span15" class="text-primary cQRb2am" __cid="cQRb2am"/>  
+                          <span xid="span15" class="pull-right text-muted cQRb2am" __cid="cQRb2am"/>  
+                          <div class="text-muted cQRb2am" xid="div16" __cid="cQRb2am"> 
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cQRb2am" xid="output2" data-bind="component:{ref:ref(&quot;pContent&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cQRb2am"/>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output cQRb2am" xid="output4" style="color:#989898;font-size:10px;" data-bind="component:{ref:ref(&quot;pDate&quot;),name:'$model/UI2/system/components/justep/output/output'}" data-config="{&quot;format&quot;:&quot;yyyy-MM-dd hh:mm&quot;}" __cid="cQRb2am"/> 
+                          </div>  
+                          <div xid="div16" class="text-muted cQRb2am" __cid="cQRb2am" data-bind="text:$object.val(&quot;fContent&quot;)"/> 
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div>  
+              <div class="x-content-center x-pull-up cQRb2am" xid="div13" __cid="cQRb2am"> 
+                <span class="x-pull-up-label cQRb2am" xid="span8" __cid="cQRb2am">加载更多评论</span> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cQRb2am" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQRb2am"> 
+      <div xid="div7" align="center" style="line-height:48px;background-color:#37b9ed;" __cid="cQRb2am" class="cQRb2am" data-bind="event:{click:$model._callModelFn.bind($model, 'div7Click')}"> 
+        <span xid="span9" style="color:#fff;" __cid="cQRb2am" class="cQRb2am">下载（</span>  
+        <label xid="label1" style="color:#fff;" __cid="cQRb2am" class="cQRb2am"/>  
+        <span xid="span10" style="color:#fff;" __cid="cQRb2am" class="cQRb2am">）</span> 
+      </div> 
+    </div>  
+    <style __cid="cQRb2am" class="cQRb2am">.x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmANRjm-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

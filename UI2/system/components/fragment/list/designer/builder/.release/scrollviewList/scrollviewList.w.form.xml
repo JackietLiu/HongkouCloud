@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3imQRr" class="c3imQRr" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c3imQRr" class="c3imQRr"></div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group c3imQRr" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="c3imQRr"> 
+    <div class="x-control-group-title c3imQRr" __cid="c3imQRr"> 
+      <span __cid="c3imQRr" class="c3imQRr"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imQRr" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imQRr"> 
+      <label class="x-label c3imQRr" xid="label2" __cid="c3imQRr">List绑定Data：</label>  
+      <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit c3imQRr" xid="select1" bind-options="dataList.datas" bind-optionsCaption="'请选择......'" bind-optionsValue="'col0'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:dataXID,name:'$model/UI2/system/components/justep/select/select'}" __cid="c3imQRr"/>
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 c3imQRr" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c3imQRr"> 
+      <label class="x-label c3imQRr" xid="label3" __cid="c3imQRr">List模板:</label>  
+      <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit c3imQRr" xid="select2" bind-options="dataListT.datas" bind-optionsCaption="'请选择模板'" bind-optionsValue="'type'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:listType,name:'$model/UI2/system/components/justep/select/select'}" __cid="c3imQRr"/>
+    </div>
+  </div> 
+</div>

@@ -1,0 +1,4 @@
+.x-wing-left .shadow{ box-shadow:0px 0px 30px rgb(72,112,158); border:5px solid rgb(72,112,158);border-radius:5px;}
+.x-panel-bottom .btn{ background-color:#fff; border-radius:20px;margin-right:20px;}
+
+.x-popOver-content .pop{border:1px solid #989898;border-radius:5px; box-shadow:1px 1px 3px #989898;}

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cQ7Fjum" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQ7Fjum" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.img_new.cQ7Fjum{width: 70px; height: 70px; bordr-radius: 100%} .o-uploadFile.cQ7Fjum .x-attachment-content.cQ7Fjum{min-height: 48px; min-height: 48px; border-top: 0; background: none; margin-top: 0px} .o-uploadFile.cQ7Fjum .x-attachment.cQ7Fjum{min-height: 48px; padding: 0} .o-uploadFile.cQ7Fjum .x-attachment.cQ7Fjum .x-attachment-cell.cQ7Fjum{float: none; margin: 0; height: 48px; display: block}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cQ7Fjum" class="cQ7Fjum"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcEv6zqm-iosstatusbar cQ7Fjum" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cQ7Fjum"> 
+    <div class="x-panel-top cQ7Fjum" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQ7Fjum"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cQ7Fjum" xid="titleBar1" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;专题工作&#34;}" __cid="cQ7Fjum"> 
+        <div class="x-titlebar-left cQ7Fjum" xid="left1" __cid="cQ7Fjum">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cQ7Fjum" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cQ7Fjum"> 
+            <i xid="i4" class="linear linear-arrowleft cQ7Fjum" __cid="cQ7Fjum"></i>  
+            <span xid="span11" __cid="cQ7Fjum" class="cQ7Fjum"></span>
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cQ7Fjum" xid="title1" style="font-weight:normal;" __cid="cQ7Fjum">专题工作</div>  
+        <div class="x-titlebar-right cQ7Fjum" xid="left2" __cid="cQ7Fjum"></div>
+      </div> 
+    </div>
+    <div class="x-panel-content  x-scroll-view cQ7Fjum" xid="content1" _xid="C700123805000001A5921E06844031A0" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cQ7Fjum"> 
+      <div class="x-scroll cQ7Fjum" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cQ7Fjum"> 
+        <div class="x-content-center x-pull-down container cQ7Fjum" xid="div6" __cid="cQ7Fjum"> 
+          <i class="icon-ios7-reloading cQ7Fjum" xid="i5" __cid="cQ7Fjum"></i>  
+          <span class="x-pull-down-label cQ7Fjum" xid="span5" __cid="cQ7Fjum">下拉刷新...</span>
+        </div>  
+        <div class="x-scroll-content cQ7Fjum" xid="div7" __cid="cQ7Fjum">
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cQ7Fjum" xid="dynamicList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:true,&#34;data&#34;:&#34;theWorkData&#34;,&#34;disableInfiniteLoad&#34;:false,&#34;disablePullToRefresh&#34;:false,&#34;limit&#34;:10}" __cid="cQ7Fjum"> 
+            <ul class="x-list-template hide cQ7Fjum" xid="listTemplateUl1" __cid="cQ7Fjum" data-bind="foreach:{data:$model.foreach_dynamicList($element),afterRender:$model.foreach_afterRender_dynamicList.bind($model,$element)}"> 
+              <li xid="li1" style="width:100%;" __cid="cQ7Fjum" class="cQ7Fjum"> 
+                <div xid="div25" __cid="cQ7Fjum" class="cQ7Fjum">
+                  <div xid="div3" class="media cQ7Fjum" style="padding:20px;" __cid="cQ7Fjum" data-bind="event:{click:$model._callModelFn.bind($model, 'pinglunBtnClick')}"> 
+                    <div xid="div8" class="media-left cQ7Fjum" __cid="cQ7Fjum"></div>
+                    <div xid="col26" style="padding-left:15px;margin-top:30px;" class="media-body cQ7Fjum" __cid="cQ7Fjum"> 
+                      <div xid="div4" __cid="cQ7Fjum" class="cQ7Fjum">
+                        <span xid="span10" __cid="cQ7Fjum" class="cQ7Fjum" data-bind="text:ref(&#34;title&#34;)">标题</span>
+                      </div>  
+                      <div xid="div12" __cid="cQ7Fjum" class="cQ7Fjum">
+                        <label xid="label3" __cid="cQ7Fjum" class="cQ7Fjum" data-bind="text:ref(&#34;createMan&#34;)"></label> 
+                      </div>
+                      <div xid="div5" __cid="cQ7Fjum" class="cQ7Fjum"> 
+                        <span xid="span9" __cid="cQ7Fjum" class="cQ7Fjum" data-bind="text:ref(&#34;createTime&#34;)"></span>
+                      </div> 
+                    </div>  
+                    <div class="media-right cQ7Fjum" xid="mediaRight1" __cid="cQ7Fjum"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQ7Fjum" xid="button3" style="color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:pinglunBtnClick" data-config="{&#34;label&#34;:&#34;0&#34;}" __cid="cQ7Fjum"> 
+                        <i xid="i8" __cid="cQ7Fjum" class="cQ7Fjum"></i>  
+                        <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/pinglun.png" xid="image6" style="width:25px;" __cid="cQ7Fjum" class="cQ7Fjum">  
+                        <span xid="span4" __cid="cQ7Fjum" class="cQ7Fjum">0</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div xid="div1" style="margin-top:10px;" __cid="cQ7Fjum" class="cQ7Fjum">
+                    <img src="" alt="" xid="image7" height="220px" style="display:none;margin-left:30px;width:150px;" __cid="cQ7Fjum" class="cQ7Fjum">
+                  </div> 
+                </div>
+                <div component="$model/UI2/system/components/justep/button/buttonGroup" class="hide btn-group btn-group-sm btn-group-justified cQ7Fjum" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;tabbed&#34;:true}" __cid="cQ7Fjum">
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQ7Fjum" xid="turnBtn" style="color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;img:$model/UI2/hongkou/img/share1.png&#34;,&#34;label&#34;:&#34;0&#34;}" __cid="cQ7Fjum"> 
+                    <i xid="i3" __cid="cQ7Fjum" class="cQ7Fjum"></i>  
+                    <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/share1.png" xid="image1" style="width:25px;" __cid="cQ7Fjum" class="cQ7Fjum">
+                    <span xid="span3" __cid="cQ7Fjum" class="cQ7Fjum">0</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQ7Fjum" xid="pinglunBtn" style="color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:pinglunBtnClick" data-config="{&#34;label&#34;:&#34;0&#34;}" __cid="cQ7Fjum"> 
+                    <i xid="i6" __cid="cQ7Fjum" class="cQ7Fjum"></i>  
+                    <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/pinglun.png" xid="image2" style="width:25px;" __cid="cQ7Fjum" class="cQ7Fjum">
+                    <span xid="span6" __cid="cQ7Fjum" class="cQ7Fjum">0</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cQ7Fjum" xid="zangBtn" style="color:#949494;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;0&#34;}" __cid="cQ7Fjum"> 
+                    <i xid="i7" __cid="cQ7Fjum" class="cQ7Fjum"></i>  
+                    <img src="@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/hongkou/img/zang.png" xid="image4" style="width:25px;" __cid="cQ7Fjum" class="cQ7Fjum">
+                    <span xid="span7" __cid="cQ7Fjum" class="cQ7Fjum">0</span>
+                  </a> 
+                </div>  
+                <div xid="div2" style="height:10px;background-color:#e5e5e5;width:100%;" __cid="cQ7Fjum" class="cQ7Fjum"></div> 
+              </li>
+            </ul> 
+          </div>  
+          <div xid="div21" align="center" class="hide cQ7Fjum" __cid="cQ7Fjum"></div>
+        </div>  
+        <div class="x-content-center x-pull-up cQ7Fjum" xid="div9" __cid="cQ7Fjum"> 
+          <span xid="span8" __cid="cQ7Fjum" class="cQ7Fjum"></span>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cQ7Fjum" class="cQ7Fjum">.x-panel.pcEv6zqm-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcEv6zqm-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcEv6zqm-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcEv6zqm-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEv6zqm-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcEv6zqm-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcEv6zqm-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEv6zqm-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcEv6zqm-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" style="left:6px;top:192px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&#34;type&#34;:&#34;OK&#34;}" __cid="cQ7Fjum" class="cQ7Fjum">
+    <div class="x-modal-overlay cQ7Fjum" __cid="cQ7Fjum"></div>
+    <div class="x-modal cQ7Fjum" __cid="cQ7Fjum">
+      <div class="x-modal-inner cQ7Fjum" __cid="cQ7Fjum">
+        <div class="x-modal-title cQ7Fjum" __cid="cQ7Fjum"></div>
+        <div class="x-modal-text cQ7Fjum" __cid="cQ7Fjum"></div>
+        <input class="x-modal-prompt-input cQ7Fjum" type="text" __cid="cQ7Fjum">
+      </div>
+      <div class="x-modal-buttons cQ7Fjum" __cid="cQ7Fjum">
+        <a class="x-modal-button x-modal-button-bold OK cQ7Fjum" value="ok" __cid="cQ7Fjum">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cQ7Fjum" value="yes" __cid="cQ7Fjum">是</a>
+        <a class="x-modal-button x-modal-button-bold No cQ7Fjum" value="no" __cid="cQ7Fjum">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cQ7Fjum" value="cancel" __cid="cQ7Fjum">取消</a>
+      </div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="commentDialog" style="top:38px;left:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cQ7Fjum" class="cQ7Fjum">
+    <div class="x-dialog-overlay cQ7Fjum" __cid="cQ7Fjum"></div>
+    <div class="x-dialog cQ7Fjum" style="display:none;" __cid="cQ7Fjum">
+      <div class="x-dialog-title cQ7Fjum" __cid="cQ7Fjum">
+        <button class="close cQ7Fjum" __cid="cQ7Fjum">
+          <span __cid="cQ7Fjum" class="cQ7Fjum">×</span>
+        </button>
+        <div class="x-dialog-title-text cQ7Fjum" __cid="cQ7Fjum"></div>
+      </div>
+      <div class="x-dialog-body cQ7Fjum" __cid="cQ7Fjum"></div>
+    </div>
+  </span>
+</div>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cvQBFBz" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cvQBFBz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/designerCommon/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <style>@import url(@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/components/designerCommon/tree/css/jqx.base.css); @import url(@justepContextPath@/v_6161_nol_zh_CNs_desktopd_pc/system/components/designerCommon/css/common.css); .x-dialog-button.cvQBFBz{margin-top: 0} .imgView.cvQBFBz{position: absolute; right: 42px; top: 54px; width: 128px; height: 128px; z-index: 10} .imgView.cvQBFBz > img.cvQBFBz{width: 100%; height: 100%}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cvQBFBz" class="cvQBFBz"></div>  
+  <div class="grid-div container-fluid cvQBFBz" __cid="cvQBFBz"> 
+    <div class="row file-select-navbar cvQBFBz" __cid="cvQBFBz"> 
+      <div class="col-xs-4 cvQBFBz" __cid="cvQBFBz"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cvQBFBz" id="queryInput" placeholder="请输入要选择的文件关键字" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'},event:{keydown:$model._callModelFn.bind($model, 'input1Keydown')}" __cid="cvQBFBz"> 
+      </div>  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cvQBFBz" xid="queryButton" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},event:{click:$model._callModelFn.bind($model, 'queryButtonClick')}" __cid="cvQBFBz">查询</a> 
+    </div>  
+    <div class="imgView hide cvQBFBz" __cid="cvQBFBz">
+      <img class="img-thumbnail cvQBFBz" __cid="cvQBFBz">
+    </div>  
+    <div xid="grids" __cid="cvQBFBz" class="cvQBFBz"> 
+      <div component="$model/UI2/system/components/designerCommon/grid/grid" data="fileSelectData" editable="false" xid="grid" style="margin:12px 0px 12px 0px;display:none;" config="{&#34;altrows&#34;:true,&#34;columns&#34;:[{&#34;columntype&#34;:&#34;textbox&#34;,&#34;dataField&#34;:&#34;colValue&#34;,&#34;text&#34;:&#34;查询结果&#34;}],&#34;dataXID&#34;:&#34;fileSelectData&#34;,&#34;editable&#34;:false,&#34;enabletooltips&#34;:true,&#34;selectionmode&#34;:&#34;singlerow&#34;}" data-bind="component:{name:'$model/UI2/system/components/designerCommon/grid/grid'}" __cid="cvQBFBz" class="cvQBFBz"></div> 
+    </div>  
+    <div class="box TreeFile cvQBFBz" style="overflow:auto;margin:12px 0px 12px 0px;" xid="jqxTreeFile" __cid="cvQBFBz"></div> 
+  </div>  
+  <div class="btn-div hide cvQBFBz" __cid="cvQBFBz"> 
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label x-dialog-button cvQBFBz" xid="cancelBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;label&#34;:&#34;取消&#34;}" __cid="cvQBFBz"> 
+      <i xid="i2" __cid="cvQBFBz" class="cvQBFBz"></i>  
+      <span xid="span2" __cid="cvQBFBz" class="cvQBFBz">取消</span> 
+    </a>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary x-dialog-button cvQBFBz" xid="OKBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:selectedFile" data-events="onClick:OKBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cvQBFBz"> 
+      <i xid="i1" __cid="cvQBFBz" class="cvQBFBz"></i>  
+      <span xid="span1" __cid="cvQBFBz" class="cvQBFBz">确定</span> 
+    </a> 
+  </div> 
+</div>

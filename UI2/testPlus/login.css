@@ -1,0 +1,59 @@
+.mybtn {
+	border-radius: 0;
+	border: 0;
+	line-height: 35px;
+	height: 50px;
+	/* background-color: #9591ff; */
+	background-color: transparent;
+	width: 100%;
+	border: 1px solid #c1d3f2;
+	color: #fff;
+}
+
+.mybtn :BEFORE {
+	box-shadow: 0px 0px 20px #888888;
+	border-radius: 0;
+	border: 0;
+	line-height: 35px;
+	height: 50px;
+	/* background-color: #9591ff; */
+	width: 100%;
+}
+
+.mybtn:ACTIVE {
+	box-shadow: 0px 0px 20px #888888;
+	border-radius: 0;
+	border: 0;
+	line-height: 35px;
+	height: 50px;
+	/* background-color: #9591ff; */
+	width: 100%;
+}
+/* background-image:url(./images/img/banner_01.jpg);height:100%;background-repeat:no-repeat;background-color:#6296f4; */
+.x-contents-content {
+	height: 100%;
+	background-color: #6296f4;
+}
+
+.x-contents-content .span1 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.x-contents-content input {
+	border-radius: 0;
+	border: 1px solid #c1d3f2;
+	float: left;
+	height: 50px;
+}
+
+.div_left {
+	border: 1px solid #c1d3f2;
+	padding: 0 10px;
+	float: left;
+	margin-left: 20px;
+	background-color: #fff;
+	height: 50px;
+	width: 15%;
+}

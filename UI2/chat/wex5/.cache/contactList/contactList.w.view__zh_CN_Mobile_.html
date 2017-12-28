@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cVzENZj" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cVzENZj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.x-query-input.cVzENZj{margin: 4px; border: 1px solid rgb(238, 238, 238); border-radius: 4px; height: 38px; padding: 8px 12px; font-size: 14px; line-height: 1.4285715; color: rgb(85, 85, 85); background-color: rgb(255, 255, 255)} .x-query-input.cVzENZj input.cVzENZj{border: 0; margin: -4px 12px; height: 28px} .x-icon-lg.cVzENZj{font-size: 18px} .x-cls-filter.cVzENZj{color: red; cursor: pointer} .x-title.cVzENZj{background-color: rgb(218, 224, 239); color: rgb(136, 136, 136); font-weight: bold; border-radius: 4px; padding: 4px 4px 4px 8px} .x-org-image.cVzENZj{height: 48px; width: 58px} .x-org-image.cVzENZj .x-blob-img.cVzENZj{border-radius: 50px} .list-group.cVzENZj{border: 0; border-radius: 0; box-shadow: none} .o-img.cVzENZj{width: 48px; height: 48px; border-radius: 48px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone" __cid="cVzENZj" class="cVzENZj"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcyu6JVf-iosstatusbar cVzENZj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cVzENZj"> 
+    <div class="x-panel-top cVzENZj" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVzENZj"> 
+      <div class="x-query-input x-flex cVzENZj" __cid="cVzENZj"> 
+        <i class="icon-android-search x-icon-lg cVzENZj" __cid="cVzENZj"></i>  
+        <input type="text" class="x-flex1 cVzENZj" data-bind="value:filterVal,valueUpdate: 'input'" __cid="cVzENZj">  
+        <i class="icon-close-circled  x-icon-lg x-cls-filter hide cVzENZj" __cid="cVzENZj" data-bind="css:{hide:!filterVal.get()},event:{click:$model._callModelFn.bind($model, 'clsfilterText')}"></i> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cVzENZj" xid="content1" _xid="C71F8591ECD00001DFB21C30EB001A71" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cVzENZj"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list  cVzENZj" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;data&#34;:&#34;contactListData&#34;,&#34;filter&#34;:&#34;$model.contactListFilter($row)&#34;,&#34;limit&#34;:-1}" __cid="cVzENZj"> 
+        <ul class="x-list-template  list-group hide cVzENZj" xid="listTemplateUl1" __cid="cVzENZj" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+          <li xid="contact" __cid="cVzENZj" class="cVzENZj" data-bind="ifnot:$model.isCreateGroup.get() &amp;&amp;( val(&#34;type&#34;)=='group' ||  val(&#34;fsName&#34;)=='群组')"> 
+            <div xid="div5" __cid="cVzENZj" class="cVzENZj"> 
+              <div xid="deptName" __cid="cVzENZj" class="cVzENZj" data-bind="if:val(&#34;fIsGroup&#34;),event:{click:$model._callModelFn.bind($model, 'deptNameClick')}"> 
+                <div xid="div6" __cid="cVzENZj" class="cVzENZj"> 
+                  <div component="$model/UI2/system/components/justep/output/output" class="x-output x-title cVzENZj" xid="output1" data-bind="component:{ref:ref(&#34;fsName&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cVzENZj"></div> 
+                </div> 
+              </div>  
+              <div xid="div7" __cid="cVzENZj" class="cVzENZj" data-bind="ifnot:val(&#34;fIsGroup&#34;),visible:!($model.isFromDlg.get()  &amp;&amp;$model.currentPersonID.get()== val(&#34;fSpersonID&#34;))"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row x-nopadding cVzENZj" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cVzENZj"> 
+                  <div class="x-col x-col-fixed x-col-center cVzENZj" xid="col7" style="width:auto;" __cid="cVzENZj" data-bind="if:$model.isFromDlg.get()"> 
+                    <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cVzENZj" xid="checkbox" checkedValue="1" uncheckedValue="0" data-config="{&#34;checked&#34;:false,&#34;checkedValue&#34;:&#34;1&#34;,&#34;disabled&#34;:false,&#34;uncheckedValue&#34;:&#34;0&#34;}" data-bind="component:{ref:ref(&#34;fCheckRow&#34;),name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:checkboxChange" __cid="cVzENZj">
+                      <input type="checkbox" __cid="cVzENZj" class="cVzENZj">
+                      <label __cid="cVzENZj" class="cVzENZj"></label>
+                    </span> 
+                  </div>  
+                  <div class="x-col x-col-center cVzENZj" xid="col8" __cid="cVzENZj" data-bind="event:{click:$model._callModelFn.bind($model, 'contactInfoClick')}"> 
+                    <div class="media-body cVzENZj" xid="mediaBody3" __cid="cVzENZj"> 
+                      <div class="media cVzENZj" xid="media2" __cid="cVzENZj"> 
+                        <div xid="div9" class="x-blob x-blob-radius pull-left media-object x-org-image cVzENZj" __cid="cVzENZj"> 
+                          <div xid="div2" class="photoDiv cVzENZj" style="width:48px;height:48px;" __cid="cVzENZj" data-bind="visible:!val(&#34;fImg&#34;)"> 
+                            <span xid="span1" style="line-height:48px;" __cid="cVzENZj" class="cVzENZj" data-bind="text:(val(&#34;fsName&#34;).indexOf(&#34;(&#34;) == -1)?( val(&#34;fsName&#34;).slice(-2)):(val(&#34;fsName&#34;).indexOf(&#34;(&#34;) <4 ? val(&#34;fsName&#34;) :val(&#34;fsName&#34;).slice(0,3))"></span> 
+                          </div>  
+                          <div xid="div3" class="photoDiv cVzENZj" style="width:48px;height:48px;" __cid="cVzENZj" data-bind="visible:val(&#34;fImg&#34;)"> 
+                            <img src="" alt="" xid="image1" class="o-img cVzENZj" __cid="cVzENZj" data-bind="attr:{src:val(&#34;fImg&#34;)}">
+                          </div>
+                        </div>  
+                        <div class="media-body cVzENZj" xid="mediaBody4" __cid="cVzENZj"> 
+                          <h4 class="media-heading cVzENZj" xid="h42" __cid="cVzENZj" data-bind="text:val(&#34;fsName&#34;)"></h4>  
+                          <div xid="div8" __cid="cVzENZj" class="cVzENZj" data-bind="text:val(&#34;fsfName&#34;)"></div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </li> 
+        </ul> 
+      </div> 
+    </div>  
+    <div xid="div1" style="position:absolute;bottom:0px;width:100%;display:none;" __cid="cVzENZj" class="cVzENZj" data-bind="visible:$model.isFromDlg.get()"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cVzENZj" xid="sendBtn" style="width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sendBtnClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cVzENZj"> 
+        <i xid="i4" __cid="cVzENZj" class="cVzENZj"></i>  
+        <span xid="span4" __cid="cVzENZj" class="cVzENZj">确定</span> 
+      </a> 
+    </div>  
+    <style __cid="cVzENZj" class="cVzENZj">.x-panel.pcyu6JVf-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcyu6JVf-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcyu6JVf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcyu6JVf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyu6JVf-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcyu6JVf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcyu6JVf-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyu6JVf-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcyu6JVf-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cJVFrmq" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJVFrmq" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onParamsReceive:modelParamsReceive" __cid="cJVFrmq" class="cJVFrmq"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-card x-full pcVnYvyq-iosstatusbar cJVFrmq" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJVFrmq"> 
+    <div class="x-panel-top cJVFrmq" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:58}" __cid="cJVFrmq"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cJVFrmq" xid="titleBar2" style="line-height:35px;background-color:#007afe;font-weight:normal;font-size:medium;font-style:normal;height:58px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;缴费详情&quot;}" __cid="cJVFrmq"> 
+        <div class="x-titlebar-left cJVFrmq" xid="left2" __cid="cJVFrmq"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cJVFrmq" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cJVFrmq"> 
+            <i class="icon-chevron-left cJVFrmq" xid="i1" __cid="cJVFrmq"/>  
+            <span xid="span1" __cid="cJVFrmq" class="cJVFrmq"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cJVFrmq" xid="title2" __cid="cJVFrmq">缴费详情</div>  
+        <div class="x-titlebar-right  cJVFrmq" xid="right2" __cid="cJVFrmq"> 
+          <div class="empty cJVFrmq" __cid="cJVFrmq"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cJVFrmq" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJVFrmq"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cJVFrmq" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cJVFrmq"> 
+        <div class="x-contents-content active cJVFrmq" xid="floorContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cJVFrmq"> 
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cJVFrmq" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;paydata&quot;}" __cid="cJVFrmq"> 
+            <ul class="x-list-template hide cJVFrmq" xid="listTemplateUl1" __cid="cJVFrmq" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}"> 
+              <li xid="li1" __cid="cJVFrmq" class="cJVFrmq" data-bind="event:{click:$model._callModelFn.bind($model, 'list1Click')}"> 
+                <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cJVFrmq" xid="controlGroup2" style="height:auto;" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;collapsed&quot;:false,&quot;collapsible&quot;:true,&quot;title&quot;:&quot;title&quot;}" __cid="cJVFrmq"> 
+                  <div class="x-control-group-title cJVFrmq" xid="controlGroupTitle2" __cid="cJVFrmq"> 
+                    <span xid="span2" style="height:1px;display:none;" __cid="cJVFrmq" class="cJVFrmq"/> 
+                  </div>  
+                  <div xid="div2" style="background: url(@justepContextPath@/v_edd124524ea44486950f814fef9ce4d4l_zh_CNs_d_m/shiquanBlock/img/no_audit.png) no-repeat 50% 50%;background-size:170px 90px;" __cid="cJVFrmq" class="cJVFrmq"> 
+                    <div xid="div1" __cid="cJVFrmq" class="cJVFrmq"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col1" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label1" __cid="cJVFrmq">金额</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output1" data-bind="component:{ref:ref(&quot;je_rent&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row13" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col31" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label7" __cid="cJVFrmq">付款日期</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit cJVFrmq" xid="output7" data-bind="component:{ref:ref(&quot;pay_date_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row12" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col30" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label6" __cid="cJVFrmq">地址</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit cJVFrmq" xid="output6" data-bind="component:{ref:ref(&quot;b_address&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col3" style="width:20%;" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label2" __cid="cJVFrmq">付款人</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output pull-left x-edit cJVFrmq" xid="output2" data-bind="component:{ref:ref(&quot;payer_Name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div>  
+                        <div class="x-col cJVFrmq" xid="col5" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/output/output" class="x-output cJVFrmq" xid="output8" data-bind="component:{ref:ref(&quot;rent_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col17" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label8" __cid="cJVFrmq">代收</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output11" data-bind="component:{ref:ref(&quot;je_wp_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output cJVFrmq" xid="output12" data-bind="component:{ref:$model.paydata.ref(&quot;je_wp_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row3" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col7" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label9" __cid="cJVFrmq">付款途径</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output13" data-bind="component:{ref:ref(&quot;pay_mode_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output cJVFrmq" xid="output14" data-bind="component:{ref:ref(&quot;pay_mode_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row6" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col20" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label10" __cid="cJVFrmq">金额减免</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output15" data-bind="component:{ref:ref(&quot;Pay_less&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output cJVFrmq" xid="output16" data-bind="component:{ref:$model.paydata.ref(&quot;Pay_less&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col11" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label11" __cid="cJVFrmq">减免原因</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output17" data-bind="component:{ref:ref(&quot;Pay_less_memo&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"> 
+                              <div component="$model/UI2/system/components/justep/output/output" class="x-output cJVFrmq" xid="output18" data-bind="component:{ref:$model.paydata.ref(&quot;Pay_less_memo&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col27" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit14" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label14" __cid="cJVFrmq">审核人</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output23" data-bind="component:{ref:ref(&quot;user_audit&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cJVFrmq" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cJVFrmq"> 
+                        <div class="x-col cJVFrmq" xid="col15" __cid="cJVFrmq"> 
+                          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cJVFrmq" xid="labelEdit15" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJVFrmq"> 
+                            <label class="x-label cJVFrmq" xid="label15" __cid="cJVFrmq">审核日期</label>  
+                            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cJVFrmq" xid="output24" data-bind="component:{ref:ref(&quot;audit_date_txt&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJVFrmq"/> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJVFrmq" class="cJVFrmq">.x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-top {height: 58px;}.x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-content { top: 58px;bottom: nullpx;}.x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-top {height: 78px;}.iosstatusbar .x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-content { top: 78px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-top {height: 58px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcVnYvyq-iosstatusbar &gt;.x-panel-content {top: 58px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="Dialog" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onOK:DialogOK" data-config="{&quot;message&quot;:&quot;对不起，没有缴费记录！&quot;,&quot;title&quot;:&quot;温馨提示&quot;,&quot;type&quot;:&quot;OK&quot;}" __cid="cJVFrmq" class="cJVFrmq"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cJVFrmq" __cid="cJVFrmq"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cJVFrmq" __cid="cJVFrmq">  
+      <div class="x-modal-inner cJVFrmq" __cid="cJVFrmq"> 
+        <div class="x-modal-title cJVFrmq" __cid="cJVFrmq">温馨提示</div>  
+        <div class="x-modal-text cJVFrmq" __cid="cJVFrmq">对不起，没有缴费记录！</div>  
+        <input class="x-modal-prompt-input cJVFrmq" type="text" __cid="cJVFrmq"/> 
+      </div>  
+      <div class="x-modal-buttons cJVFrmq" __cid="cJVFrmq"> 
+        <a class="x-modal-button x-modal-button-bold OK cJVFrmq" value="ok" __cid="cJVFrmq">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cJVFrmq" value="yes" __cid="cJVFrmq">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cJVFrmq" value="no" __cid="cJVFrmq">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cJVFrmq" value="cancel" __cid="cJVFrmq">取消</a> 
+      </div> 
+    </div> 
+  </span> 
+</div>

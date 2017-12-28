@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window container-fluid cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cymyQ3q" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/toolBar/toolBar,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/dataTables/dataTables,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cymyQ3q" class="cymyQ3q"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar x-toolbar-spliter cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cymyQ3q"> 
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+      <label class="x-label cymyQ3q" xid="label1" __cid="cymyQ3q">Data只读：</label>  
+      <div class="x-edit cymyQ3q" xid="div1" __cid="cymyQ3q"> 
+        <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="dataReadonly" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;只读表达式&quot;}" __cid="cymyQ3q"/>  
+          <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="dataReadonlyExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:dataReadonlyExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+              <i __cid="cymyQ3q" class="cymyQ3q"/>  
+              <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+            </a> 
+          </span> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/bootstrap/row/row" class="row cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cymyQ3q"> 
+    <div class="col col-xs-6 col-spliter-right cymyQ3q" style="overflow: auto;height:400px;" __cid="cymyQ3q"> 
+      <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" rowActiveClass="active" class="table table-hover cymyQ3q" xid="dataTables1" data="data" data-config="{&quot;columns&quot;:[{&quot;orderable&quot;:false,&quot;sName&quot;:&quot;name&quot;,&quot;xid&quot;:&quot;column10&quot;},{&quot;orderable&quot;:false,&quot;sName&quot;:&quot;displayName&quot;,&quot;xid&quot;:&quot;column11&quot;}],&quot;data&quot;:&quot;data&quot;,&quot;flexibleWidth&quot;:true,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" __cid="cymyQ3q"></table> 
+    </div>  
+    <div class="col col-xs-6 cymyQ3q" __cid="cymyQ3q"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q">只读：</label>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="readonly" data-bind="component:{ref:data.ref('readonly'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;只读表达式&quot;}" __cid="cymyQ3q"/>  
+            <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="readonlyExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:readonlyExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+                <i __cid="cymyQ3q" class="cymyQ3q"/>  
+                <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q">默认值：</label>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="defaultValue" data-bind="component:{ref:data.ref('defaultValue'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;新增默认值表达式&quot;}" __cid="cymyQ3q"/>  
+            <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="defaultValueExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:defaultValueExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+                <i __cid="cymyQ3q" class="cymyQ3q"/>  
+                <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q">计算：</label>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="calculate" data-bind="component:{ref:data.ref('calculate'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;计算表达式&quot;}" __cid="cymyQ3q"/>  
+            <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="calculateExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:calculateExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+                <i __cid="cymyQ3q" class="cymyQ3q"/>  
+                <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q">必填：</label>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="required" data-bind="component:{ref:data.ref('required'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;必填规则表达式&quot;}" __cid="cymyQ3q"/>  
+            <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="requiredExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:requiredExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+                <i __cid="cymyQ3q" class="cymyQ3q"/>  
+                <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q"/>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="required_message" data-bind="component:{ref:data.ref('requiredMessage'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;必填规则提示信息&quot;}" __cid="cymyQ3q"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q">约束：</label>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <div class="input-group cymyQ3q" __cid="cymyQ3q"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="constraint" data-bind="component:{ref:data.ref('constraint'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;约束规则表达式&quot;}" __cid="cymyQ3q"/>  
+            <span class="input-group-btn cymyQ3q" __cid="cymyQ3q"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cymyQ3q" xid="constraintExpr" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:constraintExprClick" data-config="{&quot;label&quot;:&quot;设置&quot;}" __cid="cymyQ3q"> 
+                <i __cid="cymyQ3q" class="cymyQ3q"/>  
+                <span __cid="cymyQ3q" class="cymyQ3q">设置</span> 
+              </a> 
+            </span> 
+          </div> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cymyQ3q" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cymyQ3q"> 
+        <label class="x-label cymyQ3q" __cid="cymyQ3q"/>  
+        <div class="x-edit cymyQ3q" __cid="cymyQ3q"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cymyQ3q" xid="constraint_message" data-bind="component:{ref:data.ref('constraintMessage'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;约束规则提示信息&quot;}" __cid="cymyQ3q"/> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

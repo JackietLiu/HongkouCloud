@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cmqmiEf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmqmiEf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/panel/panel,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cmqmiEf" class="cmqmiEf"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cmqmiEf" class="cmqmiEf"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cmqmiEf" __cid="cmqmiEf"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cmqmiEf" __cid="cmqmiEf">  
+      <div class="x-modal-inner cmqmiEf" __cid="cmqmiEf"> 
+        <div class="x-modal-title cmqmiEf" __cid="cmqmiEf"/>  
+        <div class="x-modal-text cmqmiEf" __cid="cmqmiEf"/>  
+        <input class="x-modal-prompt-input cmqmiEf" type="text" __cid="cmqmiEf"/> 
+      </div>  
+      <div class="x-modal-buttons cmqmiEf" __cid="cmqmiEf"> 
+        <a class="x-modal-button x-modal-button-bold OK cmqmiEf" value="ok" __cid="cmqmiEf">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes cmqmiEf" value="yes" __cid="cmqmiEf">是</a>  
+        <a class="x-modal-button x-modal-button-bold No cmqmiEf" value="no" __cid="cmqmiEf">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel cmqmiEf" value="cancel" __cid="cmqmiEf">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcmqmiEf-iosstatusbar cmqmiEf" xid="panel1" style="background-repeat:no-repeat;" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmqmiEf"> 
+    <div class="x-panel-content cmqmiEf" xid="content1" style="background-color:RGB(41,174,239);" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmqmiEf"> 
+      <div xid="div2" __cid="cmqmiEf" class="cmqmiEf"> 
+        <div xid="div1" align="center" style="padding:10% 0;" __cid="cmqmiEf" class="cmqmiEf"> 
+          <img src="@justepContextPath@/v_5528_nol_zh_CNs_desktopd_pc/shiquanBlock/image/person.png" alt="" xid="image2" style="border-radius:100%;width:80px;background-color:#fff;" align="middle" __cid="cmqmiEf" class="cmqmiEf"/>  
+          <h3 xid="h31" style="color:#fff;text-align:center" __cid="cmqmiEf" class="cmqmiEf">社区管理云</h3> 
+        </div> 
+      </div>  
+      <div xid="div3" style="padding:0 15px;" __cid="cmqmiEf" class="cmqmiEf"> 
+        <input component="$model/UI2/system/components/justep/input/input" class="form-control cmqmiEf" xid="username" style="border-radius:0;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;登录账号&quot;}" __cid="cmqmiEf"/>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control cmqmiEf" xid="password" style="border-radius:0;" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;登录密码&quot;}" __cid="cmqmiEf"/>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block center-block cmqmiEf" xid="loginBtn" style="border-radius:0;margin-top:10px;background-color:rgb(91,192,244);font-size:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&quot;label&quot;:&quot;登录&quot;}" __cid="cmqmiEf"> 
+          <i xid="i1" __cid="cmqmiEf" class="cmqmiEf"/>  
+          <span xid="span1" __cid="cmqmiEf" class="cmqmiEf">登录</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label pull-right cmqmiEf" xid="updataPwd" style="color:rgb(91,192,244);" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:updataPwdClick" data-config="{&quot;label&quot;:&quot;修改密码&quot;}" __cid="cmqmiEf"> 
+          <i xid="i2" __cid="cmqmiEf" class="cmqmiEf"/>  
+          <span xid="span2" __cid="cmqmiEf" class="cmqmiEf">修改密码</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cmqmiEf" class="cmqmiEf">.x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcmqmiEf-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mainupdateDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cmqmiEf" class="cmqmiEf"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cmqmiEf" __cid="cmqmiEf"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cmqmiEf" style="display:none;" __cid="cmqmiEf">  
+      <div class="x-dialog-title cmqmiEf" __cid="cmqmiEf"> 
+        <button class="close cmqmiEf" __cid="cmqmiEf"> 
+          <span __cid="cmqmiEf" class="cmqmiEf">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cmqmiEf" __cid="cmqmiEf"/> 
+      </div>  
+      <div class="x-dialog-body cmqmiEf" __cid="cmqmiEf"/> 
+    </div> 
+  </span> 
+</div>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c2yieIz" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c2yieIz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.lit.c2yieIz{font-size: 12pt} .mid.c2yieIz{font-size: 16pt} .big.c2yieIz{font-size: 21pt} .x-bar.c2yieIz{text-align: center; background-color: rgb(55, 185, 237)}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelActive;onParamsReceive:modelParamsReceive" __cid="c2yieIz" class="c2yieIz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver c2yieIz" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;shareBtn&quot;}" __cid="c2yieIz"> 
+    <div class="x-popOver-overlay c2yieIz" xid="div1" __cid="c2yieIz"/>  
+    <div class="x-popOver-content c2yieIz" xid="div2" style="background-color:white;" __cid="c2yieIz"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c2yieIz" xid="row2" style="height:45%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2yieIz"> 
+        <div class="x-col c2yieIz" xid="col4" __cid="c2yieIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-block c2yieIz" xid="button4" style="color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/d_message.png&quot;,&quot;label&quot;:&quot;信息&quot;}" __cid="c2yieIz"> 
+            <i xid="i4" __cid="c2yieIz" class="c2yieIz"/>  
+            <img src="@justepContextPath@/v_060cbf8241fb40479ed7aea5df416db7l_zh_CNs_desktopd_pc/hongkou/img/d_message.png" xid="image3" style="width:40px;" __cid="c2yieIz" class="c2yieIz"/>  
+            <span xid="span7" __cid="c2yieIz" class="c2yieIz">信息</span> 
+          </a> 
+        </div>  
+        <div class="x-col c2yieIz" xid="col5" __cid="c2yieIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-block c2yieIz" xid="button5" style="color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/d_chat.png&quot;,&quot;label&quot;:&quot;交流&quot;}" __cid="c2yieIz"> 
+            <i xid="i5" __cid="c2yieIz" class="c2yieIz"/>  
+            <img src="@justepContextPath@/v_b10f441a9b1f42b68370e73c2e1b5cc0l_zh_CNs_desktopd_pc/hongkou/img/d_chat.png" xid="image4" style="width:40px;" __cid="c2yieIz" class="c2yieIz"/>  
+            <span xid="span8" style="margin-top:11px;" __cid="c2yieIz" class="c2yieIz">交流</span> 
+          </a> 
+        </div>  
+        <div class="x-col c2yieIz" xid="col6" __cid="c2yieIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-block c2yieIz" xid="button6" style="color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/d_email.png&quot;,&quot;label&quot;:&quot;邮箱&quot;}" __cid="c2yieIz"> 
+            <i xid="i6" __cid="c2yieIz" class="c2yieIz"/>  
+            <img src="@justepContextPath@/v_643e921397764969be4c555d0428284dl_zh_CNs_desktopd_pc/hongkou/img/d_email.png" xid="image5" style="width:40px;" __cid="c2yieIz" class="c2yieIz"/>  
+            <span xid="span9" style="margin-top:7px;" __cid="c2yieIz" class="c2yieIz">邮箱</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row c2yieIz" xid="row3" style="height:45%;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c2yieIz"> 
+        <div class="x-col c2yieIz" xid="col7" __cid="c2yieIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top btn-block c2yieIz" xid="button7" style="color:#000;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;img:$model/UI2/hongkou/img/d_netpath.png&quot;,&quot;label&quot;:&quot;网盘&quot;}" __cid="c2yieIz"> 
+            <i xid="i7" __cid="c2yieIz" class="c2yieIz"/>  
+            <img src="@justepContextPath@/v_88a7985d32c242998c48d3b15af37013l_zh_CNs_desktopd_pc/hongkou/img/d_netpath.png" xid="image6" style="width:40px;" __cid="c2yieIz" class="c2yieIz"/>  
+            <span xid="span10" style="margin-top:5px;" __cid="c2yieIz" class="c2yieIz">网盘</span> 
+          </a> 
+        </div>  
+        <div class="x-col c2yieIz" xid="col8" __cid="c2yieIz"/>  
+        <div class="x-col c2yieIz" xid="col9" __cid="c2yieIz"/> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjURfmu-iosstatusbar c2yieIz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c2yieIz"> 
+    <div class="x-panel-top c2yieIz" xid="top1" style="background-color:#6296f4;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2yieIz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c2yieIz" xid="titleBar1" style="background-color:#37b9ed;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;公告详情&quot;}" __cid="c2yieIz"> 
+        <div class="x-titlebar-left c2yieIz" xid="left1" __cid="c2yieIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon c2yieIz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;linear linear-arrowleft&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="c2yieIz"> 
+            <i xid="i1" class="linear linear-arrowleft c2yieIz" __cid="c2yieIz"/>  
+            <span xid="span11" __cid="c2yieIz" class="c2yieIz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c2yieIz" xid="title1" style="font-weight:normal;" __cid="c2yieIz">公告详情</div>  
+        <div class="x-titlebar-right  c2yieIz" xid="right1" __cid="c2yieIz"> 
+          <div class="empty c2yieIz" __cid="c2yieIz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c2yieIz" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c2yieIz"> 
+      <div xid="div9" style="background-color:#37b9ed;" __cid="c2yieIz" class="c2yieIz"> 
+        <div xid="div8" align="left" __cid="c2yieIz" class="c2yieIz"> 
+          <span xid="span15" style="font-size:22px;padding-left:10px;color:#fff;" __cid="c2yieIz" class="c2yieIz"/> 
+        </div>  
+        <div xid="div6" style="padding:10px 20px;color:#fff" __cid="c2yieIz" class="c2yieIz"> 
+          <label xid="label1" __cid="c2yieIz" class="c2yieIz">时间：</label>  
+          <span xid="span14" __cid="c2yieIz" class="c2yieIz"/> 
+        </div> 
+      </div>  
+      <div xid="div7" class="text-black c2yieIz" style="padding:15px 20px;" __cid="c2yieIz"/> 
+    </div>  
+    <style __cid="c2yieIz" class="c2yieIz">.x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjURfmu-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window ciquQbe" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciquQbe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="ciquQbe" class="ciquQbe"></div>  
+  <div component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group ciquQbe" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" __cid="ciquQbe"> 
+    <div class="x-control-group-title ciquQbe" xid="controlGroupTitle1" __cid="ciquQbe"> 
+      <span xid="span1" __cid="ciquQbe" class="ciquQbe">title</span>
+    </div>  
+    <div component="$model/UI2/system/components/fragment/list/listTable" data="dataCols" masterData="" masterCol="" xid="listTable1" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="ciquQbe" class="ciquQbe"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list ciquQbe" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataCols&quot;}" __cid="ciquQbe"> 
+        <table class="table table-condensed table-hover table-striped ciquQbe" component="$model/UI2/system/components/bootstrap/table/table" xid="table1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="ciquQbe"> 
+          <thead xid="thead1" __cid="ciquQbe" class="ciquQbe"> 
+            <tr xid="tr1" __cid="ciquQbe" class="ciquQbe"> 
+              <th xid="col1" __cid="ciquQbe" class="ciquQbe"> 
+                <label bind-text="$model.dataCols.label('name')" xid="label1" __cid="ciquQbe" class="ciquQbe"/>
+              </th>  
+              <th xid="col2" __cid="ciquQbe" class="ciquQbe"> 
+                <label bind-text="$model.dataCols.label('displayName')" xid="label2" __cid="ciquQbe" class="ciquQbe"/>
+              </th>  
+              <th xid="col3" __cid="ciquQbe" class="ciquQbe"> 
+                <label bind-text="$model.dataCols.label('dataType')" xid="label3" __cid="ciquQbe" class="ciquQbe"/>
+              </th>  
+              <th xid="col4" __cid="ciquQbe" class="ciquQbe"> 
+                <label bind-text="$model.dataCols.label('orderBy')" xid="label4" __cid="ciquQbe" class="ciquQbe"/>
+              </th> 
+            </tr> 
+          </thead>  
+          <tbody class="x-list-template hide ciquQbe" bind-click="$model!=$object?$object.data.to($object):null" xid="tbody1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="ciquQbe"> 
+            <tr xid="tr2" __cid="ciquQbe" class="ciquQbe"> 
+              <td xid="td1" __cid="ciquQbe" class="ciquQbe"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output ciquQbe" xid="output1" data-bind="component:{ref:ref('name'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ciquQbe"/>
+              </td>  
+              <td xid="td2" __cid="ciquQbe" class="ciquQbe"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output ciquQbe" xid="output2" data-bind="component:{ref:ref('displayName'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ciquQbe"/>
+              </td>  
+              <td xid="td3" __cid="ciquQbe" class="ciquQbe"> 
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output ciquQbe" xid="output3" data-bind="component:{ref:ref('dataType'),name:'$model/UI2/system/components/justep/output/output'}" __cid="ciquQbe"/>
+              </td>  
+              <td xid="td4" __cid="ciquQbe" class="ciquQbe"> 
+                <select component="$model/UI2/system/components/justep/select/select" class="form-control ciquQbe" xid="select1" bind-options="$model.dataOrderBy.datas" bind-optionsCaption="'无'" bind-optionsValue="'value'" bind-optionsText="'label'" bind-optionsAfterRender2="$model.__justep__.selectOptionsAfterRender.bind($model,$element)" bind-optionsBeforeRender="$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-bind="component:{ref:ref('orderBy'),name:'$model/UI2/system/components/justep/select/select'}" __cid="ciquQbe"/>
+              </td> 
+            </tr> 
+          </tbody> 
+        </table> 
+      </div> 
+    </div>
+  </div>
+</div>

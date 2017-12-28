@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="../js/jquery.js" type="text/javascript"></script>
+		<script src="../js/im.api.js" type="text/javascript"></script>
+				<script type="text/javascript">
+			var im
+			function createChat() {
+				var url = 'http://localhost:8080/x5/UI2/chat/webChat/index.w';
+				var node = document.getElementById('chatArea');
+				var id = $('#id').val();
+				var name = $('#name').val();
+				var tokenUrl = "http://192.168.0.28:9090/v1/tokens/"+id;
+				//发送请求获取token值，应该后台实现
+				$.get(tokenUrl,{ 
+						apiPassword:'justep'
+				},function(data){
+					var cfg = {
+					node: node,
+					url: url,
+					id: id,
+					name: name,
+					token:data
+				};
+				if (id && name) {
+					im = IM.createChat(cfg);
+					im.then(function(chat) {
+						chat.showDlgList();
+						alert("创建成功");
+					});
+				} else {
+					alert('登录人的ID或姓名为空');
+				}
+				});
+
+
+			}
+
+			function sendMessage() {
+				if (im) {
+					var contactID = $('#contactID').val();
+					var contactName = $('#contactName').val();
+					var text = $('#text').val();
+					if (contactID && contactName && text) {
+						im.then(function(chat) {
+							chat.sendTextMessage(contactID, contactName, text);
+						});
+					} else {
+						alert('联系人的id、姓名或消息内容为空');
+					}
+
+				} else {
+					alert("请先创建聊天");
+				}
+			}
+
+			function showMessagePage() {
+				if (im) {
+					var contactID = $('#contactID').val();
+					var contactName = $('#contactName').val();
+					if (contactID && contactName) {
+						im.then(function(chat) {
+							chat.showMessagePage(contactID, contactName);
+						});
+					}
+
+				} else {
+					alert("请先创建聊天");
+				}
+			}
+
+			function showCreateGroupArea() {
+				if (im) {
+					$('#createGroupArea').css('display', 'block');
+				} else {
+					alert("请先创建聊天");
+				}
+			}
+
+			function createGroup() {
+				if (im) {
+					var ids = [];
+					var names = [];
+					var groupName = $('#groupName').val();
+					var id1 = $('#id1').val();
+					ids.push(id1);
+					var id2 = $('#id2').val();
+					ids.push(id2);
+					var id3 = $('#id3').val();
+					ids.push(id3);
+					var name1 = $("#name1").val();
+					names.push(name1);
+					var name2 = $("#name2").val();
+					names.push(name2)
+					var name3 = $("#name3").val();
+					names.push(name1);
+					im.then(function(chat) {
+						chat.createGroup(ids, names, groupName);
+					});
+
+				} else {
+					alert("请先创建聊天");
+				}
+			}
+
+			function exit() {
+				if (im) {
+					im.then(function(chat) {
+						chat.exit();
+						$('#createGroupArea').css('display', 'none');
+						im = null;
+					})
+				}
+
+			}
+		</script>
+		<style type="text/css">
+			.o-title {
+				float: left;
+				width: 128px;
+			}
+			
+			.o-left {
+				border-style: groove;
+				float: left;
+				width: 50%;
+				height: 600px;
+				margin-right: 10px;
+			}
+			
+			.o-right {
+				float: left;
+				border-style: groove;
+				height: 600px;
+				width: 400px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="o-left">
+			<p>
+				<div class="o-title"><label>登录人唯一标识：</label></div><input type="text" id='id' value="123456789" placeholder="登录人id(唯一标示即可)" />
+			</p>
+			<p>
+				<div class="o-title"><label>登录人姓名：</label></div><input type="text" id='name' value="张三" placeholder="登录人姓名" />
+			</p>
+			<p>
+				<input type="button" value="创建聊天" onclick="createChat()" />
+			</p>
+			<p>
+				<div class="o-title"><label>联系人唯一标识：</label></div><input type="text" value="987654321" placeholder="联系人id(唯一标示即可)" id='contactID' />
+			</p>
+			<p>
+				<div class="o-title"><label>联系人姓名：</label></div><input type="text" value="李四" placeholder="联系人姓名" id='contactName' />
+			</p>
+			<p>
+				<div class="o-title"><label>消息内容：</label></div><input type="text" value="Hello" placeholder="消息内容" id='text' />
+			</p>
+			<p>
+				<input type='button' value='发送消息' onclick="sendMessage()" /></p>
+			<p>
+				<input type="button" value="进入聊天界面" onclick="showMessagePage()"></p>
+			<p>
+				<input type="button" value="创建群组" onclick="showCreateGroupArea()" /></p>
+			<div id='createGroupArea' style="display: none;">
+				<span>三个人的唯一标识和姓名要一一对应</span><br />
+				<p>
+					<label>群组名称:</label><input type="text" id='groupName' value="测试组" /></p>
+				<p>
+					<label>联系人1：</label><input type="text" id='id1' value="20160902" /><input id='name1' type="text" value="张家玮" />
+				</p>
+				<p>
+					<label>联系人2：</label><input type="text" id='id2' value="20160903" /><input id='name2' type="text" value="王骞" />
+				</p>
+				<p>
+					<label>联系人3：</label><input type="text" id='id3' value="20160904" /><input id='name3' type="text" value="刘飚" />
+				</p>
+				<input type="button" value="确定" onclick="createGroup()" />
+			</div>
+			<input type="button" value="退出" onclick="exit()" />
+		</div>
+
+		<div id='chatArea' class="o-right"></div>
+	</body>
+
+</html>

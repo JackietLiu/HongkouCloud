@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cEVFVfy" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cEVFVfy" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/controlGroup/controlGroup,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cEVFVfy" class="cEVFVfy"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cEVFVfy" xid="controlGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;请输入微信内打开地址&quot;}" __cid="cEVFVfy"> 
+    <div class="x-control-group-title cEVFVfy" xid="controlGroupTitle1" __cid="cEVFVfy"> 
+      <span xid="span1" __cid="cEVFVfy" class="cEVFVfy">请输入微信内打开地址</span> 
+    </div>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cEVFVfy" xid="wechatInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEVFVfy"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cEVFVfy" xid="controlGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;请输入低版本Android打开地址&quot;}" __cid="cEVFVfy"> 
+    <div class="x-control-group-title cEVFVfy" xid="controlGroupTitle2" __cid="cEVFVfy"> 
+      <span xid="span2" __cid="cEVFVfy" class="cEVFVfy">请输入低版安卓打开地址</span> 
+    </div>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cEVFVfy" xid="badAdroidInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEVFVfy"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cEVFVfy" xid="controlGroup3" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;请输入Android打开地址&quot;}" __cid="cEVFVfy"> 
+    <div class="x-control-group-title cEVFVfy" xid="controlGroupTitle3" __cid="cEVFVfy"> 
+      <span xid="span3" __cid="cEVFVfy" class="cEVFVfy">请输入安卓打开地址</span> 
+    </div>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cEVFVfy" xid="androidInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEVFVfy"/> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/controlGroup/controlGroup" class="x-control-group cEVFVfy" xid="controlGroup4" data-bind="component:{name:'$model/UI2/system/components/justep/controlGroup/controlGroup'}" data-config="{&quot;title&quot;:&quot;请输入ios打开地址&quot;}" __cid="cEVFVfy"> 
+    <div class="x-control-group-title cEVFVfy" xid="controlGroupTitle4" __cid="cEVFVfy"> 
+      <span xid="span4" __cid="cEVFVfy" class="cEVFVfy">请输入ios打开地址</span> 
+    </div>  
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cEVFVfy" xid="isoInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cEVFVfy"/> 
+  </div> 
+</div>

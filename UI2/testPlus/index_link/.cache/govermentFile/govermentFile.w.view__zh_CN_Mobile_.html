@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cMjYzey" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cMjYzey" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <style>.x-panel-top.cMjYzey .btn-group.cMjYzey{box-shadow: 0px 2px 1px rgb(136, 136, 136)} .x-panel-top.cMjYzey .btn-group.cMjYzey .btn.cMjYzey{font-size: 16px; letter-spacing: 3px; font-weight: normal} .x-panel-top.cMjYzey .btn-group.cMjYzey .btn.active.cMjYzey{border-bottom: 2px solid rgb(55, 185, 237); color: rgb(55, 185, 237); font-size: 18px} .x-titlebar.cMjYzey{background: rgb(55, 185, 237)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelLoad;onLoad:modelLoad" __cid="cMjYzey" class="cMjYzey"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcV3yaem-iosstatusbar cMjYzey" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cMjYzey"> 
+    <div class="x-panel-top cMjYzey" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMjYzey"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cMjYzey" xid="titleBar1" style="font-weight:normal;font-size:20px;height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;文件列表&#34;}" __cid="cMjYzey"> 
+        <div class="x-titlebar-left cMjYzey" xid="left1" __cid="cMjYzey"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left btn-only-icon cMjYzey" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;linear linear-arrowleft&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cMjYzey"> 
+            <i xid="i7" class="linear linear-arrowleft cMjYzey" __cid="cMjYzey"></i>  
+            <span xid="span11" __cid="cMjYzey" class="cMjYzey"></span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title cMjYzey" xid="title1" style="font-weight:normal;" __cid="cMjYzey">文件列表</div>  
+        <div class="x-titlebar-right  cMjYzey" xid="right1" __cid="cMjYzey">
+          <div class="empty cMjYzey" __cid="cMjYzey"></div>
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified cMjYzey" xid="buttonGroup1" style="background-color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&#34;selected&#34;:&#34;govermentBtn&#34;,&#34;tabbed&#34;:true}" __cid="cMjYzey"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cMjYzey" xid="govermentBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;区政府&#34;,&#34;target&#34;:&#34;govermentFile&#34;}" __cid="cMjYzey"> 
+          <i xid="i1" __cid="cMjYzey" class="cMjYzey"></i>  
+          <span xid="span2" __cid="cMjYzey" class="cMjYzey">区政府</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cMjYzey" xid="partmentBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;部门&#34;,&#34;target&#34;:&#34;partmentFile&#34;}" __cid="cMjYzey"> 
+          <i xid="i3" __cid="cMjYzey" class="cMjYzey"></i>  
+          <span xid="span4" __cid="cMjYzey" class="cMjYzey">部门</span>
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default cMjYzey" xid="blockBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;label&#34;:&#34;街道&#34;,&#34;target&#34;:&#34;blockFile&#34;}" __cid="cMjYzey"> 
+          <i xid="i4" __cid="cMjYzey" class="cMjYzey"></i>  
+          <span xid="span5" __cid="cMjYzey" class="cMjYzey">街道</span>
+        </a> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cMjYzey" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cMjYzey"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cMjYzey" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="cMjYzey"> 
+        <div class="x-contents-content  x-scroll-view active cMjYzey" xid="govermentFile" onactive="govermentBtnClick" supportpulldown="true" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:govermentFileActive" __cid="cMjYzey"> 
+          <div class="x-scroll cMjYzey" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollView1PullDown" __cid="cMjYzey"> 
+            <div class="x-content-center x-pull-down container cMjYzey" xid="div1" __cid="cMjYzey"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cMjYzey" xid="i2" __cid="cMjYzey"></i>  
+              <span class="x-pull-down-label cMjYzey" xid="span10" __cid="cMjYzey">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cMjYzey" xid="div2" __cid="cMjYzey">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cMjYzey" xid="govermentFileList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;govementFileData&#34;,&#34;limit&#34;:10}" __cid="cMjYzey"> 
+                <ul class="x-list-template hide cMjYzey" xid="listTemplateUl1" __cid="cMjYzey" data-bind="foreach:{data:$model.foreach_govermentFileList($element),afterRender:$model.foreach_afterRender_govermentFileList.bind($model,$element)}"> 
+                  <li xid="li1" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cMjYzey" class="cMjYzey" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cMjYzey" xid="media1" __cid="cMjYzey"> 
+                      <div class="media-left cMjYzey" xid="mediaLeft1" __cid="cMjYzey"> 
+                        <a href="#" xid="a1" __cid="cMjYzey" class="cMjYzey"> 
+                          <img class="media-object cMjYzey" src="" alt="" xid="image1" __cid="cMjYzey">
+                        </a> 
+                      </div>
+                      <div class="media-body cMjYzey" xid="mediaBody1" __cid="cMjYzey"> 
+                        <h4 xid="h41" class="media-heading cMjYzey" style="color:#000;" __cid="cMjYzey" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span1" style="color:#989898;font-size:10px;" __cid="cMjYzey" class="cMjYzey">发布时间：</span>  
+                        <span xid="span3" __cid="cMjYzey" class="cMjYzey" data-bind="text:ref(&#34;date&#34;)"></span>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cMjYzey" xid="div3" __cid="cMjYzey"> 
+              <span class="x-pull-up-label cMjYzey" xid="span12" __cid="cMjYzey">加载更多...</span>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content  x-scroll-view cMjYzey" xid="partmentFile" onactive="partmentBtnClick" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:partmentFileActive" __cid="cMjYzey"> 
+          <div class="x-scroll cMjYzey" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollView2PullDown" __cid="cMjYzey"> 
+            <div class="x-content-center x-pull-down container cMjYzey" xid="div4" __cid="cMjYzey"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cMjYzey" xid="i5" __cid="cMjYzey"></i>  
+              <span class="x-pull-down-label cMjYzey" xid="span13" __cid="cMjYzey">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cMjYzey" xid="div5" __cid="cMjYzey">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cMjYzey" xid="departmentFileList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;departmentFileData&#34;,&#34;limit&#34;:10}" __cid="cMjYzey"> 
+                <ul class="x-list-template hide cMjYzey" xid="listTemplateUl2" __cid="cMjYzey" data-bind="foreach:{data:$model.foreach_departmentFileList($element),afterRender:$model.foreach_afterRender_departmentFileList.bind($model,$element)}"> 
+                  <li xid="li2" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cMjYzey" class="cMjYzey" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cMjYzey" xid="media2" __cid="cMjYzey"> 
+                      <div class="media-left cMjYzey" xid="mediaLeft2" __cid="cMjYzey"> 
+                        <a href="#" xid="a2" __cid="cMjYzey" class="cMjYzey"> 
+                          <img class="media-object cMjYzey" src="" alt="" xid="image2" __cid="cMjYzey">
+                        </a> 
+                      </div>  
+                      <div class="media-body cMjYzey" xid="mediaBody2" __cid="cMjYzey"> 
+                        <h4 xid="h42" class="media-heading cMjYzey" style="color:#000;" __cid="cMjYzey" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span6" style="color:#989898;font-size:10px;" __cid="cMjYzey" class="cMjYzey">发布时间：</span>  
+                        <span xid="span8" __cid="cMjYzey" class="cMjYzey" data-bind="text:ref(&#34;date&#34;)"></span>
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cMjYzey" xid="div6" __cid="cMjYzey"> 
+              <span class="x-pull-up-label cMjYzey" xid="span14" __cid="cMjYzey">加载更多...</span>
+            </div> 
+          </div>
+        </div>  
+        <div class="x-contents-content  x-scroll-view cMjYzey" xid="blockFile" onactive="blockBtnClick" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:blockFileActive" __cid="cMjYzey"> 
+          <div class="x-scroll cMjYzey" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-events="onPullDown:scrollView3PullDown" __cid="cMjYzey"> 
+            <div class="x-content-center x-pull-down container cMjYzey" xid="div7" __cid="cMjYzey"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cMjYzey" xid="i6" __cid="cMjYzey"></i>  
+              <span class="x-pull-down-label cMjYzey" xid="span15" __cid="cMjYzey">下拉刷新...</span>
+            </div>  
+            <div class="x-scroll-content cMjYzey" xid="div8" __cid="cMjYzey">
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cMjYzey" xid="blockFileList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;blockFileData&#34;,&#34;limit&#34;:10}" __cid="cMjYzey"> 
+                <ul class="x-list-template hide cMjYzey" xid="listTemplateUl3" __cid="cMjYzey" data-bind="foreach:{data:$model.foreach_blockFileList($element),afterRender:$model.foreach_afterRender_blockFileList.bind($model,$element)}"> 
+                  <li xid="li3" style="padding:10px 0;border-bottom:1px solid #e5e5e5;" __cid="cMjYzey" class="cMjYzey" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+                    <div class="media cMjYzey" xid="media3" __cid="cMjYzey"> 
+                      <div class="media-left cMjYzey" xid="mediaLeft3" __cid="cMjYzey"> 
+                        <a href="#" xid="a3" __cid="cMjYzey" class="cMjYzey"> 
+                          <img class="media-object cMjYzey" src="" alt="" xid="image3" __cid="cMjYzey">
+                        </a> 
+                      </div>  
+                      <div class="media-body cMjYzey" xid="mediaBody3" __cid="cMjYzey"> 
+                        <h4 xid="h43" class="media-heading cMjYzey" style="color:#000;" __cid="cMjYzey" data-bind="text:ref(&#34;title&#34;)">Media heading</h4>  
+                        <span xid="span9" style="color:#989898;font-size:10px;" __cid="cMjYzey" class="cMjYzey">发布时间：</span>
+                        <span xid="span7" __cid="cMjYzey" class="cMjYzey" data-bind="text:ref(&#34;date&#34;)"></span> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div>
+            </div>  
+            <div class="x-content-center x-pull-up cMjYzey" xid="div9" __cid="cMjYzey"> 
+              <span class="x-pull-up-label cMjYzey" xid="span16" __cid="cMjYzey">加载更多...</span>
+            </div> 
+          </div>
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cMjYzey" class="cMjYzey">.x-panel.pcV3yaem-iosstatusbar >.x-panel-top {height: 100px;}.x-panel.pcV3yaem-iosstatusbar >.x-panel-content { top: 100px;bottom: nullpx;}.x-panel.pcV3yaem-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcV3yaem-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV3yaem-iosstatusbar >.x-panel-top {height: 120px;}.iosstatusbar .x-panel.pcV3yaem-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcV3yaem-iosstatusbar >.x-panel-content { top: 120px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV3yaem-iosstatusbar >.x-panel-top {height: 100px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcV3yaem-iosstatusbar >.x-panel-content {top: 100px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="fileDetail" style="top:33px;left:72px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;routable&#34;:true}" __cid="cMjYzey" class="cMjYzey">
+    <div class="x-dialog-overlay cMjYzey" __cid="cMjYzey"></div>
+    <div class="x-dialog cMjYzey" style="display:none;" __cid="cMjYzey">
+      <div class="x-dialog-title cMjYzey" __cid="cMjYzey">
+        <button class="close cMjYzey" __cid="cMjYzey">
+          <span __cid="cMjYzey" class="cMjYzey">×</span>
+        </button>
+        <div class="x-dialog-title-text cMjYzey" __cid="cMjYzey"></div>
+      </div>
+      <div class="x-dialog-body cMjYzey" __cid="cMjYzey"></div>
+    </div>
+  </span>
+</div>

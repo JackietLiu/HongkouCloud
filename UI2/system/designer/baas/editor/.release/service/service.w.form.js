@@ -1,0 +1,42 @@
+define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/bootstrap/form/form');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/controlGroup/controlGroup');
+require('$model/UI2/system/components/justep/input/input');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/bootstrap/row/row');
+require('$model/UI2/system/components/justep/menu/menu');
+require('$model/UI2/system/components/justep/windowDialog/windowDialog');
+require('$model/UI2/system/components/justep/toolBar/toolBar');
+require('$model/UI2/system/components/justep/textarea/textarea');
+require('$model/UI2/system/components/justep/button/checkbox');
+require('$model/UI2/system/components/fragment/list/listTable');
+require('$model/UI2/system/components/bootstrap/table/table');
+require('$model/UI2/system/components/justep/select/select');
+require('$model/UI2/system/components/justep/output/output');
+require('$model/UI2/system/components/justep/popMenu/popMenu');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/bootstrap/inputGroup/inputGroup');
+require('$model/UI2/system/components/justep/window/window');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/system/designer/baas/editor/service'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cNf6BFn';
+	this._flag_='bd49f7b94263673e665bf988e3461974';
+	this._wCfg_={};
+	this._appCfg_={};
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmDeleteText":"确定删除当前Action?","confirmRefresh":false,"defCols":{"impl":{"define":"impl","label":"实现(*)","name":"impl","relation":"impl","type":"String"},"name":{"define":"name","label":"名称(*)","name":"name","relation":"name","type":"String"},"params":{"define":"params","label":"参数","name":"params","relation":"params","type":"String"},"private":{"define":"private","label":"private","name":"private","relation":"private","type":"Boolean"}},"directDelete":false,"events":{"onBeforeNew":"dataActionsBeforeNew","onCustomRefresh":"dataActionsCustomRefresh","onDataChange":"dataActionsDataChange","onIndexChanged":"dataActionsIndexChanged","onValueChanged":"dataActionsValueChanged"},"idColumn":"name","isMain":false,"limit":20,"xid":"dataActions"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmDeleteText":"确定删除当前参数？","confirmRefresh":false,"defCols":{"kind":{"define":"kind","label":"范围(*)","name":"kind","relation":"kind","type":"String"},"name":{"define":"name","label":"名称(*)","name":"name","relation":"name","type":"String"},"type":{"define":"type","label":"类型(*)","name":"type","relation":"type","type":"String"},"value":{"define":"value","label":"默认值","name":"value","relation":"value","type":"String"}},"directDelete":false,"events":{"onBeforeNew":"dataParamsBeforeNew","onCustomRefresh":"dataParamsCustomRefresh","onDataChange":"dataParamsDataChange"},"idColumn":"name","isMain":false,"limit":20,"xid":"dataParams"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"label":{"define":"label","label":"label","name":"label","relation":"label","type":"String"},"value":{"define":"value","label":"value","name":"value","relation":"value","type":"String"}},"directDelete":false,"events":{},"idColumn":"value","initData":"[{\"value\":\"String\",\"label\":\"String\"},{\"value\":\"Integer\",\"label\":\"Integer\"},{\"value\":\"Long\",\"label\":\"Long\"},{\"value\":\"Float\",\"label\":\"Float\"},{\"value\":\"Double\",\"label\":\"Double\"},{\"value\":\"Decimal\",\"label\":\"Decimal\"},{\"value\":\"Boolean\",\"label\":\"Boolean\"},{\"value\":\"Date\",\"label\":\"Date\"},{\"value\":\"Time\",\"label\":\"Time\"},{\"value\":\"DateTime\",\"label\":\"DateTime\"},{\"value\":\"Object\",\"label\":\"Object\"},{\"value\":\"List\",\"label\":\"List\"}]","isMain":false,"limit":20,"xid":"dataType"});
+ new __Data__(this,{"autoLoad":true,"confirmDelete":true,"confirmRefresh":true,"defCols":{"label":{"define":"label","label":"label","name":"label","relation":"label","type":"String"},"value":{"define":"value","label":"value","name":"value","relation":"value","type":"String"}},"directDelete":false,"events":{},"idColumn":"value","initData":"[{\"value\":\"public\",\"label\":\"public\"},{\"value\":\"private\",\"label\":\"private\"}]","isMain":false,"limit":20,"xid":"dataKind"});
+ var justep = require('$UI/system/lib/justep');if(!this['__justep__']) this['__justep__'] = {};if(!this['__justep__'].selectOptionsAfterRender)	this['__justep__'].selectOptionsAfterRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._addDefaultOption();	};if(!this['__justep__'].selectOptionsBeforeRender)	this['__justep__'].selectOptionsBeforeRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._optionsBeforeRender();	};
+ var justep = require('$UI/system/lib/justep');if(!this['__justep__']) this['__justep__'] = {};if(!this['__justep__'].selectOptionsAfterRender)	this['__justep__'].selectOptionsAfterRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._addDefaultOption();	};if(!this['__justep__'].selectOptionsBeforeRender)	this['__justep__'].selectOptionsBeforeRender = function($element) {		var comp = justep.Component.getComponent($element);		if(comp) comp._optionsBeforeRender();	};
+}}); 
+return __result;});

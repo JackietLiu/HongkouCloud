@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window caIBNF3" component="$model/UI2/system/components/justep/window/window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caIBNF3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <style>.msg.caIBNF3{margin-left: 10px; background: url(@justepContextPath@/v_b891c68de553449f9ec9d0e2f46ed554l_zh_CNs_d_m/system/components/justep/common/demo/checkmark.png) no-repeat 2px 3px; padding: 3px 6px 3px 20px; right: 6%; top: 10px; width: 13px; height: 24px} .x-source-code-area.caIBNF3{width: 100%; height: 100%; overflow: auto} .pln.caIBNF3{color: rgb(0, 0, 0)} @media screen {.str { color: rgb(0, 136, 0) } .kwd { color: rgb(0, 0, 136) } .com { color: rgb(136, 0, 0) } .typ { color: rgb(102, 0, 102) } .lit { color: rgb(0, 102, 102) } .pun, .opn, .clo { color: rgb(102, 102, 0) } .tag { color: rgb(0, 0, 136) } .atn { color: rgb(102, 0, 102) } .atv { color: rgb(0, 136, 0) } .dec, .var { color: rgb(102, 0, 102) } .fun { color: red } } @media print, projection {.str { color: rgb(0, 102, 0) } .kwd { color: rgb(0, 0, 102); font-weight: bold } .com { color: rgb(102, 0, 0); font-style: italic } .typ { color: rgb(68, 0, 68); font-weight: bold } .lit { color: rgb(0, 68, 68) } .pun, .opn, .clo { color: rgb(68, 68, 0) } .tag { color: rgb(0, 0, 102); font-weight: bold } .atn { color: rgb(68, 0, 68) } .atv { color: rgb(0, 102, 0) } } .prettyprint.caIBNF3{padding: 8px; background-color: rgb(247, 247, 249); border: 1px solid rgb(225, 225, 232)} ol.linenums.caIBNF3{margin: 0 0 0 33px} ol.linenums.caIBNF3 li.caIBNF3{padding-left: 12px; color: rgb(190, 190, 197); line-height: 18px; text-shadow: 0 1px 0 rgb(255, 255, 255)} li.L0.caIBNF3, li.L1.caIBNF3, li.L2.caIBNF3, li.L3.caIBNF3, li.L4.caIBNF3, li.L5.caIBNF3, li.L6.caIBNF3, li.L7.caIBNF3, li.L8.caIBNF3, li.L9.caIBNF3{list-style-type: decimal !important} li.L1.caIBNF3, li.L3.caIBNF3, li.L5.caIBNF3, li.L7.caIBNF3, li.L9.caIBNF3{background: rgb(238, 238, 238)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="caIBNF3" class="caIBNF3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYRfIZz-iosstatusbar caIBNF3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caIBNF3"> 
+    <div class="x-panel-top caIBNF3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caIBNF3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar caIBNF3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;源码显示&#34;}" __cid="caIBNF3"> 
+        <div class="x-titlebar-left caIBNF3" xid="div1" __cid="caIBNF3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caIBNF3" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:closePage" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;}" __cid="caIBNF3"> 
+            <i xid="i1" class="icon-chevron-left caIBNF3" __cid="caIBNF3"></i>  
+            <span xid="span1" __cid="caIBNF3" class="caIBNF3"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title caIBNF3" xid="div2" __cid="caIBNF3">源码显示</div>  
+        <div class="x-titlebar-right  caIBNF3" xid="div3" __cid="caIBNF3">
+          <div class="empty caIBNF3" __cid="caIBNF3"></div>
+          <div id="msg" class="msg caIBNF3" style="display:none" __cid="caIBNF3"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link caIBNF3" xid="copyBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},visible:flag" data-events="onClick:copyBtnClick" data-config="{&#34;label&#34;:&#34;copy&#34;}" __cid="caIBNF3"> 
+            <i xid="i2" __cid="caIBNF3" class="caIBNF3"></i>  
+            <span xid="span2" __cid="caIBNF3" class="caIBNF3">copy</span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content caIBNF3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caIBNF3"> 
+      <div xid="showCode" style="margin-left:5px;" __cid="caIBNF3" class="caIBNF3"></div> 
+    </div>  
+    <style __cid="caIBNF3" class="caIBNF3">.x-panel.pcYRfIZz-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcYRfIZz-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcYRfIZz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYRfIZz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYRfIZz-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcYRfIZz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYRfIZz-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYRfIZz-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYRfIZz-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="caIBNF3" class="caIBNF3"></span> 
+</div>

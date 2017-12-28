@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xbl="http://www.w3.org/ns/xbl" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xblcompliexblns="http://www.w3.org/ns/xbl" component="$model/UI2/system/components/justep/window/window" xid="window" extends="$UI/system/deploy/common/appInfo.w" __id="id_1" sysParam="false" class="window window cBbmURz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cBbmURz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cBbmURz" class="cBbmURz"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog" style="left:51px;top:256px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&quot;src&quot;:&quot;$model/UI2/system/deploy/common/waittingDialog.w&quot;}" __cid="cBbmURz" class="cBbmURz"> 
+    <div class="x-dialog-overlay cBbmURz" __cid="cBbmURz"/>  
+    <div class="x-dialog cBbmURz" style="display:none;" __cid="cBbmURz"> 
+      <div class="x-dialog-title cBbmURz" __cid="cBbmURz"> 
+        <button class="close cBbmURz" __cid="cBbmURz"> 
+          <span __cid="cBbmURz" class="cBbmURz">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cBbmURz" __cid="cBbmURz"/> 
+      </div>  
+      <div class="x-dialog-body cBbmURz" __cid="cBbmURz"/> 
+    </div> 
+  </span>  
+  <div xmlns="" xid="appInfoDiv" __cid="cBbmURz" class="cBbmURz"> 
+    <div xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput2" style="display:none" xui:update-mode="merge" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz">  
+      <label class="x-label cBbmURz" xid="label2" __cid="cBbmURz">应用名：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="appName" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label3" __cid="cBbmURz">版本号：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="version" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label6" __cid="cBbmURz">应用包名：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="packageName" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label7" __cid="cBbmURz">服务地址：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="serverURL" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div class="x-label-edit x-label20 cBbmURz" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelOutput111" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label211" __cid="cBbmURz">Web路径：</label>  
+      <div class="x-output x-edit cBbmURz" component="$model/UI2/system/components/justep/output/output" xid="webPath" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label5" __cid="cBbmURz">首页：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="indexURL" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelOutput4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label4" __cid="cBbmURz">包含UI资源：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cBbmURz" xid="uiResDirs" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="cBbmURz"/> 
+    </div>  
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 cBbmURz" xid="labelTextarea1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cBbmURz"> 
+      <label class="x-label cBbmURz" xid="label1" __cid="cBbmURz">本地插件：</label>  
+      <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cBbmURz" xid="plugins" readonly="true" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cBbmURz"/> 
+    </div>  
+    <div xid="div2" style="padding-top:8px" __cid="cBbmURz" class="cBbmURz"> 
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cBbmURz" xid="browserEngine" checked="true" disabled="true" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:true}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:$model.browserEngine}" __cid="cBbmURz"> 
+        <input type="checkbox" __cid="cBbmURz" class="cBbmURz"/>  
+        <label __cid="cBbmURz" class="cBbmURz"/> 
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cBbmURz" xid="resEncryption" label="资源加密" style="padding-left:16px" disabled="true" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:true,&quot;label&quot;:&quot;资源加密&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cBbmURz"> 
+        <input type="checkbox" __cid="cBbmURz" class="cBbmURz"/>  
+        <label __cid="cBbmURz" class="cBbmURz">资源加密</label> 
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cBbmURz" xid="sourceMode" label="源码模式" style="padding-left:16px" disabled="true" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:true,&quot;label&quot;:&quot;源码模式&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cBbmURz"> 
+        <input type="checkbox" __cid="cBbmURz" class="cBbmURz"/>  
+        <label __cid="cBbmURz" class="cBbmURz">源码模式</label> 
+      </span> 
+    </div> 
+  </div>  
+  <div xmlns="" xmlns:xui="http://www.justep.com/xui" style="padding-top:8px" xid="div1_2" xui:parent="window" xui:update-mode="insert" __cid="cBbmURz" class="cBbmURz">  
+    <span checked="true" class="x-checkbox cBbmURz" component="$model/UI2/system/components/justep/button/checkbox" label="完成后启动App生成向导" xid="startAppWiz" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false,&quot;label&quot;:&quot;完成后启动App生成向导&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cBbmURz"> 
+      <input type="checkbox" __cid="cBbmURz" class="cBbmURz"/>  
+      <label __cid="cBbmURz" class="cBbmURz">完成后启动App生成向导</label> 
+    </span> 
+  </div>  
+  <label xmlns="" xmlns:xui="http://www.justep.com/xui" class="x-label cBbmURz" style="color:#FF8000;" xid="label1_1" xui:parent="window" xui:update-mode="insert" __cid="cBbmURz">小提示：可参考目录下的“说明.txt”了解目录结构和查看常见问题</label> 
+</div>

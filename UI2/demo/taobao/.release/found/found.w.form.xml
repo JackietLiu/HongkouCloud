@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cmQNBza" component="$model/UI2/system/components/justep/window/window" design="device:mobile;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cmQNBza" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.btn-group.cmQNBza{height: 40px; border-top: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231)} .btn-group.cmQNBza .btn.cmQNBza{border-left: 1px solid rgb(231, 231, 231); color: rgb(102, 102, 102)} .text-white.cmQNBza{color: rgb(255, 255, 255)} .text-black.cmQNBza{color: rgb(33, 33, 33)} .text-danger.cmQNBza{color: rgb(255, 68, 0)} .x-titlebar.cmQNBza{background-color: rgb(255, 68, 0)} .tb-index.x-titlebar.cmQNBza .x-titlebar-title.cmQNBza{padding: 10px 0} .tb-index.x-titlebar.cmQNBza .form-group.cmQNBza input.cmQNBza{background-color: rgb(255, 68, 0); border-top: 0; border-left: 0; border-right: 0} .tb-index.x-titlebar.cmQNBza .form-group.cmQNBza input.cmQNBza:focus{box-shadow: none} .tb-nopadding.cmQNBza{padding: 0} .x-popOver-overlay.cmQNBza{top: 88px; background-color: rgb(0, 0, 0)} .tb-sorting.cmQNBza{width: 100%; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(225, 225, 225)} .tb-sorting.cmQNBza .list-group-item.cmQNBza{margin: 0 10px; padding-left: 0; padding-right: 0; border-radius: 0; border-left: 0; border-right: 0; border-top: 0} .tb-sorting.cmQNBza .list-group-item.cmQNBza .tb-liBtn.cmQNBza{display: none} .tb-sorting.cmQNBza .list-group-item.current.cmQNBza .tb-liBtn.cmQNBza{display: block} .tb-sorting.cmQNBza .list-group-item.current.cmQNBza{color: rgb(255, 68, 0)} .list-group-item.cmQNBza span.cmQNBza{padding-top: 5px} .list-group-item.cmQNBza input.cmQNBza{background-color: rgb(238, 238, 238)} .list-group-item.cmQNBza input.cmQNBza:focus{background-color: rgb(255, 255, 255)} .tb-typelist.cmQNBza .col.cmQNBza{padding-left: 0; padding-right: 5px} .tb-typelist.cmQNBza .col.cmQNBza h5.cmQNBza{line-height: 30px; border-radius: 5px; background-color: rgb(238, 238, 238); font-size: 12px} .tb-typelist.cmQNBza .col.cmQNBza h5.current.cmQNBza{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255)} .tb-resetBtn.btn-default.cmQNBza{border-color: rgb(255, 68, 0); background-color: rgb(255, 255, 255); color: rgb(255, 68, 0); padding: 4px 20px} .tb-okBtn.btn.cmQNBza{margin-top: 20px; background-color: rgb(255, 68, 0); border-radius: 0; border: 0} .media.cmQNBza{margin-top: 0; padding: 10px; border-bottom: 1px solid rgb(231, 231, 231); background-color: rgb(255, 255, 255)} .tb-twoColList.cmQNBza{padding: 5px} .tb-twoColList.cmQNBza ul.cmQNBza li.cmQNBza{margin-bottom: 15px; padding: 5px; background-color: rgb(255, 255, 255)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cmQNBza" class="cmQNBza"></div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cmQNBza" xid="sortingPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;sortingBtn&quot;,&quot;direction&quot;:&quot;left-bottom&quot;,&quot;dismissible&quot;:true,&quot;opacity&quot;:0.7}" __cid="cmQNBza"> 
+    <div class="x-popOver-overlay cmQNBza" xid="div41" __cid="cmQNBza"/>  
+    <div class="x-popOver-content tb-sorting cmQNBza" xid="div11" __cid="cmQNBza"> 
+      <div component="$model/UI2/system/components/justep/list/list" class="x-list cmQNBza" bind-click="sortingListClick" xid="conditionList" dataItemAlias="conditionRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;conditionData&quot;}" __cid="cmQNBza"> 
+        <ul class="x-list-template hide cmQNBza" xid="ul1" bind-foreach="{data:$model.foreach_conditionList($element),afterRender:$model.foreach_afterRender_conditionList.bind($model,$element),as:'conditionRow'}" __cid="cmQNBza"> 
+          <li class="list-group-item cmQNBza" bind-css="{'current':conditionRow.val('fState')==1}" __cid="cmQNBza"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right tb-liBtn cmQNBza" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-checkmark&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmQNBza"> 
+              <i xid="i4" class="icon-checkmark text-danger cmQNBza" __cid="cmQNBza"/>  
+              <span xid="span29" __cid="cmQNBza" class="cmQNBza"/> 
+            </a>  
+            <span bind-text="val(&quot;fName&quot;)" __cid="cmQNBza" class="cmQNBza"/> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cmQNBza" xid="screeningPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;listStyleBtn&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;dismissible&quot;:true,&quot;opacity&quot;:0.7}" __cid="cmQNBza"> 
+    <div class="x-popOver-overlay cmQNBza" xid="div4" __cid="cmQNBza"/>  
+    <div class="x-popOver-content tb-sorting cmQNBza" __cid="cmQNBza"> 
+      <div __cid="cmQNBza" class="cmQNBza"> 
+        <div class="list-group-item cmQNBza" xid="div26" __cid="cmQNBza"> 
+          <span class="pull-left cmQNBza" xid="span12" __cid="cmQNBza">价格区间（元）</span>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm pull-left center-block cmQNBza" xid="price1" style="width:30%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cmQNBza"/>  
+          <span class="pull-left cmQNBza" xid="span251" __cid="cmQNBza">－</span>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm pull-left center-block cmQNBza" xid="price2" style="width:30%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cmQNBza"/>  
+          <div class="clearfix cmQNBza" xid="div27" __cid="cmQNBza"/> 
+        </div>  
+        <div class="list-group-item cmQNBza" xid="div28" __cid="cmQNBza"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon pull-right text-black cmQNBza" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmQNBza"> 
+            <i xid="i12" class="icon-ios7-arrow-down cmQNBza" __cid="cmQNBza"/>  
+            <span xid="span35" __cid="cmQNBza" class="cmQNBza"/> 
+          </a>  
+          <h5 class="text-black cmQNBza" xid="h54" __cid="cmQNBza">折扣和服务</h5>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-typelist text-center cmQNBza" bind-click="discountClick" xid="discountList" dataItemAlias="discountRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;discountData&quot;}" __cid="cmQNBza"> 
+            <ul class="x-list-template hide cmQNBza" xid="ul2" componentname="ul(html)" bind-foreach="{data:$model.foreach_discountList($element),afterRender:$model.foreach_afterRender_discountList.bind($model,$element),as:'discountRow'}" __cid="cmQNBza"> 
+              <li xid="li2" class="col col-xs-3 cmQNBza" componentname="li(html)" __cid="cmQNBza"> 
+                <h5 class="text-black cmQNBza" bind-text="ref('fName')" bind-css="{'current':discountRow.val('fState')==1}" __cid="cmQNBza"/> 
+              </li> 
+            </ul> 
+          </div>  
+          <div class="clearfix cmQNBza" xid="div29" __cid="cmQNBza"/> 
+        </div>  
+        <div class="list-group-item cmQNBza" xid="div30" __cid="cmQNBza"> 
+          <div xid="div31" __cid="cmQNBza" class="cmQNBza"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon pull-right text-black cmQNBza" xid="button311" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmQNBza"> 
+              <i xid="i10" class="icon-ios7-arrow-down icon-chevron-down cmQNBza" __cid="cmQNBza"/>  
+              <span xid="span34" __cid="cmQNBza" class="cmQNBza"/> 
+            </a>  
+            <span class="text-black cmQNBza" xid="span311" __cid="cmQNBza">分类：</span>  
+            <span class="text-danger cmQNBza" xid="span32" __cid="cmQNBza">所有分类</span> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list tb-typelist text-center cmQNBza" xid="classList" bind-click="classClick" dataItemAlias="classRow" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;classData&quot;}" __cid="cmQNBza"> 
+            <ul class="x-list-template hide cmQNBza" xid="ul5" componentname="ul(html)" bind-foreach="{data:$model.foreach_classList($element),afterRender:$model.foreach_afterRender_classList.bind($model,$element),as:'classRow'}" __cid="cmQNBza"> 
+              <li xid="li3" class="col col-xs-4 cmQNBza" componentname="li(html)" __cid="cmQNBza"> 
+                <h5 class="text-black cmQNBza" bind-text="ref('fName')" bind-css="{'current':classRow.val('fState')==1 &amp;&amp; classRow.val('id')==$model.classData.val('id')}" __cid="cmQNBza"/> 
+              </li> 
+            </ul> 
+          </div>  
+          <div class="clearfix cmQNBza" xid="div32" __cid="cmQNBza"/> 
+        </div>  
+        <div class="text-center panel-body cmQNBza" xid="div33" __cid="cmQNBza"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm tb-resetBtn x-flex1 cmQNBza" xid="resetBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:resetBtnClick" data-config="{&quot;label&quot;:&quot; 重 置 &quot;}" __cid="cmQNBza"> 
+            <i xid="i9" __cid="cmQNBza" class="cmQNBza"/>  
+            <span xid="span31" __cid="cmQNBza" class="cmQNBza">重 置</span> 
+          </a> 
+        </div>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-lg btn-block tb-okBtn cmQNBza" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:screeningBtnClick" data-config="{&quot;label&quot;:&quot;确认&quot;}" __cid="cmQNBza"> 
+          <i xid="i5" __cid="cmQNBza" class="cmQNBza"/>  
+          <span xid="span25" class="text-white cmQNBza" __cid="cmQNBza">确认</span> 
+        </a> 
+      </div> 
+    </div> 
+  </div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card x-has-iosstatusbar pcYR3uea-iosstatusbar cmQNBza" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cmQNBza"> 
+    <div class="x-panel-top cmQNBza" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmQNBza"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar tb-index cmQNBza" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cmQNBza"> 
+        <div class="x-titlebar-left cmQNBza" xid="div1" __cid="cmQNBza"></div>  
+        <div class="x-titlebar-title cmQNBza" xid="div20" bind-click="searchBtnClick" __cid="cmQNBza"> 
+          <div class="form-group has-feedback cmQNBza" xid="formGroup1" __cid="cmQNBza"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm text-white cmQNBza" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cmQNBza"/>  
+            <i class="icon-ios7-search-strong form-control-feedback cmQNBza" xid="col3" __cid="cmQNBza"/> 
+          </div> 
+        </div>  
+        <div class="x-titlebar-right  cmQNBza" xid="div3" __cid="cmQNBza">
+          <div class="empty cmQNBza" __cid="cmQNBza"/>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmQNBza" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-more&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cmQNBza"> 
+            <i xid="i11" class="icon-android-more cmQNBza" __cid="cmQNBza"/>  
+            <span xid="span10" __cid="cmQNBza" class="cmQNBza"/> 
+          </a>
+        </div> 
+      </div>  
+      <div __cid="cmQNBza" class="cmQNBza"> 
+        <div class="col-xs-10 pull-left tb-nopadding cmQNBza" __cid="cmQNBza"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cmQNBza" xid="buttonGroup1" style="height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmQNBza"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmQNBza" xid="sortingBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:sortingBtnClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-down-b&quot;,&quot;label&quot;:&quot;综合排序&quot;}" __cid="cmQNBza"> 
+              <i xid="i13" class="icon-arrow-down-b text-danger cmQNBza" __cid="cmQNBza"/>  
+              <span class="text-danger cmQNBza" __cid="cmQNBza">综合排序</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cmQNBza" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;销量优先&quot;}" __cid="cmQNBza"> 
+              <i xid="i1" __cid="cmQNBza" class="cmQNBza"/>  
+              <span xid="span1" __cid="cmQNBza" class="cmQNBza">销量优先</span> 
+            </a>  
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link cmQNBza" xid="screeningBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:screeningBtnClick" data-config="{&quot;icon&quot;:&quot;icon-arrow-down-b&quot;,&quot;label&quot;:&quot;筛选&quot;}" __cid="cmQNBza"> 
+              <i xid="i8" class="icon-arrow-down-b cmQNBza" __cid="cmQNBza"/>  
+              <span xid="span7" __cid="cmQNBza" class="cmQNBza">筛选</span> 
+            </a> 
+          </div> 
+        </div>  
+        <div class="col-xs-2 pull-left text-center tb-nopadding cmQNBza" __cid="cmQNBza"> 
+          <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified cmQNBza" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cmQNBza"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cmQNBza" xid="listStyleBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:listStyleClick" data-config="{&quot;icon&quot;:&quot;glyphicon glyphicon-th-list&quot;}" __cid="cmQNBza"> 
+              <i xid="i2" class="glyphicon glyphicon-th-list cmQNBza" __cid="cmQNBza"/>  
+              <span xid="span2" __cid="cmQNBza" class="cmQNBza"/> 
+            </a> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <div xid="content" class="x-panel-content tb-trans cmQNBza" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cmQNBza"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cmQNBza" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-events="onActiveChanged:pagesActiveChanged" data-config="{&quot;active&quot;:0}" __cid="cmQNBza"> 
+        <div class="x-contents-content active cmQNBza" xid="oneColList" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmQNBza"> 
+          <div class="x-scroll cmQNBza" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView1" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cmQNBza"> 
+            <div class="x-content-center x-pull-down container cmQNBza" xid="div5" __cid="cmQNBza"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cmQNBza" xid="i7" __cid="cmQNBza"/>  
+              <span class="x-pull-down-label cmQNBza" xid="span15" __cid="cmQNBza">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cmQNBza" xid="div6" __cid="cmQNBza"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cmQNBza" xid="list1" bind-click="listClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;,&quot;limit&quot;:6}" __cid="cmQNBza"> 
+                <ul class="x-list-template hide cmQNBza" xid="listTemplateUl1" bind-foreach="{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" __cid="cmQNBza"> 
+                  <li xid="li1" class="media cmQNBza" __cid="cmQNBza"> 
+                    <div xid="div10" class="media-left cmQNBza" __cid="cmQNBza"> 
+                      <img alt="" xid="image1" class="img-rounded media-object cmQNBza" bind-attr-src="$model.getImageUrl(val(&quot;fImg&quot;))" style="width:75px;" height="80px" __cid="cmQNBza"/> 
+                    </div>  
+                    <div class="media-body cmQNBza" xid="div14" __cid="cmQNBza"> 
+                      <h5 class="media-heading lead text-black cmQNBza" bind-text="ref('fTitle')" xid="h51" __cid="cmQNBza"/>  
+                      <div class="text-muted cmQNBza" xid="div15" __cid="cmQNBza"> 
+                        <span xid="span11" class="text-danger cmQNBza" __cid="cmQNBza">￥</span>  
+                        <span xid="span9" bind-text="ref('fPrice')" class="text-danger cmQNBza" __cid="cmQNBza"/> 
+                      </div>  
+                      <div class="text-muted cmQNBza" xid="div16" __cid="cmQNBza"> 
+                        <span xid="span30" __cid="cmQNBza" class="cmQNBza">月销</span>  
+                        <span xid="span21" bind-text="ref('fRecord')" __cid="cmQNBza" class="cmQNBza"/>  
+                        <span xid="span22" __cid="cmQNBza" class="cmQNBza">笔</span>  
+                        <span xid="span20" bind-text=" ref('fPostage')" __cid="cmQNBza" class="cmQNBza"/> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cmQNBza" xid="div7" __cid="cmQNBza"> 
+              <span class="x-pull-up-label cmQNBza" xid="span16" __cid="cmQNBza">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-contents-content  x-scroll-view cmQNBza" xid="twoColList" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cmQNBza"> 
+          <div class="x-scroll cmQNBza" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cmQNBza"> 
+            <div class="x-content-center x-pull-down container cmQNBza" xid="div9" __cid="cmQNBza"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cmQNBza" xid="i3" __cid="cmQNBza"/>  
+              <span class="x-pull-down-label cmQNBza" xid="span5" __cid="cmQNBza">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cmQNBza" xid="div17" __cid="cmQNBza"> 
+              <div class="col-xs-6 tb-twoColList cmQNBza" __cid="cmQNBza"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list x-flex cmQNBza" xid="list2" bind-click="listClick" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;,&quot;disableInfiniteLoad&quot;:false,&quot;disablePullToRefresh&quot;:false,&quot;filter&quot;:&quot;$row.index()%2==0&quot;,&quot;limit&quot;:3}" __cid="cmQNBza"> 
+                  <ul class="x-list-template hide cmQNBza" xid="ul3" bind-foreach="{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}" __cid="cmQNBza"> 
+                    <li xid="li4" __cid="cmQNBza" class="cmQNBza"> 
+                      <div xid="div8" __cid="cmQNBza" class="cmQNBza"> 
+                        <img src="" alt="" bind-attr-src="$model.getImageUrl(val(&quot;fImg&quot;))" class="img-responsive cmQNBza" style="width:100%;" xid="image2" __cid="cmQNBza"/>  
+                        <div xid="div19" __cid="cmQNBza" class="cmQNBza"> 
+                          <h5 bind-text="ref('fTitle')" class="text-black cmQNBza" xid="h52" __cid="cmQNBza"/>  
+                          <div xid="div12" __cid="cmQNBza" class="cmQNBza"> 
+                            <span class="text-danger cmQNBza" xid="span3" __cid="cmQNBza">￥</span>  
+                            <span bind-text="ref('fPrice')" class="text-danger cmQNBza" xid="span4" __cid="cmQNBza"/> 
+                          </div>  
+                          <div xid="div13" class="text-muted cmQNBza" __cid="cmQNBza"> 
+                            <span xid="span24" __cid="cmQNBza" class="cmQNBza">月销</span>  
+                            <span xid="span26" bind-text="ref('fRecord')" __cid="cmQNBza" class="cmQNBza"/>  
+                            <span xid="span27" __cid="cmQNBza" class="cmQNBza">笔</span>  
+                            <span xid="span28" bind-text="ref('fPostage')" class="pull-right cmQNBza" __cid="cmQNBza"/> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div>  
+              <div class="col-xs-6 tb-twoColList cmQNBza" __cid="cmQNBza"> 
+                <div component="$model/UI2/system/components/justep/list/list" class="x-list x-flex cmQNBza" bind-click="listClick" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;goodsData&quot;,&quot;filter&quot;:&quot;$row.index()%2==1&quot;,&quot;limit&quot;:3}" __cid="cmQNBza"> 
+                  <ul class="x-list-template hide cmQNBza" xid="ul4" bind-foreach="{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}" __cid="cmQNBza"> 
+                    <li xid="li5" __cid="cmQNBza" class="cmQNBza"> 
+                      <div xid="div24" __cid="cmQNBza" class="cmQNBza"> 
+                        <img src="" alt="" bind-attr-src="$model.getImageUrl(val(&quot;fImg&quot;))" class="img-responsive cmQNBza" style="width:100%;" xid="image3" __cid="cmQNBza"/>  
+                        <div xid="div25" __cid="cmQNBza" class="cmQNBza"> 
+                          <h5 bind-text="ref('fTitle')" class="text-black cmQNBza" xid="h53" __cid="cmQNBza"/>  
+                          <div xid="div23" __cid="cmQNBza" class="cmQNBza"> 
+                            <span class="text-danger cmQNBza" xid="span23" __cid="cmQNBza">￥</span>  
+                            <span bind-text="ref('fPrice')" class="text-danger cmQNBza" xid="span19" __cid="cmQNBza"/> 
+                          </div>  
+                          <div xid="div22" class="text-muted cmQNBza" __cid="cmQNBza"> 
+                            <span xid="span18" __cid="cmQNBza" class="cmQNBza">月销</span>  
+                            <span xid="span14" bind-text="ref('fRecord')" __cid="cmQNBza" class="cmQNBza"/>  
+                            <span xid="span17" __cid="cmQNBza" class="cmQNBza">笔</span>  
+                            <span xid="span13" bind-text="ref('fPostage')" class="pull-right cmQNBza" __cid="cmQNBza"/> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </li> 
+                  </ul> 
+                </div> 
+              </div>  
+              <div class="clearfix cmQNBza" xid="div2" __cid="cmQNBza"/> 
+            </div>  
+            <div class="x-content-center x-pull-up cmQNBza" xid="div18" __cid="cmQNBza"> 
+              <span class="x-pull-up-label cmQNBza" xid="span8" __cid="cmQNBza">加载更多...</span> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cmQNBza" class="cmQNBza">.x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-top {height: 88px;}.x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-content { top: 88px;bottom: nullpx;}.x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-top {height: 108px;}.iosstatusbar .x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-content { top: 108px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-top {height: 88px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYR3uea-iosstatusbar &gt;.x-panel-content {top: 88px;}</style>
+  </div> 
+</div>

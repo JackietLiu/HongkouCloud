@@ -1,0 +1,10 @@
+/**新闻标题列表*/
+
+/**ButtonGroup*/
+.x-panel-top .btn-group{box-shadow:0px 2px 1px #888888}
+.x-panel-top .btn-group .btn{font-size:16px;letter-spacing:3px;font-weight:normal;}
+.x-panel-top .btn-group .btn.active{border-bottom:2px solid #37b9ed;color:#37b9ed;font-size:18px;}
+.x-titlebar{
+	background:#37b9ed;
+	
+}

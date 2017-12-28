@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cUv2iMn" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cUv2iMn" components="$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/data/baasData,">
+  <style>.mybtn.cUv2iMn{border-radius: 0; border: 0; line-height: 35px; height: 50px; background-color: transparent; width: 100%; border: 1px solid rgb(193, 211, 242); color: rgb(255, 255, 255)} .mybtn.cUv2iMn .cUv2iMn:BEFORE{box-shadow: 0px 0px 20px rgb(136, 136, 136); border-radius: 0; border: 0; line-height: 35px; height: 50px; width: 100%} .mybtn.cUv2iMn:ACTIVE{box-shadow: 0px 0px 20px rgb(136, 136, 136); border-radius: 0; border: 0; line-height: 35px; height: 50px; width: 100%} .x-contents-content.cUv2iMn{height: 100%; background-color: rgb(98, 150, 244)} .x-contents-content.cUv2iMn .span1.cUv2iMn{color: rgb(255, 255, 255); font-size: 25px; font-weight: bold} .x-contents-content.cUv2iMn input.cUv2iMn{border-radius: 0; border: 1px solid rgb(193, 211, 242); float: left; height: 50px} .div_left.cUv2iMn{border: 1px solid rgb(193, 211, 242); padding: 0 10px; float: left; margin-left: 20px; background-color: rgb(255, 255, 255); height: 50px; width: 15%}</style>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" style="top:8px;left:55px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&#34;type&#34;:&#34;OK&#34;}" __cid="cUv2iMn" class="cUv2iMn">
+    <div class="x-modal-overlay cUv2iMn" __cid="cUv2iMn"></div>
+    <div class="x-modal cUv2iMn" __cid="cUv2iMn">
+      <div class="x-modal-inner cUv2iMn" __cid="cUv2iMn">
+        <div class="x-modal-title cUv2iMn" __cid="cUv2iMn"></div>
+        <div class="x-modal-text cUv2iMn" __cid="cUv2iMn"></div>
+        <input class="x-modal-prompt-input cUv2iMn" type="text" __cid="cUv2iMn">
+      </div>
+      <div class="x-modal-buttons cUv2iMn" __cid="cUv2iMn">
+        <a class="x-modal-button x-modal-button-bold OK cUv2iMn" value="ok" __cid="cUv2iMn">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cUv2iMn" value="yes" __cid="cUv2iMn">是</a>
+        <a class="x-modal-button x-modal-button-bold No cUv2iMn" value="no" __cid="cUv2iMn">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cUv2iMn" value="cancel" __cid="cUv2iMn">取消</a>
+      </div>
+    </div>
+  </span>
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cUv2iMn" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;direction&#34;:&#34;left-top&#34;}" __cid="cUv2iMn"> 
+    <div class="x-popOver-overlay cUv2iMn" xid="div10" __cid="cUv2iMn"></div>  
+    <div class="x-popOver-content cUv2iMn" xid="div11" style="background-color:#f3fbff;width:350px;height:450px;" __cid="cUv2iMn"> 
+      <div xid="div12" style="padding-left:30px;" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cUv2iMn" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUv2iMn"> 
+          <div class="x-col cUv2iMn" xid="col21" __cid="cUv2iMn"></div>  
+          <div class="x-col x-col-10 cUv2iMn" xid="col20" __cid="cUv2iMn"> 
+            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-sm btn-only-icon cUv2iMn" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver1.hide'}" data-config="{&#34;icon&#34;:&#34;icon-android-close&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cUv2iMn"> 
+              <i xid="i2" class="icon-android-close cUv2iMn" __cid="cUv2iMn"></i>  
+              <span xid="span4" __cid="cUv2iMn" class="cUv2iMn"></span>
+            </a> 
+          </div> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cUv2iMn" xid="row10" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cUv2iMn"> 
+          <div class="x-col cUv2iMn" xid="col22" style="padding:10px 0;" __cid="cUv2iMn"> 
+            <span xid="span3" style="color:#6085c4;font-size:25px;font-weight:bold;" __cid="cUv2iMn" class="cUv2iMn">密码修改</span>
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div9" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div xid="div14" style="font-size:16px;color:#padding-left:40px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <span xid="span4" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="cUv2iMn" class="cUv2iMn">用户账号</span>
+        </div>  
+        <div xid="div5" style="padding-left:20px;line-height:50px;height:50px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <div xid="div10" style="border:1px solid #c1d3f2;padding:0 10px;float:left;margin-left:20px;background-color:#fff;height:50px;width:50px;" align="center" __cid="cUv2iMn" class="cUv2iMn"> 
+            <img src="@justepContextPath@/v_bc6a238bc9b54bfcab86cfe303f404d6l_zh_CNs_d_m/hongkou/img/phone.png" alt="" xid="image5" height="30px" __cid="cUv2iMn" class="cUv2iMn">
+          </div>  
+          <div xid="div6" style="float:left;width:75%;" __cid="cUv2iMn" class="cUv2iMn"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cUv2iMn" xid="up_username" style="border-radius:0;border:1px solid #c1d3f2;float:left;float:left;height:50px;width:90%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cUv2iMn">
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div18" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div xid="div19" style="font-size:16px;color:#padding-left:40px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <span xid="span5" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="cUv2iMn" class="cUv2iMn">原密码</span>
+        </div>  
+        <div xid="div8" style="padding-left:20px;line-height:50px;height:50px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <div xid="div4" style="border:1px solid #c1d3f2;padding:0 10px;float:left;margin-left:20px;background-color:#fff;height:50px;width:50px;" align="center" __cid="cUv2iMn" class="cUv2iMn"> 
+            <img src="@justepContextPath@/v_7e2c5b0898584dce9b1f090fba13fcf4l_zh_CNs_d_m/hongkou/img/lock.png" alt="" xid="image2" height="30px" __cid="cUv2iMn" class="cUv2iMn">
+          </div>  
+          <div xid="div7" style="float:left;width:75%;" __cid="cUv2iMn" class="cUv2iMn"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cUv2iMn" xid="up_password" style="border-radius:0;border:1px solid #c1d3f2;float:left;float:left;height:50px;width:90%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cUv2iMn">
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div23" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div xid="div24" style="font-size:16px;color:#padding-left:40px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <span xid="span6" style="padding-left:40px;color:#6085c4;font-size:16px;font-weight:bold;" __cid="cUv2iMn" class="cUv2iMn">修改密码</span>
+        </div>  
+        <div xid="div21" style="padding-left:20px;line-height:50px;height:50px;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <div xid="div25" style="border:1px solid #c1d3f2;padding:0 10px;float:left;margin-left:20px;background-color:#fff;height:50px;width:50px;" align="center" __cid="cUv2iMn" class="cUv2iMn"> 
+            <img src="@justepContextPath@/v_a3b52fad31244e75b24194141037931fl_zh_CNs_d_m/hongkou/img/lock.png" alt="" xid="image5" height="30px" __cid="cUv2iMn" class="cUv2iMn">
+          </div>  
+          <div xid="div22" style="float:left;width:75%;" __cid="cUv2iMn" class="cUv2iMn"> 
+            <input component="$model/UI2/system/components/justep/input/input" class="form-control cUv2iMn" xid="newpass" style="border-radius:0;border:1px solid #c1d3f2;float:left;float:left;height:50px;width:90%;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cUv2iMn">
+          </div> 
+        </div> 
+      </div>  
+      <div xid="div26" style="padding:40px;" align="left" __cid="cUv2iMn" class="cUv2iMn"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cUv2iMn" xid="button3" style="border:0;line-height:35px;height:50px;background-color:#9591ff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button3Click" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="cUv2iMn"> 
+          <i xid="i2" __cid="cUv2iMn" class="cUv2iMn"></i>  
+          <span xid="span3" style="font-size:18px;" __cid="cUv2iMn" class="cUv2iMn">确定</span>
+        </a> 
+      </div> 
+    </div> 
+  </div>
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cUv2iMn" class="cUv2iMn"></div>  
+  <div class="x-contents-content cUv2iMn" xid="loginContent" __cid="cUv2iMn">
+    <div xid="div1" style="padding-top:100px;height:150px;" align="center" __cid="cUv2iMn" class="cUv2iMn">
+      <span xid="span1" class="span1 cUv2iMn" __cid="cUv2iMn">虹口政务通</span>
+    </div>  
+    <div xid="div15" style="padding:0 20px;" __cid="cUv2iMn" class="cUv2iMn"> 
+      <div xid="div31" style="line-height:50px;height:50px;" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div xid="div32" align="center" class="div_left cUv2iMn" __cid="cUv2iMn"> 
+          <img src="@justepContextPath@/v_2bfe77c622074a778ae0f98f0a5cc04al_zh_CNs_d_m/testPlus/images/index_images/phone.png" alt="" xid="image3" style="width:20px;" __cid="cUv2iMn" class="cUv2iMn">
+        </div>  
+        <div xid="div30" style="float:left;width:75%;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control cUv2iMn" xid="username" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;placeHolder&#34;:&#34;用户名&#34;}" __cid="cUv2iMn">
+        </div> 
+      </div>  
+      <div xid="div16" style="margin-top:20px;line-height:50px;height:50px;" __cid="cUv2iMn" class="cUv2iMn"> 
+        <div xid="div20" align="center" class="div_left cUv2iMn" __cid="cUv2iMn"> 
+          <img src="@justepContextPath@/v_470dece7c8f748369ce4143d2557360el_zh_CNs_d_m/testPlus/images/index_images/lock.png" alt="" xid="image4" style="width:20px;" __cid="cUv2iMn" class="cUv2iMn">
+        </div>  
+        <div xid="div17" style="float:left;width:75%;" __cid="cUv2iMn" class="cUv2iMn"> 
+          <input component="$model/UI2/system/components/justep/input/password" class="form-control cUv2iMn" xid="password" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" data-config="{&#34;placeHolder&#34;:&#34;密码&#34;}" __cid="cUv2iMn">
+        </div> 
+      </div>  
+      <div xid="div2" __cid="cUv2iMn" class="cUv2iMn">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-left cUv2iMn" xid="button1" style="color:#fff;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{&#34;operation&#34;:&#34;popOver1.show&#34;}" data-config="{&#34;icon&#34;:&#34;dataControl dataControl-permission&#34;,&#34;label&#34;:&#34;密码修改&#34;}" __cid="cUv2iMn"> 
+          <i xid="i1" class="dataControl dataControl-permission cUv2iMn" __cid="cUv2iMn"></i>  
+          <span xid="span2" __cid="cUv2iMn" class="cUv2iMn">密码修改</span>
+        </a> 
+      </div>  
+      <div xid="div3" style="margin-left:20px;width:90%;" __cid="cUv2iMn" class="cUv2iMn">
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default mybtn cUv2iMn" xid="loginBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:loginBtnClick" data-config="{&#34;label&#34;:&#34;登录&#34;}" __cid="cUv2iMn"> 
+          <i xid="i3" __cid="cUv2iMn" class="cUv2iMn"></i>  
+          <span xid="span7" style="font-size:18px;" __cid="cUv2iMn" class="cUv2iMn">登录</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog2" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-events="onCancel:messageDialog2Cancel;onOK:messageDialog2OK" data-config="{&#34;type&#34;:&#34;OKCancel&#34;}" __cid="cUv2iMn" class="cUv2iMn">
+    <div class="x-modal-overlay cUv2iMn" __cid="cUv2iMn"></div>
+    <div class="x-modal cUv2iMn" __cid="cUv2iMn">
+      <div class="x-modal-inner cUv2iMn" __cid="cUv2iMn">
+        <div class="x-modal-title cUv2iMn" __cid="cUv2iMn"></div>
+        <div class="x-modal-text cUv2iMn" __cid="cUv2iMn"></div>
+        <input class="x-modal-prompt-input cUv2iMn" type="text" __cid="cUv2iMn">
+      </div>
+      <div class="x-modal-buttons cUv2iMn" __cid="cUv2iMn">
+        <a class="x-modal-button x-modal-button-bold OK cUv2iMn" value="ok" __cid="cUv2iMn">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cUv2iMn" value="yes" __cid="cUv2iMn">是</a>
+        <a class="x-modal-button x-modal-button-bold No cUv2iMn" value="no" __cid="cUv2iMn">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cUv2iMn" value="cancel" __cid="cUv2iMn">取消</a>
+      </div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog3" style="top:40px;left:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&#34;type&#34;:&#34;OK&#34;}" __cid="cUv2iMn" class="cUv2iMn">
+    <div class="x-modal-overlay cUv2iMn" __cid="cUv2iMn"></div>
+    <div class="x-modal cUv2iMn" __cid="cUv2iMn">
+      <div class="x-modal-inner cUv2iMn" __cid="cUv2iMn">
+        <div class="x-modal-title cUv2iMn" __cid="cUv2iMn"></div>
+        <div class="x-modal-text cUv2iMn" __cid="cUv2iMn"></div>
+        <input class="x-modal-prompt-input cUv2iMn" type="text" __cid="cUv2iMn">
+      </div>
+      <div class="x-modal-buttons cUv2iMn" __cid="cUv2iMn">
+        <a class="x-modal-button x-modal-button-bold OK cUv2iMn" value="ok" __cid="cUv2iMn">确定</a>
+        <a class="x-modal-button x-modal-button-bold Yes cUv2iMn" value="yes" __cid="cUv2iMn">是</a>
+        <a class="x-modal-button x-modal-button-bold No cUv2iMn" value="no" __cid="cUv2iMn">否</a>
+        <a class="x-modal-button x-modal-button-bold Cancel cUv2iMn" value="cancel" __cid="cUv2iMn">取消</a>
+      </div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="mainDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;forceRefreshOnOpen&#34;:true,&#34;src&#34;:&#34;$model/UI2/testPlus/main.w&#34;}" __cid="cUv2iMn" class="cUv2iMn">
+    <div class="x-dialog-overlay cUv2iMn" __cid="cUv2iMn"></div>
+    <div class="x-dialog cUv2iMn" style="display:none;" __cid="cUv2iMn">
+      <div class="x-dialog-title cUv2iMn" __cid="cUv2iMn">
+        <button class="close cUv2iMn" __cid="cUv2iMn">
+          <span __cid="cUv2iMn" class="cUv2iMn">×</span>
+        </button>
+        <div class="x-dialog-title-text cUv2iMn" __cid="cUv2iMn"></div>
+      </div>
+      <div class="x-dialog-body cUv2iMn" __cid="cUv2iMn"></div>
+    </div>
+  </span>
+</div>

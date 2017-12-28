@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" class="window crQb2ye" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crQb2ye" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="crQb2ye" class="crQb2ye"/>  
+  <div xid="div1" style="padding-top:16px;" __cid="crQb2ye" class="crQb2ye">
+    <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical crQb2ye" xid="modeRadioGroup" bind-foreach="{data:modeData.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-bind="component:{name:'$model/UI2/system/components/justep/select/radioGroup'}" __cid="crQb2ye">
+      <xhtml:span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio crQb2ye" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref('Value'),value:ref('ID')}" __cid="crQb2ye">
+        <xhtml:input type="radio" __cid="crQb2ye" class="crQb2ye"/>
+        <xhtml:label __cid="crQb2ye" class="crQb2ye"/>
+      </xhtml:span>
+    </span>
+  </div>
+</div>

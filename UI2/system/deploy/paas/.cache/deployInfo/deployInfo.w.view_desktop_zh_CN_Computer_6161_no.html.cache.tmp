@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xui="http://www.justep.com/xui" component="$model/UI2/system/components/justep/window/window" class="window criUVr2" sysParam="false" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="criUVr2" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="criUVr2" class="criUVr2"/>  
+  <div xmlns="" xid="serverDiv" style="margin-left:22px;margin-right:22px;" __cid="criUVr2" class="criUVr2"> 
+    <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label20 criUVr2" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label1" style="width:200px;" __cid="criUVr2">服务地址：</label>  
+      <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit criUVr2" xid="serverURL" data-bind="component:{name:'$model/UI2/system/components/justep/output/output'}" __cid="criUVr2"/> 
+    </div>  
+    <div class="x-label-edit x-label20 criUVr2" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelEdit2_2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label2_2" style="width:200px;" __cid="criUVr2" data-bind="text:$model.appPublished.get()?'本地App【已部署】：':'本地App：'">本地App：</label>  
+      <div class="x-edit criUVr2" xid="div6_2" __cid="criUVr2"> 
+        <span class="x-checkbox criUVr2" component="$model/UI2/system/components/justep/button/checkbox" label="包含本地App后，服务端提供App的下载" xid="appPublish" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;包含本地App后，服务端提供App的下载&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:appPublishChange" __cid="criUVr2"> 
+          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="criUVr2" class="criUVr2" data-bind="checked:$model.appPublish,enable:$model.enableAPP"></input>  
+          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="criUVr2" class="criUVr2">包含本地App后，服务端提供App的下载</label> 
+        </span> 
+      </div> 
+    </div>  
+    <div class="x-label-edit x-label20 criUVr2" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelEdit31_2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label41_2" style="width:200px;" __cid="criUVr2" data-bind="text:$model.uiPublished.get() =='1'?'UI资源【已部署】：':'UI资源：'">UI资源：</label>  
+      <div class="x-edit criUVr2" xid="div91_2" __cid="criUVr2"> 
+        <span class="x-checkbox criUVr2" component="$model/UI2/system/components/justep/button/checkbox" label="模式1和模式2发布编译（或打包）好的www目录，模式3直接发布UI2目录" xid="uiPublish" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;label&quot;:&quot;模式1和模式2发布编译（或打包）好的www目录，模式3直接发布UI2目录&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:uiPublishChange" __cid="criUVr2"> 
+          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="criUVr2" class="criUVr2" data-bind="checked:$model.uiPublish,enable:$model.enableUI"></input>  
+          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="criUVr2" class="criUVr2">模式1和模式2发布编译（或打包）好的www目录，模式3直接发布UI2目录</label> 
+        </span> 
+      </div> 
+    </div>  
+    <div class="x-label-edit x-label20 criUVr2" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="labelEdit41_2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'},visible:$model.enableBaas" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label51_2" style="width:200px;" __cid="criUVr2" data-bind="text:$model.baasPublished.get()?&quot;BaaS【已部署】：&quot;:&quot;BaaS：&quot;">BaaS：</label>  
+      <div class="x-edit criUVr2" xid="div111_2" __cid="criUVr2"> 
+        <span checked="true" class="x-checkbox criUVr2" component="$model/UI2/system/components/justep/button/checkbox" xid="baasPublish" data-config="{&quot;checked&quot;:true,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:$model.baasLabel}" data-events="onChange:baasPublishChange" __cid="criUVr2"> 
+          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="criUVr2" class="criUVr2" data-bind="checked:$model.baasPublish"></input>  
+          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="criUVr2" class="criUVr2"></label> 
+        </span> 
+      </div> 
+    </div>  
+    <div class="x-label-edit x-label20 criUVr2" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="sqlDiv" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'},visible:$model.enableSQL" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label61_2" style="width:200px;" __cid="criUVr2" data-bind="text:$model.sqlPublished.get()?&quot;SQL【已部署】：&quot;:&quot;SQL：&quot;">SQL：</label>  
+      <div class="x-edit criUVr2" xid="div131_2" __cid="criUVr2"> 
+        <span class="x-checkbox criUVr2" component="$model/UI2/system/components/justep/button/checkbox" xid="sqlPublish" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:$model.sqlLabel}" __cid="criUVr2"> 
+          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="criUVr2" class="criUVr2" data-bind="checked:$model.sqlPublish"></input>  
+          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="criUVr2" class="criUVr2"></label> 
+        </span> 
+      </div> 
+    </div>  
+    <div class="x-label-edit x-label20 criUVr2" component="$model/UI2/system/components/justep/labelEdit/labelEdit" xid="userDataDir" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'},visible:$model.enableUserData" __cid="criUVr2"> 
+      <label class="x-label criUVr2" xid="label2" style="width:200px;" __cid="criUVr2" data-bind="text:$model.userDataPublished.get()?&quot;文档数据【已部署】：&quot;:&quot;文档数据：&quot;">文档数据：</label>  
+      <div class="x-edit criUVr2" xid="div1" __cid="criUVr2"> 
+        <span class="x-checkbox criUVr2" component="$model/UI2/system/components/justep/button/checkbox" xid="userDataPublish" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox',label:$model.userDataLabel}" __cid="criUVr2"> 
+          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="criUVr2" class="criUVr2" data-bind="checked:$model.userDataPublish"></input>  
+          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="criUVr2" class="criUVr2"></label> 
+        </span> 
+      </div> 
+    </div> 
+  </div> 
+</div>

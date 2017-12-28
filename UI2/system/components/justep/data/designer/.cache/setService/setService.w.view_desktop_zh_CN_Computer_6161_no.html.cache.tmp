@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cJzUNZv" component="$model/UI2/system/components/justep/window/window" design="device:pc" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cJzUNZv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/fragment/list/listTable,$model/UI2/system/components/bootstrap/table/table,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cJzUNZv" class="cJzUNZv"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcYbUZni-iosstatusbar cJzUNZv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cJzUNZv"> 
+    <div class="x-panel-content x-flex x-flex-column cJzUNZv" xid="content1" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cJzUNZv"> 
+      <div class="x-control-group x-flex cJzUNZv" style="height:54px;" xid="controlGroup1" __cid="cJzUNZv"> 
+        <div class="x-flex1 cJzUNZv" __cid="cJzUNZv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit4" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+            <label class="x-center x-label cJzUNZv" xid="label1" __cid="cJzUNZv">action类型</label>  
+            <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cJzUNZv" xid="select1" data-bind="component:{ref:actionType,name:'$model/UI2/system/components/justep/select/select'},options:dataActionType.datas,optionsValue:'value',optionsText:'label',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-events="onChange:select1Change" __cid="cJzUNZv"/> 
+          </div> 
+        </div>  
+        <div class="x-flex1 cJzUNZv" __cid="cJzUNZv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit6" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+            <label class="x-label x-center cJzUNZv" xid="label2" __cid="cJzUNZv">查询</label>  
+            <div class="x-edit cJzUNZv" xid="controlGroupForm1" __cid="cJzUNZv"> 
+              <input component="$model/UI2/system/components/justep/input/input" class="form-control cJzUNZv" xid="input5" data-bind="component:{ref:filter,name:'$model/UI2/system/components/justep/input/input'}" __cid="cJzUNZv"/> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group x-flex1  x-scroll-view cJzUNZv" __cid="cJzUNZv"> 
+        <div class="x-scroll cJzUNZv" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cJzUNZv"> 
+          <div class="x-content-center x-pull-down cJzUNZv" xid="controlGroupForm4" __cid="cJzUNZv"> 
+            <i class="x-pull-down-img glyphicon x-icon-pull-down cJzUNZv" xid="i4" __cid="cJzUNZv"/>  
+            <span class="x-pull-down-label cJzUNZv" xid="span4" __cid="cJzUNZv">下拉刷新...</span> 
+          </div>  
+          <div class="x-scroll-content cJzUNZv" xid="controlGroupForm5" __cid="cJzUNZv"> 
+            <div component="$model/UI2/system/components/fragment/list/listTable" data="dataService" masterData="" masterCol="" xid="listTable4" data-bind="component:{name:'$model/UI2/system/components/fragment/list/listTable'}" __cid="cJzUNZv" class="cJzUNZv"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cJzUNZv" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;dataService&quot;}" __cid="cJzUNZv"> 
+                <table class="table table-condensed table-hover table-striped cJzUNZv" component="$model/UI2/system/components/bootstrap/table/table" xid="table4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/table/table'}" __cid="cJzUNZv"> 
+                  <thead xid="thead4" __cid="cJzUNZv" class="cJzUNZv"> 
+                    <tr xid="tr7" __cid="cJzUNZv" class="cJzUNZv"> 
+                      <th xid="col10" style="width:80px;text-align:center;" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <label xid="label15" __cid="cJzUNZv" class="cJzUNZv" data-bind="text:$model.dataService.label('checked')"/> 
+                      </th>  
+                      <th xid="col11" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <label xid="label16" __cid="cJzUNZv" class="cJzUNZv" data-bind="text:$model.dataService.label('path')"/> 
+                      </th>  
+                      <th xid="col12" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <label xid="label17" __cid="cJzUNZv" class="cJzUNZv" data-bind="text:$model.dataService.label('action')"/> 
+                      </th>  
+                      <th xid="col13" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <label xid="label18" __cid="cJzUNZv" class="cJzUNZv" data-bind="text:$model.dataService.label('table')"/> 
+                      </th> 
+                    </tr> 
+                  </thead>  
+                  <tbody class="x-list-template hide cJzUNZv" xid="tbody4" __cid="cJzUNZv" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)},event:{click:$model!=$object?$object.data.to($object):null}"> 
+                    <tr xid="tr8" __cid="cJzUNZv" class="cJzUNZv"> 
+                      <td xid="td10" style="text-align:center;" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <span component="$model/UI2/system/components/justep/button/radio" class="x-radio cJzUNZv" xid="radio4" name="checked" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false,&quot;name&quot;:&quot;checked&quot;}" data-bind="component:{ref:ref('checked'),name:'$model/UI2/system/components/justep/button/radio'}" __cid="cJzUNZv"> 
+                          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="radio" name="checked" __cid="cJzUNZv" class="cJzUNZv"></input>  
+                          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cJzUNZv" class="cJzUNZv"></label> 
+                        </span> 
+                      </td>  
+                      <td xid="td11" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cJzUNZv" xid="output6" data-bind="component:{ref:ref('path'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJzUNZv"/> 
+                      </td>  
+                      <td xid="td12" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cJzUNZv" xid="output7" data-bind="component:{ref:ref('action'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJzUNZv"/> 
+                      </td>  
+                      <td xid="td13" __cid="cJzUNZv" class="cJzUNZv"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cJzUNZv" xid="output8" data-bind="component:{ref:ref('table'),name:'$model/UI2/system/components/justep/output/output'}" __cid="cJzUNZv"/> 
+                      </td> 
+                    </tr> 
+                  </tbody> 
+                </table> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="x-content-center x-pull-up cJzUNZv" xid="controlGroupForm6" __cid="cJzUNZv"> 
+            <span class="x-pull-up-label cJzUNZv" xid="span5" __cid="cJzUNZv">加载更多...</span> 
+          </div> 
+        </div> 
+      </div>  
+      <div class="x-control-group cJzUNZv" style="height:254px;" __cid="cJzUNZv"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+          <label class="x-label cJzUNZv" xid="label11" __cid="cJzUNZv">服务URL</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzUNZv" xid="input2" data-bind="component:{ref:serviceURL,name:'$model/UI2/system/components/justep/input/input'},disable:$model.type!=='service'" __cid="cJzUNZv"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit5" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+          <label class="x-label cJzUNZv" xid="label19" __cid="cJzUNZv">表</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzUNZv" xid="input6" data-bind="component:{ref:table,name:'$model/UI2/system/components/justep/input/input'},disable:$model.type!=='service'" __cid="cJzUNZv"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+          <label class="x-label cJzUNZv" xid="label12" __cid="cJzUNZv">QueryAction</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzUNZv" xid="input3" data-bind="component:{ref:queryAction,name:'$model/UI2/system/components/justep/input/input'},disable:$model.type!=='service'" __cid="cJzUNZv"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label25 cJzUNZv" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cJzUNZv"> 
+          <label class="x-label cJzUNZv" xid="label13" __cid="cJzUNZv">SaveAction</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit cJzUNZv" xid="input4" data-bind="component:{ref:saveAction,name:'$model/UI2/system/components/justep/input/input'}" __cid="cJzUNZv"/> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cJzUNZv" class="cJzUNZv">.x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcYbUZni-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

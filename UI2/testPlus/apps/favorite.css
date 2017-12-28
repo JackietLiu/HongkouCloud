@@ -1,0 +1,9 @@
+.check{
+	position: absolute;
+    display:none; 
+	left:5px;
+	margin-top:40px;
+}
+.collectlist{
+	margin:10px;
+}

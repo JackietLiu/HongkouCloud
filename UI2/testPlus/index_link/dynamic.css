@@ -1,0 +1,7 @@
+.img_new{ width:70px; height:70px;bordr-radius:100%;}
+
+/*上传组件*/
+.o-uploadFile .x-attachment-content{ min-height:48px; min-height:48px; border-top:0; background:none; margin-top:0px;}
+
+.o-uploadFile .x-attachment{ min-height:48px; padding:0;}
+.o-uploadFile .x-attachment .x-attachment-cell{ float:none; margin:0; height:48px; display:block;}

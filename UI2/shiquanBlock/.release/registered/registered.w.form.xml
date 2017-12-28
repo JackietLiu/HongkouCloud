@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cZrEnIf" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cZrEnIf" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/messageDialog/messageDialog,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cZrEnIf" class="cZrEnIf"/>  
+  <span component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog1" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}" __cid="cZrEnIf" class="cZrEnIf">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay cZrEnIf" __cid="cZrEnIf"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal cZrEnIf" __cid="cZrEnIf">
+      <xhtml:div class="x-modal-inner cZrEnIf" __cid="cZrEnIf">
+        <xhtml:div class="x-modal-title cZrEnIf" __cid="cZrEnIf"></xhtml:div>
+        <xhtml:div class="x-modal-text cZrEnIf" __cid="cZrEnIf"></xhtml:div>
+        <xhtml:input class="x-modal-prompt-input cZrEnIf" type="text" __cid="cZrEnIf"/>
+      </xhtml:div>
+      <xhtml:div class="x-modal-buttons cZrEnIf" __cid="cZrEnIf">
+        <xhtml:a class="x-modal-button x-modal-button-bold OK cZrEnIf" value="ok" __cid="cZrEnIf">确定</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Yes cZrEnIf" value="yes" __cid="cZrEnIf">是</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold No cZrEnIf" value="no" __cid="cZrEnIf">否</xhtml:a>
+        <xhtml:a class="x-modal-button x-modal-button-bold Cancel cZrEnIf" value="cancel" __cid="cZrEnIf">取消</xhtml:a>
+      </xhtml:div>
+    </xhtml:div>
+  </span>
+  <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cZrEnIf" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;欢迎注册&quot;}" __cid="cZrEnIf"> 
+    <div class="x-titlebar-left cZrEnIf" xid="left1" __cid="cZrEnIf"/>  
+    <div class="x-titlebar-title cZrEnIf" xid="title1" __cid="cZrEnIf">欢迎注册</div>  
+    <div class="x-titlebar-right  cZrEnIf" xid="right1" __cid="cZrEnIf">
+      <div class="empty cZrEnIf" __cid="cZrEnIf"/>
+    </div>
+  </div>  
+  <div xid="div1" __cid="cZrEnIf" class="cZrEnIf">
+    <input component="$model/UI2/system/components/justep/input/input" class="form-control cZrEnIf" xid="input1" style="height:35px;width:100%;" data-bind="component:{ref:userData.ref('phoneNumber'),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;请输入手机号&quot;}" __cid="cZrEnIf"/>
+    <input component="$model/UI2/system/components/justep/input/password" class="form-control cZrEnIf" xid="password1" style="height:35px;width:100%;" type="password" data-bind="component:{ref:userData.ref('passWord'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请设置登录密码&quot;}" __cid="cZrEnIf"/>
+    <input component="$model/UI2/system/components/justep/input/password" class="form-control cZrEnIf" xid="password2" style="height:35px;width:100%;" type="password" data-bind="component:{ref:userData.ref('passWord'),name:'$model/UI2/system/components/justep/input/password'}" data-config="{&quot;placeHolder&quot;:&quot;请再次输入登录密码&quot;}" __cid="cZrEnIf"/>  
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block cZrEnIf" xid="registerBtn" style="height:40px;width:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:registerBtnClick" data-config="{&quot;label&quot;:&quot;注册&quot;}" __cid="cZrEnIf"> 
+      <i xid="i1" __cid="cZrEnIf" class="cZrEnIf"/>  
+      <span xid="span1" __cid="cZrEnIf" class="cZrEnIf">注册</span>
+    </a>
+    <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link pull-right cZrEnIf" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;已有账号，返回登录&quot;}" __cid="cZrEnIf"> 
+      <i xid="i2" __cid="cZrEnIf" class="cZrEnIf"/>  
+      <span xid="span2" __cid="cZrEnIf" class="cZrEnIf">已有账号，返回登录</span>
+    </a>
+  </div>
+</div>
